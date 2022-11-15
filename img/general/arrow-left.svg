@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="56px" viewBox="0 0 83 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="arrow-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="triangle-arrow" fill="#000000" transform="translate(29.000000, 28.500000) rotate(-45.000000) translate(-29.000000, -28.500000) " points="25 24.5 33 24.5 25 32.5"></polygon>
+        <rect id="arrow" stroke="#000000" x="29" y="28" width="53" height="1"></rect>
+        <path d="M28,1 C39.0921837,1 48.8706292,7.74858848 52.9726057,17.7142424 L52.2410946,17.7143493 C48.1804617,8.13924182 38.7193145,1.675 28,1.675 C13.461104,1.675 1.675,13.461104 1.675,28 C1.675,42.538896 13.461104,54.325 28,54.325 C38.7195465,54.325 48.1806218,47.8604985 52.2411323,38.2855767 L52.9726046,38.2857753 C48.8707337,48.2511811 39.092391,55 28,55 C13.0883118,55 1,42.9116882 1,28 C1,13.0883118 13.0883118,1 28,1 Z" id="circle" stroke="#000000"></path>
+    </g>
+</svg>

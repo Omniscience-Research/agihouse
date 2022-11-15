@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Using Omni | Omniscience</title>
+    <meta name="description" 
+    content="Omni is a contextual real-time information retrieval system to augment intellectual work with the most relevant information across all websites, all books, all scientific literature, and all personal writing.">
+    <meta property="og:title" content="Using Omni | Omni" />
+    <meta
+      property="og:description"
+      content="Omni is a contextual real-time information retrieval system to augment intellectual work with the most relevant information across all websites, all books, all scientific literature, and all personal writing."
+    />
+    <meta
+      property="og:image"
+      content="img/assets/cta.jpg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"/>
+    <!-- Template Vendor's Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css"/>
+    <!-- Template Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!-- Favicons & App Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="img/content/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/content/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="img/content/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/content/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/content/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/content/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/content/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/content/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="img/content/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/content/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/content/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/content/favicon-16x16.png"/>
+    <link rel="manifest" href="img/content/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="img/content/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="icon" type="image/x-icon" href="img/content/favicon.ico"/>
+  </head>
+  <body>
+    <div data-barba="wrapper">
+      <!-- Transition Curtain-->
+      <!-- TRANSITION CURTAINS -->
+      <!-- page curtain AJAX transition -->
+      <div class="curtain transition-curtain" id="js-page-transition-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Default Rectangle -->
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - page curtain AJAX transition -->
+      <!-- header curtain show/hide -->
+      <div class="header-curtain curtain" id="js-header-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Default Rectangle -->
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - header curtain show/hide -->
+      <!-- header curtain AJAX transition -->
+      <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Default Rectangle -->
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - header curtain AJAX transition -->
+      <!-- - TRANSITION CURTAINS -->
+      <!-- Cursor Follower-->
+      <div class="cursor" id="js-cursor">
+        <div class="cursor__wrapper">
+          <!-- circles -->
+          <div class="cursor__follower">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
+              <circle id="outer" cx="25" cy="25" r="24" style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+            </svg>
+          </div>
+          <!-- - circles -->
+          <!-- arrows -->
+          <div class="cursor__arrows">
+            <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+            <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+            <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+            <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+          </div>
+          <!-- - arrows -->
+          <!-- label holder -->
+          <div class="cursor__label"></div>
+          <!-- - label holder -->
+          <!-- icon holder -->
+          <div class="cursor__icon material-icons"></div>
+          <!-- - icon holder -->
+        </div>
+      </div>
+      <!-- - Cursor Follower-->
+      <!-- PAGE HEADER -->
+      <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header" data-arts-theme-text="dark" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="primary" data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light" data-arts-header-overlay-background="#ffffff">
+        <!-- top bar -->
+        <div class="header__container header__controls">
+          <div class="row justify-content-between align-items-center">
+            <!-- logo -->
+            <div class="col-auto header__col header__col-left">
+              <a class="logo" href="/">
+                <div class="logo__wrapper-img">
+                  <!-- primary logo version (for light backgrounds)--><img
+                    class="logo__img-primary"
+                    src="img/general/logo-dark.svg"
+                    alt="Omni"
+                    style="max-height: 45px;"
+                  />
+                  <!-- secondary logo version (for dark backgrounds)--><img
+                    class="logo__img-secondary"
+                    src="img/general/logo-white.svg"
+                    alt="Omni"
+                    style="max-height: 45px;"
+                  /></div>
+                  <!-- primary logo version (for light backgrounds on mobile)--><img
+                   class="logo__img-primary-mobile"
+                   src="img/general/logo-dark-icon.svg"
+                   alt="Omni"
+                   style="max-height: 45px;"
+                 />
+                </a>
+            </div>
+            <!-- - logo -->
+            <!-- burger icon -->
+            <div class="col-auto header__col">
+              <div class="header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+              </div>
+            </div>
+            <!-- - burger icon -->
+            <!-- "back" button for submenu nav -->
+            <div class="header__overlay-menu-back" id="js-submenu-back">
+              <div class="arrow arrow-left js-arrow arrow_mini" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                </svg>
+                <div class="arrow__pointer arrow-left__pointer"></div>
+                <div class="arrow__triangle"></div>
+              </div>
+            </div>
+            <!-- - "back" button for submenu nav -->
+          </div>
+        </div>
+        <!-- - top bar -->
+        <!-- fullscreen overlay container -->
+        <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
+          <!-- fullscreen menu -->
+          <div class="header__wrapper-menu">
+            <ul class="menu-overlay js-menu-overlay">
+              <li class="menu-item-has-children">
+                <a class="h2" href="/onboarding.html" data-pjax-link="overlayMenu">
+                  <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Onboarding</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- - fullscreen menu -->
+        </div>
+        <!-- - fullscreen overlay container -->
+      </header>
+      <!-- - PAGE HEADER -->
+
+      <!-- PAGE MAIN -->
+      <div class="js-smooth-scroll bg-dark-3" id="page-wrapper" data-barba="container" data-arts-theme-text="light">
+        <main class="page-wrapper__content">
+          <!-- section MASTHEAD HALFSCREEN LEFT -->
+          <section class="section section-masthead section-fullheight pt-large pt-md-0" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-background-color="var(--color-dark-3)">
+            <div class="section-masthead__inner section-fullheight__inner section-fullheight__inner_mobile-auto">
+              <div class="row no-gutters h-100 align-items-center">
+                <div class="col-lg-6 h-100 order-lg-2">
+                  <div class="container-fluid container-fluid_paddings h-100">
+                    <div class="row align-items-center h-100">
+                      <div class="col">
+                        <header class="section-masthead__header justify-content-center">
+                          <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>Walkthrough</span></div>
+                          <div class="w-100"></div>
+                          <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                            <h1 class="h1 mt-0 mb-0">How to Use Omni</h1>
+                          </div>
+                          <div class="w-100"></div>
+                          <div class="section__headline mt-2 mr-auto"></div>
+                        </header>
+                      </div>
+                    </div>
+                    <div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_left d-none d-lg-block">
+                      <div class="circle-button js-circle-button" data-arts-os-animation="true">
+                        <!-- curved label -->
+                        <div class="circle-button__outer">
+                          <div class="circle-button__wrapper-label">
+                            <div class="circle-button__label small-caps">Scroll Down</div>
+                          </div>
+                        </div>
+                        <!-- - curved label -->
+                        <!-- geometry wrapper -->
+                        <div class="circle-button__inner">
+                          <div class="circle-button__circle" data-arts-scroll-down="data-arts-scroll-down" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0">
+                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                            </svg>
+                          </div>
+                          <!-- browsers with touch support -->
+                          <div class="circle-button__icon circle-button__icon-touch">
+                            <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
+                              <path d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z"></path>
+                            </svg>
+                          </div>
+                          <!-- - browsers with touch support -->
+                          <!-- - browsers without touch support -->
+                          <div class="circle-button__icon circle-button__icon-mouse">
+                            <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <!-- border -->
+                              <path class="svg-mouse__border" d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z"></path>
+                              <!-- - border -->
+                              <!-- wheel -->
+                              <path class="svg-mouse__wheel" d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z"></path>
+                              <!-- - wheel -->
+                            </svg>
+                          </div>
+                          <!-- - browsers without touch support -->
+                        </div>
+                        <!-- - geometry wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 align-self-stretch">
+                  <div class="section-image section-masthead__background section-masthead__background_halfscreen mt-small mt-md-0">
+                    <div class="section-image__wrapper js-transition-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                      <div class="js-transition-img__transformed-el">
+                        <div class="lazy-bg" data-src="img/assets/projects/project-3.jpg"></div>
+                      </div>
+                    </div>
+                    <div class="section-masthead__bg bg-dark-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- - section MASTHEAD HALFSCREEN LEFT -->
+          <!-- section CONTENT --
+          <div class="section pt-medium pb-medium">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section__headline mb-1"></div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                        <h2>Omni Demo Environment</h2>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-lg-6">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                        <p>Start writing about any topic you want in the Text Editor panel The most relevant lines from every book in the Library dataset will automatically populate the Omni sidebar. You can also manually type queries in the "Omni Search..." bar. Highlight specific words, sentences, or paragraphs that you want to see retrievals from.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- - section CONTENT -->
+          <!-- section IMAGE #1 --
+          <section class="section section-image section_h-800 section_w-container-left">
+            <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+              <div>
+                <div class="lazy-bg" data-src="img/assets/project3/img-3-1.jpg"></div>
+              </div>
+            </div>
+            <div class="section-image__caption paragraph section-image__caption-horizontal text-right">Cooking Area</div>
+          </section>
+          <!-- - section IMAGE #1 -->
+          <!-- section CONTENT #1 -->
+          <div class="section pt-medium pb-small">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                        <h2>I.</h2>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-lg-6">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                        <h2>Omni Demo Environment</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                        <p>
+                          Start writing about any topic you want in the Text Editor panel The most relevant lines from every book in the Library dataset will automatically populate the Omni sidebar. You can also manually type queries in the "Omni Search..." bar. Highlight specific words, sentences, or paragraphs that you want to see retrievals from.
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- - section CONTENT #1 -->
+          <!-- section VIDEO -->
+          <div class="container-fluid pb-medium">
+            <section class="section section-video section-content section-image js-gallery" data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1" data-grid-mobile="1">
+              <div class="section-offset__content">
+                <div class="section-image__wrapper">
+                  <video class="of-cover" src="img/assets/sectionVideo/3-write-demo.mov" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop"></video>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- - section VIDEO -->
+          <!-- section with color theme change on scroll-->
+          <div class="section-scroll" data-arts-theme-text="dark" data-arts-default-theme="bg-light-1" data-arts-scroll-theme="bg-dark-2" data-arts-scroll-theme-text="light" data-arts-scroll-offset="-200" data-arts-scroll-trigger-hook="0.0">
+            <!-- section CONTENT #2 -->
+            <div class="section pt-medium pb-small">
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="col-lg-6">
+                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                      <div class="section-content__inner">
+                        <div class="w-100"></div>
+                        <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                          <h2>II.</h2>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-lg-6">
+                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                      <div class="section-content__inner">
+                        <div class="w-100"></div>
+                        <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                          <h2>Pin Omni</h2>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                          <p>Click on the puzzle button in the upper right hand corner of the browser. Click the pin icon next to the Omni extension to pin Omni to your toolbar. (“Show in toolbar” on Microsoft Edge)</p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- - section CONTENT #2 -->
+            <!-- section VIDEO -->
+            <div class="container-fluid pb-medium">
+              <section class="section section-video section-content section-image js-gallery" data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1" data-grid-mobile="1">
+                <div class="section-offset__content">
+                  <div class="section-image__wrapper">
+                    <video class="of-cover" src="img/assets/sectionVideo/2-pin.mov" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop"></video>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- - section VIDEO -->
+          </div>
+          <!-- - section with color theme change on scroll-->
+          <!-- section CONTENT #3 -->
+          <div class="section pt-medium pb-small bg-white">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                        <h2>III.</h2>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-lg-6">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                        <h2>Toggle On/Off</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                        <p>You can open and close the Omni sidebar by clicking the extension icon. More conveniently, you can use the shortcut ⌥ + F (alt + F on Windows) to toggle Omni on and off.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- - section CONTENT #3 -->
+          <!-- section VIDEO -->
+          <div class="container-fluid pb-medium bg-white">
+            <section class="section section-video section-content section-image js-gallery" data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1" data-grid-mobile="1">
+              <div class="section-offset__content">
+                <div class="section-offset__content">
+                  <div class="section-image__wrapper">
+                    <video class="of-cover" src="img/assets/sectionVideo/2-toggle.mov" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop"></video>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- - section VIDEO -->
+          <!-- IMAGES GALLERY BLOCK --
+          <section class="section section-grid overflow js-gallery" data-arts-os-animation data-grid-columns="1">
+            <div class="container">
+              <div class="row section mt-medium mb-medium">
+                <div class="col-lg-6 offset-lg-1">
+                  <div class="section-grid__item">
+                    <div class="figure-image section-image"><a class="hover-zoom figure-image__link" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6" data-arts-cursor-icon="add" data-arts-cursor-hide-native="true" href="img/assets/project3/img-3-2.jpg" data-size="1460x1920" data-title="Steel &amp; Glass">
+                        <div class="hover-zoom__inner">
+                          <div class="hover-zoom__zoom">
+                            <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                              <div class="lazy"><img data-src="img/assets/project3/img-3-2_thumb.jpg" src="#" alt="" width="730" height="960"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="figure-image__caption section-image__caption hover-zoom__caption section-image__caption-horizontal text-right">
+                          <div class="figure-image__wrapper-caption paragraph">Steel &amp; Glass</div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row section mt-medium mb-medium justify-content-lg-end">
+                <div class="col-lg-8">
+                  <div class="section-grid__item">
+                    <div class="figure-image section-image"><a class="hover-zoom figure-image__link" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6" data-arts-cursor-icon="add" data-arts-cursor-hide-native="true" href="img/assets/project3/img-3-3.jpg" data-size="1460x1460" data-title="Durable Wooden Furniture">
+                        <div class="hover-zoom__inner">
+                          <div class="hover-zoom__zoom">
+                            <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                              <div class="lazy"><img data-src="img/assets/project3/img-3-3_thumb.jpg" src="#" alt="" width="730" height="730"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="figure-image__caption section-image__caption hover-zoom__caption section-image__caption-horizontal text-left">
+                          <div class="figure-image__wrapper-caption paragraph">Durable Wooden Furniture</div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row section mt-medium mb-medium">
+                <div class="col-lg-6 offset-lg-2">
+                  <div class="section-grid__item">
+                    <div class="figure-image section-image"><a class="hover-zoom figure-image__link" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6" data-arts-cursor-icon="add" data-arts-cursor-hide-native="true" href="img/assets/project3/img-3-4.jpg" data-size="1460x1920" data-title="Bathroom">
+                        <div class="hover-zoom__inner">
+                          <div class="hover-zoom__zoom">
+                            <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                              <div class="lazy"><img data-src="img/assets/project3/img-3-4_thumb.jpg" src="#" alt="" width="730" height="960"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="figure-image__caption section-image__caption hover-zoom__caption section-image__caption-horizontal text-right">
+                          <div class="figure-image__wrapper-caption paragraph">Bathroom</div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row section mt-medium mb-medium">
+                <div class="col-lg-5 offset-lg-5">
+                  <div class="section-grid__item">
+                    <div class="figure-image section-image"><a class="hover-zoom figure-image__link" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6" data-arts-cursor-icon="add" data-arts-cursor-hide-native="true" href="img/assets/project3/img-3-5.jpg" data-size="1460x1460" data-title="In the Shadows">
+                        <div class="hover-zoom__inner">
+                          <div class="hover-zoom__zoom">
+                            <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                              <div class="lazy"><img data-src="img/assets/project3/img-3-5_thumb.jpg" src="#" alt="" width="730" height="730"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="figure-image__caption section-image__caption hover-zoom__caption section-image__caption-horizontal text-left">
+                          <div class="figure-image__wrapper-caption paragraph">In the Shadows</div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section section-image section_h-800 section_w-container-right">
+            <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+              <div>
+                <div class="lazy-bg" data-src="img/assets/project3/img-3-6.jpg"></div>
+              </div>
+            </div>
+            <div class="section-image__caption paragraph text-left">Bedroom</div>
+          </section>
+          <!-- - section IMAGE #2 -->
+          <!-- section NAV PROJECTS -->
+          <section class="container-fluid section section-nav-projects section-fullheight text-center" data-arts-os-animation="data-arts-os-animation">
+            <div class="section-fullheight__inner section-nav-projects__inner_actual">
+              <header class="section-nav-projects__header"><a class="section-nav-projects__link" href="google-docs.html" data-pjax-link="flyingImage">
+                  <div class="section-nav-projects__subheading small-caps mb-1 mb-md-2">Next</div>
+                  <h2 class="section-nav-projects__heading h1 mt-0 mb-0">Using Omni in Google Docs</h2></a></header>
+              <div class="section-nav-projects__wrapper-scroll-down text-center">
+                <div class="circle-button js-circle-button">
+                  <!-- curved label -->
+                  <div class="circle-button__outer">
+                    <div class="circle-button__wrapper-label">
+                      <div class="circle-button__label small-caps">Keep Scrolling</div>
+                    </div>
+                  </div>
+                  <!-- - curved label -->
+                  <!-- geometry wrapper -->
+                  <div class="circle-button__inner">
+                    <div class="circle-button__circle" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <!-- browsers with touch support -->
+                    <div class="circle-button__icon circle-button__icon-touch">
+                      <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z"></path>
+                      </svg>
+                    </div>
+                    <!-- - browsers with touch support -->
+                    <!-- browsers without touch support -->
+                    <div class="circle-button__icon circle-button__icon-mouse">
+                      <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- border -->
+                        <path class="svg-mouse__border" d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z"></path>
+                        <!-- - border -->
+                        <!-- wheel -->
+                        <path class="svg-mouse__wheel" d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z"></path>
+                        <!-- - wheel -->
+                      </svg>
+                    </div>
+                    <!-- - browsers without touch support -->
+                  </div>
+                  <!-- - geometry wrapper -->
+                </div>
+              </div>
+            </div>
+            <div class="container section-nav-projects__next-image section-fullheight__inner">
+              <div class="section-nav-projects__wrapper-image js-transition-img overflow">
+                <div class="lazy js-transition-img__transformed-el"><img class="of-cover" src="#" data-src="img/assets/projects/project-4.jpg" alt="" width="1920" height="1280"/></div>
+              </div>
+            </div>
+            <div class="section-fullheight__inner hidden"></div>
+          </section>
+          <!-- - section NAV PROJECTS -->
+        </main>
+        <!-- PAGE FOOTER -->
+        <!-- - PAGE FOOTER -->
+      </div>
+      <!-- - PAGE MAIN -->
+    </div>
+    <canvas id="js-webgl"></canvas>
+    <!-- PhotoSwipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
+      <!-- background -->
+      <div class="pswp__bg"></div>
+      <!-- - background -->
+      <!-- slider wrapper -->
+      <div class="pswp__scroll-wrap">
+        <!-- slides holder (don't modify)-->
+        <div class="pswp__container">
+          <div class="pswp__item">
+            <div class="pswp__img pswp__img--placeholder"></div>
+          </div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <!-- - slides holder (don't modify)-->
+        <!-- UI -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <!-- top bar -->
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- - top bar -->
+          <!-- left arrow -->
+          <div class="pswp__button pswp__button--arrow--left">
+            <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-left__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <!-- - left arrow -->
+          <!-- right arrow -->
+          <div class="pswp__button pswp__button--arrow--right">
+            <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-right__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <!-- - right arrow -->
+          <!-- slide caption holder (don't modify) -->
+          <div class="pswp__caption">
+            <div class="pswp__caption__center text-center"></div>
+          </div>
+          <!-- - slide caption holder (don't modify) -->
+        </div>
+        <!-- - UI -->
+      </div>
+      <!-- slider wrapper -->
+    </div>
+    <!-- - PhotoSwipe -->
+    <!-- List Hover Shaders -->
+    <script id="list-hover-vs" type="x-shader/x-vertex">
+      uniform vec2 uOffset;
+      
+      varying vec2 vUv;
+      
+      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
+        float M_PI = 3.1415926535897932384626433832795;
+        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
+        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
+        return position;
+      }
+      
+      void main() {
+        vUv =  uv + (uOffset * 2.);
+        vec3 newPosition = position;
+        newPosition = deformationCurve(position,uv,uOffset);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+      }
+    </script>
+    <script id="list-hover-fs" type="x-shader/x-fragment">
+      uniform sampler2D uTexture;
+      uniform float uAlpha;
+      uniform float uScale;
+      
+      varying vec2 vUv;
+      
+      vec2 scaleUV(vec2 uv,float scale) {
+        float center = 0.5;
+        return ((uv - center) * scale) + center;
+      }
+      
+      void main() {
+        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
+        gl_FragColor = vec4(color,uAlpha);
+      }
+      
+    </script>
+    <!-- - List Hover Shaders -->
+    <!-- Slider Textures Shaders -->
+    <script id="slider-textures-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+      }
+    </script>
+    <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+    </script>
+    <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
+        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+      
+    </script>
+    <!-- - Slider Textures Shaders -->
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- - VENDOR SCRIPTS -->
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <!-- - COMPONENTS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc" async></script>
+  </body>
+</html>
