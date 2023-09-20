@@ -1,2 +1,2 @@
-# omni-landing-page
-Omniscience Beta Landing Page
+# agihouse-landing-page
+AGI House Landing Page
