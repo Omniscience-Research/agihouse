@@ -332,33 +332,25 @@
                             <p class="mt-1"><em>Hardware builders gathering at AGI House SF</em></p>
                           </div>
 
-                          <div class="section__headline mt-2 mr-auto"></div>
-
-                          <div class="row mt-2">
-                            <div class="col-md-6 mb-2">
-                              <div class="section-content__image">
-                                <img src="img/consumer-hardware/host-aili.jpg" alt="Aili Liu hosting" class="img-fluid">
-                              </div>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                              <div class="section-content__image">
-                                <img src="img/consumer-hardware/demo-physical-ai.jpg" alt="Physical AI demo presentation" class="img-fluid">
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row mt-2">
-                            <div class="col-md-6 mb-2">
-                              <div class="section-content__image">
-                                <img src="img/consumer-hardware/speaker-1.jpg" alt="Speaker presenting" class="img-fluid">
-                              </div>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                              <div class="section-content__image">
-                                <img src="img/consumer-hardware/speaker-2.jpg" alt="Speaker presenting" class="img-fluid">
-                              </div>
+                          <!-- Photo Carousel -->
+                          <div class="swiper-container photo-carousel mt-2" style="overflow: hidden;">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="img/consumer-hardware/host-aili.jpg" alt="Aili Liu hosting" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-01.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-02.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-03.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-04.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-05.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/speaker-1.jpg" alt="Speaker presenting" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-06.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-07.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-08.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/demo-physical-ai.jpg" alt="Physical AI demo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-09.jpg" alt="Event photo" class="img-fluid"></div>
+                              <div class="swiper-slide"><img src="img/consumer-hardware/speaker-2.jpg" alt="Speaker presenting" class="img-fluid"></div>
                             </div>
                           </div>
+                          <!-- End Photo Carousel -->
 
                           <div class="section__headline mt-2 mr-auto"></div>
 
@@ -650,5 +642,50 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
       async
     ></script>
+    <!-- Photo Carousel Styles -->
+    <style>
+      .photo-carousel {
+        width: 100%;
+        padding: 20px 0;
+      }
+      .photo-carousel .swiper-slide {
+        width: auto;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .photo-carousel .swiper-slide img {
+        height: 100%;
+        width: auto;
+        max-width: none;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      @media (max-width: 768px) {
+        .photo-carousel .swiper-slide {
+          height: 280px;
+        }
+      }
+    </style>
+    <!-- Photo Carousel Init -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        new Swiper('.photo-carousel', {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          centeredSlides: false,
+          loop: true,
+          speed: 4000,
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+          },
+          freeMode: true,
+          freeModeMomentum: false,
+          grabCursor: true,
+        });
+      });
+    </script>
   </body>
 </html>
