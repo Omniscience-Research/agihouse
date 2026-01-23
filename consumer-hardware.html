@@ -333,22 +333,27 @@
                           </div>
 
                           <!-- Photo Carousel -->
-                          <div class="swiper-container photo-carousel mt-2" style="overflow: hidden;">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide"><img src="img/consumer-hardware/host-aili.jpg" alt="Aili Liu hosting" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-01.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-02.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-03.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-04.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-05.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/speaker-1.jpg" alt="Speaker presenting" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-06.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-07.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-08.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/demo-physical-ai.jpg" alt="Physical AI demo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/slide-09.jpg" alt="Event photo" class="img-fluid"></div>
-                              <div class="swiper-slide"><img src="img/consumer-hardware/speaker-2.jpg" alt="Speaker presenting" class="img-fluid"></div>
+                          <div class="carousel-wrapper" style="position: relative;">
+                            <div class="swiper-container photo-carousel mt-2" style="overflow: hidden;">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/consumer-hardware/host-aili.jpg" alt="Aili Liu hosting" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-01.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-02.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-03.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-04.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-05.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/speaker-1.jpg" alt="Speaker presenting" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-06.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-07.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-08.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/demo-physical-ai.jpg" alt="Physical AI demo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/slide-09.jpg" alt="Event photo" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/consumer-hardware/speaker-2.jpg" alt="Speaker presenting" class="img-fluid"></div>
+                              </div>
                             </div>
+                            <!-- Navigation arrows -->
+                            <div class="carousel-nav carousel-prev"><i class="fas fa-chevron-left"></i></div>
+                            <div class="carousel-nav carousel-next"><i class="fas fa-chevron-right"></i></div>
                           </div>
                           <!-- End Photo Carousel -->
 
@@ -644,6 +649,9 @@
     ></script>
     <!-- Photo Carousel Styles -->
     <style>
+      .carousel-wrapper {
+        position: relative;
+      }
       .photo-carousel {
         width: 100%;
         padding: 20px 0;
@@ -662,28 +670,72 @@
         object-fit: cover;
         border-radius: 8px;
       }
+      .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+        transition: background 0.3s ease;
+        color: white;
+        font-size: 18px;
+      }
+      .carousel-nav:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+      .carousel-prev {
+        left: 15px;
+      }
+      .carousel-next {
+        right: 15px;
+      }
       @media (max-width: 768px) {
         .photo-carousel .swiper-slide {
           height: 280px;
+        }
+        .carousel-nav {
+          width: 40px;
+          height: 40px;
+          font-size: 14px;
+        }
+        .carousel-prev {
+          left: 10px;
+        }
+        .carousel-next {
+          right: 10px;
         }
       }
     </style>
     <!-- Photo Carousel Init -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        new Swiper('.photo-carousel', {
+        var photoSwiper = new Swiper('.photo-carousel', {
           slidesPerView: 'auto',
           spaceBetween: 20,
           centeredSlides: false,
           loop: true,
-          speed: 4000,
+          speed: 800,
           autoplay: {
-            delay: 0,
+            delay: 3000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           },
-          freeMode: true,
-          freeModeMomentum: false,
           grabCursor: true,
+        });
+
+        // Custom navigation
+        document.querySelector('.carousel-prev').addEventListener('click', function() {
+          photoSwiper.slidePrev();
+        });
+        document.querySelector('.carousel-next').addEventListener('click', function() {
+          photoSwiper.slideNext();
         });
       });
     </script>
