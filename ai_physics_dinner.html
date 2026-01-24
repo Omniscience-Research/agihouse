@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>AI x Physics Dinner</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agihouse.ai/ai_physics_dinner.html" />
+    <meta property="og:title" content="AI x Physics Dinner"/>
+    <meta property="og:description" content="AGI House. Exploring the intersection of physics and artificial intelligence."/>
+    <meta property="og:image" content="https://i.imgur.com/qxHZJ1a.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content="https://agihouse.ai/ai_physics_dinner.html"/>
+    <meta name="twitter:title" content="AI x Physics Dinner"/>
+    <meta name="twitter:description" content="AGI House. Exploring the intersection of physics and artificial intelligence."/>
+    <meta name="twitter:image" content="https://i.imgur.com/qxHZJ1a.png"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="img/assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"
+    />
+    <!-- Template Vendor's Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <!-- Template Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Favicons & App Icons -->
+    <link rel="manifest" href="img/content/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <script
+      src="https://kit.fontawesome.com/f15c1cc7e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div data-barba="wrapper">
+      <!-- Transition Curtain-->
+      <!-- TRANSITION CURTAINS -->
+      <!-- page curtain AJAX transition -->
+      <div class="curtain transition-curtain" id="js-page-transition-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg
+            class="curtain-svg"
+            viewBox="0 0 1920 1080"
+            preserveAspectRatio="none"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <!-- Default Rectangle -->
+            <path
+              class="curtain-svg__normal"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+            ></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path
+              class="curtain-svg__curve curtain-svg__curve_top-desktop"
+              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+            ></path>
+            <path
+              class="curtain-svg__curve curtain-svg__curve_top-mobile"
+              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+            ></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path
+              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+            ></path>
+            <path
+              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+            ></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - page curtain AJAX transition -->
+      <!-- header curtain show/hide -->
+      <div class="header-curtain curtain" id="js-header-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg
+            class="curtain-svg"
+            viewBox="0 0 1920 1080"
+            preserveAspectRatio="none"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <!-- Default Rectangle -->
+            <path
+              class="curtain-svg__normal"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+            ></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path
+              class="curtain-svg__curve curtain-svg__curve_top-desktop"
+              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+            ></path>
+            <path
+              class="curtain-svg__curve curtain-svg__curve_top-mobile"
+              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+            ></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path
+              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+            ></path>
+            <path
+              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+            ></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - header curtain show/hide -->
+      <!-- header curtain AJAX transition -->
+      <div
+        class="header-curtain header-curtain_transition curtain"
+        id="js-header-curtain-transition"
+      >
+        <div class="curtain__wrapper-svg">
+          <svg
+            class="curtain-svg"
+            viewBox="0 0 1920 1080"
+            preserveAspectRatio="none"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <!-- Default Rectangle -->
+            <path
+              class="curtain-svg__normal"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+            ></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path
+              class="curtain-svg__curve curtain-svg__curve_top-desktop"
+              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+            ></path>
+            <path
+              class="curtain-svg__curve curtain-svg__curve_top-mobile"
+              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+            ></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path
+              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+            ></path>
+            <path
+              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+            ></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - header curtain AJAX transition -->
+      <!-- - TRANSITION CURTAINS -->
+      <!-- Cursor Follower-->
+      <div class="cursor" id="js-cursor">
+        <div class="cursor__wrapper">
+          <!-- circles -->
+          <div class="cursor__follower">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <circle
+                id="inner"
+                cx="25"
+                cy="25"
+                r="24"
+                style="opacity: 0.6"
+              ></circle>
+              <circle
+                id="outer"
+                cx="25"
+                cy="25"
+                r="24"
+                style="
+                  stroke-dashoffset: 252.327;
+                  stroke-dasharray: 0px, 999999px;
+                "
+              ></circle>
+            </svg>
+          </div>
+          <!-- - circles -->
+          <!-- arrows -->
+          <div class="cursor__arrows">
+            <div class="cursor__arrow cursor__arrow_up material-icons">
+              keyboard_arrow_up
+            </div>
+            <div class="cursor__arrow cursor__arrow_down material-icons">
+              keyboard_arrow_down
+            </div>
+            <div class="cursor__arrow cursor__arrow_left material-icons">
+              keyboard_arrow_left
+            </div>
+            <div class="cursor__arrow cursor__arrow_right material-icons">
+              keyboard_arrow_right
+            </div>
+          </div>
+          <!-- - arrows -->
+          <!-- label holder -->
+          <div class="cursor__label"></div>
+          <!-- - label holder -->
+          <!-- icon holder -->
+          <div class="cursor__icon material-icons"></div>
+          <!-- - icon holder -->
+        </div>
+      </div>
+      <!-- - Cursor Follower-->
+      <!-- PAGE HEADER -->
+      <header
+        class="header header_menu-right header_fixed container-fluid js-header-sticky"
+        id="page-header"
+        data-arts-theme-text="light"
+        data-arts-header-sticky-theme="bg-white"
+        data-arts-header-logo="secondary"
+        data-arts-header-sticky-logo="primary"
+        data-arts-header-overlay-theme="light"
+        data-arts-header-overlay-background="#f2f1ed"
+      >
+        <!-- top bar -->
+        <div class="header__container header__controls">
+          <div class="row justify-content-between align-items-center">
+
+            <!-- burger icon -->
+            <div class="col-auto header__col">
+              <!-- button -->
+              <a class="button button_solid button_black mb-0-5" data-hover="Build With Us" href="https://forms.gle/TF6Arjmv7CMM4KUQA" target="_blank">
+                <span class="button__label-hover">Join Us</span>
+              </a>
+            </div>
+            <!-- - burger icon -->
+            <!-- "back" button for submenu nav -->
+            <div class="header__overlay-menu-back" id="js-submenu-back">
+              <div
+                class="arrow arrow-left js-arrow arrow_mini"
+                data-arts-cursor="data-arts-cursor"
+                data-arts-cursor-hide-native="true"
+                data-arts-cursor-scale="0"
+                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+              >
+                <svg
+                  class="svg-circle"
+                  viewBox="0 0 60 60"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle
+                    class="circle"
+                    cx="30"
+                    cy="30"
+                    r="29"
+                    fill="none"
+                  ></circle>
+                </svg>
+                <div class="arrow__pointer arrow-left__pointer"></div>
+                <div class="arrow__triangle"></div>
+              </div>
+            </div>
+            <!-- - "back" button for submenu nav -->
+          </div>
+        </div>
+        <!-- - top bar -->
+        <!-- - fullscreen overlay container -->
+      </header>
+      <!-- - PAGE HEADER -->
+      <!-- PAGE MAIN -->
+      <div
+        class="js-smooth-scroll bg-light-1"
+        id="page-wrapper"
+        data-barba="container"
+      >
+        <main class="page-wrapper__content">
+          <!-- section MASTHEAD HALFSCREEN LEFT -->
+          <section class="section section-masthead section-fullheight pt-large pt-md-0" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-background-color="var(--color-light-1)">
+            <div class="section-masthead__inner section-fullheight__inner section-fullheight__inner_mobile-auto">
+              <div class="row no-gutters h-100 align-items-center">
+                <div class="col-12 h-100 order-lg-2">
+                  <div class="container-fluid container-fluid_paddings h-100">
+                    <div class="row align-items-center h-100 pt-2">
+                      <div class="col">
+                        <header class="section-masthead__header justify-content-center">
+                          <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>AGI House SF</span></div>
+                          <div class="w-100"></div>
+                          <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                            <h1 class="h1 mt-0 mb-0">AI x Physics Dinner</h1>
+                          </div>
+                          <div class="w-100"></div>
+
+                          <div
+                            class="section-content__text split-text js-split-text mt-1"
+                            data-split-text-type="lines"
+                            data-split-text-set="lines"
+                          >
+
+                          <div class="section__headline mt-2 mr-auto"></div>
+
+                          <p>We gathered physicists, AI researchers, and builders to explore the deep connections between physics and machine learning. The conversations ranged from thermodynamic computing to tensor networks, from the foundations of optimization to the future of energy-efficient AI.</p>
+
+                          <div class="section__headline mt-2 mr-auto"></div>
+
+                          <h3>Ideas from the Evening</h3>
+
+                          <h4>Thermodynamic Computing: Training Neural Networks with Physics</h4>
+                          <p>One of the most provocative ideas discussed was using thermodynamic systems to train neural networks without traditional backpropagation. Instead of simulating gradient descent on digital hardware, you can build analog systems governed by Kirchhoff's laws where the physics itself performs the optimization.</p>
+
+                          <p>The key insight: in a network of resistors with thermal noise, the fluctuations at each node contain information about how to update the weights. By clamping input and output nodes and observing how the hidden nodes fluctuate, you can derive weight updates that minimize energy through the system. The "backward pass" happens at the speed of light through the physical substrate.</p>
+
+                          <h4>The Energy Efficiency Frontier</h4>
+                          <p>Current digital systems operate at around 0.7 volts, but thermodynamic systems can operate at the thermal limit of kT (about 26 millielectronvolts at room temperature). This represents a potential 10<sup>7</sup> improvement in energy efficiency for neural network training. As one participant put it: "This could kick the trillion-dollar data centers in the teeth."</p>
+
+                          <h4>P-bits and the Higgs Potential</h4>
+                          <p>The discussion touched on using bi-stable wells (similar to the Higgs potential in particle physics) for computation. These "p-bits" (probabilistic bits) sit in a double-well potential where thermal fluctuations cause them to hop between states. The beautiful insight: even though each p-bit has very low information capacity (roughly ln(2) bits), by time-averaging over thermal fluctuations, you can recover arbitrary floating-point precision.</p>
+
+                          <h4>Non-Equilibrium Dynamics: Why This Time Is Different</h4>
+                          <p>Earlier attempts at analog neural computing in the late 1980s failed because they required systems to reach thermal equilibrium, which limited the class of solvable problems. The new approaches work in the non-equilibrium regime, where the system never needs to thermalize. This is a fundamental departure that opens up much richer computational possibilities.</p>
+
+                          <h4>Tensor Networks Meet Neural Networks</h4>
+                          <p>The conversation explored how tensor network decompositions from quantum physics can be applied to neural network architectures. This allows attention mechanisms, state machines, and other complex architectures to be expressed in forms amenable to physical implementation. The mathematical structure of tensor contraction maps naturally onto certain analog computing substrates.</p>
+
+                          <h4>Meta-Learning and Gradient-Free Optimization</h4>
+                          <p>Connections were drawn to the meta-learning literature from 2017-2020, where researchers explored gradient-free methods for training neural networks. These "learned optimizers" could take activations as input and produce gradient signals without explicit backpropagation. The physical computing approaches discussed share deep mathematical structure with these methods.</p>
+
+                          <div class="section__headline mt-2 mr-auto"></div>
+
+                          <h3>The Bigger Picture</h3>
+                          <p>The evening highlighted a broader theme: as we push toward more powerful AI systems, we're being forced to reconsider the physical substrate of computation itself. The separation between "hardware" and "algorithm" is blurring. Physics isn't just a metaphor for learning—it might be the most efficient way to actually implement it.</p>
+
+                          <p>The conversations continued late into the night, with discussions ranging from KKLT theories in string theory to the information bottleneck principle, from diffusion models to defense applications. It was a reminder that the most interesting ideas often emerge at the intersection of fields.</p>
+
+                          <div class="section__headline mt-2 mr-auto"></div>
+
+                        </header>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- - sections CONTENT & IMAGE #1 -->
+
+        </main>
+        <!-- PAGE FOOTER -->
+        <footer
+          class="footer container-fluid bg-white"
+          id="page-footer"
+          data-arts-theme-text="dark"
+          data-arts-footer-logo="primary"
+        >
+          <!-- widgets top area -->
+          <div class="footer__area pb-sm-4">
+            <div class="row">
+              <div class="col-lg-12">
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer__area footer__area-border-top"
+          >
+            <div class="row align-items-center">
+              <div
+                class="col-lg-6 footer__column text-center text-lg-center order-lg-2"
+              >
+                <section class="widget widget_text">
+                  <div class="textwidget">
+                    <p>
+                      <small
+                        >© 2025 AGI House | Website by
+                        <a href="" target="_blank"
+                          >Omni Genesis</a
+                        ></small
+                      >
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- - PAGE FOOTER -->
+      </div>
+      <!-- - PAGE MAIN -->
+    </div>
+    <canvas id="js-webgl"></canvas>
+    <!-- PhotoSwipe -->
+    <div
+      class="pswp"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      data-arts-theme-text="light"
+    >
+      <!-- background -->
+      <div class="pswp__bg"></div>
+      <!-- - background -->
+      <!-- slider wrapper -->
+      <div class="pswp__scroll-wrap">
+        <!-- slides holder (don't modify)-->
+        <div class="pswp__container">
+          <div class="pswp__item">
+            <div class="pswp__img pswp__img--placeholder"></div>
+          </div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <!-- - slides holder (don't modify)-->
+        <!-- UI -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <!-- top bar -->
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+              data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-scale="1.2"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+              data-arts-cursor-hide-native="true"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+              data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-scale="1.2"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+              data-arts-cursor-hide-native="true"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- - top bar -->
+          <!-- left arrow -->
+          <div class="pswp__button pswp__button--arrow--left">
+            <div
+              class="arrow arrow-left js-arrow"
+              data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-hide-native="true"
+              data-arts-cursor-scale="0"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            >
+              <svg
+                class="svg-circle"
+                viewBox="0 0 60 60"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <circle
+                  class="circle"
+                  cx="30"
+                  cy="30"
+                  r="29"
+                  fill="none"
+                ></circle>
+              </svg>
+              <div class="arrow__pointer arrow-left__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <!-- - left arrow -->
+          <!-- right arrow -->
+          <div class="pswp__button pswp__button--arrow--right">
+            <div
+              class="arrow arrow-right js-arrow"
+              data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-hide-native="true"
+              data-arts-cursor-scale="0"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            >
+              <svg
+                class="svg-circle"
+                viewBox="0 0 60 60"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <circle
+                  class="circle"
+                  cx="30"
+                  cy="30"
+                  r="29"
+                  fill="none"
+                ></circle>
+              </svg>
+              <div class="arrow__pointer arrow-right__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <!-- - right arrow -->
+          <!-- slide caption holder (don't modify) -->
+          <div class="pswp__caption">
+            <div class="pswp__caption__center text-center"></div>
+          </div>
+          <!-- - slide caption holder (don't modify) -->
+        </div>
+        <!-- - UI -->
+      </div>
+      <!-- slider wrapper -->
+    </div>
+    <!-- - PhotoSwipe -->
+    <!-- List Hover Shaders -->
+    <script id="list-hover-vs" type="x-shader/x-vertex">
+      uniform vec2 uOffset;
+
+      varying vec2 vUv;
+
+      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
+        float M_PI = 3.1415926535897932384626433832795;
+        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
+        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
+        return position;
+      }
+
+      void main() {
+        vUv =  uv + (uOffset * 2.);
+        vec3 newPosition = position;
+        newPosition = deformationCurve(position,uv,uOffset);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+      }
+    </script>
+    <script id="list-hover-fs" type="x-shader/x-fragment">
+      uniform sampler2D uTexture;
+      uniform float uAlpha;
+      uniform float uScale;
+
+      varying vec2 vUv;
+
+      vec2 scaleUV(vec2 uv,float scale) {
+        float center = 0.5;
+        return ((uv - center) * scale) + center;
+      }
+
+      void main() {
+        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
+        gl_FragColor = vec4(color,uAlpha);
+      }
+    </script>
+    <!-- - List Hover Shaders -->
+    <!-- Slider Textures Shaders -->
+    <script id="slider-textures-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+      }
+    </script>
+    <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+
+      uniform float dispFactor;
+      uniform float effectFactor;
+
+      void main() {
+
+        vec2 uv = vUv;
+
+        vec4 disp = texture2D(disp, uv);
+
+        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+
+        gl_FragColor = finalTexture;
+
+      }
+    </script>
+    <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+
+      uniform float dispFactor;
+      uniform float effectFactor;
+
+      void main() {
+
+        vec2 uv = vUv;
+
+        vec4 disp = texture2D(disp, uv);
+
+        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
+        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
+
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+
+        gl_FragColor = finalTexture;
+
+      }
+    </script>
+    <!-- - Slider Textures Shaders -->
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- - VENDOR SCRIPTS -->
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <!-- - COMPONENTS -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
+      async
+    ></script>
+  </body>
+</html>
