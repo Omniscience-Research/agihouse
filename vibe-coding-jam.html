@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Vibe Coding Jam & Tea</title>
+    <title>Vibe Coding Jam & Tea | AGI House</title>
     <meta property="og:title" content="Vibe Coding Jam & Tea"/>
     <meta property="og:image" content="img/vibe-coding-jam/IMG_5010.jpeg"/>
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="AGI House. Technology is no longer a moat, but taste is."/>
+    <meta property="og:description" content="A gathering of vibe builders crafting with taste. January 25, 2026 at AGI House."/>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/png" href="img/assets/favicon.png" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Playfair+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
     <link
@@ -40,141 +40,242 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      .photo-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
-        padding: 1rem 0;
-      }
-      .photo-grid img {
+      /* Hero Image */
+      .hero-image {
         width: 100%;
-        height: 300px;
+        height: 70vh;
         object-fit: cover;
-        border-radius: 8px;
-        transition: transform 0.3s ease;
+        margin-bottom: 3rem;
       }
-      .photo-grid img:hover {
+
+      /* Event Meta */
+      .event-meta {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        padding: 1.5rem 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+      }
+      .event-meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      .event-meta-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #888;
+      }
+      .event-meta-value {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1rem;
+      }
+
+      /* Quote */
+      .pull-quote {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        font-style: italic;
+        text-align: center;
+        padding: 3rem 2rem;
+        margin: 3rem 0;
+        border-left: none;
+        position: relative;
+        color: #333;
+      }
+      .pull-quote::before {
+        content: '"';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 6rem;
+        color: rgba(0,0,0,0.08);
+        font-family: 'Playfair Display', serif;
+        line-height: 1;
+      }
+
+      /* Section Headers */
+      .section-header {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.75rem;
+        margin: 3rem 0 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #000;
+        display: inline-block;
+      }
+
+      /* Content Blocks */
+      .content-block {
+        margin: 2rem 0;
+        line-height: 1.8;
+      }
+      .content-block ul {
+        list-style: none;
+        padding: 0;
+      }
+      .content-block li {
+        padding: 0.75rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+      .content-block li::before {
+        content: '—';
+        position: absolute;
+        left: 0;
+        color: #888;
+      }
+
+      /* Masonry Photo Grid */
+      .photo-gallery {
+        margin: 3rem 0;
+      }
+      .photo-grid-masonry {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 200px;
+        gap: 1rem;
+      }
+      .photo-grid-masonry img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        cursor: pointer;
+      }
+      .photo-grid-masonry img:hover {
         transform: scale(1.02);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
       }
-      .photo-grid-wide {
-        grid-column: span 2;
+
+      /* Grid item sizes */
+      .photo-featured {
+        grid-column: span 8;
+        grid-row: span 2;
       }
-      @media (max-width: 768px) {
-        .photo-grid {
+      .photo-tall {
+        grid-column: span 4;
+        grid-row: span 2;
+      }
+      .photo-wide {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+      .photo-square {
+        grid-column: span 4;
+        grid-row: span 1;
+      }
+      .photo-small {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      @media (max-width: 992px) {
+        .photo-featured,
+        .photo-tall,
+        .photo-wide {
+          grid-column: span 6;
+        }
+        .photo-square,
+        .photo-small {
+          grid-column: span 6;
+        }
+      }
+      @media (max-width: 576px) {
+        .photo-grid-masonry {
           grid-template-columns: 1fr;
         }
-        .photo-grid-wide {
+        .photo-featured,
+        .photo-tall,
+        .photo-wide,
+        .photo-square,
+        .photo-small {
           grid-column: span 1;
+          grid-row: span 1;
         }
+        .pull-quote {
+          font-size: 1.5rem;
+          padding: 2rem 1rem;
+        }
+      }
+
+      /* Hosts Section */
+      .hosts-section {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+      }
+      .hosts-image {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .hosts-info {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      /* Footer CTA */
+      .footer-cta {
+        text-align: center;
+        padding: 4rem 2rem;
+        margin-top: 3rem;
+        background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
+        border-radius: 8px;
+      }
+      .footer-cta h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .footer-cta p {
+        color: #666;
+        margin-bottom: 1.5rem;
       }
     </style>
   </head>
   <body>
     <div data-barba="wrapper">
       <!-- Transition Curtain-->
-      <!-- TRANSITION CURTAINS -->
-      <!-- page curtain AJAX transition -->
       <div class="curtain transition-curtain" id="js-page-transition-curtain">
         <div class="curtain__wrapper-svg">
-          <svg
-            class="curtain-svg"
-            viewBox="0 0 1920 1080"
-            preserveAspectRatio="none"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <path
-              class="curtain-svg__normal"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-desktop"
-              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-mobile"
-              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
-            ></path>
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
           </svg>
         </div>
       </div>
       <!-- header curtain show/hide -->
       <div class="header-curtain curtain" id="js-header-curtain">
         <div class="curtain__wrapper-svg">
-          <svg
-            class="curtain-svg"
-            viewBox="0 0 1920 1080"
-            preserveAspectRatio="none"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <path
-              class="curtain-svg__normal"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-desktop"
-              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-mobile"
-              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
-            ></path>
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
           </svg>
         </div>
       </div>
       <!-- header curtain AJAX transition -->
-      <div
-        class="header-curtain header-curtain_transition curtain"
-        id="js-header-curtain-transition"
-      >
+      <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
         <div class="curtain__wrapper-svg">
-          <svg
-            class="curtain-svg"
-            viewBox="0 0 1920 1080"
-            preserveAspectRatio="none"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <path
-              class="curtain-svg__normal"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-desktop"
-              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-mobile"
-              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
-            ></path>
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
           </svg>
         </div>
       </div>
@@ -182,43 +283,16 @@
       <div class="cursor" id="js-cursor">
         <div class="cursor__wrapper">
           <div class="cursor__follower">
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <circle
-                id="inner"
-                cx="25"
-                cy="25"
-                r="24"
-                style="opacity: 0.6"
-              ></circle>
-              <circle
-                id="outer"
-                cx="25"
-                cy="25"
-                r="24"
-                style="
-                  stroke-dashoffset: 252.327;
-                  stroke-dasharray: 0px, 999999px;
-                "
-              ></circle>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6"></circle>
+              <circle id="outer" cx="25" cy="25" r="24" style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
             </svg>
           </div>
           <div class="cursor__arrows">
-            <div class="cursor__arrow cursor__arrow_up material-icons">
-              keyboard_arrow_up
-            </div>
-            <div class="cursor__arrow cursor__arrow_down material-icons">
-              keyboard_arrow_down
-            </div>
-            <div class="cursor__arrow cursor__arrow_left material-icons">
-              keyboard_arrow_left
-            </div>
-            <div class="cursor__arrow cursor__arrow_right material-icons">
-              keyboard_arrow_right
-            </div>
+            <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+            <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+            <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+            <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
           </div>
           <div class="cursor__label"></div>
           <div class="cursor__icon material-icons"></div>
@@ -238,138 +312,133 @@
         <div class="header__container header__controls">
           <div class="row justify-content-between align-items-center">
             <div class="col-auto header__col">
-              <a class="button button_solid button_black mb-0-5" data-hover="Register Now" href="https://lu.ma/5bfrttaj" target="_blank">
-                <span class="button__label-hover">Join Us</span>
+              <a class="button button_solid button_black mb-0-5" data-hover="View More Events" href="https://lu.ma/agihouse" target="_blank">
+                <span class="button__label-hover">AGI House Events</span>
               </a>
             </div>
           </div>
         </div>
       </header>
       <!-- PAGE MAIN -->
-      <div
-        class="js-smooth-scroll bg-light-1"
-        id="page-wrapper"
-        data-barba="container"
-      >
+      <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
         <main class="page-wrapper__content">
-          <!-- section MASTHEAD -->
-          <section class="section section-masthead section-fullheight pt-large pt-md-0" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-background-color="var(--color-light-1)">
-            <div class="section-masthead__inner section-fullheight__inner section-fullheight__inner_mobile-auto">
-              <div class="row no-gutters h-100 align-items-center">
-                <div class="col-12 h-100 order-lg-2">
-                  <div class="container-fluid container-fluid_paddings h-100">
-                    <div class="row align-items-center h-100 pt-2">
-                      <div class="col">
-                        <header class="section-masthead__header justify-content-center">
-                          <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>AGI House. Welcome to The Intelligence Age.</span></div>
-                          <div class="w-100"></div>
-                          <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
-                            <h1 class="h1 mt-0 mb-0">Vibe Coding Jam & Tea</h1>
-                          </div>
-                          <div class="w-100"></div>
-                          <div
-                            class="section-content__text split-text js-split-text mt-1"
-                            data-split-text-type="lines"
-                            data-split-text-set="lines"
-                          >
-                          <h4>Hosted by Crystal Shan, ShanShan & Qinyu</h4>
-                          <h6>In partnership with AGI House SF, Jeremy Nixon & Julius Ritter</h6>
-                          <h6>January 25, 2026 · 3:00 PM – 7:00 PM PST</h6>
+          <!-- HERO SECTION -->
+          <section class="section section-masthead pt-large pt-md-0" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-background-color="var(--color-light-1)">
+            <div class="container-fluid container-fluid_paddings">
 
-                          <br>
-                          <p style="font-size: 1.3em; font-style: italic;">Technology is no longer a moat, but taste is.</p>
+              <!-- Hero Image -->
+              <img src="img/vibe-coding-jam/IMG_5010.jpeg" alt="Vibe Coding Jam at AGI House" class="hero-image">
 
-                          <p>Come sip tea and jam with us! Join the YAM team and fellow vibe builders who believe that beautiful, thoughtful design can change how people experience the world.</p>
+              <!-- Title Block -->
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="section-masthead__subheading small-caps mt-0 mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                    <span>AGI House Event Recap</span>
+                  </div>
+                  <h1 class="h1 mt-0 mb-0" style="font-family: 'Playfair Display', serif;">Vibe Coding Jam & Tea</h1>
 
-                          <p>This isn't your typical hackathon. We're here to craft rapidly — not just code. Every participant ships a product that reflects their authentic vision by the end.</p>
-
-                          <h3>What You'll Experience:</h3>
-                          <hr>
-                          <ul>
-                            <li><strong>Hands-on time with YAM</strong> — the next-gen vibe design copilot that helps you go from strategy to polished product. It doesn't just generate screens—it helps you think: shaping the vision, developing strategy, exploring solutions, and executing with taste and craft.</li>
-                            <li><strong>A community of vibe builders</strong> who care about taste and impact</li>
-                            <li><strong>Tea, snacks, and conversations</strong> about how to win users' hearts through taste and craft</li>
-                          </ul>
-
-                          <h3>Who We Are:</h3>
-                          <hr>
-                          <p>Product design founders from Meta, TikTok, and Cisco, with deep roots in human–computer interaction and product craft.</p>
-
-                          <h3>What to Bring:</h3>
-                          <hr>
-                          <ul>
-                            <li>Your laptop</li>
-                            <li>An idea you care about (or curiosity to discover one)</li>
-                            <li>Your point of view on what makes something intentional and beautiful</li>
-                          </ul>
-
-                          <h3>Schedule:</h3>
-                          <hr>
-                          <ul>
-                            <li><strong>3:00 PM</strong> — Arrive, connect</li>
-                            <li><strong>3:30 PM</strong> — Open mic: Share how you vibe code to infuse your taste</li>
-                            <li><strong>4:30 PM</strong> — Build session begins</li>
-                            <li><strong>6:00 PM</strong> — Present your creations</li>
-                          </ul>
-
-                          <div class="section__headline mt-2 mr-auto"></div>
-
-                          <h2>Event Photos</h2>
-
-                          <div class="photo-grid">
-                            <img src="img/vibe-coding-jam/IMG_1140.jpeg" alt="Tea selection at Vibe Coding Jam" class="photo-grid-wide">
-                            <img src="img/vibe-coding-jam/IMG_2588.jpeg" alt="Hosts Crystal, ShanShan, and Qinyu">
-                            <img src="img/vibe-coding-jam/IMG_5010.jpeg" alt="Coding session at AGI House">
-                            <img src="img/vibe-coding-jam/IMG_2604.jpeg" alt="Vibe Coding Jam">
-                            <img src="img/vibe-coding-jam/IMG_2624.jpeg" alt="Vibe Coding Jam">
-                            <img src="img/vibe-coding-jam/IMG_2651.jpeg" alt="Vibe Coding Jam" class="photo-grid-wide">
-                            <img src="img/vibe-coding-jam/IMG_4996.jpeg" alt="Vibe Coding Jam">
-                            <img src="img/vibe-coding-jam/IMG_5004.jpeg" alt="Vibe Coding Jam">
-                            <img src="img/vibe-coding-jam/IMG_9108.jpeg" alt="Vibe Coding Jam">
-                            <img src="img/vibe-coding-jam/IMG_9340.jpeg" alt="Vibe Coding Jam">
-                          </div>
-
-                          <div class="section__headline mt-2 mr-auto"></div>
-
-                        </header>
-                      </div>
+                  <!-- Event Meta -->
+                  <div class="event-meta">
+                    <div class="event-meta-item">
+                      <span class="event-meta-label">Date</span>
+                      <span class="event-meta-value">January 25, 2026</span>
                     </div>
+                    <div class="event-meta-item">
+                      <span class="event-meta-label">Time</span>
+                      <span class="event-meta-value">3:00 PM – 7:00 PM PST</span>
+                    </div>
+                    <div class="event-meta-item">
+                      <span class="event-meta-label">Location</span>
+                      <span class="event-meta-value">AGI House, San Francisco</span>
+                    </div>
+                  </div>
+
+                  <!-- Pull Quote -->
+                  <blockquote class="pull-quote">
+                    Technology is no longer a moat, but taste is.
+                  </blockquote>
+
+                  <!-- Intro -->
+                  <div class="content-block">
+                    <p>On a Saturday afternoon in January, vibe builders gathered at AGI House to sip tea, share ideas, and craft products with intention. This wasn't a typical hackathon—it was a celebration of taste, design, and the belief that beautiful, thoughtful experiences can change how people interact with the world.</p>
+                  </div>
+
+                  <!-- Hosts Section -->
+                  <h2 class="section-header">The Hosts</h2>
+                  <div class="hosts-section">
+                    <img src="img/vibe-coding-jam/IMG_2588.jpeg" alt="Crystal Shan, ShanShan, and Qinyu" class="hosts-image">
+                    <div class="hosts-info">
+                      <h3 style="margin-top: 0;">Crystal Shan, ShanShan & Qinyu</h3>
+                      <p>Product design founders from Meta, TikTok, and Cisco, with deep roots in human–computer interaction and product craft. They brought their creation—<strong>YAM</strong>, the next-gen vibe design copilot—for participants to explore.</p>
+                      <p style="color: #666; font-size: 0.9rem;">In partnership with AGI House SF, Jeremy Nixon & Julius Ritter</p>
+                    </div>
+                  </div>
+
+                  <!-- What Happened -->
+                  <h2 class="section-header">What Happened</h2>
+                  <div class="content-block">
+                    <ul>
+                      <li><strong>Hands-on time with YAM</strong> — Participants explored the next-gen vibe design copilot, going from strategy to polished product. YAM doesn't just generate screens—it helps you think: shaping the vision, developing strategy, exploring solutions, and executing with taste and craft.</li>
+                      <li><strong>A community of vibe builders</strong> connected over shared values of taste and impact</li>
+                      <li><strong>Tea, snacks, and deep conversations</strong> about how to win users' hearts through intentional design</li>
+                      <li><strong>Open mic session</strong> where builders shared how they vibe code to infuse their unique taste</li>
+                      <li><strong>Build session</strong> where every participant shipped a product reflecting their authentic vision</li>
+                    </ul>
+                  </div>
+
+                  <!-- The Tea -->
+                  <h2 class="section-header">The Tea</h2>
+                  <div class="content-block">
+                    <p>A curated selection of loose-leaf teas set the tone—jasmine, rose, hibiscus, chamomile, and more—each carefully chosen to inspire creativity and contemplation.</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Photo Gallery -->
+              <div class="photo-gallery">
+                <h2 class="section-header" style="display: block; text-align: center; width: 100%;">Moments from the Day</h2>
+                <div class="photo-grid-masonry">
+                  <img src="img/vibe-coding-jam/IMG_1140.jpeg" alt="Tea selection" class="photo-featured">
+                  <img src="img/vibe-coding-jam/IMG_2604.jpeg" alt="Vibe Coding Jam" class="photo-tall">
+                  <img src="img/vibe-coding-jam/IMG_4996.jpeg" alt="Vibe Coding Jam" class="photo-wide">
+                  <img src="img/vibe-coding-jam/IMG_2624.jpeg" alt="Vibe Coding Jam" class="photo-wide">
+                  <img src="img/vibe-coding-jam/IMG_9108.jpeg" alt="Vibe Coding Jam" class="photo-square">
+                  <img src="img/vibe-coding-jam/IMG_5004.jpeg" alt="Vibe Coding Jam" class="photo-square">
+                  <img src="img/vibe-coding-jam/IMG_9340.jpeg" alt="Vibe Coding Jam" class="photo-square">
+                  <img src="img/vibe-coding-jam/IMG_2651.jpeg" alt="Vibe Coding Jam" class="photo-wide">
+                </div>
+              </div>
+
+              <!-- Footer CTA -->
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="footer-cta">
+                    <h3>Join the Next Gathering</h3>
+                    <p>AGI House hosts builders, researchers, and dreamers working at the frontier of intelligence.</p>
+                    <a class="button button_solid button_black" data-hover="See Events" href="https://lu.ma/agihouse" target="_blank">
+                      <span class="button__label-hover">Upcoming Events</span>
+                    </a>
                   </div>
                 </div>
               </div>
+
             </div>
           </section>
         </main>
         <!-- PAGE FOOTER -->
-        <footer
-          class="footer container-fluid bg-white"
-          id="page-footer"
-          data-arts-theme-text="dark"
-          data-arts-footer-logo="primary"
-        >
+        <footer class="footer container-fluid bg-white" id="page-footer" data-arts-theme-text="dark" data-arts-footer-logo="primary">
           <div class="footer__area pb-sm-4">
             <div class="row">
-              <div class="col-lg-12">
-              </div>
+              <div class="col-lg-12"></div>
             </div>
           </div>
-          <div
-            class="footer__area footer__area-border-top"
-          >
+          <div class="footer__area footer__area-border-top">
             <div class="row align-items-center">
-              <div
-                class="col-lg-6 footer__column text-center text-lg-center order-lg-2"
-              >
+              <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
                 <section class="widget widget_text">
                   <div class="textwidget">
-                    <p>
-                      <small
-                        >© 2026 AGI House | Website by
-                        <a href="" target="_blank"
-                          >Omni Genesis</a
-                        ></small
-                      >
-                    </p>
+                    <p><small>© 2026 AGI House | Website by <a href="" target="_blank">Omni Genesis</a></small></p>
                   </div>
                 </section>
               </div>
@@ -380,57 +449,25 @@
     </div>
     <canvas id="js-webgl"></canvas>
     <!-- PhotoSwipe -->
-    <div
-      class="pswp"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-      data-arts-theme-text="light"
-    >
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
       <div class="pswp__bg"></div>
       <div class="pswp__scroll-wrap">
         <div class="pswp__container">
-          <div class="pswp__item">
-            <div class="pswp__img pswp__img--placeholder"></div>
-          </div>
+          <div class="pswp__item"><div class="pswp__img pswp__img--placeholder"></div></div>
           <div class="pswp__item"></div>
           <div class="pswp__item"></div>
         </div>
         <div class="pswp__ui pswp__ui--hidden">
           <div class="pswp__top-bar">
             <div class="pswp__counter"></div>
-            <button
-              class="pswp__button pswp__button--close"
-              title="Close (Esc)"
-            ></button>
-            <button
-              class="pswp__button pswp__button--fs"
-              title="Toggle fullscreen"
-            ></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div>
           </div>
           <div class="pswp__button pswp__button--arrow--left">
             <div class="arrow arrow-left js-arrow">
-              <svg
-                class="svg-circle"
-                viewBox="0 0 60 60"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <circle
-                  class="circle"
-                  cx="30"
-                  cy="30"
-                  r="29"
-                  fill="none"
-                ></circle>
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
               </svg>
               <div class="arrow__pointer arrow-left__pointer"></div>
               <div class="arrow__triangle"></div>
@@ -438,28 +475,14 @@
           </div>
           <div class="pswp__button pswp__button--arrow--right">
             <div class="arrow arrow-right js-arrow">
-              <svg
-                class="svg-circle"
-                viewBox="0 0 60 60"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <circle
-                  class="circle"
-                  cx="30"
-                  cy="30"
-                  r="29"
-                  fill="none"
-                ></circle>
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
               </svg>
               <div class="arrow__pointer arrow-right__pointer"></div>
               <div class="arrow__triangle"></div>
             </div>
           </div>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center text-center"></div>
-          </div>
+          <div class="pswp__caption"><div class="pswp__caption__center text-center"></div></div>
         </div>
       </div>
     </div>
