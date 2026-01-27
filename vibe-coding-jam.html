@@ -129,73 +129,54 @@
         color: #888;
       }
 
-      /* Masonry Photo Grid */
+      /* Photo Grid - Simple 3-column */
       .photo-gallery {
         margin: 3rem 0;
       }
-      .photo-grid-masonry {
+      .photo-grid {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-auto-rows: 200px;
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
       }
-      .photo-grid-masonry img {
+      .photo-grid img {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 4/3;
         object-fit: cover;
         border-radius: 4px;
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
       }
-      .photo-grid-masonry img:hover {
+      .photo-grid img:hover {
         transform: scale(1.02);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
       }
-
-      /* Grid item sizes */
-      .photo-featured {
-        grid-column: span 8;
-        grid-row: span 2;
+      /* Feature image spans full width */
+      .photo-hero {
+        grid-column: 1 / -1;
+        aspect-ratio: 21/9;
       }
-      .photo-tall {
-        grid-column: span 4;
-        grid-row: span 2;
-      }
+      /* Wide image spans 2 columns */
       .photo-wide {
-        grid-column: span 6;
-        grid-row: span 1;
-      }
-      .photo-square {
-        grid-column: span 4;
-        grid-row: span 1;
-      }
-      .photo-small {
-        grid-column: span 3;
-        grid-row: span 1;
+        grid-column: span 2;
+        aspect-ratio: 16/9;
       }
 
-      @media (max-width: 992px) {
-        .photo-featured,
-        .photo-tall,
-        .photo-wide {
-          grid-column: span 6;
+      @media (max-width: 768px) {
+        .photo-grid {
+          grid-template-columns: repeat(2, 1fr);
         }
-        .photo-square,
-        .photo-small {
-          grid-column: span 6;
+        .photo-wide {
+          grid-column: span 2;
         }
       }
-      @media (max-width: 576px) {
-        .photo-grid-masonry {
+      @media (max-width: 480px) {
+        .photo-grid {
           grid-template-columns: 1fr;
         }
-        .photo-featured,
-        .photo-tall,
-        .photo-wide,
-        .photo-square,
-        .photo-small {
+        .photo-hero,
+        .photo-wide {
           grid-column: span 1;
-          grid-row: span 1;
+          aspect-ratio: 4/3;
         }
         .pull-quote {
           font-size: 1.5rem;
@@ -398,15 +379,16 @@
               <!-- Photo Gallery -->
               <div class="photo-gallery">
                 <h2 class="section-header" style="display: block; text-align: center; width: 100%;">Moments from the Day</h2>
-                <div class="photo-grid-masonry">
-                  <img src="img/vibe-coding-jam/IMG_1140.jpeg" alt="Tea selection" class="photo-featured">
-                  <img src="img/vibe-coding-jam/IMG_2604.jpeg" alt="Vibe Coding Jam" class="photo-tall">
-                  <img src="img/vibe-coding-jam/IMG_4996.jpeg" alt="Vibe Coding Jam" class="photo-wide">
-                  <img src="img/vibe-coding-jam/IMG_2624.jpeg" alt="Vibe Coding Jam" class="photo-wide">
-                  <img src="img/vibe-coding-jam/IMG_9108.jpeg" alt="Vibe Coding Jam" class="photo-square">
-                  <img src="img/vibe-coding-jam/IMG_5004.jpeg" alt="Vibe Coding Jam" class="photo-square">
-                  <img src="img/vibe-coding-jam/IMG_9340.jpeg" alt="Vibe Coding Jam" class="photo-square">
-                  <img src="img/vibe-coding-jam/IMG_2651.jpeg" alt="Vibe Coding Jam" class="photo-wide">
+                <div class="photo-grid">
+                  <img src="img/vibe-coding-jam/IMG_1140.jpeg" alt="Tea selection" class="photo-hero">
+                  <img src="img/vibe-coding-jam/IMG_2604.jpeg" alt="Vibe Coding Jam">
+                  <img src="img/vibe-coding-jam/IMG_4996.jpeg" alt="Vibe Coding Jam">
+                  <img src="img/vibe-coding-jam/IMG_2624.jpeg" alt="Vibe Coding Jam">
+                  <img src="img/vibe-coding-jam/IMG_9108.jpeg" alt="Vibe Coding Jam" class="photo-wide">
+                  <img src="img/vibe-coding-jam/IMG_5004.jpeg" alt="Vibe Coding Jam">
+                  <img src="img/vibe-coding-jam/IMG_9340.jpeg" alt="Vibe Coding Jam">
+                  <img src="img/vibe-coding-jam/IMG_2651.jpeg" alt="Vibe Coding Jam">
+                  <img src="img/vibe-coding-jam/IMG_5010.jpeg" alt="Build session at AGI House" class="photo-wide">
                 </div>
               </div>
 
