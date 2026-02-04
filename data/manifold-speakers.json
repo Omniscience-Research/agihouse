@@ -1,0 +1,479 @@
+{
+  "conference": {
+    "name": "Manifold Conference",
+    "tagline": "Many and Various",
+    "dates": "March 15-16, 2025",
+    "location": "Twin Peaks, San Francisco",
+    "capacity": "50-100 attendees"
+  },
+  "organizers": {
+    "host": {
+      "name": "Steve Hsu",
+      "title": "Host of Manifold Podcast",
+      "bio": "Theoretical physicist, former VP of Research at Michigan State University, and host of the Manifold podcast. Steve has conducted over 200 conversations with leading scientists, writers, and technologists exploring the frontiers of human knowledge.",
+      "twitter": "haboringstein"
+    },
+    "partners": [
+      {
+        "name": "Ascension",
+        "type": "Strategic Partner"
+      },
+      {
+        "name": "AGI House",
+        "type": "Venue & Production Partner"
+      }
+    ]
+  },
+  "speakers": [
+    {
+      "name": "Steve Hsu",
+      "expertise": ["Physics", "Genomics", "AI", "Entrepreneurship"],
+      "role": "Host & Organizer",
+      "featured": true
+    },
+    {
+      "name": "Joscha Bach",
+      "expertise": ["AI", "Consciousness", "Philosophy of Mind"],
+      "role": "Keynote Speaker",
+      "featured": true
+    },
+    {
+      "name": "Robin Hanson",
+      "expertise": ["Economics", "Prediction Markets", "Future Studies"],
+      "role": "Panel Speaker",
+      "featured": true
+    },
+    {
+      "name": "Tyler Cowen",
+      "expertise": ["Economics", "Culture", "Technology"],
+      "role": "Panel Speaker",
+      "featured": true
+    },
+    {
+      "name": "Scott Aaronson",
+      "expertise": ["Quantum Computing", "Complexity Theory", "AI Safety"],
+      "role": "Keynote Speaker",
+      "featured": true
+    },
+    {
+      "name": "John Schulman",
+      "expertise": ["AI", "Reinforcement Learning", "ChatGPT"],
+      "role": "Keynote Speaker",
+      "featured": true
+    },
+    {
+      "name": "John Mearsheimer",
+      "expertise": ["Geopolitics", "International Relations", "Realism"],
+      "role": "Panel Speaker",
+      "featured": true
+    },
+    {
+      "name": "Sabine Hossenfelder",
+      "expertise": ["Physics", "Science Communication"],
+      "role": "Panel Speaker",
+      "featured": true
+    },
+    {
+      "name": "Ken Liu",
+      "expertise": ["Science Fiction", "Writing", "Chinese Culture"],
+      "role": "Fireside Chat",
+      "featured": true
+    },
+    {
+      "name": "Ted Chiang",
+      "expertise": ["Science Fiction", "Writing", "Philosophy"],
+      "role": "Fireside Chat",
+      "featured": true
+    },
+    {
+      "name": "Samo Burja",
+      "expertise": ["Institutional Analysis", "History", "Strategy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Richard Hanania",
+      "expertise": ["Political Science", "Policy", "Foreign Affairs"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Dominic Cummings",
+      "expertise": ["Politics", "Strategy", "Technology Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Dan Wang",
+      "expertise": ["China", "Technology", "Industrial Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Misha Laskin",
+      "expertise": ["AI", "Robotics", "Deep Learning"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Casey Handmer",
+      "expertise": ["Space", "Engineering", "Climate"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Jaan Tallinn",
+      "expertise": ["AI Safety", "Existential Risk", "Investing"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Glenn Luk",
+      "expertise": ["Finance", "Technology", "Investing"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Jeffrey Sachs",
+      "expertise": ["Economics", "Development", "Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Gregory Clark",
+      "expertise": ["Economics", "History", "Social Mobility"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Geoffrey Miller",
+      "expertise": ["Evolutionary Psychology", "Genetics", "Intelligence"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Anna Krylov",
+      "expertise": ["Chemistry", "Academia", "Free Speech"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Sebastian Mallaby",
+      "expertise": ["Finance", "Venture Capital", "Economics"],
+      "role": "Fireside Chat",
+      "featured": false
+    },
+    {
+      "name": "Bruno Maçães",
+      "expertise": ["Geopolitics", "Technology", "Philosophy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Kishore Mahbubani",
+      "expertise": ["Geopolitics", "Asia", "Diplomacy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Jamie Metzl",
+      "expertise": ["Biotechnology", "Geopolitics", "Future of Humanity"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Sahil Lavingia",
+      "expertise": ["Entrepreneurship", "Startups", "Investing"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Noor Siddiqui",
+      "expertise": ["AI", "Genomics", "Thiel Fellow"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Bobby Kasthuri",
+      "expertise": ["Neuroscience", "Connectomics"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Raman Sundrum",
+      "expertise": ["Physics", "String Theory", "Cosmology"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Tim Palmer",
+      "expertise": ["Climate Science", "Physics", "Prediction"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Vlatko Vedral",
+      "expertise": ["Quantum Physics", "Information Theory"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Klaus Lackner",
+      "expertise": ["Climate", "Carbon Capture", "Engineering"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "John Hawks",
+      "expertise": ["Anthropology", "Human Evolution", "Genetics"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Zach Hambrick",
+      "expertise": ["Psychology", "Expertise", "Intelligence"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Rob Henderson",
+      "expertise": ["Psychology", "Culture", "Social Class"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Katherine Dee",
+      "expertise": ["Internet Culture", "Sociology", "Media"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Meghan Daum",
+      "expertise": ["Writing", "Culture", "Media"],
+      "role": "Fireside Chat",
+      "featured": false
+    },
+    {
+      "name": "Sebastian Junger",
+      "expertise": ["Journalism", "War", "Anthropology"],
+      "role": "Fireside Chat",
+      "featured": false
+    },
+    {
+      "name": "Scott Adams",
+      "expertise": ["Persuasion", "Media", "Entrepreneurship"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Scott Horton",
+      "expertise": ["Foreign Policy", "Anti-War", "History"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Pascal Lottaz",
+      "expertise": ["Neutrality", "International Relations", "History"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Ray McGovern",
+      "expertise": ["Intelligence", "Foreign Policy", "History"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Theodore A. Postol",
+      "expertise": ["Defense", "Arms Control", "Physics"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Bharat Karnad",
+      "expertise": ["Defense", "India", "Nuclear Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Lyle Goldstein",
+      "expertise": ["China", "Military", "Foreign Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "David Goldman",
+      "expertise": ["Economics", "China", "Demographics"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Louis-Vincent Gave",
+      "expertise": ["Finance", "Macro Economics", "Asia"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Russell Clark",
+      "expertise": ["Finance", "Macro Economics", "Investing"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Vineer Bhansali",
+      "expertise": ["Finance", "Quantitative Investing", "Risk"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "John Seo",
+      "expertise": ["Finance", "Catastrophe Modeling", "Risk"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Molson Hart",
+      "expertise": ["E-commerce", "China", "Entrepreneurship"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Stephen Grugett",
+      "expertise": ["Prediction Markets", "Technology", "Startups"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Max Dama",
+      "expertise": ["AI", "Quantitative Trading", "Technology"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Taylor Ogan",
+      "expertise": ["Energy", "Finance", "Climate"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Charles Miller",
+      "expertise": ["Space", "Entrepreneurship", "Policy"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Yasheng Huang",
+      "expertise": ["China", "Economics", "Political Economy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Richard Sander",
+      "expertise": ["Law", "Affirmative Action", "Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Claude Steele",
+      "expertise": ["Psychology", "Stereotype Threat", "Education"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Dan Gable",
+      "expertise": ["Wrestling", "Sports", "Excellence"],
+      "role": "Fireside Chat",
+      "featured": false
+    },
+    {
+      "name": "Jon Y (Asianometry)",
+      "expertise": ["Semiconductors", "Asia", "Technology"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "TP Huang",
+      "expertise": ["China", "Military", "Technology"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Kaiser Kuo",
+      "expertise": ["China", "Media", "Culture"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Carl Zha",
+      "expertise": ["China", "History", "Culture"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Simone Collins",
+      "expertise": ["Pronatalism", "Culture", "Family"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Philippe Lemoine",
+      "expertise": ["Philosophy", "COVID Analysis", "Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Gilles Saint-Paul",
+      "expertise": ["Economics", "Labor", "Policy"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Abdel Abdellaoui",
+      "expertise": ["Genetics", "Psychology", "Statistics"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Shai Carmi",
+      "expertise": ["Genetics", "Population Genetics", "Statistics"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "James Lee",
+      "expertise": ["Genetics", "Psychology", "Statistics"],
+      "role": "Panel Speaker",
+      "featured": false
+    },
+    {
+      "name": "Stuart Firestein",
+      "expertise": ["Neuroscience", "Ignorance", "Science"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Mark Moffett",
+      "expertise": ["Biology", "Ants", "Societies"],
+      "role": "Lightning Talk",
+      "featured": false
+    },
+    {
+      "name": "Ted Schultz",
+      "expertise": ["Entomology", "Evolution", "Ants"],
+      "role": "Lightning Talk",
+      "featured": false
+    }
+  ],
+  "tracks": [
+    {
+      "name": "The Frontier",
+      "description": "Cutting-edge science and technology",
+      "topics": ["AI & Machine Learning", "Quantum Computing", "Physics", "Genomics", "Neuroscience"]
+    },
+    {
+      "name": "The World",
+      "description": "Geopolitics, economics, and society",
+      "topics": ["China & Asia", "Defense & Security", "Economics & Finance", "Culture & Society", "Policy"]
+    }
+  ]
+}
