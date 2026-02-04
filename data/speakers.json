@@ -1,0 +1,960 @@
+{
+  "speakers": [
+    {
+      "name": "Sergey Brin",
+      "slug": "sergey-brin",
+      "title": "Co-Founder",
+      "company": "Google / Alphabet",
+      "bio": "Co-founder of Google with Larry Page; developed PageRank algorithm; President of Alphabet until 2019; net worth $150B+; PhD Stanford (on leave); currently working hands-on at Google on AI projects",
+      "notable_achievements": [
+        "Co-founded Google",
+        "Developed PageRank algorithm",
+        "Co-founded Alphabet Inc.",
+        "One of the wealthiest people in the world"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Chris Lattner",
+      "slug": "chris-lattner",
+      "title": "Co-Founder & CEO",
+      "company": "Modular AI",
+      "bio": "Created LLVM (foundation of most modern compilers); created Swift at Apple; created Clang; founded Modular AI and Mojo language ($350M raised); former Tesla Autopilot, Google Brain; PhD UIUC",
+      "notable_achievements": [
+        "Created LLVM (25 years, powers most compilers)",
+        "Created Swift programming language at Apple",
+        "Created Clang compiler",
+        "Founded Modular AI, created Mojo language"
+      ],
+      "twitter": "clattner_llvm",
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Alec Radford",
+      "slug": "alec-radford",
+      "title": "Independent Researcher",
+      "company": "Thinking Machines Lab (Advisor)",
+      "bio": "First author of GPT-1 and GPT-2; co-created CLIP and Whisper at OpenAI; joined OpenAI in 2016; cited 322K+ times; left OpenAI Dec 2024 to pursue independent research; advisor to Thinking Machines Lab",
+      "notable_achievements": [
+        "First author of GPT-1 and GPT-2",
+        "Co-created CLIP (text-image model)",
+        "Co-created Whisper (speech recognition)",
+        "322K+ citations"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Sebastian Thrun",
+      "slug": "sebastian-thrun",
+      "title": "Founder",
+      "company": "Udacity / Kitty Hawk",
+      "bio": "Father of the modern self-driving car; founded Google X, Waymo (Google self-driving car), and Google Street View; founded Udacity (acquired by Accenture); won DARPA Grand Challenge 2005 with Stanley; co-founded Kitty Hawk with Larry Page; former Stanford AI Lab director",
+      "notable_achievements": [
+        "Founded Google X and Waymo",
+        "Won DARPA Grand Challenge 2005",
+        "Founded Udacity",
+        "Former Stanford AI Lab Director"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Aravind Srinivas",
+      "slug": "aravind-srinivas",
+      "title": "Co-Founder & CEO",
+      "company": "Perplexity AI",
+      "bio": "Co-founder & CEO of Perplexity AI ($20B valuation, 780M queries/month); former researcher at OpenAI, Google Brain, DeepMind; PhD UC Berkeley; rejected Meta acquisition offer; Cristiano Ronaldo investor",
+      "notable_achievements": [
+        "Founded Perplexity AI ($20B valuation)",
+        "Former OpenAI, Google Brain, DeepMind",
+        "PhD UC Berkeley",
+        "IIT Madras CS topper"
+      ],
+      "twitter": "AravSrinivas",
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "George Hotz",
+      "slug": "george-hotz",
+      "title": "CEO",
+      "company": "tiny corp",
+      "bio": "First to jailbreak iPhone; first to hack PS3 (sued by Sony); founded comma.ai (autonomous driving); founded tiny corp and tinygrad (neural network framework); building tinybox ($15K AI computer); mission to 'commoditize the petaflop'",
+      "notable_achievements": [
+        "First to jailbreak iPhone",
+        "Founded comma.ai (autonomous driving)",
+        "Created tinygrad framework",
+        "Building tinybox AI computer"
+      ],
+      "twitter": "realGeorgeHotz",
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "John Schulman",
+      "slug": "john-schulman",
+      "title": "Chief Scientist",
+      "company": "Thinking Machines Lab",
+      "bio": "OpenAI co-founder; invented PPO (Proximal Policy Optimization) - backbone of RLHF; called 'architect of ChatGPT'; led RL team that created ChatGPT; co-founded Thinking Machines Lab with Mira Murati; PhD UC Berkeley under Pieter Abbeel",
+      "notable_achievements": [
+        "Co-founded OpenAI",
+        "Invented PPO algorithm (powers RLHF)",
+        "Architect of ChatGPT",
+        "Co-founded Thinking Machines Lab"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Eric Schmidt",
+      "slug": "eric-schmidt",
+      "title": "CEO",
+      "company": "Relativity Space",
+      "bio": "Former CEO & Chairman of Google (2001-2017), built Google from startup to one of world's most valuable companies; Chairman of US National Security Commission on AI; Chairman of SandboxAQ; co-author of 'The Age of AI' with Henry Kissinger; net worth $53B",
+      "notable_achievements": [
+        "CEO of Google during its most transformative decade",
+        "Chairman of Alphabet Inc.",
+        "Chaired US National Security Commission on AI",
+        "Co-authored 'The Age of AI' with Henry Kissinger"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Andrej Karpathy",
+      "slug": "andrej-karpathy",
+      "title": "Founder",
+      "company": "Eureka Labs",
+      "bio": "OpenAI co-founder; former Director of AI at Tesla where he built Autopilot; created Stanford's legendary cs231n deep learning course; coined 'vibe coding'; PhD Stanford under Fei-Fei Li",
+      "notable_achievements": [
+        "Co-founded OpenAI",
+        "Director of AI at Tesla, built Autopilot",
+        "Created Stanford's cs231n",
+        "Coined 'vibe coding' phenomenon"
+      ],
+      "twitter": "karpathy",
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Dr. Stephen Wolfram",
+      "slug": "stephen-wolfram",
+      "title": "Founder & CEO",
+      "company": "Wolfram Research",
+      "bio": "Created Mathematica and Wolfram Alpha; youngest MacArthur Fellow at 21; PhD theoretical physics from Caltech at age 20; worked alongside Richard Feynman; pioneered cellular automata; authored 'A New Kind of Science'",
+      "notable_achievements": [
+        "Created Mathematica",
+        "Built Wolfram Alpha",
+        "Youngest MacArthur Fellow at 21",
+        "PhD Caltech at age 20"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Garry Tan",
+      "slug": "garry-tan",
+      "title": "President & CEO",
+      "company": "Y Combinator",
+      "bio": "CEO of Y Combinator since 2023; co-founded Initialized Capital; co-founded Posterous (acquired by Twitter); early employee at Palantir; Stanford CS",
+      "notable_achievements": [
+        "CEO of Y Combinator",
+        "Co-founded Initialized Capital",
+        "Co-founded Posterous (Twitter acquisition)",
+        "Early Palantir employee"
+      ],
+      "twitter": "garrytan",
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Joscha Bach",
+      "slug": "joscha-bach",
+      "title": "Executive Director",
+      "company": "California Institute for Machine Consciousness",
+      "bio": "Renowned AI researcher and philosopher of mind; former MIT Media Lab; created MicroPsi cognitive architecture; PhD cognitive science from Osnabruck; known for groundbreaking work on consciousness and AGI",
+      "notable_achievements": [
+        "Executive Director, CA Institute for Machine Consciousness",
+        "Created MicroPsi cognitive architecture",
+        "Former MIT Media Lab",
+        "Leading philosopher of AI consciousness"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Ben Mann",
+      "slug": "ben-mann",
+      "title": "Co-Founder",
+      "company": "Anthropic",
+      "bio": "Co-founder of Anthropic (Claude, $60B+ valuation); one of the architects of GPT-3 at OpenAI; left OpenAI because 'safety wasn't the top priority'; Columbia CS",
+      "notable_achievements": [
+        "Co-founded Anthropic (creator of Claude)",
+        "Architect of GPT-3 at OpenAI",
+        "Tech lead for product engineering at Anthropic"
+      ],
+      "twitter": "8enmann",
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Robin Rombach",
+      "slug": "robin-rombach",
+      "title": "Co-Founder & CEO",
+      "company": "Black Forest Labs",
+      "bio": "Creator of Stable Diffusion; co-invented latent diffusion models; former Research Director at Stability AI; raised $300M Series B for Black Forest Labs; PhD LMU Munich",
+      "notable_achievements": [
+        "Created Stable Diffusion",
+        "Co-invented latent diffusion models",
+        "Founded Black Forest Labs ($300M Series B)"
+      ],
+      "twitter": "robrombach",
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Elad Gil",
+      "slug": "elad-gil",
+      "title": "Investor",
+      "company": "Gil Capital",
+      "bio": "Early investor in Airbnb, Stripe, Coinbase, Figma, Notion, Perplexity, Mistral, Character.ai; co-founder of Color Health; former VP Twitter; early Google (Android acquisition); author 'High Growth Handbook'; PhD MIT",
+      "notable_achievements": [
+        "Early investor in Airbnb, Stripe, Coinbase, Figma, Perplexity",
+        "Co-founded Color Health",
+        "Author of 'High Growth Handbook'"
+      ],
+      "tier": 1,
+      "featured": true
+    },
+    {
+      "name": "Tri Dao",
+      "slug": "tri-dao",
+      "title": "Chief Scientist / Assistant Professor",
+      "company": "Together AI / Princeton",
+      "bio": "Invented Flash Attention (used by LLaMA, Falcon, MPT, etc.); Chief Scientist at Together AI; Assistant Professor at Princeton; Flash Attention 3 achieves 1.2 PFLOPS on H100; PhD Stanford under Chris Re",
+      "notable_achievements": [
+        "Invented Flash Attention (2-4x speedup)",
+        "Chief Scientist at Together AI",
+        "Assistant Professor at Princeton",
+        "PhD Stanford"
+      ],
+      "twitter": "tri_dao",
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Harrison Chase",
+      "slug": "harrison-chase",
+      "title": "Co-Founder & CEO",
+      "company": "LangChain",
+      "bio": "Co-founder & CEO of LangChain (20M+ installations, most popular LLM framework); launched LangSmith and LangGraph; raised $30M from Benchmark and Sequoia; former ML lead at Robust Intelligence; Harvard stats/CS",
+      "notable_achievements": [
+        "Founded LangChain (20M+ installations)",
+        "Launched LangSmith and LangGraph",
+        "Backed by Benchmark and Sequoia"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Amjad Masad",
+      "slug": "amjad-masad",
+      "title": "Founder & CEO",
+      "company": "Replit",
+      "bio": "Founder & CEO of Replit ($3B valuation, $250M raise, $100M+ ARR); built tools used by millions of developers; former Facebook (JavaScript infrastructure, built Babel, Jest); vision to enable 1 billion developers",
+      "notable_achievements": [
+        "Founded Replit ($3B valuation)",
+        "Former Facebook (built Babel, Jest)",
+        "Raised $250M from a16z, Prysm"
+      ],
+      "twitter": "amasad",
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Adam D'Angelo",
+      "slug": "adam-dangelo",
+      "title": "CEO",
+      "company": "Quora / Poe",
+      "bio": "CEO of Quora; OpenAI board member (only one to survive Nov 2023 crisis, brokered Altman's return); first CTO of Facebook; built Synapse Media Player with Mark Zuckerberg in high school; founded Poe (chatbot aggregator)",
+      "notable_achievements": [
+        "CEO of Quora",
+        "OpenAI board member",
+        "First CTO of Facebook",
+        "Founded Poe"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Conor White-Sullivan",
+      "slug": "conor-white-sullivan",
+      "title": "Founder & CEO",
+      "company": "Roam Research",
+      "bio": "Founder & CEO of Roam Research (pioneered bi-directional linking, tools-for-thought movement); built for AI safety researchers (MIRI, CEA, CSER); former co-founder of HuffPost Labs (reported to Arianna Huffington); sold Localocracy to AOL",
+      "notable_achievements": [
+        "Founded Roam Research",
+        "Pioneered tools-for-thought movement",
+        "Former HuffPost Labs co-founder",
+        "Sold Localocracy to AOL"
+      ],
+      "twitter": "Conaw",
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Emad Mostaque",
+      "slug": "emad-mostaque",
+      "title": "Founder",
+      "company": "Stability AI (Former)",
+      "bio": "Co-founder of Stability AI; funded and released Stable Diffusion (open source); raised $101M at $1B valuation; resigned as CEO March 2024 to pursue decentralized AI; Oxford MA mathematics/CS",
+      "notable_achievements": [
+        "Co-founded Stability AI",
+        "Funded Stable Diffusion release",
+        "Raised $101M at $1B valuation"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Edward Hu",
+      "slug": "edward-hu",
+      "title": "Founder",
+      "company": "Stealth",
+      "bio": "Invented LoRA at Microsoft (2021, now ubiquitous for fine-tuning); co-invented muTransfer; collaborated with OpenAI on GPT-3; 29K+ citations; PhD candidate under Yoshua Bengio (Turing Award); former OpenAI researcher",
+      "notable_achievements": [
+        "Invented LoRA (revolutionized fine-tuning)",
+        "Co-invented muTransfer",
+        "Former OpenAI, Microsoft Research",
+        "PhD under Yoshua Bengio"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Jim Fan",
+      "slug": "jim-fan",
+      "title": "Director of AI & Distinguished Scientist",
+      "company": "NVIDIA",
+      "bio": "Director of AI at NVIDIA; co-lead of Project GR00T (humanoid robotics); created Voyager (GPT-4 agent that plays Minecraft); created MineDojo (NeurIPS 2022 Outstanding Paper); OpenAI's first intern; PhD Stanford under Fei-Fei Li",
+      "notable_achievements": [
+        "Director of AI at NVIDIA",
+        "Co-lead of Project GR00T",
+        "Created Voyager AI agent",
+        "NeurIPS 2022 Outstanding Paper (MineDojo)"
+      ],
+      "twitter": "DrJimFan",
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Joshua Meier",
+      "slug": "joshua-meier",
+      "title": "Co-Founder & CEO",
+      "company": "Chai Discovery",
+      "bio": "Co-founder of Chai Discovery ($1.3B valuation, Eli Lilly partnership); developed ESM1 (first transformer protein model) at Meta AI; former OpenAI; started biotech at 16",
+      "notable_achievements": [
+        "Founded Chai Discovery ($1.3B, Eli Lilly deal)",
+        "Developed ESM1 at Meta",
+        "Former OpenAI researcher"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Jacob Kimmel",
+      "slug": "jacob-kimmel",
+      "title": "Co-Founder & President",
+      "company": "NewLimit",
+      "bio": "Co-founder of NewLimit (longevity biotech, close to first clinic-bound medicine); former PI at Calico Life Sciences; pioneered epigenetic reprogramming; PhD stem cell biology UCSF",
+      "notable_achievements": [
+        "Co-founded NewLimit",
+        "Former PI at Calico Life Sciences",
+        "PhD Stem Cell Biology, UCSF"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Bernardino Romera Paredes",
+      "slug": "bernardino-romera-paredes",
+      "title": "Research Scientist",
+      "company": "Google DeepMind",
+      "bio": "Lead author of FunSearch (Nature 2023) - first LLM to make new mathematical discoveries; discovered new solutions to cap set problem; PhD UCL",
+      "notable_achievements": [
+        "Lead author of FunSearch (Nature 2023)",
+        "First LLMs for mathematical discovery",
+        "Contributed to AlphaTensor"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Ameya Velingker",
+      "slug": "ameya-velingker",
+      "title": "Research Scientist",
+      "company": "Google DeepMind",
+      "bio": "Key contributor to AlphaProof (IMO silver medal 2024); co-author of AlphaProof Nature paper; developed Exphormer; PhD Carnegie Mellon",
+      "notable_achievements": [
+        "Key contributor to AlphaProof",
+        "Co-author of AlphaProof Nature paper",
+        "PhD Carnegie Mellon"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Div Garg",
+      "slug": "div-garg",
+      "title": "Founder & CEO",
+      "company": "AGI Inc",
+      "bio": "Founder of AGI Inc (97.4% on AndroidWorld benchmark); previously co-founded MultiOn ($30M+); Stanford PhD dropout; created Stanford CS 25: Transformers United; previously Nvidia, Google AI, Apple",
+      "notable_achievements": [
+        "Founded AGI Inc (SOTA AndroidWorld)",
+        "Co-founded MultiOn",
+        "Created Stanford CS 25"
+      ],
+      "twitter": "DivGarg_",
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Jeremy Nixon",
+      "slug": "jeremy-nixon",
+      "title": "Founder & CEO",
+      "company": "Omniscience",
+      "bio": "Founder of Omniscience and AGI House; created first public Book Generator and Research Generator; former Google Brain; Harvard Applied Mathematics",
+      "notable_achievements": [
+        "Founded Omniscience",
+        "Founded AGI House",
+        "Former Google Brain"
+      ],
+      "twitter": "JvNixon",
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Andrew White",
+      "slug": "andrew-white",
+      "title": "Co-Founder & Head of Science",
+      "company": "Future House",
+      "bio": "Co-founder of Future House (AI scientists); created ChemCrow (first LLM chemistry agents), PaperQA (superhuman literature agent); OpenAI GPT-4 red team; Associate Professor U of Rochester",
+      "notable_achievements": [
+        "Co-founded Future House",
+        "Created ChemCrow, PaperQA",
+        "OpenAI GPT-4 red team"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Yusuf Roohani",
+      "slug": "yusuf-roohani",
+      "title": "Associate Director of ML",
+      "company": "Arc Institute",
+      "bio": "Leading Arc Institute Virtual Cell project; created GEARS (Nature Biotech 2023); launched Arc Virtual Cell Atlas (300M+ cells); PhD Stanford (Leskovec, Quake)",
+      "notable_achievements": [
+        "Leading Virtual Cell project",
+        "Created GEARS (Nature Biotech)",
+        "PhD Stanford"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Fred Parietti",
+      "slug": "fred-parietti",
+      "title": "Co-Founder & CEO",
+      "company": "Multiply Labs",
+      "bio": "Co-founder of Multiply Labs (74% cell therapy cost reduction via robotics); developing humanoids with NVIDIA; partnerships with AstraZeneca, UCSF; PhD Robotics MIT; 10 patents",
+      "notable_achievements": [
+        "Founded Multiply Labs",
+        "Developing humanoids with NVIDIA",
+        "PhD Robotics MIT"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Steve Taub",
+      "slug": "steve-taub",
+      "title": "Senior Commercialization Advisor",
+      "company": "DARPA",
+      "bio": "Senior Commercialization Advisor at DARPA; former Partner at In-Q-Tel; former MD at GE Ventures, JetBlue Tech Ventures; board observer Desktop Metal, Hyperloop One; MIT dual masters",
+      "notable_achievements": [
+        "Senior Advisor at DARPA",
+        "Former Partner at In-Q-Tel",
+        "Former MD at GE Ventures"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "David Vernal",
+      "slug": "david-vernal",
+      "title": "Former Director of Intelligence",
+      "company": "Sixteenth Air Force",
+      "bio": "Former Director of Intelligence for 16th Air Force (60K-person info warfare command); retired Colonel, 27 years; NSC (Obama admin); Stanford GSB, Harvard",
+      "notable_achievements": [
+        "Director of Intelligence, 16th Air Force",
+        "Retired Colonel, 27 years",
+        "National Security Council"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Zal Bilimoria",
+      "slug": "zal-bilimoria",
+      "title": "Founding Partner",
+      "company": "Refactor Capital",
+      "bio": "Solo GP at Refactor Capital ($225M AUM); 4 unicorns including Solugen; former Partner a16z (launched Bio Fund); 10 years product at Google, Netflix, LinkedIn",
+      "notable_achievements": [
+        "Founding Partner Refactor Capital",
+        "Former Partner at a16z",
+        "4 unicorns"
+      ],
+      "tier": 2,
+      "featured": true
+    },
+    {
+      "name": "Jerry Liu",
+      "slug": "jerry-liu",
+      "title": "Co-Founder & CEO",
+      "company": "LlamaIndex",
+      "bio": "Co-founder & CEO of LlamaIndex (leading RAG framework); previously at Uber (ML platform); helping developers build LLM applications with data",
+      "notable_achievements": [
+        "Founded LlamaIndex",
+        "Leading RAG framework",
+        "Former Uber ML"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Robert Nishihara",
+      "slug": "robert-nishihara",
+      "title": "Co-Founder & CEO",
+      "company": "Anyscale",
+      "bio": "Co-founder & CEO of Anyscale; co-created Ray (distributed computing framework used by OpenAI, Uber, etc.); PhD UC Berkeley under Michael Jordan",
+      "notable_achievements": [
+        "Founded Anyscale",
+        "Co-created Ray framework",
+        "PhD UC Berkeley"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Erik Bernhardsson",
+      "slug": "erik-bernhardsson",
+      "title": "Founder & CEO",
+      "company": "Modal",
+      "bio": "Founder & CEO of Modal (serverless compute for AI/ML); created Spotify's music recommendation system (Annoy library); former VP Engineering at Better.com",
+      "notable_achievements": [
+        "Founded Modal",
+        "Built Spotify recommendations",
+        "Created Annoy library"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Swyx",
+      "slug": "swyx",
+      "title": "Founder",
+      "company": "Latent Space / smol.ai",
+      "bio": "Founder of Latent Space (top AI podcast/newsletter); created AI Engineer profession; founder of smol.ai; former DX at Vercel, Netlify, Temporal; AWS, Two Sigma alum",
+      "notable_achievements": [
+        "Founded Latent Space",
+        "Coined 'AI Engineer' profession",
+        "Former Vercel, AWS, Two Sigma"
+      ],
+      "twitter": "swyx",
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Grimes",
+      "slug": "grimes",
+      "title": "Musician / AI Artist",
+      "company": "Independent",
+      "bio": "Grammy-nominated musician and producer; pioneer in AI-generated music; released NPC_AI persona; exploring AI x art intersection; former partner of Elon Musk",
+      "notable_achievements": [
+        "Grammy-nominated musician",
+        "Pioneer in AI-generated music",
+        "Released AI voice model"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Rob Haisfield",
+      "slug": "rob-haisfield",
+      "title": "Co-Founder & CEO",
+      "company": "Websim",
+      "bio": "Co-founder & CEO of Websim (AI world simulation); leading hyperstition and world-building AI movement; formerly tools-for-thought researcher",
+      "notable_achievements": [
+        "Founded Websim",
+        "Leading AI world simulation",
+        "Tools-for-thought researcher"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Rafael Rafailov",
+      "slug": "rafael-rafailov",
+      "title": "Researcher",
+      "company": "Stanford",
+      "bio": "First author of DPO (Direct Preference Optimization) - widely used alternative to RLHF; Stanford PhD candidate; DPO used by many open-source models",
+      "notable_achievements": [
+        "First author of DPO paper",
+        "DPO widely adopted as RLHF alternative",
+        "Stanford PhD"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Karan Goel",
+      "slug": "karan-goel",
+      "title": "Co-Founder & CEO",
+      "company": "Cartesia",
+      "bio": "Co-founder & CEO of Cartesia (state space models for speech); building next-gen speech synthesis; Stanford PhD",
+      "notable_achievements": [
+        "Founded Cartesia",
+        "Building state space models",
+        "Stanford PhD"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "AJ Keller",
+      "slug": "aj-keller",
+      "title": "Founder & CEO",
+      "company": "Neurosity",
+      "bio": "Founder & CEO of Neurosity (brain-computer interfaces); building Crown headset for focus and productivity; democratizing neurotechnology",
+      "notable_achievements": [
+        "Founded Neurosity",
+        "Building Crown BCI headset",
+        "Democratizing neurotechnology"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Mike Heller",
+      "slug": "mike-heller",
+      "title": "Partner",
+      "company": "Floodgate",
+      "bio": "Partner at Floodgate (first new partner in decade); former Expert-in-Residence First Round Capital; first GTM at Clearbit (30x ARR); advised 30+ startups",
+      "notable_achievements": [
+        "Partner at Floodgate",
+        "Former First Round Capital",
+        "First GTM at Clearbit"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Evan Conrad",
+      "slug": "evan-conrad",
+      "title": "CEO & Co-Founder",
+      "company": "SF Compute",
+      "bio": "CEO of SF Compute ($300M valuation, $40M Series A); manages $100M+ GPU hardware; Airbnb for compute; former OpenAI, Segment",
+      "notable_achievements": [
+        "Founded SF Compute ($300M valuation)",
+        "Former OpenAI",
+        "Manages $100M+ GPU infrastructure"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Kelly Peng",
+      "slug": "kelly-peng",
+      "title": "Founder, CEO & Co-CTO",
+      "company": "Kura Technologies",
+      "bio": "Founder of Kura Technologies (150-degree FOV AR glasses); 2x CES Innovation Award; Forbes 30 Under 30; 10+ patents; UC Berkeley EECS",
+      "notable_achievements": [
+        "Founded Kura Technologies",
+        "2x CES Innovation Award",
+        "Forbes 30 Under 30"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Wachi Bandara",
+      "slug": "wachi-bandara",
+      "title": "Head of AI",
+      "company": "DRW",
+      "bio": "Head of AI at DRW (major trading firm); serial founder with exits; led $2M DRW Foundation gift to Caltech for AI; former Mellon Capital",
+      "notable_achievements": [
+        "Head of AI at DRW Trading",
+        "Serial founder with exits",
+        "Led DRW Foundation gift to Caltech"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Ben Kohlmann",
+      "slug": "ben-kohlmann",
+      "title": "CEO",
+      "company": "New American Industrial Alliance",
+      "bio": "CEO of New American Industrial Alliance; Partner at Cubit Capital; retired Navy Commander, F/A-18 pilot, 32 combat missions; founded CNO Rapid Innovation Cell; Stanford GSB",
+      "notable_achievements": [
+        "CEO of NAIA",
+        "F/A-18 pilot, 32 combat missions",
+        "Founded CNO Rapid Innovation Cell"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Sophia Lugo",
+      "slug": "sophia-lugo",
+      "title": "Co-Founder, CEO & Chairman",
+      "company": "Radar Therapeutics",
+      "bio": "Co-founder of Radar Therapeutics (smart mRNA with Jim Collins); SF Business Times 40 Under 40; 2024 Founder of the Year; Stanford GSB, Harvard '17",
+      "notable_achievements": [
+        "Founded Radar Therapeutics",
+        "Co-founded with Jim Collins (MIT)",
+        "SF Business Times 40 Under 40"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Jacob Rinaldi",
+      "slug": "jacob-rinaldi",
+      "title": "Co-Founder & CSO",
+      "company": "Noetik",
+      "bio": "Co-founder of Noetik ($50M GSK deal); built OCTO-VirtualCell foundation models; former Head of Oncology at Recursion; Stanford PhD",
+      "notable_achievements": [
+        "Founded Noetik ($50M GSK deal)",
+        "Former Head of Oncology, Recursion",
+        "Stanford PhD"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Atray Dixit",
+      "slug": "atray-dixit",
+      "title": "Co-Founder & CEO",
+      "company": "Oncko",
+      "bio": "Co-founder of Oncko; developed Perturb-seq at Broad Institute (Aviv Regev lab); former VP Tech at Gordian; PhD MIT",
+      "notable_achievements": [
+        "Founded Oncko",
+        "Developed Perturb-seq",
+        "PhD MIT"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Richa Sharma",
+      "slug": "richa-sharma",
+      "title": "Founder",
+      "company": "QEM Labs",
+      "bio": "Founder of QEM Labs (AI physics engine); created Gauss v1; quantum physicist; former OpenAI; PhD Physics Emory",
+      "notable_achievements": [
+        "Founded QEM Labs",
+        "Created Gauss v1",
+        "Former OpenAI"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Adam Green",
+      "slug": "adam-green",
+      "title": "Founder",
+      "company": "Markov Bio",
+      "bio": "Founder of Markov Biosciences (biological simulators for drug discovery); scaling hypothesis in biology; Washington University",
+      "notable_achievements": [
+        "Founded Markov Biosciences",
+        "Biological dynamics models"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Jamie Joyce",
+      "slug": "jamie-joyce",
+      "title": "Founder & Executive Director",
+      "company": "The Society Library",
+      "bio": "Founder of The Society Library; worked with OpenAI on ChatGPT governance; former Internet Archive, Wikitongues; UN representative",
+      "notable_achievements": [
+        "Founded Society Library",
+        "Worked with OpenAI on governance",
+        "UN representative"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Dmitry Pimenov",
+      "slug": "dmitry-pimenov",
+      "title": "Product Lead",
+      "company": "OpenAI",
+      "bio": "Product Lead for gpt-oss at OpenAI (open-weight reasoning models); former Stripe, Webflow, Facebook",
+      "notable_achievements": [
+        "Product Lead for gpt-oss",
+        "Former Stripe, Webflow"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Andy Zhou",
+      "slug": "andy-zhou",
+      "title": "Co-Founder",
+      "company": "Intology",
+      "bio": "Co-founder of Intology; built Zochi (first AI Scientist with ACL 2025 main track publication); 3 NeurIPS 2024 papers; PhD candidate CMU",
+      "notable_achievements": [
+        "Founded Intology",
+        "Built first AI Scientist (ACL 2025)",
+        "3 NeurIPS 2024 papers"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Xiangyi Li",
+      "slug": "xiangyi-li",
+      "title": "Founder & CEO",
+      "company": "BenchFlow",
+      "bio": "Founder of BenchFlow (60+ AI benchmarks); backed by Jeff Dean; former Tesla engineer",
+      "notable_achievements": [
+        "Founded BenchFlow",
+        "Backed by Jeff Dean",
+        "Former Tesla"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Noah Lofquist",
+      "slug": "noah-lofquist",
+      "title": "CEO & Co-Founder",
+      "company": "Tzafon",
+      "bio": "CEO of Tzafon at 22 ($9.7M from HV Capital, OpenAI and xAI angels); building Lightcone; team from DeepMind, Palantir, Character AI",
+      "notable_achievements": [
+        "Founded Tzafon at 22",
+        "Backed by OpenAI and xAI angels"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Akira Nishii",
+      "slug": "akira-nishii",
+      "title": "PhD Student / Investor",
+      "company": "Stanford / LDV Partners",
+      "bio": "Stanford Biomedical Data Science PhD (QUAD Fellow); former CEO of Perch; ML engineer at 2seventy bio (Regeneron)",
+      "notable_achievements": [
+        "Stanford PhD, QUAD Fellow",
+        "Former CEO of Perch"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Brett Goldstein",
+      "slug": "brett-goldstein",
+      "title": "Founder & CEO",
+      "company": "Micro",
+      "bio": "Founder of Micro (backed by a16z, Balaji); co-founded Launch House; former Clearbit, Google; Berkeley cognitive science researcher",
+      "notable_achievements": [
+        "Founded Micro (a16z backed)",
+        "Co-founded Launch House"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Margarita Groisman",
+      "slug": "margarita-groisman",
+      "title": "CEO & Co-Founder",
+      "company": "Aravolta",
+      "bio": "CEO of Aravolta (YC, $5.1M); former Microsoft (data center operations); building AI-native DCIM",
+      "notable_achievements": [
+        "Founded Aravolta (YC)",
+        "Former Microsoft"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Jonathan Lacoste",
+      "slug": "jonathan-lacoste",
+      "title": "Founder & GP",
+      "company": "Space VC",
+      "bio": "Founder of Space VC ($20M Fund II, invested in SpaceX); raised VC at 19; co-founded Jebbit (Vista acquisition); Top 50 Emerging VCs",
+      "notable_achievements": [
+        "Founded Space VC",
+        "Invested in SpaceX",
+        "Co-founded Jebbit"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Cassandra Carothers",
+      "slug": "cassandra-carothers",
+      "title": "Managing Partner",
+      "company": "Departure Capital",
+      "bio": "Managing Partner at Departure Capital (frontier tech: quantum, aerospace, robotics); mentor at Creative Destruction Lab",
+      "notable_achievements": [
+        "Managing Partner Departure Capital",
+        "CDL mentor"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Asher Dayanim",
+      "slug": "asher-dayanim",
+      "title": "Enterprise/Sovereign AI",
+      "company": "Cerebras",
+      "bio": "Leading Cerebras for Nations (sovereign AI for governments); built models for Arabic, Hindi, Kazakh",
+      "notable_achievements": [
+        "Leading Cerebras for Nations",
+        "Sovereign AI infrastructure"
+      ],
+      "tier": 3,
+      "featured": false
+    },
+    {
+      "name": "Nikila Ravi",
+      "slug": "nikila-ravi",
+      "title": "Research Scientist",
+      "company": "Meta AI",
+      "bio": "First author of Segment Anything (SAM); Research Scientist at Meta AI; revolutionized image segmentation",
+      "notable_achievements": [
+        "First author of Segment Anything",
+        "Research Scientist at Meta AI"
+      ],
+      "tier": 3,
+      "featured": false
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-02-02",
+    "total_speakers": 68,
+    "source": "AGI House hackathon speaker data (2022-2026)",
+    "tiers": {
+      "1": "Household names in tech/AI (15 people)",
+      "2": "Notable founders/researchers with major achievements (22 people)",
+      "3": "Rising stars and industry leaders (31 people)"
+    }
+  }
+}
