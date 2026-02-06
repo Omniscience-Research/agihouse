@@ -124,18 +124,6 @@ a {
   color: var(--black);
 }
 
-.hero__host-photo {
-  margin-bottom: 30px;
-}
-
-.hero__host-photo img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
-}
-
 .hero__subtitle {
   font-size: 20px;
   color: var(--text-gray);
@@ -296,12 +284,14 @@ a {
   border-radius: 50%;
   background: var(--light-gray);
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Georgia', serif;
-  font-size: 48px;
-  color: var(--text-gray);
+  overflow: hidden;
+}
+
+.host__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .host__info h3 {
