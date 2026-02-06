@@ -124,6 +124,18 @@ a {
   color: var(--black);
 }
 
+.hero__host-photo {
+  margin-bottom: 30px;
+}
+
+.hero__host-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
 .hero__subtitle {
   font-size: 20px;
   color: var(--text-gray);
