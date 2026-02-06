@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Our Speakers | AGI House</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agihouse.ai/speakers.html" />
+    <meta property="og:title" content="AGI House Speakers"/>
+    <meta property="og:description" content="World-class speakers who have presented at AGI House - from AI pioneers to industry leaders."/>
+    <meta property="og:image" content="https://agihouse.ai/img/speakers/og-speakers.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="img/assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/f15c1cc7e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* ============================================
+         SPEAKERS PAGE - PREMIUM DESIGN
+         ============================================ */
+
+      .speakers-page {
+        background: linear-gradient(180deg, #f8f6f2 0%, #f2efe9 100%);
+        min-height: 100vh;
+      }
+
+      /* Hero Section */
+      .speakers-hero {
+        padding: 120px 0 60px;
+        text-align: center;
+      }
+
+      .speakers-hero__label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #8b7355;
+        margin-bottom: 20px;
+      }
+
+      .speakers-hero__title {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(42px, 8vw, 72px);
+        font-weight: 400;
+        color: #2B213D;
+        margin: 0 0 24px;
+        line-height: 1.1;
+      }
+
+      .speakers-hero__subtitle {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .speakers-hero__line {
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(90deg, #d7b158, #8b7355);
+        margin: 30px auto;
+      }
+
+      .speakers-hero__stats {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 40px;
+      }
+
+      .stat {
+        text-align: center;
+      }
+
+      .stat__number {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        color: #2B213D;
+        display: block;
+      }
+
+      .stat__label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #8b7355;
+      }
+
+      /* Filter Section */
+      .speakers-filters {
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        background: rgba(248, 246, 242, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+
+      .filters-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .filter-btn {
+        background: transparent;
+        border: none;
+        padding: 12px 20px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #666;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .filter-btn::after {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 20px;
+        right: 20px;
+        height: 2px;
+        background: #d7b158;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      .filter-btn:hover {
+        color: #2B213D;
+      }
+
+      .filter-btn.active {
+        color: #2B213D;
+      }
+
+      .filter-btn.active::after {
+        transform: scaleX(1);
+      }
+
+      .filter-btn .count {
+        font-size: 11px;
+        color: #999;
+        margin-left: 4px;
+      }
+
+      .search-box {
+        position: relative;
+      }
+
+      .search-box input {
+        width: 280px;
+        padding: 14px 20px 14px 46px;
+        border: 1px solid #ddd;
+        background: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+
+      .search-box input:focus {
+        outline: none;
+        border-color: #d7b158;
+        box-shadow: 0 0 0 3px rgba(215, 177, 88, 0.1);
+      }
+
+      .search-box::before {
+        content: '\f002';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999;
+        font-size: 14px;
+      }
+
+      /* Featured Legends Section */
+      .featured-section {
+        padding: 60px 0;
+        background: linear-gradient(135deg, #2B213D 0%, #4c396d 100%);
+      }
+
+      .featured-section__header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .featured-section__label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #d7b158;
+        margin-bottom: 12px;
+      }
+
+      .featured-section__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        color: white;
+        margin: 0;
+      }
+
+      .featured-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 24px;
+      }
+
+      @media (max-width: 1200px) {
+        .featured-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .featured-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .featured-card {
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .featured-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .featured-card__photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0 auto 16px;
+        background: linear-gradient(135deg, #d7b158, #8b7355);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        border: 3px solid rgba(255,255,255,0.2);
+      }
+
+      .featured-card__photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .featured-card__initials {
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        color: white;
+      }
+
+      .featured-card__name {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        color: white;
+        margin: 0 0 4px;
+      }
+
+      .featured-card__company {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        color: rgba(255,255,255,0.6);
+        letter-spacing: 1px;
+      }
+
+      /* Main Speakers Grid */
+      .speakers-section {
+        padding: 80px 0;
+      }
+
+      .speakers-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .section-header__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+        color: #2B213D;
+        margin: 0;
+      }
+
+      .section-header__count {
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        color: #999;
+      }
+
+      .speakers-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+
+      @media (max-width: 1200px) {
+        .speakers-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 900px) {
+        .speakers-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 540px) {
+        .speakers-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Speaker Card - Clean, No Flip */
+      .speaker-card {
+        background: white;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .speaker-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+      }
+
+      .speaker-card__photo-container {
+        position: relative;
+        padding-top: 100%;
+        overflow: hidden;
+      }
+
+      .speaker-card__photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.4s ease;
+      }
+
+      .speaker-card:hover .speaker-card__photo {
+        transform: scale(1.05);
+      }
+
+      .speaker-card__photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .speaker-card__initials {
+        font-family: 'Playfair Display', serif;
+        font-size: 64px;
+        color: white;
+        opacity: 0.9;
+      }
+
+      /* Tier tags removed per request */
+
+      .speaker-card__content {
+        padding: 24px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .speaker-card__name {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: #2B213D;
+        margin: 0 0 6px;
+        line-height: 1.3;
+      }
+
+      .speaker-card__title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        color: #666;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      .speaker-card__achievement {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        color: #999;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid #f0f0f0;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .speaker-card__social {
+        margin-top: 12px;
+      }
+
+      .speaker-card__social a {
+        color: #999;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .speaker-card__social a:hover {
+        color: #1DA1F2;
+      }
+
+      /* Modal */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .modal {
+        background: white;
+        max-width: 700px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 8px;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+      }
+
+      .modal-overlay.active .modal {
+        transform: translateY(0);
+      }
+
+      .modal__header {
+        display: flex;
+        gap: 30px;
+        padding: 40px;
+        background: linear-gradient(135deg, #2B213D 0%, #4c396d 100%);
+        color: white;
+      }
+
+      .modal__photo {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 4px solid rgba(255,255,255,0.2);
+      }
+
+      .modal__photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .modal__photo-initials {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        color: white;
+      }
+
+      .modal__info {
+        flex: 1;
+      }
+
+      /* Tier removed from modal */
+
+      .modal__name {
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        margin: 0 0 8px;
+        line-height: 1.2;
+      }
+
+      .modal__title-company {
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        opacity: 0.8;
+        margin: 0;
+      }
+
+      .modal__social {
+        margin-top: 16px;
+      }
+
+      .modal__social a {
+        color: white;
+        opacity: 0.7;
+        font-size: 20px;
+        transition: opacity 0.3s ease;
+      }
+
+      .modal__social a:hover {
+        opacity: 1;
+      }
+
+      .modal__body {
+        padding: 40px;
+      }
+
+      .modal__bio {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #444;
+        margin: 0;
+      }
+
+      .modal__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: rgba(255,255,255,0.1);
+        border-radius: 50%;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal__close:hover {
+        background: rgba(255,255,255,0.2);
+        transform: rotate(90deg);
+      }
+
+      /* No Results */
+      .no-results {
+        text-align: center;
+        padding: 80px 20px;
+        display: none;
+      }
+
+      .no-results.active {
+        display: block;
+      }
+
+      .no-results__icon {
+        font-size: 48px;
+        color: #ddd;
+        margin-bottom: 20px;
+      }
+
+      .no-results__text {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        color: #888;
+      }
+
+      /* Footer */
+      .speakers-footer {
+        padding: 60px 0;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .speakers-footer p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        color: #999;
+      }
+
+      .speakers-footer a {
+        color: #4c396d;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .speakers-hero {
+          padding: 100px 20px 40px;
+        }
+
+        .speakers-hero__stats {
+          gap: 30px;
+        }
+
+        .stat__number {
+          font-size: 36px;
+        }
+
+        .filters-container {
+          flex-direction: column;
+          padding: 0 20px;
+        }
+
+        .search-box input {
+          width: 100%;
+        }
+
+        .featured-grid,
+        .speakers-container {
+          padding: 0 20px;
+        }
+
+        .modal__header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 30px;
+        }
+
+        .modal__body {
+          padding: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body class="speakers-page">
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <button class="modal__close" id="modal-close">&times;</button>
+        <div class="modal__header">
+          <div class="modal__photo" id="modal-photo"></div>
+          <div class="modal__info">
+            <h2 class="modal__name" id="modal-name"></h2>
+            <p class="modal__title-company" id="modal-title-company"></p>
+            <div class="modal__social" id="modal-social"></div>
+          </div>
+        </div>
+        <div class="modal__body">
+          <p class="modal__bio" id="modal-bio"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="speakers-hero">
+      <div class="speakers-hero__label">AGI House</div>
+      <h1 class="speakers-hero__title">Our Speakers</h1>
+      <div class="speakers-hero__line"></div>
+      <p class="speakers-hero__subtitle">
+        World-class founders, researchers, and leaders who have shared their insights at AGI House events since 2022.
+      </p>
+      <div class="speakers-hero__stats">
+        <div class="stat">
+          <span class="stat__number">68</span>
+          <span class="stat__label">Speakers</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">15</span>
+          <span class="stat__label">Legends</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">$1T+</span>
+          <span class="stat__label">Combined Impact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="speakers-filters">
+      <div class="filters-container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All <span class="count">(68)</span></button>
+          <button class="filter-btn" data-filter="1">Legends <span class="count">(15)</span></button>
+          <button class="filter-btn" data-filter="2">Pioneers <span class="count">(22)</span></button>
+          <button class="filter-btn" data-filter="3">Rising Stars <span class="count">(31)</span></button>
+        </div>
+        <div class="search-box">
+          <input type="text" id="speaker-search" placeholder="Search by name or company...">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Legends -->
+    <section class="featured-section" id="featured-section">
+      <div class="featured-section__header">
+        <div class="featured-section__label">Hall of Fame</div>
+        <h2 class="featured-section__title">Featured Legends</h2>
+      </div>
+      <div class="featured-grid" id="featured-grid"></div>
+    </section>
+
+    <!-- All Speakers -->
+    <section class="speakers-section">
+      <div class="speakers-container">
+        <div class="section-header">
+          <h2 class="section-header__title" id="section-title">All Speakers</h2>
+          <span class="section-header__count" id="section-count">68 speakers</span>
+        </div>
+        <div class="speakers-grid" id="speakers-grid"></div>
+        <div class="no-results" id="no-results">
+          <div class="no-results__icon"><i class="fas fa-search"></i></div>
+          <p class="no-results__text">No speakers found matching your search.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="speakers-footer">
+      <p>© 2026 AGI House | Website by <a href="#">Omni Genesis</a></p>
+    </section>
+
+    <script>
+      // Speaker Data
+      const speakers = [
+        { name: "Sergey Brin", slug: "sergey-brin", title: "Co-Founder", company: "Google / Alphabet", bio: "Co-founder of Google with Larry Page; developed PageRank algorithm; President of Alphabet until 2019; net worth $150B+; PhD Stanford (on leave); currently working hands-on at Google on AI projects", achievements: ["Co-founded Google", "Developed PageRank algorithm", "Co-founded Alphabet Inc.", "One of the wealthiest people in the world"], tier: 1, twitter: null },
+        { name: "Chris Lattner", slug: "chris-lattner", title: "Co-Founder & CEO", company: "Modular AI", bio: "Created LLVM (foundation of most modern compilers); created Swift at Apple; created Clang; founded Modular AI and Mojo language ($350M raised); former Tesla Autopilot, Google Brain; PhD UIUC", achievements: ["Created LLVM (25 years, powers most compilers)", "Created Swift programming language at Apple", "Created Clang compiler", "Founded Modular AI, created Mojo language"], tier: 1, twitter: "clattner_llvm" },
+        { name: "Alec Radford", slug: "alec-radford", title: "Independent Researcher", company: "Thinking Machines Lab", bio: "First author of GPT-1 and GPT-2; co-created CLIP and Whisper at OpenAI; joined OpenAI in 2016; cited 322K+ times; left OpenAI Dec 2024 to pursue independent research", achievements: ["First author of GPT-1 and GPT-2", "Co-created CLIP (text-image model)", "Co-created Whisper (speech recognition)", "322K+ citations"], tier: 1, twitter: null },
+        { name: "Sebastian Thrun", slug: "sebastian-thrun", title: "Founder", company: "Udacity / Kitty Hawk", bio: "Father of the modern self-driving car; founded Google X, Waymo (Google self-driving car), and Google Street View; founded Udacity; won DARPA Grand Challenge 2005 with Stanley", achievements: ["Founded Google X and Waymo", "Won DARPA Grand Challenge 2005", "Founded Udacity", "Former Stanford AI Lab Director"], tier: 1, twitter: null },
+        { name: "Aravind Srinivas", slug: "aravind-srinivas", title: "Co-Founder & CEO", company: "Perplexity AI", bio: "Co-founder & CEO of Perplexity AI ($20B valuation, 780M queries/month); former researcher at OpenAI, Google Brain, DeepMind; PhD UC Berkeley", achievements: ["Founded Perplexity AI ($20B valuation)", "Former OpenAI, Google Brain, DeepMind", "PhD UC Berkeley", "IIT Madras CS topper"], tier: 1, twitter: "AravSrinivas" },
+        { name: "George Hotz", slug: "george-hotz", title: "CEO", company: "tiny corp", bio: "First to jailbreak iPhone; first to hack PS3 (sued by Sony); founded comma.ai (autonomous driving); founded tiny corp and tinygrad (neural network framework); building tinybox ($15K AI computer)", achievements: ["First to jailbreak iPhone", "Founded comma.ai (autonomous driving)", "Created tinygrad framework", "Building tinybox AI computer"], tier: 1, twitter: "realGeorgeHotz" },
+        { name: "John Schulman", slug: "john-schulman", title: "Chief Scientist", company: "Thinking Machines Lab", bio: "OpenAI co-founder; invented PPO (Proximal Policy Optimization) - backbone of RLHF; called 'architect of ChatGPT'; led RL team that created ChatGPT; co-founded Thinking Machines Lab", achievements: ["Co-founded OpenAI", "Invented PPO algorithm (powers RLHF)", "Architect of ChatGPT", "Co-founded Thinking Machines Lab"], tier: 1, twitter: null },
+        { name: "Eric Schmidt", slug: "eric-schmidt", title: "Former CEO", company: "Google / Alphabet", bio: "Former CEO & Chairman of Google (2001-2017), built Google from startup to one of world's most valuable companies; Chairman of US National Security Commission on AI; net worth $53B", achievements: ["CEO of Google during its most transformative decade", "Chairman of Alphabet Inc.", "Chaired US National Security Commission on AI", "Co-authored 'The Age of AI' with Henry Kissinger"], tier: 1, twitter: null },
+        { name: "Andrej Karpathy", slug: "andrej-karpathy", title: "Founder", company: "Eureka Labs", bio: "OpenAI co-founder; former Director of AI at Tesla where he built Autopilot; created Stanford's legendary cs231n deep learning course; coined 'vibe coding'; PhD Stanford under Fei-Fei Li", achievements: ["Co-founded OpenAI", "Director of AI at Tesla, built Autopilot", "Created Stanford's cs231n", "Coined 'vibe coding' phenomenon"], tier: 1, twitter: "karpathy" },
+        { name: "Dr. Stephen Wolfram", slug: "stephen-wolfram", title: "Founder & CEO", company: "Wolfram Research", bio: "Created Mathematica and Wolfram Alpha; youngest MacArthur Fellow at 21; PhD theoretical physics from Caltech at age 20; worked alongside Richard Feynman", achievements: ["Created Mathematica", "Built Wolfram Alpha", "Youngest MacArthur Fellow at 21", "PhD Caltech at age 20"], tier: 1, twitter: null },
+        { name: "Garry Tan", slug: "garry-tan", title: "President & CEO", company: "Y Combinator", bio: "CEO of Y Combinator since 2023; co-founded Initialized Capital; co-founded Posterous (acquired by Twitter); early employee at Palantir; Stanford CS", achievements: ["CEO of Y Combinator", "Co-founded Initialized Capital", "Co-founded Posterous (Twitter acquisition)", "Early Palantir employee"], tier: 1, twitter: "garrytan" },
+        { name: "Joscha Bach", slug: "joscha-bach", title: "Executive Director", company: "CA Institute for Machine Consciousness", bio: "Renowned AI researcher and philosopher of mind; former MIT Media Lab; created MicroPsi cognitive architecture; PhD cognitive science from Osnabruck", achievements: ["Executive Director, CA Institute for Machine Consciousness", "Created MicroPsi cognitive architecture", "Former MIT Media Lab", "Leading philosopher of AI consciousness"], tier: 1, twitter: null },
+        { name: "Ben Mann", slug: "ben-mann", title: "Co-Founder", company: "Anthropic", bio: "Co-founder of Anthropic (Claude, $60B+ valuation); one of the architects of GPT-3 at OpenAI; left OpenAI because 'safety wasn't the top priority'", achievements: ["Co-founded Anthropic (creator of Claude)", "Architect of GPT-3 at OpenAI", "Tech lead for product engineering at Anthropic"], tier: 1, twitter: "8enmann" },
+        { name: "Robin Rombach", slug: "robin-rombach", title: "Co-Founder & CEO", company: "Black Forest Labs", bio: "Creator of Stable Diffusion; co-invented latent diffusion models; former Research Director at Stability AI; raised $300M Series B for Black Forest Labs", achievements: ["Created Stable Diffusion", "Co-invented latent diffusion models", "Founded Black Forest Labs ($300M Series B)"], tier: 1, twitter: "robrombach" },
+        { name: "Elad Gil", slug: "elad-gil", title: "Investor", company: "Gil Capital", bio: "Early investor in Airbnb, Stripe, Coinbase, Figma, Notion, Perplexity, Mistral, Character.ai; co-founder of Color Health; author 'High Growth Handbook'", achievements: ["Early investor in Airbnb, Stripe, Coinbase, Figma, Perplexity", "Co-founded Color Health", "Author of 'High Growth Handbook'"], tier: 1, twitter: null },
+        { name: "Tri Dao", slug: "tri-dao", title: "Chief Scientist", company: "Together AI / Princeton", bio: "Invented Flash Attention (used by LLaMA, Falcon, MPT, etc.); Chief Scientist at Together AI; Assistant Professor at Princeton; PhD Stanford under Chris Re", achievements: ["Invented Flash Attention (2-4x speedup)", "Chief Scientist at Together AI", "Assistant Professor at Princeton", "PhD Stanford"], tier: 2, twitter: "tri_dao" },
+        { name: "Harrison Chase", slug: "harrison-chase", title: "Co-Founder & CEO", company: "LangChain", bio: "Co-founder & CEO of LangChain (20M+ installations, most popular LLM framework); launched LangSmith and LangGraph; raised $30M from Benchmark and Sequoia", achievements: ["Founded LangChain (20M+ installations)", "Launched LangSmith and LangGraph", "Backed by Benchmark and Sequoia"], tier: 2, twitter: null },
+        { name: "Amjad Masad", slug: "amjad-masad", title: "Founder & CEO", company: "Replit", bio: "Founder & CEO of Replit ($3B valuation, $250M raise, $100M+ ARR); built tools used by millions of developers; former Facebook (JavaScript infrastructure)", achievements: ["Founded Replit ($3B valuation)", "Former Facebook (built Babel, Jest)", "Raised $250M from a16z, Prysm"], tier: 2, twitter: "amasad" },
+        { name: "Adam D'Angelo", slug: "adam-dangelo", title: "CEO", company: "Quora / Poe", bio: "CEO of Quora; OpenAI board member (only one to survive Nov 2023 crisis); first CTO of Facebook; built Synapse Media Player with Zuckerberg in high school", achievements: ["CEO of Quora", "OpenAI board member", "First CTO of Facebook", "Founded Poe"], tier: 2, twitter: null },
+        { name: "Conor White-Sullivan", slug: "conor-white-sullivan", title: "Founder & CEO", company: "Roam Research", bio: "Founder & CEO of Roam Research (pioneered bi-directional linking, tools-for-thought movement); built for AI safety researchers", achievements: ["Founded Roam Research", "Pioneered tools-for-thought movement", "Former HuffPost Labs co-founder", "Sold Localocracy to AOL"], tier: 2, twitter: "Conaw" },
+        { name: "Emad Mostaque", slug: "emad-mostaque", title: "Founder", company: "Stability AI (Former)", bio: "Co-founder of Stability AI; funded and released Stable Diffusion (open source); raised $101M at $1B valuation; resigned as CEO March 2024", achievements: ["Co-founded Stability AI", "Funded Stable Diffusion release", "Raised $101M at $1B valuation"], tier: 2, twitter: null },
+        { name: "Edward Hu", slug: "edward-hu", title: "Founder", company: "Stealth", bio: "Invented LoRA at Microsoft (2021, now ubiquitous for fine-tuning); co-invented muTransfer; 29K+ citations; PhD candidate under Yoshua Bengio", achievements: ["Invented LoRA (revolutionized fine-tuning)", "Co-invented muTransfer", "Former OpenAI, Microsoft Research", "PhD under Yoshua Bengio"], tier: 2, twitter: null },
+        { name: "Jim Fan", slug: "jim-fan", title: "Director of AI", company: "NVIDIA", bio: "Director of AI at NVIDIA; co-lead of Project GR00T (humanoid robotics); created Voyager (GPT-4 agent that plays Minecraft); NeurIPS 2022 Outstanding Paper", achievements: ["Director of AI at NVIDIA", "Co-lead of Project GR00T", "Created Voyager AI agent", "NeurIPS 2022 Outstanding Paper (MineDojo)"], tier: 2, twitter: "DrJimFan" },
+        { name: "Joshua Meier", slug: "joshua-meier", title: "Co-Founder & CEO", company: "Chai Discovery", bio: "Co-founder of Chai Discovery ($1.3B valuation, Eli Lilly partnership); developed ESM1 (first transformer protein model) at Meta AI", achievements: ["Founded Chai Discovery ($1.3B, Eli Lilly deal)", "Developed ESM1 at Meta", "Former OpenAI researcher"], tier: 2, twitter: null },
+        { name: "Jacob Kimmel", slug: "jacob-kimmel", title: "Co-Founder & President", company: "NewLimit", bio: "Co-founder of NewLimit (longevity biotech); former PI at Calico Life Sciences; pioneered epigenetic reprogramming", achievements: ["Co-founded NewLimit", "Former PI at Calico Life Sciences", "PhD Stem Cell Biology, UCSF"], tier: 2, twitter: null },
+        { name: "Bernardino Romera Paredes", slug: "bernardino-romera-paredes", title: "Research Scientist", company: "Google DeepMind", bio: "Lead author of FunSearch (Nature 2023) - first LLM to make new mathematical discoveries", achievements: ["Lead author of FunSearch (Nature 2023)", "First LLMs for mathematical discovery", "Contributed to AlphaTensor"], tier: 2, twitter: null },
+        { name: "Ameya Velingker", slug: "ameya-velingker", title: "Research Scientist", company: "Google DeepMind", bio: "Key contributor to AlphaProof (IMO silver medal 2024); co-author of AlphaProof Nature paper", achievements: ["Key contributor to AlphaProof", "Co-author of AlphaProof Nature paper", "PhD Carnegie Mellon"], tier: 2, twitter: null },
+        { name: "Div Garg", slug: "div-garg", title: "Founder & CEO", company: "AGI Inc", bio: "Founder of AGI Inc (97.4% on AndroidWorld benchmark); previously co-founded MultiOn; created Stanford CS 25: Transformers United", achievements: ["Founded AGI Inc (SOTA AndroidWorld)", "Co-founded MultiOn", "Created Stanford CS 25"], tier: 2, twitter: "DivGarg_" },
+        { name: "Jeremy Nixon", slug: "jeremy-nixon", title: "Founder & CEO", company: "Omniscience", bio: "Founder of Omniscience and AGI House; created first public Book Generator and Research Generator; former Google Brain", achievements: ["Founded Omniscience", "Founded AGI House", "Former Google Brain"], tier: 2, twitter: "JvNixon" },
+        { name: "Andrew White", slug: "andrew-white", title: "Co-Founder", company: "Future House", bio: "Co-founder of Future House (AI scientists); created ChemCrow and PaperQA; OpenAI GPT-4 red team", achievements: ["Co-founded Future House", "Created ChemCrow, PaperQA", "OpenAI GPT-4 red team"], tier: 2, twitter: null },
+        { name: "Yusuf Roohani", slug: "yusuf-roohani", title: "Associate Director of ML", company: "Arc Institute", bio: "Leading Arc Institute Virtual Cell project; created GEARS (Nature Biotech 2023); PhD Stanford", achievements: ["Leading Virtual Cell project", "Created GEARS (Nature Biotech)", "PhD Stanford"], tier: 2, twitter: null },
+        { name: "Fred Parietti", slug: "fred-parietti", title: "Co-Founder & CEO", company: "Multiply Labs", bio: "Co-founder of Multiply Labs (74% cell therapy cost reduction via robotics); developing humanoids with NVIDIA", achievements: ["Founded Multiply Labs", "Developing humanoids with NVIDIA", "PhD Robotics MIT"], tier: 2, twitter: null },
+        { name: "Steve Taub", slug: "steve-taub", title: "Senior Advisor", company: "DARPA", bio: "Senior Commercialization Advisor at DARPA; former Partner at In-Q-Tel; former MD at GE Ventures", achievements: ["Senior Advisor at DARPA", "Former Partner at In-Q-Tel", "Former MD at GE Ventures"], tier: 2, twitter: null },
+        { name: "David Vernal", slug: "david-vernal", title: "Former Director of Intelligence", company: "Sixteenth Air Force", bio: "Former Director of Intelligence for 16th Air Force (60K-person info warfare command); retired Colonel, 27 years", achievements: ["Director of Intelligence, 16th Air Force", "Retired Colonel, 27 years", "National Security Council"], tier: 2, twitter: null },
+        { name: "Zal Bilimoria", slug: "zal-bilimoria", title: "Founding Partner", company: "Refactor Capital", bio: "Solo GP at Refactor Capital ($225M AUM); 4 unicorns including Solugen; former Partner a16z", achievements: ["Founding Partner Refactor Capital", "Former Partner at a16z", "4 unicorns"], tier: 2, twitter: null },
+        { name: "Jerry Liu", slug: "jerry-liu", title: "Co-Founder & CEO", company: "LlamaIndex", bio: "Co-founder & CEO of LlamaIndex (leading RAG framework); previously at Uber ML platform", achievements: ["Founded LlamaIndex", "Leading RAG framework", "Former Uber ML"], tier: 3, twitter: null },
+        { name: "Robert Nishihara", slug: "robert-nishihara", title: "Co-Founder & CEO", company: "Anyscale", bio: "Co-founder & CEO of Anyscale; co-created Ray (distributed computing framework used by OpenAI, Uber)", achievements: ["Founded Anyscale", "Co-created Ray framework", "PhD UC Berkeley"], tier: 3, twitter: null },
+        { name: "Erik Bernhardsson", slug: "erik-bernhardsson", title: "Founder & CEO", company: "Modal", bio: "Founder & CEO of Modal (serverless compute for AI/ML); created Spotify's music recommendation system", achievements: ["Founded Modal", "Built Spotify recommendations", "Created Annoy library"], tier: 3, twitter: null },
+        { name: "Swyx", slug: "swyx", title: "Founder", company: "Latent Space / smol.ai", bio: "Founder of Latent Space (top AI podcast/newsletter); created AI Engineer profession; former Vercel, AWS", achievements: ["Founded Latent Space", "Coined 'AI Engineer' profession", "Former Vercel, AWS, Two Sigma"], tier: 3, twitter: "swyx" },
+        { name: "Grimes", slug: "grimes", title: "Musician / AI Artist", company: "Independent", bio: "Grammy-nominated musician and producer; pioneer in AI-generated music; released NPC_AI persona", achievements: ["Grammy-nominated musician", "Pioneer in AI-generated music", "Released AI voice model"], tier: 3, twitter: null },
+        { name: "Rob Haisfield", slug: "rob-haisfield", title: "Co-Founder & CEO", company: "Websim", bio: "Co-founder & CEO of Websim (AI world simulation); leading hyperstition and world-building AI movement", achievements: ["Founded Websim", "Leading AI world simulation", "Tools-for-thought researcher"], tier: 3, twitter: null },
+        { name: "Rafael Rafailov", slug: "rafael-rafailov", title: "Researcher", company: "Stanford", bio: "First author of DPO (Direct Preference Optimization) - widely used alternative to RLHF", achievements: ["First author of DPO paper", "DPO widely adopted as RLHF alternative", "Stanford PhD"], tier: 3, twitter: null },
+        { name: "Karan Goel", slug: "karan-goel", title: "Co-Founder & CEO", company: "Cartesia", bio: "Co-founder & CEO of Cartesia (state space models for speech); building next-gen speech synthesis", achievements: ["Founded Cartesia", "Building state space models", "Stanford PhD"], tier: 3, twitter: null },
+        { name: "AJ Keller", slug: "aj-keller", title: "Founder & CEO", company: "Neurosity", bio: "Founder & CEO of Neurosity (brain-computer interfaces); building Crown headset", achievements: ["Founded Neurosity", "Building Crown BCI headset", "Democratizing neurotechnology"], tier: 3, twitter: null },
+        { name: "Mike Heller", slug: "mike-heller", title: "Partner", company: "Floodgate", bio: "Partner at Floodgate; former Expert-in-Residence First Round Capital; first GTM at Clearbit", achievements: ["Partner at Floodgate", "Former First Round Capital", "First GTM at Clearbit"], tier: 3, twitter: null },
+        { name: "Evan Conrad", slug: "evan-conrad", title: "CEO & Co-Founder", company: "SF Compute", bio: "CEO of SF Compute ($300M valuation); manages $100M+ GPU hardware; former OpenAI", achievements: ["Founded SF Compute ($300M valuation)", "Former OpenAI", "Manages $100M+ GPU infrastructure"], tier: 3, twitter: null },
+        { name: "Kelly Peng", slug: "kelly-peng", title: "Founder & CEO", company: "Kura Technologies", bio: "Founder of Kura Technologies (150-degree FOV AR glasses); 2x CES Innovation Award; Forbes 30 Under 30", achievements: ["Founded Kura Technologies", "2x CES Innovation Award", "Forbes 30 Under 30"], tier: 3, twitter: null },
+        { name: "Wachi Bandara", slug: "wachi-bandara", title: "Head of AI", company: "DRW", bio: "Head of AI at DRW (major trading firm); serial founder with exits", achievements: ["Head of AI at DRW Trading", "Serial founder with exits", "Led DRW Foundation gift to Caltech"], tier: 3, twitter: null },
+        { name: "Ben Kohlmann", slug: "ben-kohlmann", title: "CEO", company: "New American Industrial Alliance", bio: "CEO of New American Industrial Alliance; retired Navy Commander, F/A-18 pilot, 32 combat missions", achievements: ["CEO of NAIA", "F/A-18 pilot, 32 combat missions", "Founded CNO Rapid Innovation Cell"], tier: 3, twitter: null },
+        { name: "Sophia Lugo", slug: "sophia-lugo", title: "Co-Founder & CEO", company: "Radar Therapeutics", bio: "Co-founder of Radar Therapeutics (smart mRNA with Jim Collins); SF Business Times 40 Under 40", achievements: ["Founded Radar Therapeutics", "Co-founded with Jim Collins (MIT)", "SF Business Times 40 Under 40"], tier: 3, twitter: null },
+        { name: "Jacob Rinaldi", slug: "jacob-rinaldi", title: "Co-Founder & CSO", company: "Noetik", bio: "Co-founder of Noetik ($50M GSK deal); built OCTO-VirtualCell foundation models", achievements: ["Founded Noetik ($50M GSK deal)", "Former Head of Oncology, Recursion", "Stanford PhD"], tier: 3, twitter: null },
+        { name: "Atray Dixit", slug: "atray-dixit", title: "Co-Founder & CEO", company: "Oncko", bio: "Co-founder of Oncko; developed Perturb-seq at Broad Institute; PhD MIT", achievements: ["Founded Oncko", "Developed Perturb-seq", "PhD MIT"], tier: 3, twitter: null },
+        { name: "Richa Sharma", slug: "richa-sharma", title: "Founder", company: "QEM Labs", bio: "Founder of QEM Labs (AI physics engine); created Gauss v1; former OpenAI", achievements: ["Founded QEM Labs", "Created Gauss v1", "Former OpenAI"], tier: 3, twitter: null },
+        { name: "Adam Green", slug: "adam-green", title: "Founder", company: "Markov Bio", bio: "Founder of Markov Biosciences (biological simulators for drug discovery)", achievements: ["Founded Markov Biosciences", "Biological dynamics models"], tier: 3, twitter: null },
+        { name: "Jamie Joyce", slug: "jamie-joyce", title: "Founder & Executive Director", company: "The Society Library", bio: "Founder of The Society Library; worked with OpenAI on ChatGPT governance; UN representative", achievements: ["Founded Society Library", "Worked with OpenAI on governance", "UN representative"], tier: 3, twitter: null },
+        { name: "Dmitry Pimenov", slug: "dmitry-pimenov", title: "Product Lead", company: "OpenAI", bio: "Product Lead for gpt-oss at OpenAI (open-weight reasoning models); former Stripe, Webflow", achievements: ["Product Lead for gpt-oss", "Former Stripe, Webflow"], tier: 3, twitter: null },
+        { name: "Andy Zhou", slug: "andy-zhou", title: "Co-Founder", company: "Intology", bio: "Co-founder of Intology; built Zochi (first AI Scientist with ACL 2025 publication)", achievements: ["Founded Intology", "Built first AI Scientist (ACL 2025)", "3 NeurIPS 2024 papers"], tier: 3, twitter: null },
+        { name: "Xiangyi Li", slug: "xiangyi-li", title: "Founder & CEO", company: "BenchFlow", bio: "Founder of BenchFlow (60+ AI benchmarks); backed by Jeff Dean; former Tesla", achievements: ["Founded BenchFlow", "Backed by Jeff Dean", "Former Tesla"], tier: 3, twitter: null },
+        { name: "Noah Lofquist", slug: "noah-lofquist", title: "CEO & Co-Founder", company: "Tzafon", bio: "CEO of Tzafon at 22 ($9.7M from HV Capital, OpenAI and xAI angels)", achievements: ["Founded Tzafon at 22", "Backed by OpenAI and xAI angels"], tier: 3, twitter: null },
+        { name: "Akira Nishii", slug: "akira-nishii", title: "PhD Student / Investor", company: "Stanford / LDV Partners", bio: "Stanford Biomedical Data Science PhD (QUAD Fellow); former CEO of Perch", achievements: ["Stanford PhD, QUAD Fellow", "Former CEO of Perch"], tier: 3, twitter: null },
+        { name: "Brett Goldstein", slug: "brett-goldstein", title: "Founder & CEO", company: "Micro", bio: "Founder of Micro (backed by a16z, Balaji); co-founded Launch House", achievements: ["Founded Micro (a16z backed)", "Co-founded Launch House"], tier: 3, twitter: null },
+        { name: "Margarita Groisman", slug: "margarita-groisman", title: "CEO & Co-Founder", company: "Aravolta", bio: "CEO of Aravolta (YC, $5.1M); former Microsoft; building AI-native DCIM", achievements: ["Founded Aravolta (YC)", "Former Microsoft"], tier: 3, twitter: null },
+        { name: "Jonathan Lacoste", slug: "jonathan-lacoste", title: "Founder & GP", company: "Space VC", bio: "Founder of Space VC ($20M Fund II, invested in SpaceX); raised VC at 19", achievements: ["Founded Space VC", "Invested in SpaceX", "Co-founded Jebbit"], tier: 3, twitter: null },
+        { name: "Cassandra Carothers", slug: "cassandra-carothers", title: "Managing Partner", company: "Departure Capital", bio: "Managing Partner at Departure Capital (frontier tech: quantum, aerospace, robotics)", achievements: ["Managing Partner Departure Capital", "CDL mentor"], tier: 3, twitter: null },
+        { name: "Asher Dayanim", slug: "asher-dayanim", title: "Enterprise/Sovereign AI", company: "Cerebras", bio: "Leading Cerebras for Nations (sovereign AI for governments)", achievements: ["Leading Cerebras for Nations", "Sovereign AI infrastructure"], tier: 3, twitter: null },
+        { name: "Nikila Ravi", slug: "nikila-ravi", title: "Research Scientist", company: "Meta AI", bio: "First author of Segment Anything (SAM); Research Scientist at Meta AI", achievements: ["First author of Segment Anything", "Research Scientist at Meta AI"], tier: 3, twitter: null }
+      ];
+
+      // Color palette for initials
+      const tierColors = {
+        1: ['#d7b158', '#b8956c', '#c9a84c', '#a68b45'],
+        2: ['#4c396d', '#604889', '#7c5fa8', '#5a4580'],
+        3: ['#8b7355', '#9c8465', '#7a6548', '#a39080']
+      };
+
+      function getColor(name, tier) {
+        const colors = tierColors[tier];
+        let hash = 0;
+        for (let i = 0; i < name.length; i++) {
+          hash = name.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        return colors[Math.abs(hash) % colors.length];
+      }
+
+      function getInitials(name) {
+        return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+      }
+
+      function getTierLabel(tier) {
+        return tier === 1 ? 'Legend' : tier === 2 ? 'Pioneer' : 'Rising Star';
+      }
+
+      function getTierClass(tier) {
+        return tier === 1 ? 'legend' : tier === 2 ? 'pioneer' : 'rising';
+      }
+
+      // Render featured legends
+      function renderFeatured() {
+        const grid = document.getElementById('featured-grid');
+        const legends = speakers.filter(s => s.tier === 1).slice(0, 10);
+
+        grid.innerHTML = legends.map(speaker => `
+          <div class="featured-card" data-slug="${speaker.slug}">
+            <div class="featured-card__photo" style="background: ${getColor(speaker.name, speaker.tier)}">
+              <img src="img/speakers/${speaker.slug}.jpg" alt="${speaker.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              <span class="featured-card__initials" style="display:none;">${getInitials(speaker.name)}</span>
+            </div>
+            <h3 class="featured-card__name">${speaker.name}</h3>
+            <p class="featured-card__company">${speaker.company}</p>
+          </div>
+        `).join('');
+
+        // Add click handlers
+        grid.querySelectorAll('.featured-card').forEach(card => {
+          card.addEventListener('click', () => openModal(card.dataset.slug));
+        });
+      }
+
+      // Render speakers grid
+      function renderSpeakers(speakersToRender) {
+        const grid = document.getElementById('speakers-grid');
+        const noResults = document.getElementById('no-results');
+        const count = document.getElementById('section-count');
+
+        if (speakersToRender.length === 0) {
+          grid.innerHTML = '';
+          noResults.classList.add('active');
+          count.textContent = '0 speakers';
+          return;
+        }
+
+        noResults.classList.remove('active');
+        count.textContent = `${speakersToRender.length} speaker${speakersToRender.length !== 1 ? 's' : ''}`;
+
+        grid.innerHTML = speakersToRender.map(speaker => `
+          <div class="speaker-card" data-slug="${speaker.slug}">
+            <div class="speaker-card__photo-container">
+              <div class="speaker-card__photo" style="background: ${getColor(speaker.name, speaker.tier)}">
+                <img src="img/speakers/${speaker.slug}.jpg" alt="${speaker.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="speaker-card__initials" style="display:none;">${getInitials(speaker.name)}</span>
+              </div>
+            </div>
+            <div class="speaker-card__content">
+              <h3 class="speaker-card__name">${speaker.name}</h3>
+              <p class="speaker-card__title">${speaker.title}, ${speaker.company}</p>
+              <p class="speaker-card__achievement">${speaker.achievements[0]}</p>
+              ${speaker.twitter ? `<div class="speaker-card__social"><a href="https://twitter.com/${speaker.twitter}" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-twitter"></i></a></div>` : ''}
+            </div>
+          </div>
+        `).join('');
+
+        // Add click handlers
+        grid.querySelectorAll('.speaker-card').forEach(card => {
+          card.addEventListener('click', () => openModal(card.dataset.slug));
+        });
+      }
+
+      // Modal functions
+      function openModal(slug) {
+        const speaker = speakers.find(s => s.slug === slug);
+        if (!speaker) return;
+
+        document.getElementById('modal-photo').innerHTML = `
+          <img src="img/speakers/${speaker.slug}.jpg" alt="${speaker.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="modal__photo-initials" style="display:none; background: ${getColor(speaker.name, speaker.tier)}; width:100%; height:100%; display:flex; align-items:center; justify-content:center;">${getInitials(speaker.name)}</span>
+        `;
+        document.getElementById('modal-photo').style.background = getColor(speaker.name, speaker.tier);
+        document.getElementById('modal-name').textContent = speaker.name;
+        document.getElementById('modal-title-company').textContent = `${speaker.title} at ${speaker.company}`;
+        document.getElementById('modal-bio').textContent = speaker.bio;
+        document.getElementById('modal-social').innerHTML = speaker.twitter
+          ? `<a href="https://twitter.com/${speaker.twitter}" target="_blank"><i class="fab fa-twitter"></i></a>`
+          : '';
+
+        document.getElementById('modal-overlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        document.getElementById('modal-overlay').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      // Filter function
+      function filterSpeakers(tier, searchTerm) {
+        let filtered = speakers;
+
+        if (tier !== 'all') {
+          filtered = filtered.filter(s => s.tier === parseInt(tier));
+        }
+
+        if (searchTerm) {
+          const term = searchTerm.toLowerCase();
+          filtered = filtered.filter(s =>
+            s.name.toLowerCase().includes(term) ||
+            s.company.toLowerCase().includes(term) ||
+            s.title.toLowerCase().includes(term)
+          );
+        }
+
+        return filtered;
+      }
+
+      // Initialize
+      document.addEventListener('DOMContentLoaded', function() {
+        let currentTier = 'all';
+        let currentSearch = '';
+        const featuredSection = document.getElementById('featured-section');
+
+        renderFeatured();
+        renderSpeakers(speakers);
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.addEventListener('click', function() {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentTier = this.dataset.filter;
+
+            // Show/hide featured section
+            if (currentTier === 'all' || currentTier === '1') {
+              featuredSection.style.display = 'block';
+            } else {
+              featuredSection.style.display = 'none';
+            }
+
+            // Update section title
+            const titles = { 'all': 'All Speakers', '1': 'Legends', '2': 'Pioneers', '3': 'Rising Stars' };
+            document.getElementById('section-title').textContent = titles[currentTier];
+
+            renderSpeakers(filterSpeakers(currentTier, currentSearch));
+          });
+        });
+
+        // Search
+        document.getElementById('speaker-search').addEventListener('input', function() {
+          currentSearch = this.value;
+          if (currentSearch) {
+            featuredSection.style.display = 'none';
+          } else if (currentTier === 'all' || currentTier === '1') {
+            featuredSection.style.display = 'block';
+          }
+          renderSpeakers(filterSpeakers(currentTier, currentSearch));
+        });
+
+        // Modal close
+        document.getElementById('modal-close').addEventListener('click', closeModal);
+        document.getElementById('modal-overlay').addEventListener('click', function(e) {
+          if (e.target === this) closeModal();
+        });
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') closeModal();
+        });
+      });
+    </script>
+  </body>
+</html>
