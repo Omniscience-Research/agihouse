@@ -391,6 +391,17 @@ a {
   color: var(--text-gray);
   border: 2px solid var(--mid-gray);
   transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.speaker__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .speaker:hover .speaker__photo {
