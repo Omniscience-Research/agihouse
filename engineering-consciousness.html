@@ -137,7 +137,7 @@
         color: #888;
       }
 
-      /* Photo Grid */
+      /* Photo Grid — uniform sizing */
       .photo-gallery {
         margin: 3rem 0;
       }
@@ -158,31 +158,15 @@
         transform: scale(1.02);
         box-shadow: 0 10px 30px rgba(0,0,0,0.12);
       }
-      .photo-hero {
-        grid-column: 1 / -1;
-        aspect-ratio: 21/9;
-      }
-      .photo-wide {
-        grid-column: span 2;
-        aspect-ratio: 16/9;
-      }
 
       @media (max-width: 768px) {
         .photo-grid {
           grid-template-columns: repeat(2, 1fr);
         }
-        .photo-wide {
-          grid-column: span 2;
-        }
       }
       @media (max-width: 480px) {
         .photo-grid {
           grid-template-columns: 1fr;
-        }
-        .photo-hero,
-        .photo-wide {
-          grid-column: span 1;
-          aspect-ratio: 4/3;
         }
         .pull-quote {
           font-size: 1.5rem;
@@ -595,15 +579,14 @@
               <div class="photo-gallery">
                 <h2 class="section-header" style="display: block; text-align: center; width: 100%;">Moments from the Day</h2>
                 <div class="photo-grid">
-                  <img src="img/engineering-consciousness/event-7.jpeg" alt="Engineering Consciousness group photo" class="photo-hero">
+                  <img src="img/engineering-consciousness/event-7.jpeg" alt="Engineering Consciousness group photo">
                   <img src="img/engineering-consciousness/event-11.jpeg" alt="Joscha Bach - Hacking Consciousness">
                   <img src="img/engineering-consciousness/event-14.jpeg" alt="Michael Andregg - The Dawn of Uploading">
                   <img src="img/engineering-consciousness/event-6.jpeg" alt="Presenting at AGI House">
-                  <img src="img/engineering-consciousness/event-5.jpeg" alt="Demo presentation" class="photo-wide">
+                  <img src="img/engineering-consciousness/event-5.jpeg" alt="Demo presentation">
                   <img src="img/engineering-consciousness/event-9.jpeg" alt="Hackathon participants">
-                  <img src="img/engineering-consciousness/event-12.jpeg" alt="Attendees at AGI House">
                   <img src="img/engineering-consciousness/event-8.jpeg" alt="Dinner at the hackathon">
-                  <img src="img/engineering-consciousness/event-10.jpeg" alt="Hackathon demo" class="photo-wide">
+                  <img src="img/engineering-consciousness/event-10.jpeg" alt="Hackathon demo">
                   <img src="img/engineering-consciousness/event-4.jpeg" alt="Project presentation">
                 </div>
               </div>
