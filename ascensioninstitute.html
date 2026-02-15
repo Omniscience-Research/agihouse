@@ -346,6 +346,44 @@
       color: var(--ivory-muted);
     }
 
+    /* ── Team ── */
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .team-member {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .team-member h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--ivory);
+      margin-bottom: 0.25rem;
+    }
+
+    .team-role {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .team-bio {
+      font-size: 0.92rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--ivory-muted);
+    }
+
     /* ── CTA ── */
     .cta-section {
       text-align: center;
@@ -439,10 +477,10 @@
         Engineers at the frontier AI labs sit at an unprecedented intersection: they possess both <strong>deep technical knowledge</strong> of what these systems can do, and increasingly, the <strong>financial capital</strong> to act on that knowledge.
       </p>
       <p class="body-text">
-        Meanwhile, the researchers best positioned to identify which problems matter most &mdash; the scientists pushing at the boundaries of biology, physics, mathematics &mdash; have the expertise but <strong>lack the resources</strong>. Many face resistance within their own institutions, fighting to adopt the very tools that could transform their fields.
+        Meanwhile, the academics best positioned to identify which problems matter most &mdash; the scientists pushing at the boundaries of biology, physics, mathematics &mdash; have the expertise but <strong>lack the resources</strong>. Many face resistance within their own institutions, fighting to adopt the very tools that could transform their fields.
       </p>
       <p class="body-text">
-        These two groups need each other. No one else is building the bridge.
+        These two groups need each other.
       </p>
     </div>
   </section>
@@ -486,6 +524,26 @@
           <p class="pillar-number">III</p>
           <h3>Direct</h3>
           <p>Coordinate the flow of capital toward specific, high-leverage research automation efforts. Not broad mandates, but targeted investments in the tools and systems that will compress decades of scientific progress into years.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- Team -->
+  <section>
+    <div class="container reveal">
+      <p class="section-label">The Team</p>
+      <h2>Leadership</h2>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-member-info">
+            <h3>Stephen Hsu</h3>
+            <p class="team-role">Physics Lead</p>
+            <p class="team-bio">Theoretical physicist, former VP for Research at Michigan State University. Work spanning quantum field theory, genomics, and the application of machine learning to fundamental science.</p>
+          </div>
         </div>
       </div>
     </div>
