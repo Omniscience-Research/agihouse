@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Autoresearch Hackathon | AGI House</title>
+    <meta property="og:title" content="Autoresearch Hackathon"/>
+    <meta property="og:image" content="img/autoresearch-hackathon/group-photo.jpg"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Karpathy released autoresearch. A week later, 60 builders showed up to push it further. March 14, 2026 at AGI House."/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="img/assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"
+    />
+    <!-- Template Vendor's Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <!-- Template Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Favicons & App Icons -->
+    <link rel="manifest" href="img/content/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <script
+      src="https://kit.fontawesome.com/f15c1cc7e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* Hero Video Thumbnail */
+      .hero-video {
+        position: relative;
+        width: 100%;
+        margin-bottom: 3rem;
+        background: #000;
+      }
+      .hero-video a {
+        display: block;
+        position: relative;
+      }
+      .hero-video img {
+        width: 100%;
+        display: block;
+      }
+      .hero-video .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background: rgba(0,0,0,0.7);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s ease;
+      }
+      .hero-video a:hover .play-button {
+        background: rgba(0,0,0,0.9);
+      }
+      .hero-video .play-button::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 14px 0 14px 24px;
+        border-color: transparent transparent transparent #fff;
+        margin-left: 4px;
+      }
+
+      /* Event Meta */
+      .event-meta {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        padding: 1.5rem 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+      }
+      .event-meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      .event-meta-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #888;
+      }
+      .event-meta-value {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1rem;
+      }
+
+      /* Quote */
+      .pull-quote {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        font-style: italic;
+        text-align: center;
+        padding: 3rem 2rem;
+        margin: 3rem 0;
+        border-left: none;
+        position: relative;
+        color: #333;
+      }
+      .pull-quote::before {
+        content: '\201C';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 6rem;
+        color: rgba(0,0,0,0.08);
+        font-family: 'Playfair Display', serif;
+        line-height: 1;
+      }
+
+      /* Section Headers */
+      .section-header {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.75rem;
+        margin: 3rem 0 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #000;
+        display: inline-block;
+      }
+
+      /* Content Blocks */
+      .content-block {
+        margin: 2rem 0;
+        line-height: 1.8;
+      }
+
+      /* Speaker Card */
+      .speaker-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+      }
+      .speaker-card img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .speaker-info {
+        flex: 1;
+        min-width: 280px;
+      }
+      .speaker-info h3 {
+        margin-top: 0;
+        font-family: 'Playfair Display', serif;
+      }
+      .speaker-info p {
+        line-height: 1.8;
+      }
+      .speaker-info .affiliation {
+        color: #888;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+      }
+
+      /* Schedule */
+      .schedule-grid {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 0;
+        margin: 2rem 0;
+      }
+      .schedule-time {
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        padding: 1rem 0;
+        border-top: 1px solid rgba(0,0,0,0.08);
+        color: #888;
+      }
+      .schedule-event {
+        padding: 1rem 0;
+        border-top: 1px solid rgba(0,0,0,0.08);
+        font-size: 1rem;
+      }
+
+      /* Winners */
+      .winners-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+      .winner-card {
+        text-align: center;
+      }
+      .winner-card img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+      }
+      .winner-card .place {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #888;
+        margin-bottom: 0.25rem;
+      }
+      .winner-card h3 {
+        font-family: 'Playfair Display', serif;
+        margin: 0.25rem 0;
+      }
+      .winner-card .project {
+        font-style: italic;
+        color: #555;
+        margin-bottom: 0.5rem;
+      }
+      .winner-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #444;
+      }
+
+      /* Photo Grid - Uniform 3-column */
+      .photo-gallery {
+        margin: 3rem 0;
+      }
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      .photo-grid img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+      .photo-grid img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      }
+
+      @media (max-width: 768px) {
+        .photo-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .winners-grid {
+          grid-template-columns: 1fr;
+        }
+        .speaker-card img {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 4/3;
+        }
+      }
+      @media (max-width: 480px) {
+        .photo-grid {
+          grid-template-columns: 1fr;
+        }
+        .pull-quote {
+          font-size: 1.5rem;
+          padding: 2rem 1rem;
+        }
+      }
+
+      /* Tweets Section */
+      .tweets-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+      .tweets-grid .tweet-embed {
+        min-width: 0;
+      }
+      @media (max-width: 768px) {
+        .tweets-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Footer CTA */
+      .footer-cta {
+        text-align: center;
+        padding: 4rem 2rem;
+        margin-top: 3rem;
+        background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
+        border-radius: 8px;
+      }
+      .footer-cta h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .footer-cta p {
+        color: #666;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Sponsors */
+      .sponsors {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem 0 2rem;
+        flex-wrap: wrap;
+        color: #888;
+        font-size: 0.9rem;
+      }
+      .sponsors span {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-barba="wrapper">
+      <!-- Transition Curtain-->
+      <div class="curtain transition-curtain" id="js-page-transition-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- header curtain show/hide -->
+      <div class="header-curtain curtain" id="js-header-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- header curtain AJAX transition -->
+      <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- Cursor Follower-->
+      <div class="cursor" id="js-cursor">
+        <div class="cursor__wrapper">
+          <div class="cursor__follower">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6"></circle>
+              <circle id="outer" cx="25" cy="25" r="24" style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+            </svg>
+          </div>
+          <div class="cursor__arrows">
+            <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+            <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+            <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+            <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+          </div>
+          <div class="cursor__label"></div>
+          <div class="cursor__icon material-icons"></div>
+        </div>
+      </div>
+      <!-- PAGE HEADER -->
+      <header
+        class="header header_menu-right header_fixed container-fluid js-header-sticky"
+        id="page-header"
+        data-arts-theme-text="light"
+        data-arts-header-sticky-theme="bg-white"
+        data-arts-header-logo="secondary"
+        data-arts-header-sticky-logo="primary"
+        data-arts-header-overlay-theme="light"
+        data-arts-header-overlay-background="#f2f1ed"
+      >
+        <div class="header__container header__controls">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto header__col">
+              <a class="button button_solid button_black mb-0-5" data-hover="View More Events" href="https://lu.ma/agihouse" target="_blank">
+                <span class="button__label-hover">AGI House Events</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- PAGE MAIN -->
+      <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
+        <main class="page-wrapper__content">
+          <!-- HERO SECTION -->
+          <section class="section section-masthead pt-large pt-md-0" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-background-color="var(--color-light-1)">
+            <div class="container-fluid container-fluid_paddings">
+
+              <!-- Hero: YouTube Thumbnail Fallback -->
+              <div class="hero-video">
+                <a href="https://youtu.be/0c0wjvKU_OA" target="_blank" rel="noopener">
+                  <img src="https://img.youtube.com/vi/0c0wjvKU_OA/maxresdefault.jpg" alt="Autoresearch Hackathon Presentation">
+                  <div class="play-button"></div>
+                </a>
+              </div>
+
+              <!-- Title Block -->
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="section-masthead__subheading small-caps mt-0 mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                    <span>AGI House Hackathon Recap</span>
+                  </div>
+                  <h1 class="h1 mt-0 mb-0" style="font-family: 'Playfair Display', serif;">Autoresearch Hackathon</h1>
+
+                  <!-- Event Meta -->
+                  <div class="event-meta">
+                    <div class="event-meta-item">
+                      <span class="event-meta-label">Date</span>
+                      <span class="event-meta-value">March 14, 2026</span>
+                    </div>
+                    <div class="event-meta-item">
+                      <span class="event-meta-label">Time</span>
+                      <span class="event-meta-value">11:00 AM – 7:00 PM PT</span>
+                    </div>
+                    <div class="event-meta-item">
+                      <span class="event-meta-label">Location</span>
+                      <span class="event-meta-value">AGI House, San Francisco</span>
+                    </div>
+                    <div class="event-meta-item">
+                      <span class="event-meta-label">Sponsor</span>
+                      <span class="event-meta-value">Hyperbolic AI</span>
+                    </div>
+                  </div>
+
+                  <!-- Pull Quote -->
+                  <blockquote class="pull-quote">
+                    The first accessible blueprint for building self-improving research agents.
+                  </blockquote>
+
+                  <!-- Intro -->
+                  <div class="content-block">
+                    <p>Andrej Karpathy released autoresearch, a 630-line framework for autonomous AI research. A week later, 60 builders gathered at AGI House to extend it. They worked on metric discovery, drug discovery, second brains with human feedback, autodrafting research papers, and porting the framework to new hardware.</p>
+                  </div>
+
+                  <!-- The Talk -->
+                  <h2 class="section-header">The Talk</h2>
+                  <div class="speaker-card">
+                    <img src="img/autoresearch-hackathon/autoresearch-team.jpeg" alt="Austin Baggio presenting autoresearch@home">
+                    <div class="speaker-info">
+                      <h3>Austin Baggio</h3>
+                      <p class="affiliation">CEO, Ensue</p>
+                      <p>Austin presented autoresearch@home, a distributed version of Karpathy's framework. Over 2,100 submissions from 13 research agents running experiments autonomously. A strategy repository of everything that has been tried by past research agents. The project became the starting point for many of the day's hacks.</p>
+                    </div>
+                  </div>
+
+                  <!-- The Day -->
+                  <h2 class="section-header">The Day</h2>
+                  <div class="schedule-grid">
+                    <div class="schedule-time">11:00 AM</div>
+                    <div class="schedule-event">Arrival</div>
+                    <div class="schedule-time">11:30 AM</div>
+                    <div class="schedule-event">Opening talks</div>
+                    <div class="schedule-time">12:30 PM</div>
+                    <div class="schedule-event">Hacker lightning talks</div>
+                    <div class="schedule-time">12:45 PM</div>
+                    <div class="schedule-event">Hacking begins</div>
+                    <div class="schedule-time">1:00 PM</div>
+                    <div class="schedule-event">Lunch</div>
+                    <div class="schedule-time">5:00 PM</div>
+                    <div class="schedule-event">Dinner</div>
+                    <div class="schedule-time">6:00 PM</div>
+                    <div class="schedule-event">Demos and presentations</div>
+                    <div class="schedule-time">7:00 PM</div>
+                    <div class="schedule-event">Judging and awards</div>
+                  </div>
+
+                  <!-- The Winners -->
+                  <h2 class="section-header">The Winners</h2>
+                  <div class="winners-grid">
+                    <div class="winner-card">
+                      <img src="img/autoresearch-hackathon/winners.jpg" alt="Travis Cline and Steven accepting their award">
+                      <div class="place">1st Place</div>
+                      <h3>Travis Cline &amp; Steven</h3>
+                      <p class="project">Go Port of Autoresearch for Apple Silicon</p>
+                      <p>A complete rewrite of Karpathy's autoresearch in Go, optimized to run on Apple's Neural Engine. Give an agent an LLM training setup on the Neural Engine and let it experiment autonomously.</p>
+                    </div>
+                    <div class="winner-card">
+                      <img src="img/autoresearch-hackathon/autoresearch-at-home.jpeg" alt="autoresearch@home dashboard">
+                      <div class="place">Featured Project</div>
+                      <h3>autoresearch@home</h3>
+                      <p class="project">Distributed Autoresearch by Ensue</p>
+                      <p>467 experiments, 30 improvements, 13 research agents contributing. A distributed platform that lets anyone contribute compute to autonomous research. Over 2,100 submissions tracked in a shared strategy repository.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Photo Gallery -->
+              <div class="photo-gallery">
+                <h2 class="section-header" style="display: block; text-align: center; width: 100%;">The Hackathon</h2>
+                <div class="photo-grid">
+                  <img src="img/autoresearch-hackathon/group-photo.jpg" alt="Autoresearch Hackathon group photo">
+                  <img src="img/autoresearch-hackathon/winners.jpg" alt="Winners receiving their award">
+                  <img src="img/autoresearch-hackathon/autoresearch-team.jpeg" alt="autoresearch@home team presenting">
+                </div>
+              </div>
+
+              <!-- Tweets Section -->
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <h2 class="section-header">From the Timeline</h2>
+                  <div class="tweets-grid">
+                    <div class="tweet-embed">
+                      <blockquote class="twitter-tweet"><a href="https://x.com/AGIHouseSF/status/2032884368084185497"></a></blockquote>
+                    </div>
+                    <div class="tweet-embed">
+                      <blockquote class="twitter-tweet"><a href="https://x.com/AGIHouseSF/status/2032910734389293501"></a></blockquote>
+                    </div>
+                    <div class="tweet-embed">
+                      <blockquote class="twitter-tweet"><a href="https://x.com/AGIHouseSF/status/2033312898710384857"></a></blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer CTA -->
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="footer-cta">
+                    <h3>Join the Next Gathering</h3>
+                    <p>AGI House hosts builders and researchers working at the frontier of intelligence.</p>
+                    <a class="button button_solid button_black" data-hover="See Events" href="https://lu.ma/agihouse" target="_blank">
+                      <span class="button__label-hover">Upcoming Events</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+        <!-- PAGE FOOTER -->
+        <footer class="footer container-fluid bg-white" id="page-footer" data-arts-theme-text="dark" data-arts-footer-logo="primary">
+          <div class="footer__area pb-sm-4">
+            <div class="row">
+              <div class="col-lg-12"></div>
+            </div>
+          </div>
+          <div class="footer__area footer__area-border-top">
+            <div class="row align-items-center">
+              <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
+                <section class="widget widget_text">
+                  <div class="textwidget">
+                    <p><small>&copy; 2026 AGI House | Website by <a href="" target="_blank">Omni Genesis</a></small></p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <canvas id="js-webgl"></canvas>
+    <!-- PhotoSwipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"><div class="pswp__img pswp__img--placeholder"></div></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div>
+          </div>
+          <div class="pswp__button pswp__button--arrow--left">
+            <div class="arrow arrow-left js-arrow">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-left__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <div class="pswp__button pswp__button--arrow--right">
+            <div class="arrow arrow-right js-arrow">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-right__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <div class="pswp__caption"><div class="pswp__caption__center text-center"></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- List Hover Shaders -->
+    <script id="list-hover-vs" type="x-shader/x-vertex">
+      uniform vec2 uOffset;
+      varying vec2 vUv;
+      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
+        float M_PI = 3.1415926535897932384626433832795;
+        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
+        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
+        return position;
+      }
+      void main() {
+        vUv =  uv + (uOffset * 2.);
+        vec3 newPosition = position;
+        newPosition = deformationCurve(position,uv,uOffset);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+      }
+    </script>
+    <script id="list-hover-fs" type="x-shader/x-fragment">
+      uniform sampler2D uTexture;
+      uniform float uAlpha;
+      uniform float uScale;
+      varying vec2 vUv;
+      vec2 scaleUV(vec2 uv,float scale) {
+        float center = 0.5;
+        return ((uv - center) * scale) + center;
+      }
+      void main() {
+        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
+        gl_FragColor = vec4(color,uAlpha);
+      }
+    </script>
+    <!-- Slider Textures Shaders -->
+    <script id="slider-textures-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+      }
+    </script>
+    <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      uniform float dispFactor;
+      uniform float effectFactor;
+      void main() {
+        vec2 uv = vUv;
+        vec4 disp = texture2D(disp, uv);
+        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+        gl_FragColor = finalTexture;
+      }
+    </script>
+    <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      uniform float dispFactor;
+      uniform float effectFactor;
+      void main() {
+        vec2 uv = vUv;
+        vec4 disp = texture2D(disp, uv);
+        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
+        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+        gl_FragColor = finalTexture;
+      }
+    </script>
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <!-- Twitter Embeds -->
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+  </body>
+</html>
