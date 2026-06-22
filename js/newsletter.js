@@ -39,6 +39,11 @@
   var ENDPOINT_CONFIGURED =
     ENDPOINT && ENDPOINT.indexOf("REPLACE_WITH") === -1;
 
+  // Safety: in production, don't show the bar until the backend endpoint is
+  // configured — otherwise we'd show "success" while silently dropping signups.
+  // On localhost we still show it (dev mode simulates the backend) for preview.
+  if (!IS_DEV && !ENDPOINT_CONFIGURED) return;
+
   // Don't show if already handled.
   function flag(key) {
     try {
