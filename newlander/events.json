@@ -1,0 +1,583 @@
+{
+  "generatedAt": "2026-06-26T21:55:03Z",
+  "upcoming": [
+    {
+      "title": "AI Neo Lab +1 Brunch",
+      "startAt": "2026-06-28T18:00:00.000Z",
+      "endAt": "2026-06-28T20:00:00.000Z",
+      "url": "https://luma.com/neolabplusonebrunch",
+      "coverUrl": "https://images.lumacdn.com/uploads/y1/fef61b18-356b-4e00-90da-2bc910dcd19a.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "996 & Picnics - Deep Work & Garden Lunch II",
+      "startAt": "2026-07-01T15:30:00.000Z",
+      "endAt": "2026-07-02T04:00:00.000Z",
+      "url": "https://luma.com/996II",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/73/f7d4908c-b430-49c9-8b39-8a6f0ce0e48f",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Enhanced Humans I: New Way of Working",
+      "startAt": "2026-07-04T17:00:00.000Z",
+      "endAt": "2026-07-04T19:00:00.000Z",
+      "url": "https://luma.com/enhancedhumansI",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/yl/35c06a9f-fe5b-4598-93de-bdde26f03157",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AutoResearch",
+      "startAt": "2026-07-04T22:30:00.000Z",
+      "endAt": "2026-07-05T01:00:00.000Z",
+      "url": "https://luma.com/agi-u7k6",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/cz/d1f8ae12-e094-4599-96f1-ba941940b2a1.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Quantum Biology Modeling in the Age of AGI",
+      "startAt": "2026-07-08T01:30:00.000Z",
+      "endAt": "2026-07-08T03:30:00.000Z",
+      "url": "https://luma.com/quantumbiology",
+      "coverUrl": "https://images.lumacdn.com/uploads/mt/c513022d-0547-425e-a4a7-8532f048356a.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Science Fiction Reading Night",
+      "startAt": "2026-07-09T01:00:00.000Z",
+      "endAt": "2026-07-09T05:00:00.000Z",
+      "url": "https://luma.com/ScienceFictionReadingNight",
+      "coverUrl": "https://images.lumacdn.com/uploads/4m/253fd4c7-8ad2-4204-b5b7-74b1cd130298.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Mechanistic Interpretability",
+      "startAt": "2026-07-15T01:30:00.000Z",
+      "endAt": "2026-07-15T03:00:00.000Z",
+      "url": "https://luma.com/mechanistic.interpretability",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/bd/2f984afb-e732-4f78-ad09-e5c5c16d9af7",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Mechanistic Interpretability",
+      "startAt": "2026-07-15T01:30:00.000Z",
+      "endAt": "2026-07-15T05:00:00.000Z",
+      "url": "https://luma.com/mechanisticinterpretability",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/3o/1eac0497-1680-41a6-ba52-6b3b2cc61025",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "PaperBench: Evaluating AI\u2019s Ability to Replicate AI Research",
+      "startAt": "2026-07-16T01:00:00.000Z",
+      "endAt": "2026-07-16T05:00:00.000Z",
+      "url": "https://luma.com/PaperBenchEvaluatingAIsAbility",
+      "coverUrl": "https://images.lumacdn.com/uploads/g6/ddc28a89-329e-48d5-9427-7366d25e09ad.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Creativity Reading Night",
+      "startAt": "2026-07-16T02:00:00.000Z",
+      "endAt": "2026-07-16T05:00:00.000Z",
+      "url": "https://luma.com/creativityreadingnight",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/fx/676d2304-1be9-4066-8d9c-d5185af971db",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The California Peptide Club IV",
+      "startAt": "2026-07-19T00:30:00.000Z",
+      "endAt": "2026-07-19T05:30:00.000Z",
+      "url": "https://luma.com/agi-knz4",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/y5/bb8ffa8c-b879-40a5-85d1-a0cd35dd276c",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Life of the Mind Dinner",
+      "startAt": "2026-07-19T01:00:00.000Z",
+      "endAt": "2026-07-19T05:00:00.000Z",
+      "url": "https://luma.com/LifeoftheMindDinner",
+      "coverUrl": "https://images.lumacdn.com/uploads/u2/2e125d63-28dc-49bd-902d-d6850fbce373.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "ShinkaEvolve: Open-Ended & Sample-Efficient Program Evolution \u2014 Reading & Discussion",
+      "startAt": "2026-07-23T01:30:00.000Z",
+      "endAt": "2026-07-23T04:00:00.000Z",
+      "url": "https://luma.com/agi-49cn",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/zt/4d94593d-bf72-42cc-9954-5d3b57ccb3e1.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AlphaEvolve \u2014 Paper Reading",
+      "startAt": "2026-07-30T01:00:00.000Z",
+      "endAt": "2026-07-30T05:00:00.000Z",
+      "url": "https://luma.com/agi-oz7e",
+      "coverUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw3fHxyZWFkaW5nfGVufDB8fHx8MTc4MjIxNDA5NHwy&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Build-a-thon: Drone Engineering",
+      "startAt": "2026-08-08T17:00:00.000Z",
+      "endAt": "2026-08-09T04:00:00.000Z",
+      "url": "https://luma.com/agi-wlyh",
+      "coverUrl": "https://images.unsplash.com/photo-1640262653848-adea46405e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2NHx8ZHJvbmUlMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3ODIzMTk1MTN8Mg&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "When AI Builds Itself",
+      "startAt": "2026-08-13T02:00:00.000Z",
+      "endAt": "2026-08-13T17:00:00.000Z",
+      "url": "https://luma.com/whenaibuildsitself",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/61/7941172d-f1fc-43a1-a883-c7ac02d97e19",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The California Peptide Club V",
+      "startAt": "2026-08-16T00:30:00.000Z",
+      "endAt": "2026-08-16T05:30:00.000Z",
+      "url": "https://luma.com/agi-q6tq",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/z0/a24d4133-7826-4ed1-9b83-95f57f1ec89d",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Neural Computers",
+      "startAt": "2026-08-20T01:00:00.000Z",
+      "endAt": "2026-08-20T05:00:00.000Z",
+      "url": "https://luma.com/neuralcomputers",
+      "coverUrl": "https://images.lumacdn.com/uploads/lz/688134dd-3558-4e1d-9323-8c59de5b42fe.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "startAt": "2026-09-03T01:30:00.000Z",
+      "endAt": "2026-09-03T03:00:00.000Z",
+      "url": "https://luma.com/MAIThinking1",
+      "coverUrl": "https://images.lumacdn.com/uploads/6x/cd5bc7b3-1c74-4ee1-a3db-570b081d07e4.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The California Peptide Club VI",
+      "startAt": "2026-09-20T00:30:00.000Z",
+      "endAt": "2026-09-20T05:30:00.000Z",
+      "url": "https://luma.com/agi-empy",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/21/171e0794-3f09-40f2-a4d1-72eb76299921",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Personal Assistant Robot Building",
+      "startAt": "2026-10-10T18:00:00.000Z",
+      "endAt": "2026-10-11T02:00:00.000Z",
+      "url": "https://luma.com/PARobotBuilding",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/0n/c4b8aff1-e354-412f-847c-ce0ff6a98dab.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The California Peptide Club VII",
+      "startAt": "2026-10-18T00:30:00.000Z",
+      "endAt": "2026-10-18T05:30:00.000Z",
+      "url": "https://luma.com/agi-kqt4",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Ascension (Uploading / Universe Escape Meetup)",
+      "startAt": "2027-01-08T18:00:00.000Z",
+      "endAt": "2027-01-11T04:00:00.000Z",
+      "url": "https://luma.com/agi-alll",
+      "coverUrl": "https://images.unsplash.com/photo-1543719621-92ebcae62483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2MHx8dW5pdmVyc2V8ZW58MHx8fHwxNzgyMzIzODI0fDI&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    }
+  ],
+  "past": [
+    {
+      "title": "Genomic Sequencing at Home - with @SethSHowes and Augmentiv Labs",
+      "startAt": "2026-06-25T02:00:00.000Z",
+      "endAt": "2026-06-25T04:30:00.000Z",
+      "url": "https://luma.com/genomics",
+      "coverUrl": "https://images.lumacdn.com/uploads/41/6afd39cb-155e-4036-9a8e-4dccf893e650.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "996 & Picnics - Deep Work & Garden Lunch I",
+      "startAt": "2026-06-24T15:30:00.000Z",
+      "endAt": "2026-06-25T04:00:00.000Z",
+      "url": "https://luma.com/996I",
+      "coverUrl": "https://images.lumacdn.com/uploads/wk/ec0bd26d-5ece-43c3-b9bf-c898912f1727.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Post-Labor Economics Reading Night",
+      "startAt": "2026-06-24T01:00:00.000Z",
+      "endAt": "2026-06-24T05:00:00.000Z",
+      "url": "https://luma.com/economicsnight",
+      "coverUrl": "https://images.lumacdn.com/uploads/j0/a53838c4-75be-4775-a42f-0f9fcc7f6141.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The AI Neo Lab Hangout",
+      "startAt": "2026-06-16T02:00:00.000Z",
+      "endAt": "2026-06-16T05:00:00.000Z",
+      "url": "https://luma.com/neolab1",
+      "coverUrl": "https://images.lumacdn.com/api-uploads/ab/a3b7a213-781e-4a6d-b01d-331da15c784b.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The California Peptide Club III",
+      "startAt": "2026-06-14T00:30:00.000Z",
+      "endAt": "2026-06-14T07:00:00.000Z",
+      "url": "https://luma.com/californiapeptideclub3",
+      "coverUrl": "https://images.lumacdn.com/uploads/iq/3e1fa469-9e38-469b-8ab6-b1b7925a27f9.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Sci-Fi Reading + Movie Night Ep. II: The Expanse",
+      "startAt": "2026-06-11T02:00:00.000Z",
+      "endAt": "2026-06-11T06:30:00.000Z",
+      "url": "https://luma.com/scifinight2",
+      "coverUrl": "https://images.lumacdn.com/uploads/rp/78a2d89f-fa4f-4484-a107-c4d0866c272a.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Longevity Dinner",
+      "startAt": "2026-06-10T01:30:00.000Z",
+      "endAt": "2026-06-10T05:00:00.000Z",
+      "url": "https://luma.com/longevitydinner",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ry/bd098b7b-aae7-495c-9b4d-2ff4c014a61e",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Self Improving Agent Framework & 1M Context LLMs - Workshop on Recursive Agents and Deep dive into DeepSeek-V4 Architecture",
+      "startAt": "2026-06-07T18:30:00.000Z",
+      "endAt": "2026-06-07T21:00:00.000Z",
+      "url": "https://luma.com/contextagents",
+      "coverUrl": "https://images.lumacdn.com/uploads/3n/79011d8a-476f-47e8-9010-74c918589279.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "[Blocker] Sci-Fi Inventathon",
+      "startAt": "2026-06-06T17:00:00.000Z",
+      "endAt": "2026-06-07T02:00:00.000Z",
+      "url": "https://luma.com/agi-0fck",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/r1/2de72242-6d5a-4740-87be-c51b7a941c92",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Self Improving AI (SIA) Agents - Emergency Hackathon (by AGI House SF & Nebius)",
+      "startAt": "2026-06-06T17:00:00.000Z",
+      "endAt": "2026-06-07T01:00:00.000Z",
+      "url": "https://luma.com/selfimprovingai",
+      "coverUrl": "https://images.lumacdn.com/uploads/pq/393137e9-44a1-488b-adc5-b587c7d33cc3.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The AI Neo Lab Dinner",
+      "startAt": "2026-06-03T01:30:00.000Z",
+      "endAt": "2026-06-03T05:00:00.000Z",
+      "url": "https://luma.com/neolabdinner",
+      "coverUrl": "https://images.lumacdn.com/api-uploads/nu/8771113f-4a0d-4537-992a-05593261f079.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Open Mic Night II",
+      "startAt": "2026-05-30T02:00:00.000Z",
+      "endAt": "2026-05-30T04:30:00.000Z",
+      "url": "https://luma.com/openmic2",
+      "coverUrl": "https://images.lumacdn.com/uploads/o2/220e9dc0-d648-4c17-af87-7b861b7e0d7b.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Pizza Party at AGI House SF",
+      "startAt": "2026-05-28T01:30:00.000Z",
+      "endAt": "2026-05-28T04:00:00.000Z",
+      "url": "https://luma.com/pizzapartyAGI",
+      "coverUrl": "https://images.lumacdn.com/api-uploads/s4/55caec62-8094-425e-8762-ecaa3b70c331.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Jam Session - AGI House Community",
+      "startAt": "2026-05-20T03:00:00.000Z",
+      "endAt": "2026-05-20T05:00:00.000Z",
+      "url": "https://luma.com/jamsession3",
+      "coverUrl": "https://images.lumacdn.com/uploads/7n/7a635862-61ab-4d88-84bd-3a2636985c1f.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The Afterpepty",
+      "startAt": "2026-05-17T05:00:00.000Z",
+      "endAt": "2026-05-17T08:30:00.000Z",
+      "url": "https://luma.com/afterpepty",
+      "coverUrl": "https://images.lumacdn.com/uploads/k9/390e759b-02cb-4ad7-b885-197e44e4e88a.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The California Peptide Club II - Pep Talks & Afterpepty",
+      "startAt": "2026-05-17T02:00:00.000Z",
+      "endAt": "2026-05-17T08:30:00.000Z",
+      "url": "https://luma.com/californiapeptideclub2",
+      "coverUrl": "https://images.lumacdn.com/uploads/vg/7438e7e1-a7b8-48a0-9d89-b30d1735475b.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Autonomous GTM Hackathon with Vultr and OpenAI Codex",
+      "startAt": "2026-05-09T18:00:00.000Z",
+      "endAt": "2026-05-10T03:00:00.000Z",
+      "url": "https://luma.com/gtmengineering",
+      "coverUrl": "https://images.lumacdn.com/uploads/xw/554b2dc4-37b4-48cb-8006-e07ee353ee15.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Sci-Fi Reading + Movie Night: The Martian",
+      "startAt": "2026-05-01T01:00:00.000Z",
+      "endAt": "2026-05-01T05:30:00.000Z",
+      "url": "https://luma.com/scifinight",
+      "coverUrl": "https://images.lumacdn.com/uploads/he/8b72c322-46be-4b80-b89f-6c2af33271fe.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "OpenAI x Qdrant x Tandem AI Revenue Hackathon",
+      "startAt": "2026-04-25T00:30:00.000Z",
+      "endAt": "2026-04-27T05:00:00.000Z",
+      "url": "https://luma.com/buildacompany",
+      "coverUrl": "https://images.lumacdn.com/event-covers/44/fa138499-681f-49e3-bad5-fc331c0c9bdf.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AI For Thought Night - Episode I",
+      "startAt": "2026-04-23T01:00:00.000Z",
+      "endAt": "2026-04-23T05:00:00.000Z",
+      "url": "https://luma.com/aiforthoughtnight",
+      "coverUrl": "https://images.lumacdn.com/event-covers/zj/0569bf92-431f-41fc-aab9-ede10d4e614c.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Agentic Robotic Engineering - Build your Cute Robot Arm Assistant in a Night",
+      "startAt": "2026-04-21T01:30:00.000Z",
+      "endAt": "2026-04-21T04:00:00.000Z",
+      "url": "https://luma.com/agenticrobots",
+      "coverUrl": "https://images.lumacdn.com/event-covers/sc/6890a4d9-bae7-4511-97e5-fa783c5f1357.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Open Mic Night I",
+      "startAt": "2026-04-19T03:00:00.000Z",
+      "endAt": "2026-04-19T05:30:00.000Z",
+      "url": "https://luma.com/OpenMic1",
+      "coverUrl": "https://images.lumacdn.com/event-covers/wo/c9d2322b-93e6-4f88-b820-2c5f23d92481.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Automated Discovery at Scale",
+      "startAt": "2026-04-18T20:00:00.000Z",
+      "endAt": "2026-04-19T02:00:00.000Z",
+      "url": "https://luma.com/automateddiscovery",
+      "coverUrl": "https://images.lumacdn.com/event-covers/rg/f051a784-9b3a-4e3b-83d4-89401bc74daa.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The California Peptide Club - Inaugural Gathering",
+      "startAt": "2026-04-12T21:00:00.000Z",
+      "endAt": "2026-04-13T00:30:00.000Z",
+      "url": "https://luma.com/californiapeptideclub",
+      "coverUrl": "https://images.lumacdn.com/event-covers/jb/41629c89-32fe-46fb-81f6-35956ccf9506.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Limiting Beliefs - Identifying & Overcoming what Prevents You from Your True Potential",
+      "startAt": "2026-04-05T23:30:00.000Z",
+      "endAt": "2026-04-06T02:00:00.000Z",
+      "url": "https://luma.com/limitingbeliefs",
+      "coverUrl": "https://images.lumacdn.com/event-covers/ol/32c4a27d-8dcb-4b6c-a6ed-a370c474400f.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Autoresearch Hackathon",
+      "startAt": "2026-03-14T18:00:00.000Z",
+      "endAt": "2026-03-15T05:00:00.000Z",
+      "url": "https://luma.com/autoresearch",
+      "coverUrl": "https://images.lumacdn.com/event-covers/pt/80757150-a517-465b-8704-de965582a44b.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The Infinity Investors Dinner",
+      "startAt": "2026-03-13T01:30:00.000Z",
+      "endAt": "2026-03-13T03:30:00.000Z",
+      "url": "https://luma.com/infinityinvestorsdinner",
+      "coverUrl": "https://images.lumacdn.com/event-covers/4d/9126e8e4-839d-40e4-8c7c-bd44728eea25.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "CTO Poker Night",
+      "startAt": "2026-02-27T03:00:00.000Z",
+      "endAt": "2026-02-27T06:00:00.000Z",
+      "url": "https://luma.com/ctopokernight",
+      "coverUrl": "https://images.lumacdn.com/event-covers/pb/f4d8ca16-472d-4c65-9a6d-8920f507bafb.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The SPV Dinner",
+      "startAt": "2026-02-21T02:30:00.000Z",
+      "endAt": "2026-02-21T05:00:00.000Z",
+      "url": "https://luma.com/spvdinner",
+      "coverUrl": "https://images.lumacdn.com/event-covers/np/ae5344cb-866e-4f13-9350-147a16cc0a12.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Edge AI Dinner - by AGI Inc & Ascension",
+      "startAt": "2026-02-19T02:00:00.000Z",
+      "endAt": "2026-02-19T04:30:00.000Z",
+      "url": "https://luma.com/edgeaidinner",
+      "coverUrl": "https://images.lumacdn.com/event-covers/st/00501f9f-dc1c-437e-ba0b-961725a1fdb0.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Search & Information Retrieval",
+      "startAt": "2026-01-24T19:00:00.000Z",
+      "endAt": "2026-01-25T07:00:00.000Z",
+      "url": "https://luma.com/otdp9uwj",
+      "coverUrl": "https://images.lumacdn.com/event-covers/qc/7e171a26-eacc-4352-9449-235d58ba2e87.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Finance x Artificial Intelligence",
+      "startAt": "2026-01-17T19:00:00.000Z",
+      "endAt": "2026-01-18T07:00:00.000Z",
+      "url": "https://luma.com/h45cco4m",
+      "coverUrl": "https://images.lumacdn.com/event-covers/eg/e3c3aeba-62b0-4888-bf8d-2af1baf056c6.webp",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Agentic Justice",
+      "startAt": "2026-01-03T19:00:00.000Z",
+      "endAt": "2026-01-04T07:00:00.000Z",
+      "url": "https://luma.com/jr58xxjl",
+      "coverUrl": "https://images.lumacdn.com/event-covers/3f/e287c80d-b1a5-4a5c-bb42-2102913bea21.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The Voice of AGI",
+      "startAt": "2025-09-20T18:00:00.000Z",
+      "endAt": "2025-09-21T06:00:00.000Z",
+      "url": "https://luma.com/wdhtnoga",
+      "coverUrl": "https://images.lumacdn.com/event-covers/3k/50d796c0-1440-4e27-ae28-b2d1c89d0355.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AI x Biological Science",
+      "startAt": "2025-09-13T18:00:00.000Z",
+      "endAt": "2025-09-14T06:00:00.000Z",
+      "url": "https://luma.com/dmhsjs21",
+      "coverUrl": "https://images.lumacdn.com/event-covers/3r/743a978a-4c66-4494-8be2-eaf53c4ff9a0.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AI Accelerated Learning",
+      "startAt": "2025-07-19T18:00:00.000Z",
+      "endAt": "2025-07-20T06:00:00.000Z",
+      "url": "https://luma.com/ctmlauuf",
+      "coverUrl": "https://images.lumacdn.com/event-covers/5s/78b56683-7031-4851-8620-e85382b32c57.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Search: The Advent of AI Knowledge Discovery",
+      "startAt": "2025-06-14T18:00:00.000Z",
+      "endAt": "2025-06-15T05:00:00.000Z",
+      "url": "https://luma.com/lovhis3m",
+      "coverUrl": "https://images.lumacdn.com/event-covers/hl/c9f098a1-280b-4a20-8f31-a95d4026d7ef.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "MCP Hackathon w/ Anthropic x Smithery.ai @ AGI House",
+      "startAt": "2025-03-15T18:00:00.000Z",
+      "endAt": "2025-03-16T06:00:00.000Z",
+      "url": "https://luma.com/2kutm92r",
+      "coverUrl": "https://images.lumacdn.com/event-covers/4b/cbb0fe99-a36d-49a1-b84a-a12c05ec5897.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Vibe Code-a-Thon: Give in to the Vibes",
+      "startAt": "2025-03-08T19:00:00.000Z",
+      "endAt": "2025-03-09T07:00:00.000Z",
+      "url": "https://luma.com/zybz6klf",
+      "coverUrl": "https://images.lumacdn.com/event-covers/av/bd151654-54dd-4f8f-a9ff-bf712989f111.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Defense of the West: Ukraine",
+      "startAt": "2025-01-11T17:00:00.000Z",
+      "endAt": "2025-01-13T06:00:00.000Z",
+      "url": "https://luma.com/wl3stggu",
+      "coverUrl": "https://images.lumacdn.com/event-covers/yh/d21aecf7-6601-471a-bec4-1a9f6107c249",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Decentralized AI Hackathon ",
+      "startAt": "2024-06-16T19:00:00.000Z",
+      "endAt": "2024-06-17T05:00:00.000Z",
+      "url": "https://luma.com/decent-ai-crypto",
+      "coverUrl": "https://images.lumacdn.com/event-covers/cj/a4d6580a-be0f-447f-a4fe-a1e85dab026a",
+      "city": "",
+      "venue": ""
+    }
+  ]
+}
