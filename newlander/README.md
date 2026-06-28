@@ -4,13 +4,17 @@ Pure-black, minimalist redesign served at **agihouse.ai/newlander**. Single stat
 page (`index.html`), no build step.
 
 ## Pieces
-- **Hero** — a self-hosted [UnicornStudio](https://www.unicorn.studio) WebGL scene
-  (`assets/agi-hero-scene.json`, loaded via the v2.2.5 jsDelivr SDK with
-  `data-us-project-src`). The scene renders the whole lockup: AGI HOUSE SF +
-  "RESEARCHERS BUILDING UNICORNS" (in the self-hosted **Delight** webfont, `assets/fonts/`),
-  ARAVIND SRINIVAS + Perplexity logo, and the dithered portrait with live mouse-trail,
-  god-rays, and 3D tilt. The scene's own phoenix mark was removed so it doesn't double
-  up with the nav logo.
+- **Hero** — a self-contained **WebGL2 cycling pixel-portrait** (inline `<script>` in
+  `index.html`, no library). It dissolves through the AGI House builders (`assets/people/*.jpg`),
+  ~2s each, tile-by-tile, rendering each face as an LED/mosaic dither on black. The
+  name + company label (top-right) is synced to each face; the left lockup (AGI HOUSE SF /
+  RESEARCHERS BUILDING UNICORNS, in the self-hosted **Delight** webfont, `assets/fonts/`)
+  stays put. The cycle + dither shader is adapted from George's UnicornStudio effect
+  (8-texture slot cycler). Edit the `PEOPLE` array at the top of the script to change the
+  roster; `prefers-reduced-motion` holds on the first builder. Falls back to a static
+  first portrait if WebGL2 is unavailable.
+  - Portraits are preprocessed to a uniform 1280×960 (4:3) by hand from the source shots;
+    keep new ones consistent (head-and-shoulders, centered, on near-black).
 - **Nav** — liquid-glass top bar with the AGI House phoenix mark + wordmark, top-left.
 - **Events** — a section with a top-right **List / Calendar** switch:
   - *List* — events pulled from the Luma API into `events.json`, with an Upcoming / Past
@@ -35,7 +39,7 @@ The Calendar view is always live (it embeds Luma directly).
 
 ## Preview
 Serve from the repo root (so `/js/` and `/newlander/` both resolve) over http:// — the
-UnicornStudio SDK fetches the scene JSON, which `file://` blocks:
+hero loads the portraits as WebGL textures, which `file://` blocks via CORS:
 ```
 python3 -m http.server 8765      # → http://localhost:8765/newlander/
 ```
