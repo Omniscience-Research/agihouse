@@ -70,40 +70,17 @@
   .nl .applybtn:hover{background:var(--text);color:#000;border-color:var(--text)}
   @media(max-width:820px){.nl a:not(.applybtn){display:none}.brand span{display:none}}
 
-  /* ---- HERO (cycling pixel-portrait canvas + overlay) ---- */
+  /* ---- HERO (UnicornStudio bg + overlay) ---- */
   .hero{position:relative;min-height:100vh;width:100%;overflow:hidden;background:#000}
-  /* the WebGL canvas lives in the right portion, like the deck lockup */
-  .hero-portrait{position:absolute;top:0;right:0;width:60%;height:100%;z-index:0}
-  .hero-portrait canvas{display:block;width:100%;height:100%}
-  /* left-to-right + bottom scrim so the left lockup stays legible over the tiles */
+  #us-hero{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  #us-hero canvas{width:100%!important;height:100%!important}
+  /* the scene carries its own composition + legibility; just a faint bottom fade
+     for the overlaid coords/scroll cue */
   .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-    background:
-      linear-gradient(90deg,#000 24%,rgba(0,0,0,.35) 48%,rgba(0,0,0,0) 66%),
-      linear-gradient(180deg,rgba(0,0,0,0) 80%,rgba(0,0,0,.5) 100%);}
+    background:linear-gradient(180deg,rgba(0,0,0,0) 78%,rgba(0,0,0,.55) 100%);}
+  /* click-through so the scene receives mouse for its trail / god-rays / tilt */
   .hero-overlay{position:relative;z-index:2;min-height:100vh;display:flex;
-    flex-direction:column;justify-content:center;pointer-events:none}
-
-  /* left lockup — AGI HOUSE SF / RESEARCHERS BUILDING UNICORNS */
-  .hero-lock .l1{font-family:var(--display);text-transform:uppercase;font-weight:300;
-    font-size:clamp(34px,6vw,84px);letter-spacing:.1em;line-height:1.02}
-  .hero-lock .l2{font-family:var(--display);text-transform:uppercase;font-weight:300;
-    letter-spacing:.36em;font-size:clamp(11px,1.45vw,17px);color:var(--mute);margin-top:20px;padding-left:.1em}
-
-  /* cycling name + company, centered over the portrait (top) */
-  .hero-name{position:absolute;z-index:3;top:13%;right:0;width:60%;text-align:center;
-    pointer-events:none;transition:opacity .45s ease}
-  .hero-name.fade{opacity:0}
-  .hero-name .nm{font-family:var(--display);text-transform:uppercase;font-weight:400;
-    font-size:clamp(15px,2.1vw,29px);letter-spacing:.3em;text-shadow:0 2px 22px rgba(0,0,0,.9),0 0 8px rgba(0,0,0,.7)}
-  .hero-name .rl{font-family:var(--body);text-transform:uppercase;letter-spacing:.28em;
-    font-size:11px;color:var(--text);opacity:.82;margin-top:12px;min-height:13px;text-shadow:0 2px 16px rgba(0,0,0,.95),0 0 6px rgba(0,0,0,.8)}
-  @media(max-width:820px){
-    .hero-portrait{width:100%;opacity:.5}
-    .hero-name{width:100%;top:11%}
-    .hero::before{background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.2) 40%,rgba(0,0,0,.75))}
-  }
-  /* bottom overlay row sits at the foot of the hero */
-  .hero-overlay .hero-bot{position:absolute;left:0;right:0;bottom:56px;padding:0 40px}
+    align-items:flex-end;padding:0 0 56px;pointer-events:none}
 
   /* bottom: scroll cue + coords (the only HTML overlay; the rest is the scene) */
   .hero-bot{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;width:100%}
@@ -240,6 +217,9 @@
 </head>
 <body>
 
+<!-- UnicornStudio loader -->
+<script type="text/javascript">!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.2.5/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+
 <nav id="nav">
   <div class="navinner">
     <a href="#top" class="brand"><img src="assets/phoenix-mark.png" alt="AGI House SF"><span>AGI House SF</span></a>
@@ -256,23 +236,13 @@
 <div id="top"></div>
 
 <!-- ===== HERO ===== -->
-<!-- Cycling pixel-portrait: a WebGL2 canvas dissolves through the AGI House builders
-     (~2s each, tile-by-tile), with the name/company label synced to each face.
-     The dither + cycle shader is adapted from George's UnicornStudio effect. -->
+<!-- The full lockup (phoenix logo, AGI HOUSE SF, tagline, ARAVIND SRINIVAS, perplexity
+     logo, dithered portrait, bottom gradient) is rendered by the self-hosted
+     UnicornStudio scene below. Only the non-scene coords + scroll cue are overlaid. -->
 <header class="hero">
-  <div class="hero-portrait" id="hero-portrait"></div>
-
-  <!-- cycling name + company (synced in JS) -->
-  <div class="hero-name" id="hero-name">
-    <div class="nm" id="hero-name-nm">AGI HOUSE SF</div>
-    <div class="rl" id="hero-name-rl"></div>
-  </div>
+  <div id="us-hero" data-us-project-src="assets/agi-hero-scene.json" data-us-scale="1" data-us-dpi="1.5"></div>
 
   <div class="wrap hero-overlay">
-    <div class="hero-lock">
-      <div class="l1">AGI House SF</div>
-      <div class="l2">Researchers Building Unicorns</div>
-    </div>
     <div class="hero-bot">
       <span class="coords">37.5630&deg;N&nbsp;&nbsp;122.3255&deg;W &middot; Hillsborough, CA</span>
       <span class="scrollcue">Scroll <span class="ln"></span></span>
@@ -483,198 +453,6 @@
       });
     });
   })();
-</script>
-
-<!-- ===== CYCLING PIXEL-PORTRAIT HERO (WebGL2) ===== -->
-<script>
-(function(){
-  // ── Roster: each builder shown ~2s, dissolving tile-by-tile into the next ──
-  // Add people here (8–10 total). name + role drive the synced label.
-  const PEOPLE = [
-    {img:'assets/people/aravind.jpg', name:'Aravind Srinivas', role:'Perplexity'},
-    {img:'assets/people/andrej.jpg',  name:'Andrej Karpathy',  role:'Tesla · OpenAI'},
-    {img:'assets/people/josh.jpg',    name:'Josh',             role:''},
-    {img:'assets/people/anton.jpg',   name:'Anton',            role:''},
-  ];
-  const HOLD = 3.2;     // seconds per person (60% slower than the original 2.0s)
-  const TRANS = 1.0;    // dissolve window (s)
-  const CELL = 11.0;    // mosaic cell px (css px)
-  const TEX_W = 1280, TEX_H = 960;
-  const N = PEOPLE.length;
-  // accessibility: hold on the first builder (no cycling) if the user prefers reduced motion
-  const REDUCE = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  const wrap = document.getElementById('hero-portrait');
-  const nameEl = document.getElementById('hero-name');
-  const nmEl = document.getElementById('hero-name-nm');
-  const rlEl = document.getElementById('hero-name-rl');
-
-  const cv = document.createElement('canvas');
-  wrap.appendChild(cv);
-  const gl = cv.getContext('webgl2', {antialias:false, premultipliedAlpha:false, powerPreference:'high-performance'});
-
-  // Graceful fallback: no WebGL2 → static first portrait
-  if(!gl){
-    wrap.style.background = 'radial-gradient(60% 60% at 50% 42%, #1a1714, #000) , url('+PEOPLE[0].img+') center/cover';
-    nmEl.textContent = PEOPLE[0].name; rlEl.textContent = PEOPLE[0].role||'';
-    return;
-  }
-
-  const VERT = `#version 300 es
-in vec2 p; out vec2 vUv;
-void main(){ vUv = p*0.5+0.5; gl_Position = vec4(p,0.,1.); }`;
-
-  function buildFrag(n){
-    let samplers='', chain='';
-    for(let i=0;i<n;i++){ samplers+='uniform sampler2D uTex'+i+';\n'; chain+='  if(i=='+i+') return texture(uTex'+i+', uv);\n'; }
-    return `#version 300 es
-precision highp float;
-in vec2 vUv; out vec4 frag;
-uniform vec2 uRes; uniform float uTime, uCount, uHold, uTrans, uCell, uDpr;
-uniform vec2 uTexSize;
-uniform vec2 uMouse; uniform float uMouseAmt;   // smoothed cursor (uv) + presence 0..1
-${samplers}
-vec4 samp(int i, vec2 uv){
-${chain}
-  return vec4(0.);
-}
-vec2 coverUV(vec2 uv){
-  float sa=uRes.x/uRes.y, ta=uTexSize.x/uTexSize.y; vec2 r=uv;
-  if(sa>ta){ float s=sa/ta; r.y=(r.y-0.5)/s+0.5; }
-  else { float s=ta/sa; r.x=(r.x-0.5)/s+0.5; }
-  return r;
-}
-float hash(vec2 v){ return fract(sin(dot(v,vec2(127.1,311.7)))*43758.5453); }
-void main(){
-  vec2 cell = (uCell*uDpr)/uRes;
-  vec2 cellId = floor(vUv/cell);
-  vec2 cellCenter = (cellId+0.5)*cell;
-  vec2 local = fract(vUv/cell);
-
-  // ---- mouse interaction: depth parallax + a flowing cursor "trail" lens ----
-  vec2 asp = vec2(uRes.x/uRes.y, 1.0);
-  vec2 toM = (cellCenter - uMouse) * asp;
-  float md = length(toM);
-  float infl = smoothstep(0.42, 0.0, md) * uMouseAmt;          // 1 near the cursor
-  vec2 dir = toM / (md + 1e-4);
-  vec2 parallax = (uMouse - 0.5) * 0.05 * uMouseAmt;           // whole-image depth shift
-  vec2 lens = (dir/asp) * infl * 0.05 * (0.6 + 0.4*sin(md*20.0 - uTime*3.0)); // ripple near cursor
-  vec2 cuv = clamp(coverUV(cellCenter + parallax + lens), 0.0, 1.0);
-
-  float t = uTime/uHold;
-  float fl = floor(t);
-  int idx = int(mod(fl, uCount));
-  int nxt = int(mod(fl+1.0, uCount));
-  float ph = fract(t);
-  // tile-by-tile dissolve to the next face near the end of the hold
-  float reveal = smoothstep(1.0 - uTrans/uHold, 1.0, ph);
-  int useIdx = (hash(cellId) < reveal) ? nxt : idx;
-  vec3 col = samp(useIdx, cuv).rgb;
-  col = pow(col, vec3(0.92)) * 1.06;            // slight lift/pop
-  col *= 1.0 + infl*0.22;                        // brighten under the cursor
-
-  float lum = dot(col, vec3(0.299,0.587,0.114));
-  float s = smoothstep(0.015, 0.55, lum) * 0.96; // square half-size grows with brightness; dark → black
-  s = clamp(s + infl*0.16, 0.0, 1.0);            // tiles swell under the cursor
-  vec2 d = abs(local-0.5)*2.0;
-  float m = max(d.x,d.y);
-  float tile = 1.0 - smoothstep(s-0.12, s, m);
-  vec3 outc = col * tile;
-
-  float vig = smoothstep(1.28, 0.32, length((vUv-0.5)*vec2(uRes.x/uRes.y,1.0)));
-  outc *= mix(1.0, vig, 0.4);
-  frag = vec4(outc, 1.0);
-}`;
-  }
-
-  function compile(type,src){ const s=gl.createShader(type); gl.shaderSource(s,src); gl.compileShader(s);
-    if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){ console.error(gl.getShaderInfoLog(s)); return null; } return s; }
-  const vs=compile(gl.VERTEX_SHADER,VERT), fs=compile(gl.FRAGMENT_SHADER,buildFrag(N));
-  const prog=gl.createProgram(); gl.attachShader(prog,vs); gl.attachShader(prog,fs); gl.linkProgram(prog);
-  if(!gl.getProgramParameter(prog,gl.LINK_STATUS)){ console.error(gl.getProgramInfoLog(prog)); return; }
-  gl.useProgram(prog);
-
-  const buf=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buf);
-  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1, 3,-1, -1,3]),gl.STATIC_DRAW);
-  const loc=gl.getAttribLocation(prog,'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
-
-  const U={}; ['uRes','uTime','uCount','uHold','uTrans','uCell','uTexSize','uDpr','uMouse','uMouseAmt'].forEach(k=>U[k]=gl.getUniformLocation(prog,k));
-
-  // ---- pointer: smoothed (spring/momentum) cursor, like the original scene ----
-  let mx=0.5,my=0.5, tmx=0.5,tmy=0.5, mAmt=0,tAmt=0;
-  function onMove(e){ const r=cv.getBoundingClientRect();
-    tmx=(e.clientX-r.left)/r.width; tmy=1.0-(e.clientY-r.top)/r.height; tAmt=1.0; }
-  addEventListener('pointermove',onMove,{passive:true});
-  addEventListener('pointerdown',onMove,{passive:true});
-  document.querySelector('.hero').addEventListener('pointerleave',()=>{ tAmt=0.0; });
-  // subtle opposing parallax on the overlay text for layered depth
-  const lockEl=document.querySelector('.hero-lock');
-
-  let loaded=0;
-  PEOPLE.forEach((p,i)=>{
-    const img=new Image(); img.crossOrigin='anonymous';
-    img.onload=()=>{
-      const tex=gl.createTexture();
-      gl.activeTexture(gl.TEXTURE0+i); gl.bindTexture(gl.TEXTURE_2D,tex);
-      gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);
-      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,img);
-      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
-      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
-      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
-      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
-      gl.uniform1i(gl.getUniformLocation(prog,'uTex'+i),i);
-      loaded++;
-    };
-    img.src=p.img;
-  });
-
-  let dpr=1;
-  function resize(){ dpr=Math.min(window.devicePixelRatio||1,2);
-    const w=wrap.clientWidth, h=wrap.clientHeight;
-    cv.width=Math.max(1,Math.floor(w*dpr)); cv.height=Math.max(1,Math.floor(h*dpr));
-    gl.viewport(0,0,cv.width,cv.height);
-  }
-  addEventListener('resize',resize); resize();
-
-  // sync the name/company label to the current face
-  let shownIdx=-1;
-  function syncLabel(t){
-    const f=t/HOLD, idx=Math.floor(f)%N, ph=f-Math.floor(f);
-    if(idx!==shownIdx){ shownIdx=idx; nmEl.textContent=PEOPLE[idx].name; rlEl.textContent=PEOPLE[idx].role||''; }
-    nameEl.classList.toggle('fade', ph > (1 - TRANS/HOLD));   // fade out as next face dissolves in
-  }
-
-  // pause the loop only when the hero is scrolled out of view (the browser already
-  // pauses rAF for hidden tabs). Absolute clock from a fixed base advances correctly
-  // whether running at 60fps or throttled.
-  let visible=true, running=false, base=0;
-  const io=new IntersectionObserver(es=>{ visible=es[0].isIntersecting; if(visible) start(); else running=false; },{threshold:0.01});
-  io.observe(wrap);
-  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) start(); });
-
-  function frame(now){
-    if(!visible){ running=false; return; }
-    if(!base) base=now;
-    const t = REDUCE ? 0.3 : (now-base)/1000;
-    // spring the cursor toward its target (momentum)
-    mx+=(tmx-mx)*0.09; my+=(tmy-my)*0.09; mAmt+=(tAmt-mAmt)*0.06;
-    gl.uniform2f(U.uRes,cv.width,cv.height);
-    gl.uniform1f(U.uTime,t); gl.uniform1f(U.uCount,N);
-    gl.uniform1f(U.uHold,HOLD); gl.uniform1f(U.uTrans,TRANS);
-    gl.uniform1f(U.uCell,CELL); gl.uniform2f(U.uTexSize,TEX_W,TEX_H);
-    gl.uniform1f(U.uDpr,dpr);
-    gl.uniform2f(U.uMouse,mx,my); gl.uniform1f(U.uMouseAmt,REDUCE?0:mAmt);
-    gl.drawArrays(gl.TRIANGLES,0,3);
-    // layered depth: nudge the overlay text opposite the cursor
-    if(lockEl){ const px=(mx-0.5)*-14*mAmt, py=(my-0.5)*10*mAmt;
-      lockEl.style.transform='translate('+px.toFixed(1)+'px,'+py.toFixed(1)+'px)';
-      nameEl.style.transform='translate('+(px*0.5).toFixed(1)+'px,'+(py*0.5).toFixed(1)+'px)'; }
-    syncLabel(t);
-    requestAnimationFrame(frame);
-  }
-  function start(){ if(running||!visible) return; running=true; requestAnimationFrame(frame); }
-  start();
-})();
 </script>
 
 <!-- NEWSLETTER SIGNUP (shared site-wide bar) -->
