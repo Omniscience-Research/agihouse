@@ -496,8 +496,8 @@
     {img:'assets/people/josh.jpg',    name:'Josh',             role:''},
     {img:'assets/people/anton.jpg',   name:'Anton',            role:''},
   ];
-  const HOLD = 2.0;     // seconds per person
-  const TRANS = 0.85;   // dissolve window (s)
+  const HOLD = 3.2;     // seconds per person (60% slower than the original 2.0s)
+  const TRANS = 1.0;    // dissolve window (s)
   const CELL = 11.0;    // mosaic cell px (css px)
   const TEX_W = 1280, TEX_H = 960;
   const N = PEOPLE.length;
@@ -532,6 +532,7 @@ precision highp float;
 in vec2 vUv; out vec4 frag;
 uniform vec2 uRes; uniform float uTime, uCount, uHold, uTrans, uCell, uDpr;
 uniform vec2 uTexSize;
+uniform vec2 uMouse; uniform float uMouseAmt;   // smoothed cursor (uv) + presence 0..1
 ${samplers}
 vec4 samp(int i, vec2 uv){
 ${chain}
@@ -549,8 +550,16 @@ void main(){
   vec2 cellId = floor(vUv/cell);
   vec2 cellCenter = (cellId+0.5)*cell;
   vec2 local = fract(vUv/cell);
-  vec2 cuv = coverUV(cellCenter);
-  if(cuv.x<0.0||cuv.x>1.0||cuv.y<0.0||cuv.y>1.0){ frag=vec4(0.,0.,0.,1.); return; }
+
+  // ---- mouse interaction: depth parallax + a flowing cursor "trail" lens ----
+  vec2 asp = vec2(uRes.x/uRes.y, 1.0);
+  vec2 toM = (cellCenter - uMouse) * asp;
+  float md = length(toM);
+  float infl = smoothstep(0.42, 0.0, md) * uMouseAmt;          // 1 near the cursor
+  vec2 dir = toM / (md + 1e-4);
+  vec2 parallax = (uMouse - 0.5) * 0.05 * uMouseAmt;           // whole-image depth shift
+  vec2 lens = (dir/asp) * infl * 0.05 * (0.6 + 0.4*sin(md*20.0 - uTime*3.0)); // ripple near cursor
+  vec2 cuv = clamp(coverUV(cellCenter + parallax + lens), 0.0, 1.0);
 
   float t = uTime/uHold;
   float fl = floor(t);
@@ -562,9 +571,11 @@ void main(){
   int useIdx = (hash(cellId) < reveal) ? nxt : idx;
   vec3 col = samp(useIdx, cuv).rgb;
   col = pow(col, vec3(0.92)) * 1.06;            // slight lift/pop
+  col *= 1.0 + infl*0.22;                        // brighten under the cursor
 
   float lum = dot(col, vec3(0.299,0.587,0.114));
   float s = smoothstep(0.015, 0.55, lum) * 0.96; // square half-size grows with brightness; dark → black
+  s = clamp(s + infl*0.16, 0.0, 1.0);            // tiles swell under the cursor
   vec2 d = abs(local-0.5)*2.0;
   float m = max(d.x,d.y);
   float tile = 1.0 - smoothstep(s-0.12, s, m);
@@ -587,7 +598,17 @@ void main(){
   gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1, 3,-1, -1,3]),gl.STATIC_DRAW);
   const loc=gl.getAttribLocation(prog,'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
 
-  const U={}; ['uRes','uTime','uCount','uHold','uTrans','uCell','uTexSize','uDpr'].forEach(k=>U[k]=gl.getUniformLocation(prog,k));
+  const U={}; ['uRes','uTime','uCount','uHold','uTrans','uCell','uTexSize','uDpr','uMouse','uMouseAmt'].forEach(k=>U[k]=gl.getUniformLocation(prog,k));
+
+  // ---- pointer: smoothed (spring/momentum) cursor, like the original scene ----
+  let mx=0.5,my=0.5, tmx=0.5,tmy=0.5, mAmt=0,tAmt=0;
+  function onMove(e){ const r=cv.getBoundingClientRect();
+    tmx=(e.clientX-r.left)/r.width; tmy=1.0-(e.clientY-r.top)/r.height; tAmt=1.0; }
+  addEventListener('pointermove',onMove,{passive:true});
+  addEventListener('pointerdown',onMove,{passive:true});
+  document.querySelector('.hero').addEventListener('pointerleave',()=>{ tAmt=0.0; });
+  // subtle opposing parallax on the overlay text for layered depth
+  const lockEl=document.querySelector('.hero-lock');
 
   let loaded=0;
   PEOPLE.forEach((p,i)=>{
@@ -635,12 +656,19 @@ void main(){
     if(!visible){ running=false; return; }
     if(!base) base=now;
     const t = REDUCE ? 0.3 : (now-base)/1000;
+    // spring the cursor toward its target (momentum)
+    mx+=(tmx-mx)*0.09; my+=(tmy-my)*0.09; mAmt+=(tAmt-mAmt)*0.06;
     gl.uniform2f(U.uRes,cv.width,cv.height);
     gl.uniform1f(U.uTime,t); gl.uniform1f(U.uCount,N);
     gl.uniform1f(U.uHold,HOLD); gl.uniform1f(U.uTrans,TRANS);
     gl.uniform1f(U.uCell,CELL); gl.uniform2f(U.uTexSize,TEX_W,TEX_H);
     gl.uniform1f(U.uDpr,dpr);
+    gl.uniform2f(U.uMouse,mx,my); gl.uniform1f(U.uMouseAmt,REDUCE?0:mAmt);
     gl.drawArrays(gl.TRIANGLES,0,3);
+    // layered depth: nudge the overlay text opposite the cursor
+    if(lockEl){ const px=(mx-0.5)*-14*mAmt, py=(my-0.5)*10*mAmt;
+      lockEl.style.transform='translate('+px.toFixed(1)+'px,'+py.toFixed(1)+'px)';
+      nameEl.style.transform='translate('+(px*0.5).toFixed(1)+'px,'+(py*0.5).toFixed(1)+'px)'; }
     syncLabel(t);
     requestAnimationFrame(frame);
   }
