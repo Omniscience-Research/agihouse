@@ -237,14 +237,23 @@
     var layer = scene.getLayer(meta.id);
     if(!layer || typeof layer.setSource !== 'function') return;
     PEOPLE.forEach(function(u){ var im=new Image(); im.src=u; }); // warm the cache
+    // force a few synchronous draw passes so the new photo flattens into the
+    // texture the dither effect reads (requestSceneRender alone is too late/once).
+    function repaint(){
+      if(scene.renderNFrames) scene.renderNFrames(4);
+      else if(scene.requestSceneRender) scene.requestSceneRender();
+    }
     var idx = 0;
     setInterval(function(){
       idx = (idx+1) % PEOPLE.length;
-      layer.setSource(PEOPLE[idx], { onLoad:function(){ if(scene.requestSceneRender) scene.requestSceneRender(); } });
+      layer.setSource(PEOPLE[idx], { onLoad:repaint });
+      // a couple of delayed nudges in case the texture upload lands a frame later
+      setTimeout(repaint, 60); setTimeout(repaint, 180);
     }, HOLD);
   }
 
-  function boot(){ UnicornStudio.init().then(startCycle).catch(function(){}); }
+  // init() resolves with an ARRAY of scenes — cycle the first one
+  function boot(){ UnicornStudio.init().then(function(scenes){ startCycle(scenes && scenes[0]); }).catch(function(){}); }
 
   var u = window.UnicornStudio;
   if(u && u.init){ boot(); }
