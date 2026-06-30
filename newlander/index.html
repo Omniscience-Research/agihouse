@@ -99,8 +99,10 @@
   .rv.in{opacity:1;transform:none}
 
   /* ---- generic section ---- */
-  section{padding:120px 0;position:relative}
-  .shead{display:flex;align-items:baseline;gap:20px;margin-bottom:48px}
+  /* generous, consistent vertical rhythm between sections */
+  section{padding:160px 0;position:relative}
+  @media(max-width:680px){section{padding:104px 0}}
+  .shead{display:flex;align-items:baseline;gap:20px;margin-bottom:56px}
   .shead .id{font-family:var(--body);font-size:12px;letter-spacing:.1em;color:var(--mute)}
   .shead .ln{flex:1;height:1px;background:var(--line)}
   h2.st{font-family:var(--display);text-transform:uppercase;font-weight:300;
@@ -115,6 +117,17 @@
   .readout .k{font-family:var(--display);font-size:46px;font-weight:400;line-height:1;letter-spacing:.01em}
   .readout .t{margin-top:12px;font-family:var(--body);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
   @media(max-width:860px){.intro{grid-template-columns:1fr;gap:40px}}
+  .lead + .lead{margin-top:20px}
+  /* give-back + subscribe footer under the intro grid */
+  .intro-foot{margin-top:72px;padding-top:40px;border-top:1px solid var(--line);
+    display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+  .intro-foot .lead{max-width:none}
+  .sub-cta{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+  .sub-cta span{font-family:var(--body);font-size:13px;color:var(--mute);letter-spacing:.02em}
+  .sub-cta .applybtn{border:1px solid var(--line-2);padding:14px 30px;font-family:var(--body);
+    text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(--text);background:none;cursor:pointer;transition:all .25s}
+  .sub-cta .applybtn:hover{background:var(--text);color:#000;border-color:var(--text)}
+  @media(max-width:860px){.intro-foot{grid-template-columns:1fr;gap:28px;margin-top:52px}}
   .readout{position:relative}
   /* hero stat tile — the trillion-dollar number, with a hover/focus breakdown */
   .stat-hero{cursor:help;position:relative}
@@ -571,6 +584,18 @@
       const foot=document.getElementById('bd-foot');
       if(foot) foot.textContent='As of '+(d.asOf||'')+'. '+undisclosed+' more companies have undisclosed valuations and aren’t counted. Valuations attributed to founding-team members; figures from public reporting.';
     }).catch(()=>{});
+  })();
+
+  // ===== SUBSCRIBE button → reveal + focus the site newsletter bar =====
+  (function(){
+    const btn=document.getElementById('nl-subscribe');
+    if(!btn) return;
+    btn.addEventListener('click',function(){
+      const bar=document.getElementById('agih-nl');
+      const input=bar&&bar.querySelector('input[type=email]');
+      if(input){ bar.style.transform='none'; bar.style.opacity='1'; input.scrollIntoView({behavior:'smooth',block:'center'}); setTimeout(()=>input.focus(),350); }
+      else { window.open('https://lu.ma/agi-house','_blank','noopener'); }
+    });
   })();
 
   // ===== THE HOUSE — community grid (data/people.json) =====
