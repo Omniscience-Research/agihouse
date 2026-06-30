@@ -89,6 +89,10 @@
   .scrollcue .ln{width:46px;height:1px;background:linear-gradient(90deg,var(--mute),transparent);position:relative;overflow:hidden}
   .scrollcue .ln::after{content:"";position:absolute;inset:0;width:18px;background:var(--text);animation:slide 2.4s infinite}
   @keyframes slide{0%{transform:translateX(-20px)}100%{transform:translateX(48px)}}
+  /* comparison badge (top-left of each hero) */
+  .hero-badge{position:absolute;top:90px;left:40px;z-index:3;font-family:var(--body);font-size:10px;
+    letter-spacing:.24em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);
+    padding:7px 12px;pointer-events:none;background:rgba(0,0,0,.3)}
 
   /* ---- reveal ---- */
   .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -286,8 +290,8 @@
     }, HOLD);
   }
 
-  // init() resolves with an ARRAY of scenes — cycle the first one
-  function boot(){ UnicornStudio.init().then(function(scenes){ startCycle(scenes && scenes[0]); }).catch(function(){}); }
+  // init() resolves with an ARRAY of scenes — cycle every one (both hero variants)
+  function boot(){ UnicornStudio.init().then(function(scenes){ (scenes||[]).forEach(startCycle); }).catch(function(){}); }
 
   var u = window.UnicornStudio;
   if(u && u.init){ boot(); }
@@ -322,6 +326,22 @@
      UnicornStudio scene below. Only the non-scene coords + scroll cue are overlaid. -->
 <header class="hero">
   <div id="us-hero" data-us-project-src="assets/agi-hero-scene.json" data-us-scale="1" data-us-dpi="1.5"></div>
+  <span class="hero-badge">Dither &middot; Original</span>
+
+  <div class="wrap hero-overlay">
+    <div class="hero-bot">
+      <span class="coords">37.5630&deg;N&nbsp;&nbsp;122.3255&deg;W &middot; Hillsborough, CA</span>
+      <span class="scrollcue">Scroll <span class="ln"></span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO · DUPLICATE (50% finer dither, for comparison) =====
+     Same scene/effect/cycle as above, but loads agi-hero-scene-fine.json whose
+     glyph-dither grid is doubled (cells half the size → pixels 50% smaller). -->
+<header class="hero">
+  <div id="us-hero-2" data-us-project-src="assets/agi-hero-scene-fine.json" data-us-scale="1" data-us-dpi="1.5"></div>
+  <span class="hero-badge">Dither &middot; 50% Finer</span>
 
   <div class="wrap hero-overlay">
     <div class="hero-bot">
