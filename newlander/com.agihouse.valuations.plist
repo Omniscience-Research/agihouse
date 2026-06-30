@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- launchd job: weekly valuation refresh, Mondays at 09:00 local.
+     Install:
+       cp newlander/com.agihouse.valuations.plist ~/Library/LaunchAgents/
+       launchctl load ~/Library/LaunchAgents/com.agihouse.valuations.plist
+     Remove:
+       launchctl unload ~/Library/LaunchAgents/com.agihouse.valuations.plist -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.agihouse.valuations</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/juliusritter/agihouse/newlander/refresh-valuations.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>1</integer>
+    <key>Hour</key><integer>9</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/tmp/agihouse-valuations.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/agihouse-valuations.log</string>
+</dict>
+</plist>
