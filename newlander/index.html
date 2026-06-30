@@ -240,6 +240,11 @@
   .bk{display:flex;flex-wrap:wrap;gap:10px}
   .bk span{border:1px solid var(--line);padding:10px 16px;font-size:12px;color:var(--mute);letter-spacing:.04em;font-family:var(--body);transition:all .25s}
   .bk span:hover{color:var(--text);border-color:var(--line-2)}
+  .bk a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;height:66px;min-width:130px;padding:16px 22px;border:1px solid var(--line);transition:all .25s}
+  .bk a img{height:26px;width:auto;max-width:160px;opacity:.78;transition:opacity .25s}
+  .bk a:hover{border-color:var(--line-2);background:rgba(255,255,255,.04)}
+  .bk a:hover img{opacity:1}
+  @media(max-width:640px){.bk a{height:54px;min-width:104px;padding:12px 16px}.bk a img{height:20px;max-width:120px}}
 
   /* CTA */
   .ctaband{border:1px solid var(--line);padding:96px 60px;text-align:center;position:relative;overflow:hidden;background:var(--bg-2)}
@@ -353,26 +358,34 @@
 
 <!-- ===== INTRO / RECORD ===== -->
 <section id="intro" class="wrap">
+  <div class="shead rv"><span class="id">00</span><span class="ln"></span><span class="eyebrow">The Nexus</span></div>
   <div class="intro">
     <div>
-      <div class="shead rv"><span class="id">00</span><span class="ln"></span><span class="eyebrow">The Record</span></div>
-      <h2 class="st rv">Their Companies<br>Are Worth Over<br>a Trillion Dollars</h2>
-      <p class="lead rv">The people who came through the house went on to <b>co-found the companies now defining the field.</b> Add up what those companies are worth today and the number passes <b>$1.8&nbsp;trillion.</b></p>
+      <h2 class="st rv" style="max-width:16ch">The Nexus for Progress in the Intelligence Age</h2>
+      <p class="lead rv">AGI House SF is the nexus for technical talent to <b>advance humanity through technological invention.</b></p>
+      <p class="lead rv">We work with and support the world's best AI and deep-tech founders. We've hosted <b>80+ build-a-thons and hackathons</b> — inventions like <b>Lovable</b> and <b>Perplexity</b> came out of them. <b>Ten of the seventy</b> AGI House-series roommates are unicorn founders, with <b>nine more</b> behind $100M+ companies. Together, roommates have founded companies worth <b>over a trillion dollars.</b></p>
     </div>
     <div class="readout rv">
       <div class="stat-hero" id="stat-total" tabindex="0" aria-describedby="breakdown">
-        <div class="k display" id="total-num">$1.8T</div>
-        <div class="t">Combined Company Value <span class="info" aria-hidden="true">&#9432;</span></div>
+        <div class="k display" id="total-num">$1T+</div>
+        <div class="t">Companies Founded <span class="info" aria-hidden="true">&#9432;</span></div>
         <div class="breakdown" id="breakdown" role="tooltip">
-          <div class="bd-h">Companies our people co-founded — added up</div>
+          <div class="bd-h">Companies our roommates co-founded — added up</div>
           <div class="bd-scroll" id="bd-rows"></div>
           <div class="bd-total"><span class="lab">Total</span><span class="vv" id="bd-total-val">—</span></div>
           <div class="bd-foot" id="bd-foot"></div>
         </div>
       </div>
-      <div><div class="k display" id="stat-unicorns">13</div><div class="t">Unicorns Co-Founded</div></div>
-      <div><div class="k display">27</div><div class="t">In the House</div></div>
-      <div><div class="k display">2022</div><div class="t">Founded · SF</div></div>
+      <div><div class="k display">10</div><div class="t">Unicorn Founders</div></div>
+      <div><div class="k display">80+</div><div class="t">Hackathons</div></div>
+      <div><div class="k display">15,000</div><div class="t">In the Community</div></div>
+    </div>
+  </div>
+  <div class="intro-foot rv">
+    <p class="lead" style="margin-top:0">We give back to the broader SF ecosystem through selective community hackathons, curated soirées, research and reading nights, and hands-on help with fundraising.</p>
+    <div class="sub-cta">
+      <span>Stay up to date — join 15,000 people in our community.</span>
+      <button class="applybtn" id="nl-subscribe" type="button">Subscribe</button>
     </div>
   </div>
 </section>
@@ -460,7 +473,45 @@
   <div class="shead rv"><span class="id">06</span><span class="ln"></span><span class="eyebrow">Backed By</span></div>
   <h2 class="st rv" style="max-width:18ch;margin-bottom:48px">The Labs &amp; Funds Behind the Network</h2>
   <div class="bk">
-    <span class="rv">OpenAI</span><span class="rv">Anthropic</span><span class="rv">NVIDIA</span><span class="rv">Google Cloud</span><span class="rv">AWS</span><span class="rv">8VC</span><span class="rv">General Catalyst</span><span class="rv">Greylock</span><span class="rv">Index Ventures</span><span class="rv">NEA</span><span class="rv">CRV</span><span class="rv">Basis Set Ventures</span><span class="rv">DCVC</span><span class="rv">Nexus VP</span><span class="rv">Prime Intellect</span><span class="rv">Replicate</span><span class="rv">Replit</span><span class="rv">Stability AI</span><span class="rv">RunPod</span><span class="rv">Quora</span><span class="rv">Zapier</span><span class="rv">fal</span><span class="rv">Anyscale</span><span class="rv">Arize</span>
+    <a class="rv" href="https://8vc.com" target="_blank" rel="noopener" aria-label="8VC"><img src="assets/logos/8vc.svg" alt="8VC" loading="lazy"></a>
+    <a class="rv" href="https://aws.amazon.com" target="_blank" rel="noopener" aria-label="AWS"><img src="assets/logos/aws.svg" alt="AWS" loading="lazy"></a>
+    <a class="rv" href="https://www.anthropic.com" target="_blank" rel="noopener" aria-label="Anthropic"><img src="assets/logos/anthropic.svg" alt="Anthropic" loading="lazy"></a>
+    <a class="rv" href="https://www.anyscale.com" target="_blank" rel="noopener" aria-label="Anyscale"><img src="assets/logos/anyscale.svg" alt="Anyscale" loading="lazy"></a>
+    <a class="rv" href="https://arize.com" target="_blank" rel="noopener" aria-label="Arize"><img src="assets/logos/arize.svg" alt="Arize" loading="lazy"></a>
+    <a class="rv" href="https://www.basisset.ventures" target="_blank" rel="noopener" aria-label="Basis Set Ventures"><img src="assets/logos/basis-set-ventures.svg" alt="Basis Set Ventures" loading="lazy"></a>
+    <a class="rv" href="https://www.crv.com" target="_blank" rel="noopener" aria-label="CRV"><img src="assets/logos/crv.svg" alt="CRV" loading="lazy"></a>
+    <a class="rv" href="https://www.dcvc.com" target="_blank" rel="noopener" aria-label="DCVC"><img src="assets/logos/dcvc.svg" alt="DCVC" loading="lazy"></a>
+    <a class="rv" href="https://github.com/mem0ai/mem0" target="_blank" rel="noopener" aria-label="Embed Chain"><img src="assets/logos/embedchain.svg" alt="Embed Chain" loading="lazy"></a>
+    <a class="rv" href="https://fal.ai" target="_blank" rel="noopener" aria-label="fal"><img src="assets/logos/fal.svg" alt="fal" loading="lazy"></a>
+    <a class="rv" href="https://www.foundersxventures.com" target="_blank" rel="noopener" aria-label="FoundersX"><img src="assets/logos/foundersx.svg" alt="FoundersX" loading="lazy"></a>
+    <a class="rv" href="https://www.generalcatalyst.com" target="_blank" rel="noopener" aria-label="General Catalyst"><img src="assets/logos/general-catalyst.svg" alt="General Catalyst" loading="lazy"></a>
+    <a class="rv" href="https://cloud.google.com" target="_blank" rel="noopener" aria-label="Google Cloud"><img src="assets/logos/google-cloud.svg" alt="Google Cloud" loading="lazy"></a>
+    <a class="rv" href="https://greylock.com" target="_blank" rel="noopener" aria-label="Greylock"><img src="assets/logos/greylock.svg" alt="Greylock" loading="lazy"></a>
+    <a class="rv" href="https://grupa.io" target="_blank" rel="noopener" aria-label="Grupa"><img src="assets/logos/grupa.svg" alt="Grupa" loading="lazy"></a>
+    <a class="rv" href="https://www.indexventures.com" target="_blank" rel="noopener" aria-label="Index Ventures"><img src="assets/logos/index-ventures.svg" alt="Index Ventures" loading="lazy"></a>
+    <a class="rv" href="https://inworld.ai" target="_blank" rel="noopener" aria-label="Inworld"><img src="assets/logos/inworld.svg" alt="Inworld" loading="lazy"></a>
+    <a class="rv" href="https://www.langchain.com" target="_blank" rel="noopener" aria-label="LangChain"><img src="assets/logos/langchain.svg" alt="LangChain" loading="lazy"></a>
+    <a class="rv" href="https://www.lighthouse.com" target="_blank" rel="noopener" aria-label="Lighthouse"><img src="assets/logos/lighthouse.svg" alt="Lighthouse" loading="lazy"></a>
+    <a class="rv" href="https://www.llamaindex.ai" target="_blank" rel="noopener" aria-label="LlamaIndex"><img src="assets/logos/llamaindex.svg" alt="LlamaIndex" loading="lazy"></a>
+    <a class="rv" href="https://modal.com" target="_blank" rel="noopener" aria-label="Modal"><img src="assets/logos/modal.svg" alt="Modal" loading="lazy"></a>
+    <a class="rv" href="https://nebius.com" target="_blank" rel="noopener" aria-label="Nebius"><img src="assets/logos/nebius.svg" alt="Nebius" loading="lazy"></a>
+    <a class="rv" href="https://neurosity.co" target="_blank" rel="noopener" aria-label="Neurosity"><img src="assets/logos/neurosity.svg" alt="Neurosity" loading="lazy"></a>
+    <a class="rv" href="https://www.nea.com" target="_blank" rel="noopener" aria-label="NEA"><img src="assets/logos/nea.svg" alt="NEA" loading="lazy"></a>
+    <a class="rv" href="https://nexusvp.com" target="_blank" rel="noopener" aria-label="Nexus Venture Partners"><img src="assets/logos/nexus-vp.svg" alt="Nexus Venture Partners" loading="lazy"></a>
+    <a class="rv" href="https://www.nvidia.com" target="_blank" rel="noopener" aria-label="NVIDIA"><img src="assets/logos/nvidia.svg" alt="NVIDIA" loading="lazy"></a>
+    <a class="rv" href="https://omniscience.com" target="_blank" rel="noopener" aria-label="Omniscience"><img src="assets/logos/omniscience.svg" alt="Omniscience" loading="lazy"></a>
+    <a class="rv" href="https://openai.com" target="_blank" rel="noopener" aria-label="OpenAI"><img src="assets/logos/openai.svg" alt="OpenAI" loading="lazy"></a>
+    <a class="rv" href="https://www.primeintellect.ai" target="_blank" rel="noopener" aria-label="Prime Intellect"><img src="assets/logos/prime-intellect.svg" alt="Prime Intellect" loading="lazy"></a>
+    <a class="rv" href="https://www.producthunt.com" target="_blank" rel="noopener" aria-label="Product Hunt"><img src="assets/logos/product-hunt.svg" alt="Product Hunt" loading="lazy"></a>
+    <a class="rv" href="https://www.quora.com" target="_blank" rel="noopener" aria-label="Quora"><img src="assets/logos/quora.svg" alt="Quora" loading="lazy"></a>
+    <a class="rv" href="https://replit.com" target="_blank" rel="noopener" aria-label="Replit"><img src="assets/logos/replit.svg" alt="Replit" loading="lazy"></a>
+    <a class="rv" href="https://replicate.com" target="_blank" rel="noopener" aria-label="Replicate"><img src="assets/logos/replicate.svg" alt="Replicate" loading="lazy"></a>
+    <a class="rv" href="https://www.runpod.io" target="_blank" rel="noopener" aria-label="RunPod"><img src="assets/logos/runpod.svg" alt="RunPod" loading="lazy"></a>
+    <a class="rv" href="https://stability.ai" target="_blank" rel="noopener" aria-label="Stability AI"><img src="assets/logos/stability-ai.svg" alt="Stability AI" loading="lazy"></a>
+    <a class="rv" href="https://www.susaventures.com" target="_blank" rel="noopener" aria-label="SUSA Ventures"><img src="assets/logos/susa-ventures.svg" alt="SUSA Ventures" loading="lazy"></a>
+    <a class="rv" href="https://www.upstage.ai" target="_blank" rel="noopener" aria-label="Upstage"><img src="assets/logos/upstage.svg" alt="Upstage" loading="lazy"></a>
+    <a class="rv" href="https://www.wing.vc" target="_blank" rel="noopener" aria-label="Wing"><img src="assets/logos/wing.svg" alt="Wing" loading="lazy"></a>
+    <a class="rv" href="https://zapier.com" target="_blank" rel="noopener" aria-label="Zapier"><img src="assets/logos/zapier.svg" alt="Zapier" loading="lazy"></a>
   </div>
 </section>
 
@@ -507,10 +558,9 @@
       const total=priced.reduce((s,c)=>s+c.valuationB,0);
       const unicorns=priced.filter(c=>c.valuationB>=1).length;
 
-      // headline number — show "$1.8T+" rounded down to one decimal so it reads as a floor
+      // headline number — floor to whole trillions so it reads as a conservative floor ("$1T+")
       const tnum=document.getElementById('total-num');
-      if(tnum) tnum.textContent='$'+(Math.floor(total/100)/10).toFixed(1)+'T+';
-      const su=document.getElementById('stat-unicorns'); if(su) su.textContent=unicorns;
+      if(tnum) tnum.textContent= total>=1000 ? '$'+Math.floor(total/1000)+'T+' : '$'+Math.round(total)+'B+';
 
       // breakdown rows
       const rows=document.getElementById('bd-rows');
