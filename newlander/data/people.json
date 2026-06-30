@@ -1,0 +1,32 @@
+{
+  "_comment": "People who came through the AGI House / Genesis lineage — rendered into the community grid. img = assets/network/<slug>.jpg. tag = soft affiliation line. group: roommate | community.",
+  "people": [
+    { "name": "Andrej Karpathy",       "company": "OpenAI · Eureka Labs",      "tag": "Genesis · AGI House",        "img": "andrej-karpathy",      "group": "roommate" },
+    { "name": "Benjamin Mann",         "company": "Anthropic",                 "tag": "Founding house · 2021",      "img": "benjamin-mann",        "group": "roommate" },
+    { "name": "Luke Metz",             "company": "Thinking Machines Lab",     "tag": "Genesis",                    "img": "luke-metz",            "group": "roommate" },
+    { "name": "Aravind Srinivas",      "company": "Perplexity",                "tag": "Founding hackathon",         "img": "aravind-srinivas",     "group": "community" },
+    { "name": "Anton Osika",           "company": "Lovable",                   "tag": "AGI House SF",               "img": "anton-osika",          "group": "roommate" },
+    { "name": "Erik Bernhardsson",     "company": "Modal Labs",                "tag": "In the network",             "img": "erik-bernhardsson",    "group": "community" },
+    { "name": "Max Novendstern",       "company": "Worldcoin · Mana",          "tag": "In the network",             "img": "max-novendstern",      "group": "roommate" },
+    { "name": "Adam D'Angelo",         "company": "Quora · Poe",               "tag": "Speaker",                    "img": "adam-dangelo",         "group": "community" },
+    { "name": "Tim Shi",               "company": "Cresta",                    "tag": "Genesis",                    "img": "tim-shi",              "group": "roommate" },
+    { "name": "Chris Power",           "company": "Hadrian",                   "tag": "In the network",             "img": "chris-power",          "group": "roommate" },
+    { "name": "Josh Payne",            "company": "Coframe · Autograph",       "tag": "AGI House SF",               "img": "josh-payne",           "group": "roommate" },
+    { "name": "Michael Ng",            "company": "Ambience Healthcare",       "tag": "Genesis",                    "img": "michael-ng",           "group": "roommate" },
+    { "name": "Robert Nishihara",      "company": "Anyscale",                  "tag": "Genesis",                    "img": "robert-nishihara",     "group": "roommate" },
+    { "name": "George Sivulka",        "company": "Hebbia",                    "tag": "In the network",             "img": "george-sivulka",       "group": "roommate" },
+    { "name": "John Schulman",         "company": "Thinking Machines Lab",     "tag": "Speaker",                    "img": "john-schulman",        "group": "community" },
+    { "name": "Celine Halioua",        "company": "Loyal",                     "tag": "In the network",             "img": "celine-halioua",       "group": "roommate" },
+    { "name": "Laura Deming",          "company": "Until Labs",                "tag": "In the network",             "img": "laura-deming",         "group": "roommate" },
+    { "name": "Conor White-Sullivan",  "company": "Roam Research",             "tag": "AGI House SF",               "img": "conor-white-sullivan", "group": "roommate" },
+    { "name": "Sampriti Bhattacharyya","company": "Navier",                    "tag": "In the network",             "img": "sampriti-bhattacharyya","group": "roommate" },
+    { "name": "Scott Fitsimones",      "company": "AirGarage",                 "tag": "In the network",             "img": "scott-fitzsimmons",    "group": "roommate" },
+    { "name": "Louis Andre",           "company": "Episteme",                  "tag": "AGI House SF",               "img": "louie-andre",          "group": "roommate" },
+    { "name": "Sergey Brin",           "company": "Google",                    "tag": "Sponsor & speaker",          "img": "sergey-brin",          "group": "community" },
+    { "name": "George Hotz",           "company": "the tiny corp · comma.ai",  "tag": "Hackathon hacker",           "img": "george-hotz",          "group": "community" },
+    { "name": "Stephen Wolfram",       "company": "Wolfram Research",          "tag": "Speaker",                    "img": "stephen-wolfram",      "group": "community" },
+    { "name": "Alec Radford",          "company": "GPT · Independent",         "tag": "In the network",             "img": "alec-radford",         "group": "community" },
+    { "name": "Andrew White",          "company": "FutureHouse",               "tag": "In the network",             "img": "andrew-white",         "group": "community" },
+    { "name": "Kawal Gandhi",          "company": "Google",                    "tag": "Speaker",                    "img": "kawal-gandhi",         "group": "community" }
+  ]
+}
