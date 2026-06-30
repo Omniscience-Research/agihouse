@@ -9,6 +9,10 @@
 #   0 9 * * 1  /Users/juliusritter/agihouse/newlander/refresh-valuations.sh >> /tmp/agihouse-valuations.log 2>&1
 set -euo pipefail
 
+# launchd runs with a minimal PATH; make sure user bins + git are reachable.
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+CLAUDE_BIN="$(command -v claude || echo "$HOME/.local/bin/claude")"
+
 REPO="/Users/juliusritter/agihouse"
 cd "$REPO"
 
@@ -17,7 +21,7 @@ git pull --ff-only || true
 
 # Hand the runbook to Claude headless. --permission-mode bypassPermissions lets it
 # edit the JSON, run the sanity check, commit, and push without prompts.
-claude -p "Follow the instructions in newlander/update-valuations.md to refresh company valuations, then commit and push the updated newlander/data/companies.json to main. Report a short summary of what moved." \
+"$CLAUDE_BIN" -p "Follow the instructions in newlander/update-valuations.md to refresh company valuations, then commit and push the updated newlander/data/companies.json to main. Report a short summary of what moved." \
   --permission-mode bypassPermissions
 
 echo "[$(date)] valuation refresh run complete"
