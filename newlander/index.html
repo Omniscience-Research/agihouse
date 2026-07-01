@@ -264,11 +264,17 @@
   .bk{display:flex;flex-wrap:wrap;gap:10px}
   .bk span{border:1px solid var(--line);padding:10px 16px;font-size:12px;color:var(--mute);letter-spacing:.04em;font-family:var(--body);transition:all .25s}
   .bk span:hover{color:var(--text);border-color:var(--line-2)}
-  .bk a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;height:66px;min-width:130px;padding:16px 22px;border:1px solid var(--line);transition:all .25s}
-  .bk a img{height:26px;width:auto;max-width:160px;opacity:.78;transition:opacity .25s}
-  .bk a:hover{border-color:var(--line-2);background:rgba(255,255,255,.04)}
-  .bk a:hover img{opacity:1}
-  @media(max-width:640px){.bk a{height:54px;min-width:104px;padding:12px 16px}.bk a img{height:20px;max-width:120px}}
+  .bk a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;height:72px;min-width:132px;padding:16px 24px;border:1px solid var(--line);transition:all .25s}
+  .bk a img{max-height:30px;max-width:150px;width:auto;height:auto;opacity:1;transition:transform .25s}
+  .bk a:hover{border-color:var(--line-2);background:rgba(255,255,255,.05)}
+  .bk a:hover img{transform:scale(1.05)}
+  /* optical-size normalization — compact / near-square marks read too small at a uniform cap */
+  .bk a img[alt="CRV"]{max-height:46px}
+  .bk a img[alt="8VC"]{max-height:38px}
+  .bk a img[alt="DCVC"]{max-height:40px}
+  .bk a img[alt="Replit"]{max-height:34px}
+  .bk a img[alt="Product Hunt"],.bk a img[alt="Grupa"],.bk a img[alt="Neurosity"],.bk a img[alt="Embed Chain"]{max-height:34px}
+  @media(max-width:640px){.bk a{height:58px;min-width:106px;padding:12px 16px}.bk a img{max-height:22px;max-width:118px}.bk a img[alt="CRV"]{max-height:34px}.bk a img[alt="8VC"]{max-height:28px}.bk a img[alt="DCVC"]{max-height:30px}}
 
   /* CTA */
   .ctaband{border:1px solid var(--line);padding:96px 60px;text-align:center;position:relative;overflow:hidden;background:var(--bg-2)}
@@ -283,6 +289,50 @@
 </style>
 </head>
 <body>
+<!-- ===== PRELOADER — gates the page until the WebGL hero scene has actually rendered
+     (prevents the green-canvas flash). Real progress: DOM → fonts → assets → US.init → frames. -->
+<style>
+  #preloader{position:fixed;inset:0;z-index:9999;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity .7s ease}
+  #preloader.done{opacity:0;pointer-events:none}
+  .pl-inner{display:flex;flex-direction:column;align-items:center;gap:20px;width:min(300px,66vw)}
+  .pl-mark{width:40px;height:40px;object-fit:contain;animation:plpulse 2.4s ease-in-out infinite}
+  @keyframes plpulse{0%,100%{opacity:.4;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+  .pl-count{font-family:var(--display,'Jost',sans-serif);font-weight:300;letter-spacing:.03em;font-size:62px;line-height:1;color:var(--text,#ECE9E1);display:flex;align-items:baseline;gap:3px}
+  .pl-pct{font-size:20px;color:var(--mute,#8b8b8b)}
+  .pl-bar{width:100%;height:1px;background:rgba(255,255,255,.14);overflow:hidden}
+  .pl-bar i{display:block;height:100%;width:0;background:var(--text,#ECE9E1);transition:width .4s cubic-bezier(.2,.7,.2,1)}
+  .pl-word{font-family:var(--body,sans-serif);text-transform:uppercase;letter-spacing:.28em;font-size:10px;color:var(--mute,#8b8b8b)}
+  /* belt-and-suspenders: keep the WebGL canvases hidden until the scene is ready */
+  body:not(.hero-ready) #us-hero>canvas,body:not(.hero-ready) #us-hero-2>canvas{opacity:0}
+  #us-hero>canvas,#us-hero-2>canvas{transition:opacity .6s ease}
+</style>
+<div id="preloader" role="progressbar" aria-label="Loading" aria-live="polite">
+  <div class="pl-inner">
+    <img class="pl-mark" src="assets/phoenix-mark.png" alt="">
+    <div class="pl-count"><span id="pl-num">0</span><span class="pl-pct">%</span></div>
+    <div class="pl-bar"><i id="pl-fill"></i></div>
+    <div class="pl-word">Loading the Nexus</div>
+  </div>
+</div>
+<script>
+  window.HeroPreloader=(function(){
+    var pct=0,target=6,done=false,raf,numEl,fillEl,el;
+    function render(){ if(numEl)numEl.textContent=Math.round(pct); if(fillEl)fillEl.style.width=pct.toFixed(1)+'%'; }
+    function loop(){ pct+=(target-pct)*0.07; if(pct>target-0.15)pct=Math.min(pct,target); render(); if(!done)raf=requestAnimationFrame(loop); }
+    function bump(t){ if(t>target)target=Math.min(t,99); }
+    function finish(){
+      if(done)return; done=true; cancelAnimationFrame(raf);
+      pct=100; render(); document.body.classList.add('hero-ready');
+      setTimeout(function(){ if(el)el.classList.add('done'); setTimeout(function(){ if(el&&el.parentNode)el.parentNode.removeChild(el); },820); },240);
+    }
+    function start(){ el=document.getElementById('preloader'); numEl=document.getElementById('pl-num'); fillEl=document.getElementById('pl-fill'); render(); loop(); bump(20); }
+    if(document.readyState!=='loading')start(); else document.addEventListener('DOMContentLoaded',start);
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){bump(42);});
+    window.addEventListener('load',function(){bump(68);});
+    setTimeout(finish,9000); // hard fallback — never stay stuck
+    return { bump:bump, heroReady:finish };
+  })();
+</script>
 
 <!-- UnicornStudio loader + synced portrait / name / logo cycle.
      The scene dithers only the portrait image layer; the person name + company logo
@@ -338,13 +388,23 @@
   var idx = 0;
   function tick(){ var p = PEOPLE[idx]; setPortrait(p); paintLabel(p); idx = (idx+1) % PEOPLE.length; }
 
+  function signalReady(){
+    // wait for the scene to actually paint a few frames before revealing (no green flash)
+    scenes.forEach(function(sp){ repaint(sp.scene); });
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){
+      setTimeout(function(){ if(window.HeroPreloader) window.HeroPreloader.heroReady(); }, 350);
+    });});
+  }
   function boot(){
+    if(window.HeroPreloader) window.HeroPreloader.bump(86);
     UnicornStudio.init().then(function(list){
       (list||[]).forEach(registerScene);
       paintLabel(PEOPLE[0]); // scene's baked-in default portrait is Aravind
       idx = 1;               // first tick advances to the next person
       setInterval(tick, HOLD);
-    }).catch(function(){ paintLabel(PEOPLE[0]); });
+      if(window.HeroPreloader) window.HeroPreloader.bump(94);
+      signalReady();
+    }).catch(function(){ paintLabel(PEOPLE[0]); if(window.HeroPreloader) window.HeroPreloader.heroReady(); });
   }
 
   var u = window.UnicornStudio;
@@ -353,7 +413,8 @@
     window.UnicornStudio = { isInitialized:false };
     var i = document.createElement('script');
     i.src = 'https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.2.5/dist/unicornStudio.umd.js';
-    i.onload = boot;
+    i.onload = function(){ if(window.HeroPreloader) window.HeroPreloader.bump(78); boot(); };
+    i.onerror = function(){ if(window.HeroPreloader) window.HeroPreloader.heroReady(); };
     (document.head||document.body).appendChild(i);
   }
 })();
