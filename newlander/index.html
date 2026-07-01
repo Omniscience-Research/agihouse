@@ -94,6 +94,17 @@
     letter-spacing:.24em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);
     padding:7px 12px;pointer-events:none;background:rgba(0,0,0,.3)}
 
+  /* crisp person name + company logo overlay, top-centre of each hero (swapped by JS in
+     sync with the cycling dithered portrait). Replaces the scene's baked-in name/logo. */
+  .hero-label{position:absolute;top:15%;left:50%;transform:translateX(-50%);z-index:3;pointer-events:none;
+    display:flex;flex-direction:column;align-items:center;gap:20px;width:max-content;max-width:92vw;text-align:center}
+  .hero-label .hl-name{font-family:var(--display);text-transform:uppercase;font-weight:400;color:var(--text);
+    font-size:clamp(15px,1.55vw,21px);letter-spacing:.34em;text-indent:.34em;white-space:nowrap}
+  .hero-label .hl-logo{height:clamp(24px,3vw,38px);width:auto;max-width:min(460px,70vw);object-fit:contain;
+    filter:drop-shadow(0 2px 12px rgba(0,0,0,.55))}
+  .hero-label.show .hl-name,.hero-label.show .hl-logo{animation:hlfade .55s cubic-bezier(.2,.7,.2,1)}
+  @keyframes hlfade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+
   /* ---- reveal ---- */
   .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
   .rv.in{opacity:1;transform:none}
@@ -273,43 +284,68 @@
 </head>
 <body>
 
-<!-- UnicornStudio loader + portrait cycle.
-     George's approach: keep the scene/effect exactly as-is and only swap the source
-     image feeding it. We grab the portrait image layer and call layer.setSource() on a
-     timer — the dither / glitter / god-rays / mouse-tether all stay untouched. -->
+<!-- UnicornStudio loader + synced portrait / name / logo cycle.
+     The scene dithers only the portrait image layer; the person name + company logo
+     were removed from the scene (their text texture can't be re-uploaded reliably at
+     runtime) and are now crisp HTML overlays. One timer swaps the portrait (via
+     layer.setSource) AND repaints the .hero-label so the name+logo always match the face. -->
 <script type="text/javascript">
 (function(){
-  // builders to cycle through; first one matches the scene's default (Aravind)
-  var PEOPLE = ['aravind','andrej','josh','anton'].map(function(n){
-    return new URL('assets/people/'+n+'.jpg', document.baseURI).href;
-  });
-  var HOLD = 3200; // ms per person
+  var BASE = document.baseURI;
+  function asset(p){ return new URL('assets/'+p, BASE).href; }
+  // Each person: dithered portrait + crisp name + company logo (combined PNG when two).
+  var PEOPLE = [
+    { slug:'aravind', name:'Aravind Srinivas', logo:'logos/perplexity.png'  },
+    { slug:'andrej',  name:'Andrej Karpathy',  logo:'logos/openai.png'      },
+    { slug:'josh',    name:'Josh Payne',       logo:'logos/hero-josh.png'   },
+    { slug:'anton',   name:'Anton Osika',      logo:'logos/lovable.png'     },
+    { slug:'jeremy',  name:'Jeremy Nixon',     logo:'logos/hero-jeremy.png' }
+  ];
+  var HOLD = 3400; // ms per person
+  // warm caches
+  PEOPLE.forEach(function(p){ [asset('people/'+p.slug+'.jpg'), asset(p.logo)].forEach(function(u){ var i=new Image(); i.src=u; }); });
 
-  function startCycle(scene){
+  // --- crisp HTML label (name + logo), shared across both hero variants ---
+  // (queried fresh each call — this script runs before the hero DOM is parsed)
+  function paintLabel(p){
+    [].slice.call(document.querySelectorAll('.hero-label')).forEach(function(el){
+      var n=el.querySelector('.hl-name'), lg=el.querySelector('.hl-logo');
+      if(n) n.textContent = p.name;
+      if(lg){ lg.src = asset(p.logo); lg.alt = p.name + ' — company'; }
+      el.classList.remove('show'); void el.offsetWidth; el.classList.add('show'); // retrigger fade
+    });
+  }
+
+  // --- scene portrait swap (same mechanism as before) ---
+  var scenes = [];
+  function repaint(s){ if(s.renderNFrames) s.renderNFrames(4); else if(s.requestSceneRender) s.requestSceneRender(); }
+  function registerScene(scene){
     if(!scene || !scene.getLayers) return;
-    // the portrait is the first image layer (the per-person photo, before the logo)
     var meta = scene.getLayers().filter(function(l){ return (l.type||l.layerType)==='image'; })[0];
     if(!meta) return;
     var layer = scene.getLayer(meta.id);
     if(!layer || typeof layer.setSource !== 'function') return;
-    PEOPLE.forEach(function(u){ var im=new Image(); im.src=u; }); // warm the cache
-    // force a few synchronous draw passes so the new photo flattens into the
-    // texture the dither effect reads (requestSceneRender alone is too late/once).
-    function repaint(){
-      if(scene.renderNFrames) scene.renderNFrames(4);
-      else if(scene.requestSceneRender) scene.requestSceneRender();
-    }
-    var idx = 0;
-    setInterval(function(){
-      idx = (idx+1) % PEOPLE.length;
-      layer.setSource(PEOPLE[idx], { onLoad:repaint });
-      // a couple of delayed nudges in case the texture upload lands a frame later
-      setTimeout(repaint, 60); setTimeout(repaint, 180);
-    }, HOLD);
+    scenes.push({ scene:scene, layer:layer });
+  }
+  function setPortrait(p){
+    scenes.forEach(function(sp){
+      sp.layer.setSource(asset('people/'+p.slug+'.jpg'), { onLoad:function(){ repaint(sp.scene); } });
+      setTimeout(function(){ repaint(sp.scene); }, 60);
+      setTimeout(function(){ repaint(sp.scene); }, 180);
+    });
   }
 
-  // init() resolves with an ARRAY of scenes — cycle every one (both hero variants)
-  function boot(){ UnicornStudio.init().then(function(scenes){ (scenes||[]).forEach(startCycle); }).catch(function(){}); }
+  var idx = 0;
+  function tick(){ var p = PEOPLE[idx]; setPortrait(p); paintLabel(p); idx = (idx+1) % PEOPLE.length; }
+
+  function boot(){
+    UnicornStudio.init().then(function(list){
+      (list||[]).forEach(registerScene);
+      paintLabel(PEOPLE[0]); // scene's baked-in default portrait is Aravind
+      idx = 1;               // first tick advances to the next person
+      setInterval(tick, HOLD);
+    }).catch(function(){ paintLabel(PEOPLE[0]); });
+  }
 
   var u = window.UnicornStudio;
   if(u && u.init){ boot(); }
@@ -343,8 +379,10 @@
      logo, dithered portrait, bottom gradient) is rendered by the self-hosted
      UnicornStudio scene below. Only the non-scene coords + scroll cue are overlaid. -->
 <header class="hero">
-  <div id="us-hero" data-us-project-src="assets/agi-hero-scene.json" data-us-scale="1" data-us-dpi="1.5"></div>
+  <div id="us-hero" data-us-project-src="assets/agi-hero-scene.json?v=2" data-us-scale="1" data-us-dpi="1.5"></div>
   <span class="hero-badge">Dither &middot; Original</span>
+  <!-- crisp name + company logo, swapped in sync with the cycling portrait -->
+  <div class="hero-label show"><div class="hl-name">Aravind Srinivas</div><img class="hl-logo" src="assets/logos/perplexity.png" alt="Perplexity — company"></div>
 
   <div class="wrap hero-overlay">
     <div class="hero-bot">
@@ -358,8 +396,9 @@
      Same scene/effect/cycle as above, but loads agi-hero-scene-fine.json whose
      glyph-dither grid is doubled (cells half the size → pixels 50% smaller). -->
 <header class="hero">
-  <div id="us-hero-2" data-us-project-src="assets/agi-hero-scene-fine.json" data-us-scale="1" data-us-dpi="1.5"></div>
+  <div id="us-hero-2" data-us-project-src="assets/agi-hero-scene-fine.json?v=2" data-us-scale="1" data-us-dpi="1.5"></div>
   <span class="hero-badge">Dither &middot; 50% Finer</span>
+  <div class="hero-label show"><div class="hl-name">Aravind Srinivas</div><img class="hl-logo" src="assets/logos/perplexity.png" alt="Perplexity — company"></div>
 
   <div class="wrap hero-overlay">
     <div class="hero-bot">
