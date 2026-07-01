@@ -89,29 +89,29 @@
   .scrollcue .ln{width:46px;height:1px;background:linear-gradient(90deg,var(--mute),transparent);position:relative;overflow:hidden}
   .scrollcue .ln::after{content:"";position:absolute;inset:0;width:18px;background:var(--text);animation:slide 2.4s infinite}
   @keyframes slide{0%{transform:translateX(-20px)}100%{transform:translateX(48px)}}
-  /* comparison badge (top-left of each hero) */
-  .hero-badge{position:absolute;top:90px;left:40px;z-index:3;font-family:var(--body);font-size:10px;
-    letter-spacing:.24em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);
-    padding:7px 12px;pointer-events:none;background:rgba(0,0,0,.3)}
+  /* static left lockup — AGI HOUSE SF + tagline, recreated as crisp HTML now that the
+     scene exports "just the image". Sits in the empty left half; the portrait is right-of-centre. */
+  .hero-lockup{position:absolute;top:50%;left:8%;transform:translateY(-50%);z-index:3;pointer-events:none;max-width:46vw}
+  .hero-lockup .hl-title{font-family:var(--display);text-transform:uppercase;font-weight:300;color:var(--text);
+    font-size:clamp(38px,7vw,94px);line-height:.98;letter-spacing:.06em;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+  .hero-lockup .hl-tag{margin-top:24px;font-family:var(--body);text-transform:uppercase;color:var(--mute);
+    font-size:clamp(11px,1.15vw,15px);letter-spacing:.34em;text-indent:.34em}
+  @media(max-width:820px){.hero-lockup{left:50%;transform:translate(-50%,0);top:13%;text-align:center;max-width:90vw}
+    .hero-lockup .hl-tag{text-indent:0;letter-spacing:.26em}}
 
   /* crisp person name + company logo overlay, top-centre of each hero (swapped by JS in
      sync with the cycling dithered portrait). Replaces the scene's baked-in name/logo. */
   /* centred horizontally over the head (portrait sits right-of-centre) and just above it */
-  .hero-label{position:absolute;top:45%;left:66%;transform:translate(-50%,-100%);z-index:3;pointer-events:none;
-    display:flex;flex-direction:column;align-items:center;gap:18px;width:max-content;max-width:90vw;text-align:center}
-  @media(max-width:820px){.hero-label{left:50%;top:40%}}
+  .hero-label{position:absolute;top:23%;left:66%;transform:translate(-50%,-100%);z-index:3;pointer-events:none;
+    display:flex;flex-direction:column;align-items:center;gap:16px;width:max-content;max-width:90vw;text-align:center}
+  @media(max-width:820px){.hero-label{left:50%;top:24%}}
   .hero-label .hl-name{font-family:var(--display);text-transform:uppercase;font-weight:400;color:var(--text);
     font-size:clamp(15px,1.55vw,21px);letter-spacing:.34em;text-indent:.34em;white-space:nowrap}
   .hero-label .hl-logo{height:clamp(24px,3vw,38px);width:auto;max-width:min(460px,70vw);object-fit:contain;
     filter:drop-shadow(0 2px 12px rgba(0,0,0,.55))}
+  /* one-time intro fade on first load only (no per-swap animation — the cycle is a hard cut) */
   .hero-label.show .hl-name,.hero-label.show .hl-logo{animation:hlfade .55s cubic-bezier(.2,.7,.2,1)}
   @keyframes hlfade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
-
-  /* fade-through-black between people — covers the whole hero (portrait + label) so the
-     swap happens in darkness, then fades back. Toggled by the cycle script. */
-  .hero-fade{position:absolute;inset:0;z-index:4;background:#000;opacity:0;pointer-events:none;
-    transition:opacity .3s ease}
-  .hero-fade.on{opacity:1}
 
   /* ---- reveal ---- */
   .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -356,7 +356,7 @@
     { slug:'aravind', name:'Aravind Srinivas', logo:'logos/perplexity.png'  },
     { slug:'andrej',  name:'Andrej Karpathy',  logo:'logos/openai.png'      },
     { slug:'josh',    name:'Josh Payne',       logo:'logos/hero-josh.png'   },
-    { slug:'anton',   name:'Anton Osika',      logo:'logos/lovable.png'     },
+    { slug:'anton',   name:'Anton Osika',      logo:'logos/hero-anton.png'  },
     { slug:'jeremy',  name:'Jeremy Nixon',     logo:'logos/hero-jeremy.png' }
   ];
   var HOLD = 3400; // ms per person
@@ -370,7 +370,7 @@
       var n=el.querySelector('.hl-name'), lg=el.querySelector('.hl-logo');
       if(n) n.textContent = p.name;
       if(lg){ lg.src = asset(p.logo); lg.alt = p.name + ' — company'; }
-      el.classList.remove('show'); void el.offsetWidth; el.classList.add('show'); // retrigger fade
+      // hard cut — no transition; name + logo swap instantly with the portrait
     });
   }
 
@@ -394,13 +394,10 @@
   }
 
   var idx = 0;
-  // fade the whole hero to black, swap portrait + label while dark, then fade back
+  // hard cut — swap the dithered portrait + name/logo instantly, no fade
   function tick(){
     var p = PEOPLE[idx];
-    var fades = [].slice.call(document.querySelectorAll('.hero-fade'));
-    fades.forEach(function(f){ f.classList.add('on'); });        // fade to black (~300ms)
-    setTimeout(function(){ setPortrait(p); paintLabel(p); }, 300); // swap in the dark
-    setTimeout(function(){ fades.forEach(function(f){ f.classList.remove('on'); }); }, 360); // fade back
+    setPortrait(p); paintLabel(p);
     idx = (idx+1) % PEOPLE.length;
   }
 
@@ -462,9 +459,13 @@
      data-us-project-src at the new file and bump ?v= to bust the cache — everything else
      (the .hero-label overlay + cycle) stays as-is. -->
 <header class="hero">
-  <div id="us-hero" data-us-project-src="assets/agi-hero-scene-fine.json?v=2" data-us-scale="1" data-us-dpi="1.5"></div>
-  <!-- fade-through-black transition, animated over the whole hero on each portrait/label swap -->
-  <div class="hero-fade" aria-hidden="true"></div>
+  <div id="us-hero" data-us-project-src="assets/agi-hero-scene-fine.json?v=3" data-us-scale="1" data-us-dpi="1.5"></div>
+  <!-- static left lockup — the AGI House title, recreated as crisp HTML now that the
+       scene exports "just the image" (the title text was removed from the scene) -->
+  <div class="hero-lockup">
+    <div class="hl-title">AGI House SF</div>
+    <div class="hl-tag">Researchers Building Unicorns</div>
+  </div>
   <!-- crisp name + company logo, centred above the head, swapped in sync with the portrait -->
   <div class="hero-label show"><div class="hl-name">Aravind Srinivas</div><img class="hl-logo" src="assets/logos/perplexity.png" alt="Perplexity — company"></div>
 
