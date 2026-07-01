@@ -3,7 +3,6 @@
   "asOf": "2026-06-29",
   "currency": "USD",
   "companies": [
-    { "company": "Anthropic",            "founder": "Benjamin Mann",        "role": "Co-founder",                 "valuationB": 965,   "display": "$965B",  "note": "Series H, May 2026 (post-money). Founding team.", "source": "https://www.anthropic.com/news/series-h" },
     { "company": "OpenAI",               "founder": "Andrej Karpathy",      "role": "Founding member",            "valuationB": 852,   "display": "$852B",  "note": "Round closed Mar 2026 at $852B. John Schulman also a co-founder.", "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html" },
     { "company": "Perplexity",           "founder": "Aravind Srinivas",     "role": "Co-founder & CEO",           "valuationB": 20,    "display": "$20B",   "note": "Sept 2025 round; founded out of the AGI House SF community.", "source": "https://www.forbes.com/profile/aravind-srinivas/" },
     { "company": "Thinking Machines Lab","founder": "Luke Metz",            "role": "Co-founder",                 "valuationB": 12,    "display": "$12B",   "note": "$2B seed, Jul 2025. John Schulman is Chief Scientist.", "source": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab" },

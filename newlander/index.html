@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>AGI House SF — Phoenix</title>
-<meta name="description" content="AGI House SF — the nexus for technical talent advancing humanity through invention. Roommates have founded companies worth over a trillion dollars. Hackathons, residencies, and dinners in Hillsborough, CA." />
+<meta name="description" content="AGI House SF — the nexus for technical talent advancing humanity through invention. Roommates have founded companies worth ~$1 trillion. Hackathons, residencies, and dinners in Hillsborough, CA." />
 
 <!-- Favicon: the AGI House phoenix -->
 <link rel="icon" type="image/png" href="assets/phoenix-mark.png" />
@@ -527,11 +527,11 @@
     <div>
       <h2 class="st rv" style="max-width:16ch">The Nexus for Progress in the Intelligence Age</h2>
       <p class="lead rv">AGI House SF is the nexus for technical talent to <b>advance humanity through technological invention.</b></p>
-      <p class="lead rv">We work with and support the world's best AI and deep-tech founders. We've hosted <b>80+ build-a-thons and hackathons</b> — inventions like <b>Lovable</b> and <b>Perplexity</b> came out of them. <b>Ten of the seventy</b> AGI House-series roommates are unicorn founders, with <b>nine more</b> behind $100M+ companies. Together, roommates have founded companies worth <b>over a trillion dollars.</b></p>
+      <p class="lead rv">We work with and support the world's best AI and deep-tech founders. We've hosted <b>80+ build-a-thons and hackathons</b> — inventions like <b>Lovable</b> and <b>Perplexity</b> came out of them. <b>Ten of the seventy</b> AGI House-series roommates are unicorn founders, with <b>nine more</b> behind $100M+ companies. Together, roommates have founded companies worth <b>~$1 trillion.</b></p>
     </div>
     <div class="readout rv">
       <div class="stat-hero" id="stat-total" tabindex="0" aria-describedby="breakdown">
-        <div class="k display" id="total-num">$1T+</div>
+        <div class="k display" id="total-num">~$1T</div>
         <div class="t">Companies Founded <span class="info" aria-hidden="true">&#9432;</span></div>
         <div class="breakdown" id="breakdown" role="tooltip">
           <div class="bd-h">Companies our roommates co-founded — added up</div>
@@ -616,7 +616,7 @@
   <h2 class="st rv" style="margin-bottom:40px">A Short<br>History</h2>
 
   <p class="hist-lead rv">In February 2022, Jeremy Nixon put his own name on the lease for a house in Hillsborough and started inviting researchers to live and build there. That fall he and <b>Andrej Karpathy</b> ran the first hackathons out of the living room. There was no brand and no plan, just a full house of people who wanted to work on intelligence together. It became the first AGI House.</p>
-  <p class="hist-lead rv"><b>Perplexity</b> was started there. <b>Martian</b> was invented and won a hackathon there. The founders who came through, the group that got called the PayPal Mafia of AI, went on to build companies now worth <b>over a trillion dollars</b>. Across 2022 and 2023 the house ran dozens of hackathons, from Whisper and the first ChatGPT weekend to LangChain, GPT-4, and the CRV agents hackathon where MultiOn and AutoGPT first showed up.</p>
+  <p class="hist-lead rv"><b>Perplexity</b> was started there. <b>Martian</b> was invented and won a hackathon there. The founders who came through, the group that got called the PayPal Mafia of AI, went on to build companies now worth <b>~$1 trillion</b>. Across 2022 and 2023 the house ran dozens of hackathons, from Whisper and the first ChatGPT weekend to LangChain, GPT-4, and the CRV agents hackathon where MultiOn and AutoGPT first showed up.</p>
   <div class="mission rv">The mission never changed: give the people building the future a place to build it together, then get out of their way.</div>
 
   <!-- the two houses -->
@@ -768,7 +768,7 @@
 
       // headline number — floor to whole trillions so it reads as a conservative floor ("$1T+")
       const tnum=document.getElementById('total-num');
-      if(tnum) tnum.textContent= total>=1000 ? '$'+Math.floor(total/1000)+'T+' : '$'+Math.round(total)+'B+';
+      if(tnum) tnum.textContent = total>=1500 ? '$'+Math.floor(total/1000)+'T+' : (total>=900 ? '~$1T' : '$'+Math.round(total)+'B+');
 
       // breakdown rows
       const rows=document.getElementById('bd-rows');
