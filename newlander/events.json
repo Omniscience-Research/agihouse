@@ -1,30 +1,12 @@
 {
-  "generatedAt": "2026-06-26T21:55:03Z",
+  "generatedAt": "2026-07-03T19:55:07Z",
   "upcoming": [
-    {
-      "title": "AI Neo Lab +1 Brunch",
-      "startAt": "2026-06-28T18:00:00.000Z",
-      "endAt": "2026-06-28T20:00:00.000Z",
-      "url": "https://luma.com/neolabplusonebrunch",
-      "coverUrl": "https://images.lumacdn.com/uploads/y1/fef61b18-356b-4e00-90da-2bc910dcd19a.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "996 & Picnics - Deep Work & Garden Lunch II",
-      "startAt": "2026-07-01T15:30:00.000Z",
-      "endAt": "2026-07-02T04:00:00.000Z",
-      "url": "https://luma.com/996II",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/73/f7d4908c-b430-49c9-8b39-8a6f0ce0e48f",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Enhanced Humans I: New Way of Working",
       "startAt": "2026-07-04T17:00:00.000Z",
       "endAt": "2026-07-04T19:00:00.000Z",
       "url": "https://luma.com/enhancedhumansI",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/yl/35c06a9f-fe5b-4598-93de-bdde26f03157",
+      "coverUrl": "https://images.lumacdn.com/uploads/8y/3622fdaa-a068-4f82-aae8-d63cd9a4be5f.jpg",
       "city": "",
       "venue": ""
     },
@@ -32,8 +14,26 @@
       "title": "AutoResearch",
       "startAt": "2026-07-04T22:30:00.000Z",
       "endAt": "2026-07-05T01:00:00.000Z",
-      "url": "https://luma.com/agi-u7k6",
+      "url": "https://luma.com/2xr67tfz",
       "coverUrl": "https://images.lumacdn.com/gallery-images/cz/d1f8ae12-e094-4599-96f1-ba941940b2a1.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Inference Hackathon",
+      "startAt": "2026-07-05T01:00:00.000Z",
+      "endAt": "2026-07-05T05:00:00.000Z",
+      "url": "https://luma.com/InferenceHackathon",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/mh/61829d4f-dce0-45be-91bd-ffb546b970e1",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Recursive Self-Improvement Hackathon",
+      "startAt": "2026-07-06T01:00:00.000Z",
+      "endAt": "2026-07-06T05:00:00.000Z",
+      "url": "https://luma.com/recursiveselfimprovement",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/yl/35c06a9f-fe5b-4598-93de-bdde26f03157",
       "city": "",
       "venue": ""
     },
@@ -47,29 +47,38 @@
       "venue": ""
     },
     {
-      "title": "Science Fiction Reading Night",
-      "startAt": "2026-07-09T01:00:00.000Z",
-      "endAt": "2026-07-09T05:00:00.000Z",
+      "title": "The Crossing: From Fantasy to Reality",
+      "startAt": "2026-07-10T01:00:00.000Z",
+      "endAt": "2026-07-10T05:00:00.000Z",
       "url": "https://luma.com/ScienceFictionReadingNight",
-      "coverUrl": "https://images.lumacdn.com/uploads/4m/253fd4c7-8ad2-4204-b5b7-74b1cd130298.png",
+      "coverUrl": "https://images.lumacdn.com/uploads/y0/259ea127-8eae-4d70-a2d4-9a21ea840393.png",
       "city": "",
       "venue": ""
     },
     {
-      "title": "Mechanistic Interpretability",
-      "startAt": "2026-07-15T01:30:00.000Z",
-      "endAt": "2026-07-15T03:00:00.000Z",
-      "url": "https://luma.com/mechanistic.interpretability",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/bd/2f984afb-e732-4f78-ad09-e5c5c16d9af7",
+      "title": "Hardware Hackathon",
+      "startAt": "2026-07-12T01:00:00.000Z",
+      "endAt": "2026-07-12T05:00:00.000Z",
+      "url": "https://luma.com/hardwarehackathon",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/sv/c14ea5cc-0118-46a0-aaba-7d405125c7b4",
       "city": "",
       "venue": ""
     },
     {
-      "title": "Mechanistic Interpretability",
+      "title": "Infinity Unconference",
+      "startAt": "2026-07-13T01:00:00.000Z",
+      "endAt": "2026-07-13T05:00:00.000Z",
+      "url": "https://luma.com/infinityunconference",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/l9/8a9304d4-ae5f-4fa4-87d2-acac12d8a637",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Mechanistic Interpretability Reading Group",
       "startAt": "2026-07-15T01:30:00.000Z",
       "endAt": "2026-07-15T05:00:00.000Z",
       "url": "https://luma.com/mechanisticinterpretability",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/3o/1eac0497-1680-41a6-ba52-6b3b2cc61025",
+      "coverUrl": "https://images.lumacdn.com/uploads/xb/8d0f9dd1-6caf-47c7-8fda-98ec90980b8c.png",
       "city": "",
       "venue": ""
     },
@@ -104,7 +113,7 @@
       "title": "Life of the Mind Dinner",
       "startAt": "2026-07-19T01:00:00.000Z",
       "endAt": "2026-07-19T05:00:00.000Z",
-      "url": "https://luma.com/LifeoftheMindDinner",
+      "url": "https://luma.com/fv6k6gsh",
       "coverUrl": "https://images.lumacdn.com/uploads/u2/2e125d63-28dc-49bd-902d-d6850fbce373.png",
       "city": "",
       "venue": ""
@@ -113,7 +122,7 @@
       "title": "ShinkaEvolve: Open-Ended & Sample-Efficient Program Evolution \u2014 Reading & Discussion",
       "startAt": "2026-07-23T01:30:00.000Z",
       "endAt": "2026-07-23T04:00:00.000Z",
-      "url": "https://luma.com/agi-49cn",
+      "url": "https://luma.com/ShinkaEvolve",
       "coverUrl": "https://images.lumacdn.com/gallery-images/zt/4d94593d-bf72-42cc-9954-5d3b57ccb3e1.png",
       "city": "",
       "venue": ""
@@ -128,11 +137,29 @@
       "venue": ""
     },
     {
+      "title": "Mechanism Design",
+      "startAt": "2026-07-31T01:00:00.000Z",
+      "endAt": "2026-07-31T05:00:00.000Z",
+      "url": "https://luma.com/MechanismDesign",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/x1/11a76033-3f05-479f-97e3-7a140bf272ff",
+      "city": "",
+      "venue": ""
+    },
+    {
       "title": "Build-a-thon: Drone Engineering",
       "startAt": "2026-08-08T17:00:00.000Z",
       "endAt": "2026-08-09T04:00:00.000Z",
-      "url": "https://luma.com/agi-wlyh",
+      "url": "https://luma.com/DroneEngineering",
       "coverUrl": "https://images.unsplash.com/photo-1640262653848-adea46405e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2NHx8ZHJvbmUlMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3ODIzMTk1MTN8Mg&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Robotics Build-a-thon",
+      "startAt": "2026-08-09T02:00:00.000Z",
+      "endAt": "2026-08-09T05:00:00.000Z",
+      "url": "https://luma.com/RoboticsBuild-a-thon",
+      "coverUrl": "https://images.lumacdn.com/uploads/je/39bf55b9-a8d8-407c-a3bb-f10300f46d7b.png",
       "city": "",
       "venue": ""
     },
@@ -142,6 +169,15 @@
       "endAt": "2026-08-13T17:00:00.000Z",
       "url": "https://luma.com/whenaibuildsitself",
       "coverUrl": "https://images.lumacdn.com/gallery-images/61/7941172d-f1fc-43a1-a883-c7ac02d97e19",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Synesthesia School",
+      "startAt": "2026-08-14T01:00:00.000Z",
+      "endAt": "2026-08-14T05:00:00.000Z",
+      "url": "https://luma.com/SynesthesiaSchool",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/rc/5f979993-5700-481b-b6a9-06b50d5385df",
       "city": "",
       "venue": ""
     },
@@ -164,6 +200,24 @@
       "venue": ""
     },
     {
+      "title": "OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration",
+      "startAt": "2026-08-26T10:00:00.000Z",
+      "endAt": "2026-08-26T14:00:00.000Z",
+      "url": "https://luma.com/OPUS_TowardsEfficientAndPrincipledData",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ry/bd098b7b-aae7-495c-9b4d-2ff4c014a61e",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "NeoTranshumanist Eschatology",
+      "startAt": "2026-08-28T01:00:00.000Z",
+      "endAt": "2026-08-28T05:00:00.000Z",
+      "url": "https://luma.com/NeoTranshumanistEschatology",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/xy/13fae58d-87bd-455a-8c6d-c1ba52df7767",
+      "city": "",
+      "venue": ""
+    },
+    {
       "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
       "startAt": "2026-09-03T01:30:00.000Z",
       "endAt": "2026-09-03T03:00:00.000Z",
@@ -173,11 +227,47 @@
       "venue": ""
     },
     {
+      "title": "Computational Memetics",
+      "startAt": "2026-09-11T01:00:00.000Z",
+      "endAt": "2026-09-11T05:00:00.000Z",
+      "url": "https://luma.com/ComputationalMemetics",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/j5/e0d9e03b-63b3-452b-8899-3fc8f848a4bb",
+      "city": "",
+      "venue": ""
+    },
+    {
       "title": "The California Peptide Club VI",
       "startAt": "2026-09-20T00:30:00.000Z",
       "endAt": "2026-09-20T05:30:00.000Z",
       "url": "https://luma.com/agi-empy",
       "coverUrl": "https://images.lumacdn.com/gallery-images/21/171e0794-3f09-40f2-a4d1-72eb76299921",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Worldview Building",
+      "startAt": "2026-09-25T01:00:00.000Z",
+      "endAt": "2026-09-25T05:00:00.000Z",
+      "url": "https://luma.com/WorldviewBuilding",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/x1/11a76033-3f05-479f-97e3-7a140bf272ff",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Space (Rockets + Satellites)",
+      "startAt": "2026-09-26T02:00:00.000Z",
+      "endAt": "2026-09-26T05:00:00.000Z",
+      "url": "https://luma.com/Space_Rockets_Satellites",
+      "coverUrl": "https://images.lumacdn.com/uploads/vh/de1bfa1b-4977-495c-aac4-3ba8582c997a.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The Future of Ontology",
+      "startAt": "2026-10-09T01:00:00.000Z",
+      "endAt": "2026-10-09T05:00:00.000Z",
+      "url": "https://luma.com/TheFutureofOntology",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ry/bd098b7b-aae7-495c-9b4d-2ff4c014a61e",
       "city": "",
       "venue": ""
     },
@@ -200,6 +290,78 @@
       "venue": ""
     },
     {
+      "title": "Computationalism",
+      "startAt": "2026-10-23T01:00:00.000Z",
+      "endAt": "2026-10-23T05:00:00.000Z",
+      "url": "https://luma.com/Computationalism",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/xs/47c724b6-d63f-40c2-8277-e7436cdb4bb0.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Flight",
+      "startAt": "2026-10-31T02:00:00.000Z",
+      "endAt": "2026-10-31T05:00:00.000Z",
+      "url": "https://luma.com/Flight",
+      "coverUrl": "https://images.lumacdn.com/uploads/r4/424af432-400d-4e3d-a96b-0743307a7827.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Ravenclaw Common Room",
+      "startAt": "2026-11-06T02:00:00.000Z",
+      "endAt": "2026-11-06T06:00:00.000Z",
+      "url": "https://luma.com/RavenclawCommonRoom",
+      "coverUrl": "https://images.unsplash.com/photo-1594399429950-3bc814d4081c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHwxfHxSYXZlbmNsYXd8ZW58MHx8fHwxNzgyOTM5Mjg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Metacognition",
+      "startAt": "2026-11-06T02:00:00.000Z",
+      "endAt": "2026-11-06T06:00:00.000Z",
+      "url": "https://luma.com/Metacognition",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/lr/7abe3092-628a-42a3-b74e-4cfd56a4d79f",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Alexandria / The Great Library",
+      "startAt": "2026-11-20T02:00:00.000Z",
+      "endAt": "2026-11-20T06:00:00.000Z",
+      "url": "https://luma.com/AlexandriaTheGreatLibrary",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/vn/e95edc2d-7ad2-45a0-ba4c-393e17cb8f60",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Information Theory Meetup",
+      "startAt": "2026-11-20T02:00:00.000Z",
+      "endAt": "2026-11-20T06:00:00.000Z",
+      "url": "https://luma.com/InformationTheoryMeetup",
+      "coverUrl": "https://images.unsplash.com/photo-1560416313-414b33c856a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw4fHxJbmZvcm1hdGlvbnxlbnwwfHx8fDE3ODI5Mzk0MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Chips & Compute",
+      "startAt": "2026-11-29T03:00:00.000Z",
+      "endAt": "2026-11-29T06:00:00.000Z",
+      "url": "https://luma.com/ChipsandCompute",
+      "coverUrl": "https://images.lumacdn.com/uploads/8z/accc9af6-fd36-47d7-93c3-8f5a2fce9ec8.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Cosmogenesis",
+      "startAt": "2026-12-04T02:00:00.000Z",
+      "endAt": "2026-12-04T06:00:00.000Z",
+      "url": "https://luma.com/Cosmogenesis",
+      "coverUrl": "https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw3fHxjb3Ntb3xlbnwwfHx8fDE3ODI5Mzk1OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
       "title": "Ascension (Uploading / Universe Escape Meetup)",
       "startAt": "2027-01-08T18:00:00.000Z",
       "endAt": "2027-01-11T04:00:00.000Z",
@@ -210,6 +372,42 @@
     }
   ],
   "past": [
+    {
+      "title": "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents",
+      "startAt": "2026-07-01T17:30:00.000Z",
+      "endAt": "2026-07-01T18:30:00.000Z",
+      "url": "https://luma.com/DarwinGodelMachine",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ua/c2f85aab-5bf5-4576-96f4-66994e7d1c87",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Understanding Reasoning Collapse in LLM Agent Reinforcement Learning",
+      "startAt": "2026-07-01T17:00:00.000Z",
+      "endAt": "2026-07-01T18:00:00.000Z",
+      "url": "https://luma.com/UnderstandingReasoningCollapseinLLMAgent",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/21/f9c1e8fc-6255-4c93-b011-bf8221d19748",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "996 & Picnics - Deep Work & Garden Lunch II",
+      "startAt": "2026-07-01T15:30:00.000Z",
+      "endAt": "2026-07-02T04:00:00.000Z",
+      "url": "https://luma.com/996II",
+      "coverUrl": "https://images.lumacdn.com/uploads/b1/f94a4ec9-9b24-4c10-ab2f-0aa147ddf373.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AI Neo Lab +1 Brunch",
+      "startAt": "2026-06-28T18:00:00.000Z",
+      "endAt": "2026-06-28T20:00:00.000Z",
+      "url": "https://luma.com/neolabplusonebrunch",
+      "coverUrl": "https://images.lumacdn.com/uploads/y1/fef61b18-356b-4e00-90da-2bc910dcd19a.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Genomic Sequencing at Home - with @SethSHowes and Augmentiv Labs",
       "startAt": "2026-06-25T02:00:00.000Z",
