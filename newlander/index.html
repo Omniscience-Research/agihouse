@@ -306,7 +306,9 @@
     display:flex;align-items:center;color:#fff;opacity:0;transition:opacity .25s;padding:0}
   .hc-arrow svg{width:22px;height:22px;filter:drop-shadow(0 1px 4px rgba(0,0,0,.6))}
   .house-card:hover .hc-arrow{opacity:.85}
-  .hc-arrow:hover{opacity:1!important}
+  .hc-arrow:hover,.hc-arrow:focus{opacity:1!important}
+  .hc-arrow:focus{outline:1px solid var(--text);outline-offset:-4px}
+  .hc-arrow:focus:not(:focus-visible){outline:none}
   .hc-arrow--prev{left:0;justify-content:flex-start;padding-left:14px}
   .hc-arrow--next{right:0;justify-content:flex-end;padding-right:14px}
   .house-card .hc-meta{padding:18px 22px 22px;border-top:1px solid var(--line)}
