@@ -1,962 +1,978 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>AGI House</title>
-    <meta property="og:title" content="Home | AGI House" />
-    <meta
-      property="og:image"
-      content="img/assets/neo.jpg"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta content="telephone=no" name="format-detection" />
-    <meta name="HandheldFriendly" content="true" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"
-    />
-    <!-- Template Vendor's Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
-    <!-- Template Main Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <!-- Favicons & App Icons -->
-    <link rel="manifest" href="img/content/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
-    <script
-      src="https://kit.fontawesome.com/f15c1cc7e2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <link rel="icon" type="image/x-icon" href="img/content/favicon.ico" /> -->
-  </head>
-  <body>
-    <div data-barba="wrapper">
-      <!-- Transition Curtain-->
-      <!-- TRANSITION CURTAINS -->
-      <!-- page curtain AJAX transition -->
-      <div class="curtain transition-curtain" id="js-page-transition-curtain">
-        <div class="curtain__wrapper-svg">
-          <svg
-            class="curtain-svg"
-            viewBox="0 0 1920 1080"
-            preserveAspectRatio="none"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <!-- Default Rectangle -->
-            <path
-              class="curtain-svg__normal"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
-            ></path>
-            <!-- - Default Rectangle -->
-            <!-- Curve Top -->
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-desktop"
-              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-mobile"
-              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
-            ></path>
-            <!-- - Curve Top -->
-            <!-- Curve Bottom -->
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
-            ></path>
-            <!-- - Curve Bottom -->
-          </svg>
-        </div>
-      </div>
-      <!-- - page curtain AJAX transition -->
-      <!-- header curtain show/hide -->
-      <div class="header-curtain curtain" id="js-header-curtain">
-        <div class="curtain__wrapper-svg">
-          <svg
-            class="curtain-svg"
-            viewBox="0 0 1920 1080"
-            preserveAspectRatio="none"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <!-- Default Rectangle -->
-            <path
-              class="curtain-svg__normal"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
-            ></path>
-            <!-- - Default Rectangle -->
-            <!-- Curve Top -->
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-desktop"
-              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-mobile"
-              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
-            ></path>
-            <!-- - Curve Top -->
-            <!-- Curve Bottom -->
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
-            ></path>
-            <!-- - Curve Bottom -->
-          </svg>
-        </div>
-      </div>
-      <!-- - header curtain show/hide -->
-      <!-- header curtain AJAX transition -->
-      <div
-        class="header-curtain header-curtain_transition curtain"
-        id="js-header-curtain-transition"
-      >
-        <div class="curtain__wrapper-svg">
-          <svg
-            class="curtain-svg"
-            viewBox="0 0 1920 1080"
-            preserveAspectRatio="none"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <!-- Default Rectangle -->
-            <path
-              class="curtain-svg__normal"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
-            ></path>
-            <!-- - Default Rectangle -->
-            <!-- Curve Top -->
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-desktop"
-              d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_top-mobile"
-              d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
-            ></path>
-            <!-- - Curve Top -->
-            <!-- Curve Bottom -->
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
-            ></path>
-            <path
-              class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
-              d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
-            ></path>
-            <!-- - Curve Bottom -->
-          </svg>
-        </div>
-      </div>
-      <!-- - header curtain AJAX transition -->
-      <!-- - TRANSITION CURTAINS -->
-      <!-- Cursor Follower-->
-      <div class="cursor" id="js-cursor">
-        <div class="cursor__wrapper">
-          <!-- circles -->
-          <div class="cursor__follower">
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <circle
-                id="inner"
-                cx="25"
-                cy="25"
-                r="24"
-                style="opacity: 0.6"
-              ></circle>
-              <circle
-                id="outer"
-                cx="25"
-                cy="25"
-                r="24"
-                style="
-                  stroke-dashoffset: 252.327;
-                  stroke-dasharray: 0px, 999999px;
-                "
-              ></circle>
-            </svg>
-          </div>
-          <!-- - circles -->
-          <!-- arrows -->
-          <div class="cursor__arrows">
-            <div class="cursor__arrow cursor__arrow_up material-icons">
-              keyboard_arrow_up
-            </div>
-            <div class="cursor__arrow cursor__arrow_down material-icons">
-              keyboard_arrow_down
-            </div>
-            <div class="cursor__arrow cursor__arrow_left material-icons">
-              keyboard_arrow_left
-            </div>
-            <div class="cursor__arrow cursor__arrow_right material-icons">
-              keyboard_arrow_right
-            </div>
-          </div>
-          <!-- - arrows -->
-          <!-- label holder -->
-          <div class="cursor__label"></div>
-          <!-- - label holder -->
-          <!-- icon holder -->
-          <div class="cursor__icon material-icons"></div>
-          <!-- - icon holder -->
-        </div>
-      </div>
-      <!-- - Cursor Follower-->
-      <!-- PAGE HEADER -->
-      <header
-        class="header header_menu-right header_fixed container-fluid js-header-sticky"
-        id="page-header"
-        data-arts-theme-text="light"
-        data-arts-header-sticky-theme="bg-white"
-        data-arts-header-logo="secondary"
-        data-arts-header-sticky-logo="primary"
-        data-arts-header-overlay-theme="light"
-        data-arts-header-overlay-background="#f2f1ed"
-      >
-        <!-- top bar -->
-        <div class="header__container header__controls">
-          <div class="row justify-content-between align-items-center">
-            
-            <!-- burger icon -->
-            <div class="col-auto header__col">
-              <!--div
-                class="header__burger"
-                id="js-burger"
-                data-arts-cursor="data-arts-cursor"
-                data-arts-cursor-scale="1.7"
-                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-                data-arts-cursor-hide-native="true"
-              >
-              </div>
-              <!-- button -->
-              <a class="button button_solid button_black mb-0-5" data-hover="Build With Us" href="https://forms.gle/TF6Arjmv7CMM4KUQA" target="_blank">
-                <span class="button__label-hover">Join Us</span>
-              </a>          
-            </div>
-            <!-- - burger icon -->
-            <!-- "back" button for submenu nav -->
-            <div class="header__overlay-menu-back" id="js-submenu-back">
-              <div
-                class="arrow arrow-left js-arrow arrow_mini"
-                data-arts-cursor="data-arts-cursor"
-                data-arts-cursor-hide-native="true"
-                data-arts-cursor-scale="0"
-                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-              >
-                <svg
-                  class="svg-circle"
-                  viewBox="0 0 60 60"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <circle
-                    class="circle"
-                    cx="30"
-                    cy="30"
-                    r="29"
-                    fill="none"
-                  ></circle>
-                </svg>
-                <div class="arrow__pointer arrow-left__pointer"></div>
-                <div class="arrow__triangle"></div>
-              </div>
-            </div>
-            <!-- - "back" button for submenu nav -->
-          </div>
-        </div>
-        <!-- - burger icon -->
-        <!-- "back" button for submenu nav -->
-        <!-- - top bar -->
-        <!-- - fullscreen overlay container -->
-      </header>
-      <!-- - PAGE HEADER -->
-      <!-- PAGE MAIN -->
-      <div
-        class="js-smooth-scroll bg-light-1"
-        id="page-wrapper"
-        data-barba="container"
-      >
-        <main class="page-wrapper__content">
-          <!-- section MASTHEAD HALFSCREEN LEFT -->
-          <section class="section section-masthead section-fullheight pt-large pt-md-0" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-background-color="var(--color-light-1)">
-            <div class="section-masthead__inner section-fullheight__inner section-fullheight__inner_mobile-auto">
-              <div class="row no-gutters h-100 align-items-center">
-                <div class="col-lg-6 h-100 order-lg-2">
-                  <div class="container-fluid container-fluid_paddings h-100">
-                    <div class="row align-items-center h-100">
-                      <div class="col">
-                        <header class="section-masthead__header justify-content-center">
-                          <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>Shaping the future of AI, one line of code at a time.</span></div>
-                          <div class="w-100"></div>
-                          <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
-                            <h1 class="h1 mt-0 mb-0">AGI House.</h1>
-                          </div>
-                          <div class="section-masthead__links mt-2">
-                            <a href="origins.html" class="">Origins</a>
-                            <span class="mx-2">|</span>
-                            <a href="https://agihouse.ai/timeline" class="">Timeline</a>
-                          </div>
-                          </div>
-                          <b>SF. Hillsborough.</b>
-                          <div class="w-100"></div>
-                          <div
-                            class="section-content__text split-text js-split-text mt-1"
-                            data-split-text-type="lines"
-                            data-split-text-set="lines"
-                          >
-                            <p>
-                              The machine learning hacker houses bringing hackathon life back to Silicon Valley. Welcome to a new golden age.<br>
-                            </p>
-                            <p>
-                              <b>ML Founders. ML Researchers. AGI House.</b>
-                            </p>
-                            <img src="https://i.imgur.com/0jKG70I.jpg">
-                            <img src="img/content/neo.jpeg">
-                          <div class="section__headline mt-2 mr-auto"></div>
-                        </header>
-                      </div>
-                    </div>
-                    <div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_left d-none d-lg-block">
-                      <div class="circle-button js-circle-button" data-arts-os-animation="true">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AGI House SF</title>
+<meta name="description" content="AGI House SF — the nexus for technical talent advancing humanity through invention. Roommates have founded companies worth ~$1 trillion. Hackathons, residencies, and dinners in San Francisco, CA." />
+<link rel="canonical" href="https://agihouse.ai/" />
 
-                        <div class="circle-button__outer">
-                          <div class="circle-button__wrapper-label">
-                            <div class="circle-button__label small-caps">Scroll</div>
-                          </div>
-                        </div>
+<!-- This page's source assets/data physically live in newlander/ (untouched, still
+     served at agihouse.ai/newlander/ too) — <base> resolves every relative path
+     (img/link/fetch/inline-<style> url(), and the JS asset() helper via
+     document.baseURI) into that folder without rewriting each one individually. -->
+<base href="newlander/">
 
-                        <div class="circle-button__inner">
-                          <div class="circle-button__circle" data-arts-scroll-down="data-arts-scroll-down" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0">
-                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                              <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                            </svg>
-                          </div>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://agihouse.ai/" />
+<meta property="og:title" content="AGI House SF" />
+<meta property="og:description" content="Residencies and hackathons alongside the founders behind Perplexity, Lovable, and a trillion dollars of companies." />
+<meta property="og:image" content="https://agihouse.ai/newlander/assets/house-sf.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AGI House SF" />
+<meta name="twitter:description" content="Residencies and hackathons alongside the founders behind Perplexity, Lovable, and a trillion dollars of companies." />
+<meta name="twitter:image" content="https://agihouse.ai/newlander/assets/house-sf.jpg" />
 
-                          <div class="circle-button__icon circle-button__icon-touch">
-                            <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
-                              <path d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z"></path>
-                            </svg>
-                          </div>
+<!-- Favicon: the AGI House phoenix -->
+<link rel="icon" type="image/png" href="assets/phoenix-mark.png" />
+<link rel="apple-touch-icon" href="assets/phoenix-mark.png" />
 
-                          <div class="circle-button__icon circle-button__icon-mouse">
-                            <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Inter for all text elements · Jost as the live geometric fallback for Delight -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* Delight — the AGI House display face (thin geometric all-caps, per the deck).
+     Self-hosted from assets/fonts/. Variable font (wght 100–900) first, with a
+     static Light cut + Jost (Google Fonts) as progressive fallbacks. */
+  @font-face{
+    font-family:'Delight';
+    src:url('assets/fonts/Delight-VF.woff2') format('woff2-variations'),
+        url('assets/fonts/Delight-Light.woff2') format('woff2'),
+        url('assets/fonts/Delight-Light.otf') format('opentype');
+    font-weight:100 900;font-style:normal;font-display:swap;
+  }
+</style>
+<style>
+  :root{
+    --bg:#000000;
+    --bg-2:#060606;
+    --text:#ECE9E1;        /* warm white from the deck */
+    --mute:#8b8b8b;
+    --dim:#7a7a7a; /* WCAG AA (4.5:1) against --bg for real body copy — was #555 (~2.8:1) */
+    --line:rgba(255,255,255,.10);
+    --line-2:rgba(255,255,255,.20);
+    --display:'Delight','Jost','Inter',sans-serif;
+    --body:'Inter',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:var(--body);font-weight:400;font-size:15px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 40px;position:relative}
 
-                              <path class="svg-mouse__border" d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z"></path>
+  /* ---- type helpers ---- */
+  .display{font-family:var(--display);text-transform:uppercase;font-weight:400}
+  .eyebrow{font-family:var(--body);text-transform:uppercase;letter-spacing:.28em;font-size:11px;font-weight:500;color:var(--mute)}
 
-                              <path class="svg-mouse__wheel" d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z"></path>
+  /* ---- NAV (liquid glass top bar) ---- */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s,border-color .4s,backdrop-filter .4s;
+    border-bottom:1px solid transparent;
+    /* faint always-on glass + top scrim so the brand stays legible over the bright hero */
+    background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,0));
+    -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);}
+  .navinner{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+  nav.solid{background:rgba(0,0,0,.7);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);border-bottom:1px solid var(--line)}
+  /* phoenix mark + wordmark, always visible top-left */
+  .brand{display:flex;align-items:center;gap:13px;font-family:var(--display);text-transform:uppercase;font-size:15px;letter-spacing:.22em;color:var(--text)}
+  .brand img{width:30px;height:30px;object-fit:contain;filter:drop-shadow(0 1px 6px rgba(0,0,0,.6))}
+  .nl{display:flex;gap:34px;align-items:center}
+  .nl a{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);transition:color .2s}
+  .nl a:hover{color:var(--text)}
+  .nl .applybtn{border:1px solid var(--line-2);padding:9px 20px;color:var(--text);font-size:11px;letter-spacing:.2em;transition:all .25s}
+  .nl .applybtn:hover{background:var(--text);color:#000;border-color:var(--text)}
+  @media(max-width:820px){.nl a:not(.applybtn){display:none}.brand span{display:none}}
 
-                            </svg>
-                          </div>
+  /* ---- HERO (UnicornStudio bg + overlay) ---- */
+  .hero{position:relative;min-height:100vh;width:100%;overflow:hidden;background:#000}
+  #us-hero{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  #us-hero canvas{width:100%!important;height:100%!important}
+  /* the scene carries its own composition + legibility; just a faint bottom fade
+     for the overlaid coords/scroll cue */
+  .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 78%,rgba(0,0,0,.55) 100%);}
+  /* click-through so the scene receives mouse for its trail / god-rays / tilt */
+  .hero-overlay{position:relative;z-index:2;min-height:100vh;display:flex;
+    align-items:flex-end;padding:0 0 56px;pointer-events:none}
 
-                        </div>
+  /* bottom: scroll cue + coords (the only HTML overlay; the rest is the scene) */
+  .hero-bot{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;width:100%}
+  .hero-bot .coords{font-family:var(--body);text-transform:uppercase;letter-spacing:.22em;font-size:10.5px;color:var(--dim)}
+  .scrollcue{display:flex;align-items:center;gap:12px;font-family:var(--body);text-transform:uppercase;letter-spacing:.24em;font-size:10.5px;color:var(--mute)}
+  .scrollcue .ln{width:46px;height:1px;background:linear-gradient(90deg,var(--mute),transparent);position:relative;overflow:hidden}
+  .scrollcue .ln::after{content:"";position:absolute;inset:0;width:18px;background:var(--text);animation:slide 2.4s infinite}
+  @keyframes slide{0%{transform:translateX(-20px)}100%{transform:translateX(48px)}}
+  /* static left lockup — AGI HOUSE SF + tagline, recreated as crisp HTML now that the
+     scene exports "just the image". Sits in the empty left half; the portrait is right-of-centre. */
+  .hero-lockup{position:absolute;top:50%;left:8%;transform:translateY(-50%);z-index:3;pointer-events:none;max-width:46vw}
+  .hero-lockup .hl-title{font-family:var(--display);text-transform:uppercase;font-weight:300;color:var(--text);
+    font-size:clamp(38px,7vw,94px);line-height:.98;letter-spacing:.06em;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+  .hero-lockup .hl-tag{margin-top:24px;font-family:var(--body);text-transform:uppercase;color:var(--mute);
+    font-size:clamp(11px,1.15vw,15px);letter-spacing:.34em;text-indent:.34em}
+  @media(max-width:820px){.hero-lockup{left:50%;transform:translate(-50%,0);top:13%;text-align:center;max-width:90vw}
+    .hero-lockup .hl-tag{text-indent:0;letter-spacing:.26em}}
 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 order-lg-1 js-gallery section-video align-self-stretch">
-                  <div class="section-image section-masthead__background section-masthead__background_halfscreen section-video__container section section_h-100vh section-content__image"><a class="section-video__link" href="https://www.youtube.com/watch?v=mDMXmfyEctk" data-autoplay="data-autoplay">
-                    <div class="section-video__link-inner" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="0" data-arts-cursor-label="Watch" data-arts-cursor-hide-native="true" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                      <div class="section-video__icon material-icons">play_arrow</div>
-                    </div></a>
-                    <div class="section__bg js-transition-img">
-                      <div class="section-image__wrapper js-transition-img__transformed-el" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.25">
-                        <div class="js-transition-img__transformed-el">
-                          <video class="of-cover" src="img/assets/sectionVideo/hackathon_thumbnail.mov" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop"></video>
-                          <!-- <div class="lazy-bg bg-left-25" data-src="/img/assets/comparison.jpg"></div> -->
-                          <!-- <video class="of-cover" src="img/assets/comparison.jpg" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop"></video> -->
-                        </div>
-                      </div>
-                      <div class="overlay overlay_dark overlay_deither"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- - section MASTHEAD HALFSCREEN LEFT -->
-          <div class="section-scroll bg-light-1" data-arts-theme-text="dark" data-arts-scroll-theme-text="dark" data-arts-default-theme="bg-light-1" data-arts-scroll-theme="bg-light-1" data-arts-scroll-trigger-hook="0.0" data-arts-scroll-offset="-50">
-            <!-- section CONTENT #1 -->
-            <div class="section pt-medium pb-medium">
-              <div class="container">
-                <div class="row justify-content-between">
-                  <div class="col-lg-5">
-                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                      <div class="section-content__inner">
-                        <div class="w-100"></div>
-                        <div class="section__headline mb-1 mb-md-2"></div>
-                        <div class="w-100"></div>
-                        <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
-                          <h2>Coliving in the intelligence age.</h2>
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                  <div class="col-lg-6">
-                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                      <div class="section-content__inner">
-                        <div class="w-100"></div>
-                        <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <p class="has-drop-cap">We are the AI Founders and Researchers of the AGI House, a community of individuals who are dedicated to advancing the field of artificial intelligence.</p>
-                          <p>Our vision is to create a new era of innovation and discovery in the field of AI, one that is driven by collaboration and a commitment to understanding the implications of this technology. We believe that the AGI House will serve as a hub for the most ambitious and thoughtful minds in the field, providing a space where they can come together to share ideas, challenge one another, and explore the potential consequences of AI.                            .</p>
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- - section CONTENT #1 -->
-            <!-- section IMAGES #1 -->
-            <section class="section section-images section-grid overflow pb-medium" data-arts-os-animation data-grid-columns="1" data-grid-columns-tablet="1" data-grid-columns-mobile="1">
-              <div class="container js-gallery">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-lg-12">
-                    <div class="section-grid__item">
-                      <div class="figure-image section-image">
-                        <img src="https://i.imgur.com/h6ZRTpL.jpeg" alt="AGI House Team" class="img-fluid" width="1920" height="1280"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- - section IMAGES #1 -->
-            
-          </div>
-          <!-- section CONTENT #1 -->
-          <div class="section pt-medium pb-small bg-white">
-            <div class="container">
-              <div class="row justify-content-between">
-                <div class="col-lg-6">
-                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                    <div class="section-content__inner">
-                      <div class="w-100"></div>
-                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
-                        <h2>I.</h2>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-                <div class="col-lg-6">
-                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                    <div class="section-content__inner">
-                      <div class="w-100"></div>
-                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
-                        <h2>Our mission.</h2>
-                      </div>
-                      <div class="w-100"></div>
-                      <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                        <p>
-                          Our mission is to foster a community of AI founders, builders and researchers who are dedicated to advancing the field of artificial intelligence in a responsible and ethical manner. We will provide a supportive and collaborative environment where members can work together to develop cutting-edge technology, conduct groundbreaking research, and inspire one another in hackathon projects in AI.
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- - section CONTENT #1 -->
-          <!-- section with color theme change on scroll-->
-          <div class="section-scroll" data-arts-theme-text="dark" data-arts-default-theme="bg-light-1" data-arts-scroll-theme="bg-dark-2" data-arts-scroll-theme-text="light" data-arts-scroll-offset="-200" data-arts-scroll-trigger-hook="0.0">
-            <!-- section CONTENT #2 -->
-            <div class="section pt-medium pb-small">
-              <div class="container">
-                <div class="row justify-content-between">
-                  <div class="col-lg-6">
-                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                      <div class="section-content__inner">
-                        <div class="w-100"></div>
-                        <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
-                          <h2>II.</h2>
-                          <!-- <img src="img/content/neo.jpeg"> -->
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                  <div class="col-lg-6">
-                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                      <div class="section-content__inner">
-                        <div class="w-100"></div>
-                        <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
-                          <h2>Values</h2>
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <p> The AGI House is founded on a set of core values that guide our work and inform our approach to AI. These values include:
-                            
-                            Collaboration: We know that the most exciting and impactful advances in AI will come from teams of individuals working together, sharing ideas and expertise, and pushing one another to think deeply about the implications of this technology.
-                            Responsibility: We recognize that AI technology has the potential to be used for both good and bad, and we are committed to promoting its responsible and ethical use.
-                            Curiosity: We believe in the power of curiosity and critical thinking to drive innovation, and we encourage our members to ask difficult questions and explore the potential consequences of AI.
-                            Education: We believe that it is important to educate the public about AI, and to help people understand the potential benefits and challenges of this technology.</p>
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- - section CONTENT #2 -->
-          </div>
-          <!-- - section with color theme change on scroll-->
-          <!-- section CONTENT #3 -->
-          <div class="section pt-medium pb-small bg-white">
-            <div class="container">
-              <div class="row justify-content-between">
-                <div class="col-lg-6">
-                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                    <div class="section-content__inner">
-                      <div class="w-100"></div>
-                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
-                        <h2>III.</h2>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-                <div class="col-lg-6">
-                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                    <div class="section-content__inner">
-                      <div class="w-100"></div>
-                      <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
-                        <h2>Gratitude</h2>
-                      </div>
-                      <div class="w-100"></div>
-                      <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                        <p>We would like to express our gratitude to the pioneers of the field of artificial intelligence who have paved the way for the work we do today. We are grateful for their groundbreaking research and their commitment to advancing this technology in a responsible and ethical manner. We would also like to thank our fellow members of the AGI House for their collaboration and support, and for creating a community that is dedicated to pushing the boundaries of what is possible with AI. Together, we will continue to build on the work of those who have come before us and continue to make strides in this exciting field.</p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="container-fluid no-gutters bg-light-3">
-            <div class="row no-gutters align-items-center">
-              <div class="col-lg-6 order-lg-1">
-                <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings" data-arts-os-animation="data-arts-os-animation">
-                  <div class="section-content__inner">
-                    <div class="w-100"></div>
-                    <div class="section__headline mb-1 mb-md-2"></div>
-                    <div class="w-100"></div>
-                    <div class="section-content__heading split-text js-split-text mb-3" data-split-text-type="lines,words" data-split-text-set="words">
-                      <h2>A community like no other.</h2>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                      <div class="section-content__button"><a class="button button_solid button_gold button_width_50" data-hover="Build With Us" href="https://forms.gle/TF6Arjmv7CMM4KUQA" target="_blank"><span class="button__label-hover">Join Us</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="col-lg-6 order-lg-2 bg-white">
-                <section class="section section-image section_h-800">
-                  <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                    <div>
-                      <div class="lazy-bg" data-src="img/assets/cta.jpg"></div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div> -->
-          <!-- - sections CONTENT & IMAGE #1 -->
-          
-          <!-- section CTA --
-          <section class="section section-cta text-center section-content pt-medium pb-large bg-dark-1" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light">
-            <div class="section__content">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-lg-10">
-                    <div class="section-cta__heading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                      <h2 class="h2 mt-0 mt-md-1 mb-1">Supercharge your reading & writing workflow with Omni.</h2>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-10">
-                    <div class="section-content__button"><a class="button button_solid button_gold" data-hover="Start trial" href="https://checkout.stripe.com/c/pay/plink_1LW3ZlArzJCDuCQnzJFfU7ru#fidkdWxOYHwnPyd1blppbHNgWjA0SVNmT1FEd39PRkFwRlRrc189M28zdzFpM2l0XHw9X2tdczNPY2RfNER%2FQVE0MlNySG1VTlNobVw8bGFkal98PXxodzZpPGg2aW1OUXxna29uNDdDXWtWNTVCc1I2YjI3bicpJ3VpbGtuQH11anZgYUxhJz8nMWJyZkpMMUdqM2ZoZjZWZEBAJyknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKmpoa2xpZGd2K2RsKid4JSUl" target="_blank"><span class="button__label-hover">Try for free</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section__bg">
-              <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                <div>
-                  <div class="lazy-bg" data-src="img/assets/cta.jpg"></div>
-                </div>
-              </div>
-              <div class="overlay overlay_top-dark overlay_deither section-masthead__overlay"></div>
-            </div>
-          </section>
-          <!-- - section CTA -->
-        </main>
-        <!-- PAGE FOOTER -->
-        <!-- <footer
-          class="footer container-fluid bg-white"
-          id="page-footer"
-          data-arts-theme-text="dark"
-          data-arts-footer-logo="primary"
-        >
-          <!-- widgets top area -->
-          <!-- - widgets top area -->
-          <!-- widgets bottom area -->
-          <!-- <div
-            class="footer__area footer__area-border-top pt-sm-3 pb-sm-1 pt-2 pb-0"
-          >
-            <div class="row align-items-center"> -->
-              <!-- widget LOGO -->
-              <!-- <div
-                class="col-lg-3 footer__column text-center text-lg-left order-lg-1"
-              >
-                <section class="widget widget_rhye_logo">
-                  <a class="logo" href="/">
-                    <div class="logo__wrapper-img">
-                      <img
-                        class="logo__img-primary"
-                        src="img/general/logo-dark.svg"
-                        alt="Omni"
-                        style="max-height: 45px;"
-                      />
-                      <img
-                        class="logo__img-secondary"
-                        src="img/general/logo-white.svg"
-                        alt="Omni"
-                        style="max-height: 45px;"
-                      /></div
-                  ></a>
-                  
-                </section>
-              </div> -->
-              <!-- - widget LOGO -->
-              <!-- widget SOCIAL --
-              <div
-                class="col-lg-3 footer__column text-center text-lg-right order-lg-3"
-              >
-                <section class="widget widget_rhye_social">
+  /* crisp person name + company logo overlay, top-centre of each hero (swapped by JS in
+     sync with the cycling dithered portrait). Replaces the scene's baked-in name/logo. */
+  /* centred horizontally over the head (portrait sits right-of-centre) and just above it */
+  .hero-label{position:absolute;top:23%;left:66%;transform:translate(-50%,-100%);z-index:3;pointer-events:none;
+    display:flex;flex-direction:column;align-items:center;gap:16px;width:max-content;max-width:90vw;text-align:center}
+  @media(max-width:820px){.hero-label{left:50%;top:24%}}
+  .hero-label .hl-name{font-family:var(--display);text-transform:uppercase;font-weight:400;color:var(--text);
+    font-size:clamp(15px,1.55vw,21px);letter-spacing:.34em;text-indent:.34em;white-space:nowrap}
+  .hero-label .hl-logo{height:clamp(24px,3vw,38px);width:auto;max-width:min(460px,70vw);object-fit:contain;
+    filter:drop-shadow(0 2px 12px rgba(0,0,0,.55))}
+  /* one-time intro fade on first load only (no per-swap animation — the cycle is a hard cut) */
+  .hero-label.show .hl-name,.hero-label.show .hl-logo{animation:hlfade .55s cubic-bezier(.2,.7,.2,1)}
+  @keyframes hlfade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
 
-                  <ul class="social">
-                    <li class="social__item">
-                      <a
-                        class="fa fa-instagram"
-                        href=""
-                        target="_blank"
-                      ></a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="fa fa-pen-nib"
-                        href=""
-                        target="_blank"
-                      ></a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="fa fa-youtube-play"
-                        href=""
-                        target="_blank"
-                      ></a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="fa fa-linkedin"
-                        href=""
-                        target="_blank"
-                      ></a>
-                    </li>
-                  </ul>
+  /* ---- reveal ---- */
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
 
-                </section>
-              </div>
-              <!-- - widget SOCIAL -->
-              <!-- widget TEXT -->
-              <!-- <div
-                class="col-lg-6 footer__column text-center text-lg-center order-lg-2"
-              >
-                <section class="widget widget_text"> -->
-                  <!-- content -->
-                  <div class="textwidget" style="text-align: center;">
-                      <small
-                        >© 2023 AGI House | Website by
-                        <a href="" target="_blank"
-                          >Omni Genesis</a
-                        ></small
-                      >
-                  </div>
-                  <!-- - content -->
-                <!-- </section>
-              </div> -->
-              <!-- - widget TEXT -->
-            <!-- </div>
-          </div> -->
-          <!-- - widgetst bottom area -->
-        </footer>
-        <!-- - PAGE FOOTER -->
-      </div>
-      <!-- - PAGE MAIN -->
+  /* ---- generic section ---- */
+  /* generous, consistent vertical rhythm between sections */
+  section{padding:188px 0;position:relative}
+  @media(max-width:680px){section{padding:120px 0}}
+  .shead{display:flex;align-items:baseline;gap:20px;margin-bottom:56px}
+  .shead .id{font-family:var(--body);font-size:12px;letter-spacing:.1em;color:var(--mute)}
+  .shead .ln{flex:1;height:1px;background:var(--line)}
+  h2.st{font-family:var(--display);text-transform:uppercase;font-weight:300;
+    font-size:clamp(30px,4.6vw,62px);line-height:1.04;letter-spacing:.06em;max-width:14ch}
+  .lead{font-family:var(--body);color:var(--mute);font-size:16px;line-height:1.8;max-width:620px;margin-top:26px}
+  .lead b{color:var(--text);font-weight:500}
+
+  /* readout under intro */
+  .intro{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}
+  .readout{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);position:relative}
+  .readout div{padding:26px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .readout .k{font-family:var(--display);font-size:46px;font-weight:400;line-height:1;letter-spacing:.01em}
+  .readout .t{margin-top:12px;font-family:var(--body);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+  @media(max-width:860px){.intro{grid-template-columns:1fr;gap:40px}}
+  .lead + .lead{margin-top:20px}
+  /* give-back + subscribe footer under the intro grid */
+  .intro-foot{margin-top:72px;padding-top:40px;border-top:1px solid var(--line);
+    display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+  .intro-foot .lead{max-width:none}
+  .sub-cta{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+  .sub-cta span{font-family:var(--body);font-size:13px;color:var(--mute);letter-spacing:.02em}
+  .sub-cta .applybtn{border:1px solid var(--line-2);padding:14px 30px;font-family:var(--body);
+    text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(--text);background:none;cursor:pointer;transition:all .25s}
+  .sub-cta .applybtn:hover{background:var(--text);color:#000;border-color:var(--text)}
+  @media(max-width:860px){.intro-foot{grid-template-columns:1fr;gap:28px;margin-top:52px}}
+  /* hero stat tile — the trillion-dollar number, with a hover/focus breakdown */
+  .stat-hero{cursor:help;position:relative}
+  .stat-hero .k{background:linear-gradient(180deg,var(--text),#b9b39f);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .stat-hero .info{display:inline-block;margin-left:6px;color:var(--dim);font-size:9px;vertical-align:middle;transition:color .25s}
+  .stat-hero:hover .info,.stat-hero:focus-within .info{color:var(--text)}
+  /* floating breakdown panel */
+  .breakdown{position:absolute;z-index:40;top:calc(100% + 14px);left:0;width:min(440px,86vw);
+    background:rgba(8,8,8,.96);border:1px solid var(--line-2);border-radius:6px;
+    -webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);
+    box-shadow:0 24px 60px rgba(0,0,0,.6);padding:18px 18px 14px;
+    opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .28s,transform .28s,visibility .28s}
+  .stat-hero:hover .breakdown,.stat-hero:focus-within .breakdown{opacity:1;visibility:visible;transform:none}
+  .breakdown .bd-h{font-family:var(--body);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-bottom:12px}
+  .breakdown .bd-scroll{max-height:300px;overflow-y:auto;margin:0 -6px;padding:0 6px}
+  .breakdown .bd-row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+  .breakdown .bd-row .co{font-family:var(--body);font-size:12.5px;color:var(--text);letter-spacing:.01em}
+  .breakdown .bd-row .co small{display:block;color:var(--dim);font-size:10.5px;letter-spacing:.02em;margin-top:1px}
+  .breakdown .bd-row .vv{font-family:var(--display);font-size:15px;letter-spacing:.02em;color:var(--text);white-space:nowrap}
+  .breakdown .bd-total{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-top:12px;padding-top:13px;border-top:1px solid var(--line-2)}
+  .breakdown .bd-total .lab{font-family:var(--body);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+  .breakdown .bd-total .vv{font-family:var(--display);font-size:22px;letter-spacing:.02em}
+  .breakdown .bd-foot{margin-top:10px;color:var(--dim);font-size:10px;line-height:1.5;font-family:var(--body)}
+  @media(max-width:860px){.breakdown{left:auto;right:0}}
+
+  /* community grid: tighter cards so 27 fit gracefully */
+  .gridc{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  @media(max-width:1100px){.gridc{grid-template-columns:repeat(4,1fr)}}
+  @media(max-width:820px){.gridc{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:520px){.gridc{grid-template-columns:repeat(2,1fr);gap:10px}}
+  .gridc .card .meta{padding:13px 14px 16px}
+  .gridc .card .meta .n{font-size:13.5px;letter-spacing:.04em}
+  .gridc .card .meta .o{font-size:9.5px;letter-spacing:.13em;margin-top:6px}
+  .gridc .card .meta .x{font-size:11px;margin-top:9px}
+
+  /* ---- EVENTS ---- */
+  .ev-head{display:flex;align-items:center;gap:20px;margin-bottom:14px}
+  .ev-head .id{font-family:var(--body);font-size:12px;letter-spacing:.1em;color:var(--mute)}
+  .ev-head .ln{flex:1;height:1px;background:var(--line)}
+  /* top-right view switch: independent list  ·  direct Luma calendar */
+  .view-toggle{display:flex;border:1px solid var(--line);border-radius:3px;overflow:hidden;flex-shrink:0}
+  .view-toggle .vt{background:transparent;border:0;color:var(--mute);font-family:var(--body);font-size:11px;
+    letter-spacing:.16em;text-transform:uppercase;padding:9px 17px;cursor:pointer;transition:background .25s,color .25s}
+  .view-toggle .vt:hover{color:var(--text)}
+  .view-toggle .vt.active{background:var(--text);color:#000}
+  .ev-view[hidden]{display:none}
+  /* upcoming / past sub-toggle */
+  .ev-subtoggle{display:flex;gap:30px;border-bottom:1px solid var(--line);margin:6px 0 4px}
+  .ev-subtoggle .est{background:transparent;border:0;border-bottom:2px solid transparent;color:var(--mute);
+    font-family:var(--body);font-size:13px;letter-spacing:.04em;padding:0 0 14px;margin-bottom:-1px;cursor:pointer;
+    transition:color .25s,border-color .25s}
+  .ev-subtoggle .est .ct{color:var(--dim);font-size:11px;margin-left:5px;letter-spacing:.04em}
+  .ev-subtoggle .est:hover{color:var(--text)}
+  .ev-subtoggle .est.active{color:var(--text);border-color:var(--text)}
+  .ev-list[hidden]{display:none}
+  /* thumbnail is now square + first (left of the text); then date, then title */
+  .ev-row{display:grid;grid-template-columns:74px 56px 1fr;gap:22px;align-items:center;padding:16px 6px;
+    border-bottom:1px solid var(--line);color:inherit;transition:background .3s,padding .3s}
+  .ev-row:hover{background:rgba(255,255,255,.03);padding-left:14px}
+  .ev-date{text-align:center}
+  .ev-date .d{font-family:var(--display);font-size:30px;line-height:1}
+  .ev-date .mo{font-family:var(--body);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-top:5px}
+  .ev-main{min-width:0}
+  .ev-main .t{font-family:var(--display);text-transform:uppercase;font-size:17px;letter-spacing:.03em;line-height:1.25}
+  .ev-main .m{color:var(--mute);font-size:12px;margin-top:8px;font-family:var(--body);display:flex;gap:8px 16px;flex-wrap:wrap;align-items:center}
+  .ev-main .m .dot{width:3px;height:3px;border-radius:50%;background:var(--dim)}
+  .ev-thumb{width:74px;height:74px;object-fit:cover;border:1px solid var(--line);filter:grayscale(1) brightness(.92);transition:filter .5s}
+  .ev-row:hover .ev-thumb{filter:grayscale(0) brightness(1)}
+  .ev-thumb.placeholder{background:var(--bg-2)}
+  /* collapsed by default — only the first rows show until expanded */
+  .ev-row.ev-extra{display:none}
+  .ev-list.show-all .ev-row.ev-extra{display:grid}
+  .ev-empty{color:var(--mute);padding:46px 6px;font-size:14px;font-family:var(--body)}
+  .ev-expand{display:inline-block;margin-top:22px;background:none;border:0;cursor:pointer;color:var(--mute);
+    font-family:var(--body);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+    border-bottom:1px solid var(--line);padding:0 0 3px;transition:color .25s,border-color .25s}
+  .ev-expand:hover{color:var(--text);border-color:var(--line-2)}
+  .ev-more{display:inline-block;margin-top:26px;margin-left:26px;color:var(--mute);font-size:11.5px;letter-spacing:.16em;
+    text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .25s,border-color .25s}
+  .ev-more:hover{color:var(--text);border-color:var(--line-2)}
+  /* direct calendar embed */
+  .ev-embed{border:1px solid var(--line);border-radius:4px;overflow:hidden;min-height:760px;background:var(--bg-2)}
+  .ev-embed iframe{width:100%;min-height:760px;border:0;display:block}
+  @media(max-width:680px){
+    .ev-row{grid-template-columns:58px 44px 1fr;gap:16px}
+    .ev-thumb{width:58px;height:58px}
+    .ev-date .d{font-size:24px}
+    .ev-embed,.ev-embed iframe{min-height:560px}
+  }
+
+  /* outcomes ledger */
+  .tbl{border-top:1px solid var(--line-2)}
+  .tr{display:grid;grid-template-columns:54px 1.3fr 1.9fr .8fr;gap:24px;padding:26px 6px;border-bottom:1px solid var(--line);align-items:center;transition:background .3s,padding .3s}
+  .tr.h{padding:14px 6px;font-family:var(--body);color:var(--dim);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase}
+  .tr:not(.h):hover{background:rgba(255,255,255,.03);padding-left:16px}
+  .tr .idx{font-family:var(--body);color:var(--dim);font-size:13px}
+  .tr .co{font-family:var(--display);text-transform:uppercase;font-size:23px;letter-spacing:.04em}
+  .tr .ds{color:var(--mute);font-size:13.5px}
+  .tr .vv{text-align:right;font-family:var(--display);font-size:24px;letter-spacing:.02em}
+  @media(max-width:760px){.tr,.tr.h{grid-template-columns:1fr auto}.tr .idx,.tr .ds{display:none}}
+
+  /* network cards */
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .card{border:1px solid var(--line);overflow:hidden;transition:border-color .35s,transform .35s;background:var(--bg-2)}
+  .card:hover{border-color:var(--line-2);transform:translateY(-5px)}
+  .card .ph{aspect-ratio:1/1.12;overflow:hidden;position:relative}
+  .card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.9))}
+  .card .ph img{width:100%;height:100%;object-fit:cover;object-position:center 18%;filter:grayscale(1) brightness(.9) contrast(1.05);transition:filter .55s,transform .8s}
+  .card:hover .ph img{filter:grayscale(0) brightness(1);transform:scale(1.05)}
+  .card .meta{padding:18px 20px 22px}
+  .card .meta .n{font-family:var(--display);text-transform:uppercase;font-size:16px;letter-spacing:.05em}
+  .card .meta .o{color:var(--mute);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;margin-top:7px}
+  .card .meta .x{color:var(--dim);font-size:12.5px;margin-top:13px;line-height:1.5;font-family:var(--body)}
+  @media(max-width:900px){.grid4{grid-template-columns:repeat(2,1fr)}}
+
+  /* origin split */
+  .split{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line)}
+  .split .imgside{position:relative;overflow:hidden;min-height:420px}
+  .split .imgside img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06) brightness(.78)}
+  .split .imgside::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(0,0,0,.15),rgba(0,0,0,.65))}
+  .split .imgside .tag{position:absolute;left:20px;bottom:18px;z-index:2;font-family:var(--body);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+  .split .txt{padding:60px 52px;display:flex;flex-direction:column;justify-content:center;background:var(--bg-2)}
+  .split .txt .big{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(20px,2.3vw,30px);line-height:1.25;letter-spacing:.03em}
+  .split .txt .cap{margin-top:26px;color:var(--mute);font-size:13px;font-family:var(--body)}
+  @media(max-width:820px){.split{grid-template-columns:1fr}.split .imgside{min-height:320px}}
+
+  /* history / mission */
+  .hist-lead{color:var(--mute);font-size:16px;line-height:1.85;max-width:680px}
+  .hist-lead b{color:var(--text);font-weight:500}
+  .hist-lead + .hist-lead{margin-top:20px}
+  .mission{margin-top:34px;padding-left:22px;border-left:1px solid var(--line-2);
+    font-family:var(--display);text-transform:uppercase;font-weight:300;letter-spacing:.03em;
+    font-size:clamp(18px,2vw,26px);line-height:1.3;max-width:20ch;color:var(--text)}
+  /* the two houses, side by side, small rectangular photos, full color */
+  .houses{display:grid;grid-template-columns:repeat(2,minmax(0,440px));gap:24px;margin:76px 0 12px}
+  @media(max-width:760px){.houses{grid-template-columns:minmax(0,440px);justify-content:center}}
+  .house-card{border:1px solid var(--line);background:var(--bg-2);overflow:hidden;max-width:440px}
+  .house-card .hc-img{aspect-ratio:4/3;overflow:hidden;position:relative}
+  .house-card .hc-img img{width:100%;height:100%;object-fit:cover;transition:transform .9s}
+  .house-card:hover .hc-img img{transform:scale(1.03)}
+  .hc-slideshow img{position:absolute;inset:0;opacity:0;transition:opacity .7s ease}
+  .hc-slideshow img.is-active{opacity:1;z-index:1}
+  .hc-dots{position:absolute;left:0;right:0;bottom:12px;z-index:2;display:flex;justify-content:center;gap:6px;pointer-events:none}
+  .hc-dots span{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.38);transition:background .3s,transform .3s}
+  .hc-dots span.is-active{background:#fff;transform:scale(1.3)}
+  .hc-arrow{position:absolute;top:0;bottom:0;width:38%;z-index:3;border:0;background:transparent;cursor:pointer;
+    display:flex;align-items:center;color:#fff;opacity:0;transition:opacity .25s;padding:0}
+  .hc-arrow svg{width:22px;height:22px;filter:drop-shadow(0 1px 4px rgba(0,0,0,.6))}
+  .house-card:hover .hc-arrow{opacity:.85}
+  .hc-arrow:hover,.hc-arrow:focus{opacity:1!important}
+  .hc-arrow:focus{outline:1px solid var(--text);outline-offset:-4px}
+  .hc-arrow:focus:not(:focus-visible){outline:none}
+  .hc-arrow--prev{left:0;justify-content:flex-start;padding-left:14px}
+  .hc-arrow--next{right:0;justify-content:flex-end;padding-right:14px}
+  .house-card .hc-meta{padding:18px 22px 22px;border-top:1px solid var(--line)}
+  .house-card .hc-k{font-family:var(--display);text-transform:uppercase;font-size:19px;letter-spacing:.05em}
+  .house-card .hc-t{color:var(--mute);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-top:9px}
+  .house-card .hc-x{color:var(--dim);font-size:12.5px;margin-top:13px;line-height:1.55;font-family:var(--body)}
+  /* milestone timeline */
+  .milestones{border-top:1px solid var(--line-2);margin-top:76px}
+  .ms{display:grid;grid-template-columns:132px 1fr;gap:28px;padding:24px 6px;border-bottom:1px solid var(--line);align-items:baseline;transition:background .3s,padding .3s}
+  .ms:hover{background:rgba(255,255,255,.03);padding-left:16px}
+  .ms .yr{font-family:var(--display);font-size:21px;letter-spacing:.04em;color:var(--text)}
+  .ms .mtxt{color:var(--mute);font-size:14px;line-height:1.65;font-family:var(--body)}
+  .ms .mtxt b{color:var(--text);font-weight:500}
+  @media(max-width:620px){.ms{grid-template-columns:1fr;gap:6px}.ms .yr{font-size:18px}}
+
+  /* built-here chips */
+  .chips{display:flex;flex-wrap:wrap;gap:12px}
+  .chips span{border:1px solid var(--line);padding:14px 22px;font-family:var(--display);text-transform:uppercase;font-size:14px;letter-spacing:.06em;color:var(--text);transition:all .3s}
+  .chips span:hover{border-color:var(--line-2);background:rgba(255,255,255,.04)}
+
+  /* backers */
+  .bk{display:flex;flex-wrap:wrap;gap:10px}
+  .bk span{border:1px solid var(--line);padding:10px 16px;font-size:12px;color:var(--mute);letter-spacing:.04em;font-family:var(--body);transition:all .25s}
+  .bk span:hover{color:var(--text);border-color:var(--line-2)}
+  .bk a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;height:72px;min-width:132px;padding:16px 24px;border:1px solid var(--line);transition:all .25s}
+  .bk a img{max-height:30px;max-width:150px;width:auto;height:auto;opacity:1;transition:transform .25s}
+  .bk a:hover{border-color:var(--line-2);background:rgba(255,255,255,.05)}
+  .bk a:hover img{transform:scale(1.05)}
+  /* optical-size normalization — compact / near-square marks read too small at a uniform cap */
+  /* sized by class, not alt text — alt should stay free for accessibility, not layout hooks */
+  .bk a img.lg-crv{max-height:46px}
+  .bk a img.lg-8vc{max-height:38px}
+  .bk a img.lg-dcvc{max-height:40px}
+  .bk a img.lg-sm{max-height:34px}
+  @media(max-width:640px){.bk a{height:58px;min-width:106px;padding:12px 16px}.bk a img{max-height:22px;max-width:118px}.bk a img.lg-crv{max-height:34px}.bk a img.lg-8vc{max-height:28px}.bk a img.lg-dcvc{max-height:30px}}
+
+  /* CTA */
+  .ctaband{border:1px solid var(--line);padding:96px 60px;text-align:center;position:relative;overflow:hidden;background:var(--bg-2)}
+  .ctaband h2{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(34px,6vw,76px);line-height:.98;letter-spacing:.04em}
+  .ctaband p{margin:26px auto 0;max-width:460px;color:var(--mute);font-family:var(--body)}
+  .ctaband .applybtn{display:inline-block;margin-top:40px;border:1px solid var(--line-2);padding:16px 34px;font-family:var(--body);text-transform:uppercase;letter-spacing:.2em;font-size:12px;transition:all .25s}
+  .ctaband .applybtn:hover{background:var(--text);color:#000;border-color:var(--text)}
+  @media(max-width:680px){.ctaband{padding:64px 26px}}
+
+  footer{border-top:1px solid var(--line);padding:46px 0 64px}
+  .ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;align-items:center;color:var(--dim);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-family:var(--body)}
+</style>
+</head>
+<body>
+<!-- ===== PRELOADER — gates the page until the WebGL hero scene has actually rendered
+     (prevents the green-canvas flash). Real progress: DOM → fonts → assets → US.init → frames. -->
+<style>
+  #preloader{position:fixed;inset:0;z-index:9999;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity .7s ease}
+  #preloader.done{opacity:0;pointer-events:none}
+  .pl-inner{display:flex;flex-direction:column;align-items:center;gap:20px;width:min(300px,66vw)}
+  .pl-mark{width:40px;height:40px;object-fit:contain;animation:plpulse 2.4s ease-in-out infinite}
+  @keyframes plpulse{0%,100%{opacity:.4;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+  .pl-count{font-family:var(--display,'Jost',sans-serif);font-weight:300;letter-spacing:.03em;font-size:62px;line-height:1;color:var(--text,#ECE9E1);display:flex;align-items:baseline;gap:3px}
+  .pl-pct{font-size:20px;color:var(--mute,#8b8b8b)}
+  .pl-bar{width:100%;height:1px;background:rgba(255,255,255,.14);overflow:hidden}
+  .pl-bar i{display:block;height:100%;width:0;background:var(--text,#ECE9E1);transition:width .4s cubic-bezier(.2,.7,.2,1)}
+  .pl-word{font-family:var(--body,sans-serif);text-transform:uppercase;letter-spacing:.28em;font-size:10px;color:var(--mute,#8b8b8b)}
+  /* belt-and-suspenders: keep the WebGL canvases hidden until the scene is ready */
+  body:not(.hero-ready) #us-hero>canvas,body:not(.hero-ready) #us-hero-2>canvas{opacity:0}
+  #us-hero>canvas,#us-hero-2>canvas{transition:opacity .6s ease}
+</style>
+<div id="preloader" role="progressbar" aria-label="Loading" aria-live="polite">
+  <div class="pl-inner">
+    <img class="pl-mark" src="assets/phoenix-mark.png" alt="">
+    <div class="pl-count"><span id="pl-num">0</span><span class="pl-pct">%</span></div>
+    <div class="pl-bar"><i id="pl-fill"></i></div>
+    <div class="pl-word">Loading the Nexus</div>
+  </div>
+</div>
+<script>
+  window.HeroPreloader=(function(){
+    var pct=0,target=6,done=false,raf,numEl,fillEl,el;
+    function render(){ if(numEl)numEl.textContent=Math.round(pct); if(fillEl)fillEl.style.width=pct.toFixed(1)+'%'; }
+    function loop(){ pct+=(target-pct)*0.07; if(pct>target-0.15)pct=Math.min(pct,target); render(); if(!done)raf=requestAnimationFrame(loop); }
+    function bump(t){ if(t>target)target=Math.min(t,99); }
+    function finish(){
+      if(done)return; done=true; cancelAnimationFrame(raf);
+      pct=100; render(); document.body.classList.add('hero-ready');
+      setTimeout(function(){ if(el)el.classList.add('done'); setTimeout(function(){ if(el&&el.parentNode)el.parentNode.removeChild(el); },820); },240);
+    }
+    function start(){ el=document.getElementById('preloader'); numEl=document.getElementById('pl-num'); fillEl=document.getElementById('pl-fill'); render(); loop(); bump(20); }
+    if(document.readyState!=='loading')start(); else document.addEventListener('DOMContentLoaded',start);
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){bump(42);});
+    window.addEventListener('load',function(){bump(68);});
+    setTimeout(finish,9000); // hard fallback — never stay stuck
+    return { bump:bump, heroReady:finish };
+  })();
+</script>
+
+<!-- UnicornStudio loader + synced portrait / name / logo cycle.
+     The scene dithers only the portrait image layer; the person name + company logo
+     were removed from the scene (their text texture can't be re-uploaded reliably at
+     runtime) and are now crisp HTML overlays. One timer swaps the portrait (via
+     layer.setSource) AND repaints the .hero-label so the name+logo always match the face. -->
+<script type="text/javascript">
+(function(){
+  var BASE = document.baseURI;
+  function asset(p){ return new URL('assets/'+p, BASE).href; }
+  // Each person: dithered portrait + crisp name + company logo (combined PNG when two).
+  var PEOPLE = [
+    { slug:'aravind', name:'Aravind Srinivas', logo:'logos/perplexity.png'  },
+    { slug:'andrej',  name:'Andrej Karpathy',  logo:'logos/openai.png'      },
+    { slug:'josh',    name:'Josh Payne',       logo:'logos/hero-josh.png'   },
+    { slug:'anton',   name:'Anton Osika',      logo:'logos/hero-anton.png'  },
+    { slug:'jeremy',  name:'Jeremy Nixon',     logo:'logos/hero-jeremy.png' }
+  ];
+  var HOLD = 3400; // ms per person
+  // warm caches
+  PEOPLE.forEach(function(p){ [asset('people/'+p.slug+'.jpg'), asset(p.logo)].forEach(function(u){ var i=new Image(); i.src=u; }); });
+
+  // --- crisp HTML label (name + logo), shared across both hero variants ---
+  // (queried fresh each call — this script runs before the hero DOM is parsed)
+  function paintLabel(p){
+    [].slice.call(document.querySelectorAll('.hero-label')).forEach(function(el){
+      var n=el.querySelector('.hl-name'), lg=el.querySelector('.hl-logo');
+      if(n) n.textContent = p.name;
+      if(lg){ lg.src = asset(p.logo); lg.alt = p.name + ' — company'; }
+      // hard cut — no transition; name + logo swap instantly with the portrait
+    });
+  }
+
+  // --- scene portrait swap (same mechanism as before) ---
+  var scenes = [];
+  function repaint(s){ if(s.renderNFrames) s.renderNFrames(4); else if(s.requestSceneRender) s.requestSceneRender(); }
+  function registerScene(scene){
+    if(!scene || !scene.getLayers) return;
+    var meta = scene.getLayers().filter(function(l){ return (l.type||l.layerType)==='image'; })[0];
+    if(!meta) return;
+    var layer = scene.getLayer(meta.id);
+    if(!layer || typeof layer.setSource !== 'function') return;
+    scenes.push({ scene:scene, layer:layer });
+  }
+  function setPortrait(p){
+    scenes.forEach(function(sp){
+      sp.layer.setSource(asset('people/'+p.slug+'.jpg'), { onLoad:function(){ repaint(sp.scene); } });
+      setTimeout(function(){ repaint(sp.scene); }, 60);
+      setTimeout(function(){ repaint(sp.scene); }, 180);
+    });
+  }
+
+  var idx = 0;
+  // hard cut — swap the dithered portrait + name/logo instantly, no fade
+  function tick(){
+    var p = PEOPLE[idx];
+    setPortrait(p); paintLabel(p);
+    idx = (idx+1) % PEOPLE.length;
+  }
+
+  function signalReady(){
+    // Wait for the scene to actually paint real frames before revealing (no green flash).
+    // UnicornStudio renders on its own internal ticker, so our repaint() calls only
+    // request a frame — they don't guarantee it's been drawn by the next RAF. Force
+    // several repaint+RAF rounds spread across real time, then add a generous fixed
+    // buffer, so slower GPUs/first paints still finish before the canvas is revealed.
+    var rounds = 0, maxRounds = 5;
+    function pump(){
+      scenes.forEach(function(sp){ repaint(sp.scene); });
+      rounds++;
+      if(rounds < maxRounds){
+        setTimeout(function(){ requestAnimationFrame(pump); }, 60);
+      } else {
+        setTimeout(function(){ if(window.HeroPreloader) window.HeroPreloader.heroReady(); }, 400);
+      }
+    }
+    requestAnimationFrame(pump);
+  }
+  function boot(){
+    if(window.HeroPreloader) window.HeroPreloader.bump(86);
+    UnicornStudio.init().then(function(list){
+      (list||[]).forEach(registerScene);
+      paintLabel(PEOPLE[0]); // scene's baked-in default portrait is Aravind
+      idx = 1;               // first tick advances to the next person
+      setInterval(tick, HOLD);
+      if(window.HeroPreloader) window.HeroPreloader.bump(94);
+      signalReady();
+    }).catch(function(){ paintLabel(PEOPLE[0]); if(window.HeroPreloader) window.HeroPreloader.heroReady(); });
+  }
+
+  var u = window.UnicornStudio;
+  if(u && u.init){ boot(); }
+  else{
+    window.UnicornStudio = { isInitialized:false };
+    var i = document.createElement('script');
+    i.src = 'https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.2.5/dist/unicornStudio.umd.js';
+    i.onload = function(){ if(window.HeroPreloader) window.HeroPreloader.bump(78); boot(); };
+    i.onerror = function(){ if(window.HeroPreloader) window.HeroPreloader.heroReady(); };
+    (document.head||document.body).appendChild(i);
+  }
+})();
+</script>
+
+<nav id="nav">
+  <div class="navinner">
+    <a href="#top" class="brand"><img src="assets/phoenix-mark.png" alt="AGI House SF"><span>AGI House SF</span></a>
+    <div class="nl">
+      <a href="#events">Events</a>
+      <a href="#outcomes">Outcomes</a>
+      <a href="#network">The House</a>
+      <a href="#history">History</a>
+      <a href="#backers">Backers</a>
+      <a class="applybtn" href="https://forms.gle/TF6Arjmv7CMM4KUQA" target="_blank">Contact</a>
     </div>
-    <canvas id="js-webgl"></canvas>
-    <!-- PhotoSwipe -->
-    <div
-      class="pswp"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-      data-arts-theme-text="light"
-    >
-      <!-- background -->
-      <div class="pswp__bg"></div>
-      <!-- - background -->
-      <!-- slider wrapper -->
-      <div class="pswp__scroll-wrap">
-        <!-- slides holder (don't modify)-->
-        <div class="pswp__container">
-          <div class="pswp__item">
-            <div class="pswp__img pswp__img--placeholder"></div>
-          </div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-        <!-- - slides holder (don't modify)-->
-        <!-- UI -->
-        <div class="pswp__ui pswp__ui--hidden">
-          <!-- top bar -->
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button
-              class="pswp__button pswp__button--close"
-              title="Close (Esc)"
-              data-arts-cursor="data-arts-cursor"
-              data-arts-cursor-scale="1.2"
-              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-              data-arts-cursor-hide-native="true"
-            ></button>
-            <button
-              class="pswp__button pswp__button--fs"
-              title="Toggle fullscreen"
-              data-arts-cursor="data-arts-cursor"
-              data-arts-cursor-scale="1.2"
-              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-              data-arts-cursor-hide-native="true"
-            ></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- - top bar -->
-          <!-- left arrow -->
-          <div class="pswp__button pswp__button--arrow--left">
-            <div
-              class="arrow arrow-left js-arrow"
-              data-arts-cursor="data-arts-cursor"
-              data-arts-cursor-hide-native="true"
-              data-arts-cursor-scale="0"
-              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-            >
-              <svg
-                class="svg-circle"
-                viewBox="0 0 60 60"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <circle
-                  class="circle"
-                  cx="30"
-                  cy="30"
-                  r="29"
-                  fill="none"
-                ></circle>
-              </svg>
-              <div class="arrow__pointer arrow-left__pointer"></div>
-              <div class="arrow__triangle"></div>
-            </div>
-          </div>
-          <!-- - left arrow -->
-          <!-- right arrow -->
-          <div class="pswp__button pswp__button--arrow--right">
-            <div
-              class="arrow arrow-right js-arrow"
-              data-arts-cursor="data-arts-cursor"
-              data-arts-cursor-hide-native="true"
-              data-arts-cursor-scale="0"
-              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-            >
-              <svg
-                class="svg-circle"
-                viewBox="0 0 60 60"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <circle
-                  class="circle"
-                  cx="30"
-                  cy="30"
-                  r="29"
-                  fill="none"
-                ></circle>
-              </svg>
-              <div class="arrow__pointer arrow-right__pointer"></div>
-              <div class="arrow__triangle"></div>
-            </div>
-          </div>
-          <!-- - right arrow -->
-          <!-- slide caption holder (don't modify) -->
-          <div class="pswp__caption">
-            <div class="pswp__caption__center text-center"></div>
-          </div>
-          <!-- - slide caption holder (don't modify) -->
-        </div>
-        <!-- - UI -->
-      </div>
-      <!-- slider wrapper -->
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- ===== HERO =====
+     Dithered UnicornStudio scene (assets/agi-hero-scene-fine.json — the finer-grain
+     dither we settled on). The portrait is the only dithered layer; the person name +
+     company logo are the crisp .hero-label overlay, swapped in sync by the cycle script.
+
+     NOTE — importing a new WebGL / UnicornStudio scene later: the newest scene you import
+     is the one to use. Prefer the smaller / finer-dither export; a larger-cell export
+     would otherwise win, matching how UnicornStudio resolves scenes. To swap: point
+     data-us-project-src at the new file and bump ?v= to bust the cache — everything else
+     (the .hero-label overlay + cycle) stays as-is. -->
+<header class="hero">
+  <div id="us-hero" data-us-project-src="assets/agi-hero-scene-fine.json?v=3" data-us-scale="1" data-us-dpi="1.5"></div>
+  <!-- static left lockup — the AGI House title, recreated as crisp HTML now that the
+       scene exports "just the image" (the title text was removed from the scene) -->
+  <div class="hero-lockup">
+    <h1 class="hl-title">AGI House SF</h1>
+    <div class="hl-tag">Researchers Building Unicorns</div>
+  </div>
+  <!-- crisp name + company logo, centred above the head, swapped in sync with the portrait -->
+  <div class="hero-label show"><div class="hl-name">Aravind Srinivas</div><img class="hl-logo" src="assets/logos/perplexity.png" alt="Perplexity — company"></div>
+
+  <div class="wrap hero-overlay">
+    <div class="hero-bot">
+      <span class="coords">37.5630&deg;N&nbsp;&nbsp;122.3255&deg;W &middot; Hillsborough, CA</span>
+      <span class="scrollcue">Scroll <span class="ln"></span></span>
     </div>
-    <!-- - PhotoSwipe -->
-    <!-- List Hover Shaders -->
-    <script id="list-hover-vs" type="x-shader/x-vertex">
-      uniform vec2 uOffset;
+  </div>
+</header>
 
-      varying vec2 vUv;
+<!-- ===== INTRO / RECORD ===== -->
+<section id="intro" class="wrap">
+  <div class="shead rv"><span class="id">00</span><span class="ln"></span><span class="eyebrow">The Nexus</span></div>
+  <div class="intro">
+    <div>
+      <h2 class="st rv" style="max-width:16ch">The Nexus for Progress in the Intelligence Age</h2>
+      <p class="lead rv">AGI House SF is the nexus for technical talent to <b>advance humanity through technological invention.</b></p>
+      <p class="lead rv">We work with and support the world's best AI and deep-tech founders. We've hosted <b>80+ build-a-thons and hackathons</b> — inventions like <b>Lovable</b> and <b>Perplexity</b> came out of them. <b>Twelve of the seventy</b> AGI House-series roommates are unicorn founders, with <b>nine more</b> behind $100M+ companies. Together, roommates have founded companies worth <b>~$1 trillion.</b></p>
+    </div>
+    <div class="readout rv">
+      <div class="stat-hero" id="stat-total" tabindex="0" aria-describedby="breakdown">
+        <div class="k display" id="total-num">~$1T</div>
+        <div class="t">Companies Founded <span class="info" aria-hidden="true">&#9432;</span></div>
+        <div class="breakdown" id="breakdown" role="tooltip">
+          <div class="bd-h">Companies our roommates co-founded — added up</div>
+          <div class="bd-scroll" id="bd-rows"></div>
+          <div class="bd-total"><span class="lab">Total</span><span class="vv" id="bd-total-val">—</span></div>
+          <div class="bd-foot" id="bd-foot"></div>
+        </div>
+      </div>
+      <div><div class="k display" id="unicorn-num">12</div><div class="t">Unicorn Founder Roommates</div></div>
+      <div><div class="k display">80+</div><div class="t">Hackathons</div></div>
+      <div><div class="k display">15,000</div><div class="t">In the Community</div></div>
+    </div>
+  </div>
+  <div class="intro-foot rv">
+    <p class="lead" style="margin-top:0">We give back to the broader SF ecosystem through selective community hackathons, curated soirées, research and reading nights, and hands-on help with fundraising.</p>
+    <div class="sub-cta">
+      <span>Stay up to date — join 15,000 people in our community.</span>
+      <button class="applybtn" id="nl-subscribe" type="button">Subscribe</button>
+    </div>
+  </div>
+</section>
 
-      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
-        float M_PI = 3.1415926535897932384626433832795;
-        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
-        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
-        return position;
+<!-- ===== EVENTS ===== -->
+<section id="events" class="wrap">
+  <div class="ev-head rv">
+    <span class="id">01</span>
+    <span class="eyebrow">Gather</span>
+    <span class="ln"></span>
+    <!-- top-right: switch between the independent list and the direct Luma calendar -->
+    <div class="view-toggle" role="tablist" aria-label="Events view">
+      <button class="vt active" data-view="list" role="tab" aria-selected="true">List</button>
+      <button class="vt" data-view="calendar" role="tab" aria-selected="false">Calendar</button>
+    </div>
+  </div>
+  <h2 class="st rv" style="margin-bottom:40px">Upcoming<br>Events</h2>
+
+  <!-- VIEW A — independent embed: events pulled from the Luma API, toggle upcoming / past -->
+  <div class="ev-view" id="view-list">
+    <div class="ev-subtoggle">
+      <button class="est active" data-when="upcoming" aria-selected="true">Upcoming <span class="ct" id="ct-up"></span></button>
+      <button class="est" data-when="past" aria-selected="false">Past <span class="ct" id="ct-past"></span></button>
+    </div>
+    <div class="ev-list" id="list-upcoming"><div class="ev-empty">Loading events…</div></div>
+    <div class="ev-list" id="list-past" hidden></div>
+    <a class="ev-more" href="https://lu.ma/agi-house" target="_blank" rel="noopener">See everything on Luma &#8599;</a>
+  </div>
+
+  <!-- VIEW B — direct embed of the lu.ma/agi-house calendar -->
+  <div class="ev-view" id="view-calendar" hidden>
+    <div class="ev-embed">
+      <iframe id="luma-cal" src="" title="AGI House — Luma calendar" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUTCOMES ===== -->
+<section id="outcomes" class="wrap">
+  <div class="shead rv"><span class="id">02</span><span class="ln"></span><span class="eyebrow">Outcomes</span></div>
+  <h2 class="st rv" style="margin-bottom:48px">Companies<br>Born Here</h2>
+  <div class="tbl">
+    <div class="tr h"><div class="idx">#</div><div>Company</div><div>Origin at AGI House</div><div style="text-align:right">Result</div></div>
+    <div class="tr rv"><div class="idx">001</div><div class="co">Perplexity</div><div class="ds">Founded at AGI House — Aravind Srinivas</div><div class="vv">$3B</div></div>
+    <div class="tr rv"><div class="idx">002</div><div class="co">Matterport</div><div class="ds">Founding community — Matt Bell</div><div class="vv">$1.6B</div></div>
+    <div class="tr rv"><div class="idx">003</div><div class="co">Lamini</div><div class="ds">Founded at AGI House — Sharon Zhou</div><div class="vv">$100M</div></div>
+    <div class="tr rv"><div class="idx">004</div><div class="co">Lexica</div><div class="ds">Funded at an AGI House event — Sharif Shankar</div><div class="vv">$5M</div></div>
+    <div class="tr rv"><div class="idx">005</div><div class="co">Replicate</div><div class="ds">Secured major funding through AGI House</div><div class="vv">&#8599;</div></div>
+    <div class="tr rv"><div class="idx">006</div><div class="co">Martian</div><div class="ds">Invented &amp; won at an AGI House hackathon</div><div class="vv">&#8599;</div></div>
+  </div>
+</section>
+
+<!-- ===== NETWORK ===== -->
+<section id="network" class="wrap">
+  <div class="shead rv"><span class="id">03</span><span class="ln"></span><span class="eyebrow">The House</span></div>
+  <h2 class="st rv" style="margin-bottom:20px">AGI House<br>Community</h2>
+  <p class="lead rv" style="margin-bottom:44px">The roommates, founders, and hackers who came through AGI House. Many now run the companies counted above.</p>
+  <div class="gridc" id="network-grid"><div class="ev-empty">Loading…</div></div>
+</section>
+
+<!-- ===== HISTORY ===== -->
+<section id="history" class="wrap">
+  <div class="shead rv"><span class="id">04</span><span class="ln"></span><span class="eyebrow">History</span></div>
+  <h2 class="st rv" style="margin-bottom:40px">A Short<br>History</h2>
+
+  <p class="hist-lead rv">In February 2022, Jeremy Nixon put his own name on the lease for a house in Hillsborough and started inviting researchers to live and build there. That fall he and <b>Andrej Karpathy</b> ran the first hackathons out of the living room. There was no brand and no plan, just a full house of people who wanted to work on intelligence together. It became the first AGI House.</p>
+  <p class="hist-lead rv"><b>Perplexity</b> was started there. <b>Martian</b> was invented and won a hackathon there. The founders who came through, the group that got called the PayPal Mafia of AI, went on to build companies now worth <b>~$1 trillion</b>. Across 2022 and 2023 the house ran dozens of hackathons, from Whisper and the first ChatGPT weekend to LangChain, GPT-4, and the CRV agents hackathon where MultiOn and AutoGPT first showed up.</p>
+  <div class="mission rv">The mission never changed: give the people building the future a place to build it together, then get out of their way.</div>
+
+  <!-- the two houses -->
+  <div class="houses">
+    <div class="house-card rv">
+      <div class="hc-img hc-slideshow">
+        <img src="assets/house-hillsborough/01.jpg" alt="The first AGI House, Hillsborough — entrance" loading="lazy" class="is-active">
+        <img src="assets/house-hillsborough/02.jpg" alt="The first AGI House, Hillsborough — grand foyer" loading="lazy">
+        <img src="assets/house-hillsborough/03.jpg" alt="The first AGI House, Hillsborough — motor court" loading="lazy">
+        <img src="assets/house-hillsborough/04.jpg" alt="The first AGI House, Hillsborough — cypress garden path" loading="lazy">
+        <img src="assets/house-hillsborough/05.jpg" alt="The first AGI House, Hillsborough — garden path" loading="lazy">
+        <img src="assets/house-hillsborough/06.jpg" alt="The first AGI House, Hillsborough — dining room" loading="lazy">
+        <img src="assets/house-hillsborough/07.jpg" alt="The first AGI House, Hillsborough — pool" loading="lazy">
+        <img src="assets/house-hillsborough/08.jpg" alt="The first AGI House, Hillsborough — aerial garden view" loading="lazy">
+        <img src="assets/house-hillsborough/09.jpg" alt="The first AGI House, Hillsborough — garden" loading="lazy">
+        <button type="button" class="hc-arrow hc-arrow--prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" class="hc-arrow hc-arrow--next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="hc-dots"></div>
+      </div>
+      <div class="hc-meta">
+        <div class="hc-k">AGI House</div>
+        <div class="hc-t">Hillsborough · 2022</div>
+        <div class="hc-x">The first house. Jeremy Nixon and Andrej Karpathy's hackathons, and the estate where Perplexity and Martian were built.</div>
+      </div>
+    </div>
+    <div class="house-card rv">
+      <div class="hc-img hc-slideshow">
+        <img src="assets/house/01.jpg" alt="AGI House SF — living room" loading="lazy" class="is-active">
+        <img src="assets/house/02.jpg" alt="AGI House SF — lounge with city view" loading="lazy">
+        <img src="assets/house/03.jpg" alt="AGI House SF — open dining and living area" loading="lazy">
+        <img src="assets/house/04.jpg" alt="AGI House SF — bedroom overlooking the city" loading="lazy">
+        <img src="assets/house/05.jpg" alt="AGI House SF — spiral staircase and kitchen" loading="lazy">
+        <img src="assets/house/06.jpg" alt="AGI House SF — rear exterior with garden" loading="lazy">
+        <button type="button" class="hc-arrow hc-arrow--prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" class="hc-arrow hc-arrow--next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="hc-dots"></div>
+      </div>
+      <div class="hc-meta">
+        <div class="hc-k">AGI House SF</div>
+        <div class="hc-t">San Francisco · 2024</div>
+        <div class="hc-x">The second house. Jeremy opened it in the city to run the same thing at a larger scale, now hosting up to five events a week.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- milestones -->
+  <div class="milestones">
+    <div class="ms rv"><div class="yr">2022</div><div class="mtxt">Jeremy Nixon takes the lease on a house in <b>Hillsborough</b>. He and Andrej Karpathy run the earliest generative-AI hackathons out of it, and the first AGI House is born.</div></div>
+    <div class="ms rv"><div class="yr">2023</div><div class="mtxt">Dozens of hackathons in a single year. The house becomes the default place new agents, image models, and LLM tools get built and demoed first.</div></div>
+    <div class="ms rv"><div class="yr">2024</div><div class="mtxt">Jeremy opens <b>AGI House SF</b>, a second house in San Francisco, and moves the work into the city.</div></div>
+    <div class="ms rv"><div class="yr">Jan 2026</div><div class="mtxt"><b>Julius Ritter</b> joins as president to lead AGI House SF. The house runs hackathons with <b>OpenAI</b> on autoresearch, self-improving agent frameworks, and harness optimization, at a cadence of up to <b>five events a week</b>.</div></div>
+  </div>
+
+</section>
+
+<!-- ===== BUILT HERE ===== -->
+<section id="born" class="wrap">
+  <div class="shead rv"><span class="id">05</span><span class="ln"></span><span class="eyebrow">Built Here</span></div>
+  <h2 class="st rv" style="max-width:20ch;margin-bottom:48px">Invented, Developed &amp; Won Inside the House</h2>
+  <div class="bk">
+    <a class="rv" href="https://www.perplexity.ai" target="_blank" rel="noopener" aria-label="Perplexity"><img src="assets/logos/perplexity.svg" alt="Perplexity" loading="lazy"></a>
+    <a class="rv" href="https://replicate.com" target="_blank" rel="noopener" aria-label="Replicate"><img src="assets/logos/replicate.svg" alt="Replicate" loading="lazy"></a>
+    <a class="rv" href="https://www.langchain.com" target="_blank" rel="noopener" aria-label="LangChain"><img src="assets/logos/langchain.svg" alt="LangChain" loading="lazy"></a>
+    <a class="rv" href="https://theagi.company" target="_blank" rel="noopener" aria-label="MultiOn"><img src="assets/logos/multion.png" alt="MultiOn" loading="lazy"></a>
+    <a class="rv" href="https://websim.com" target="_blank" rel="noopener" aria-label="WebSim"><img src="assets/logos/websim.png" alt="WebSim" loading="lazy"></a>
+    <a class="rv" href="https://www.factory.ai" target="_blank" rel="noopener" aria-label="Factory AI"><img src="assets/logos/factory-ai.png" alt="Factory AI" loading="lazy"></a>
+    <a class="rv" href="https://www.llamaindex.ai" target="_blank" rel="noopener" aria-label="LlamaIndex"><img src="assets/logos/llamaindex.svg" alt="LlamaIndex" loading="lazy"></a>
+    <a class="rv" href="https://www.agentops.ai" target="_blank" rel="noopener" aria-label="AgentOps"><img src="assets/logos/agentops.png" alt="AgentOps" loading="lazy"></a>
+    <a class="rv" href="https://withmartian.com" target="_blank" rel="noopener" aria-label="Martian"><img src="assets/logos/martian.png" alt="Martian" loading="lazy"></a>
+    <a class="rv" href="https://stability.ai" target="_blank" rel="noopener" aria-label="Stability AI"><img src="assets/logos/stability-ai.svg" alt="Stability AI" loading="lazy"></a>
+  </div>
+</section>
+
+<!-- ===== BACKERS ===== -->
+<section id="backers" class="wrap">
+  <div class="shead rv"><span class="id">06</span><span class="ln"></span><span class="eyebrow">Backed By</span></div>
+  <h2 class="st rv" style="max-width:18ch;margin-bottom:48px">The Labs &amp; Funds Behind the Network</h2>
+  <div class="bk">
+    <a class="rv" href="https://8vc.com" target="_blank" rel="noopener" aria-label="8VC"><img src="assets/logos/8vc.svg" alt="8VC" class="lg-8vc" loading="lazy"></a>
+    <a class="rv" href="https://aws.amazon.com" target="_blank" rel="noopener" aria-label="AWS"><img src="assets/logos/aws.svg" alt="AWS" loading="lazy"></a>
+    <a class="rv" href="https://www.anthropic.com" target="_blank" rel="noopener" aria-label="Anthropic"><img src="assets/logos/anthropic.svg" alt="Anthropic" loading="lazy"></a>
+    <a class="rv" href="https://www.anyscale.com" target="_blank" rel="noopener" aria-label="Anyscale"><img src="assets/logos/anyscale.svg" alt="Anyscale" loading="lazy"></a>
+    <a class="rv" href="https://arize.com" target="_blank" rel="noopener" aria-label="Arize"><img src="assets/logos/arize.svg" alt="Arize" loading="lazy"></a>
+    <a class="rv" href="https://www.basisset.ventures" target="_blank" rel="noopener" aria-label="Basis Set Ventures"><img src="assets/logos/basis-set-ventures.svg" alt="Basis Set Ventures" loading="lazy"></a>
+    <a class="rv" href="https://www.crv.com" target="_blank" rel="noopener" aria-label="CRV"><img src="assets/logos/crv.svg" alt="CRV" class="lg-crv" loading="lazy"></a>
+    <a class="rv" href="https://www.dcvc.com" target="_blank" rel="noopener" aria-label="DCVC"><img src="assets/logos/dcvc.svg" alt="DCVC" class="lg-dcvc" loading="lazy"></a>
+    <a class="rv" href="https://github.com/mem0ai/mem0" target="_blank" rel="noopener" aria-label="Embed Chain"><img src="assets/logos/embedchain.svg" alt="Embed Chain" class="lg-sm" loading="lazy"></a>
+    <a class="rv" href="https://fal.ai" target="_blank" rel="noopener" aria-label="fal"><img src="assets/logos/fal.svg" alt="fal" loading="lazy"></a>
+    <a class="rv" href="https://www.foundersxventures.com" target="_blank" rel="noopener" aria-label="FoundersX"><img src="assets/logos/foundersx.svg" alt="FoundersX" loading="lazy"></a>
+    <a class="rv" href="https://www.generalcatalyst.com" target="_blank" rel="noopener" aria-label="General Catalyst"><img src="assets/logos/general-catalyst.svg" alt="General Catalyst" loading="lazy"></a>
+    <a class="rv" href="https://cloud.google.com" target="_blank" rel="noopener" aria-label="Google Cloud"><img src="assets/logos/google-cloud.svg" alt="Google Cloud" loading="lazy"></a>
+    <a class="rv" href="https://greylock.com" target="_blank" rel="noopener" aria-label="Greylock"><img src="assets/logos/greylock.svg" alt="Greylock" loading="lazy"></a>
+    <a class="rv" href="https://www.indexventures.com" target="_blank" rel="noopener" aria-label="Index Ventures"><img src="assets/logos/index-ventures.svg" alt="Index Ventures" loading="lazy"></a>
+    <a class="rv" href="https://inworld.ai" target="_blank" rel="noopener" aria-label="Inworld"><img src="assets/logos/inworld.svg" alt="Inworld" loading="lazy"></a>
+    <a class="rv" href="https://www.langchain.com" target="_blank" rel="noopener" aria-label="LangChain"><img src="assets/logos/langchain.svg" alt="LangChain" loading="lazy"></a>
+    <a class="rv" href="https://www.lighthouse.com" target="_blank" rel="noopener" aria-label="Lighthouse"><img src="assets/logos/lighthouse.svg" alt="Lighthouse" loading="lazy"></a>
+    <a class="rv" href="https://www.llamaindex.ai" target="_blank" rel="noopener" aria-label="LlamaIndex"><img src="assets/logos/llamaindex.svg" alt="LlamaIndex" loading="lazy"></a>
+    <a class="rv" href="https://modal.com" target="_blank" rel="noopener" aria-label="Modal"><img src="assets/logos/modal.svg" alt="Modal" loading="lazy"></a>
+    <a class="rv" href="https://nebius.com" target="_blank" rel="noopener" aria-label="Nebius"><img src="assets/logos/nebius.svg" alt="Nebius" loading="lazy"></a>
+    <a class="rv" href="https://neurosity.co" target="_blank" rel="noopener" aria-label="Neurosity"><img src="assets/logos/neurosity.svg" alt="Neurosity" class="lg-sm" loading="lazy"></a>
+    <a class="rv" href="https://www.nea.com" target="_blank" rel="noopener" aria-label="NEA"><img src="assets/logos/nea.svg" alt="NEA" loading="lazy"></a>
+    <a class="rv" href="https://nexusvp.com" target="_blank" rel="noopener" aria-label="Nexus Venture Partners"><img src="assets/logos/nexus-vp.svg" alt="Nexus Venture Partners" loading="lazy"></a>
+    <a class="rv" href="https://www.nvidia.com" target="_blank" rel="noopener" aria-label="NVIDIA"><img src="assets/logos/nvidia.svg" alt="NVIDIA" loading="lazy"></a>
+    <a class="rv" href="https://omniscience.com" target="_blank" rel="noopener" aria-label="Omniscience"><img src="assets/logos/omniscience.svg" alt="Omniscience" loading="lazy"></a>
+    <a class="rv" href="https://openai.com" target="_blank" rel="noopener" aria-label="OpenAI"><img src="assets/logos/openai.svg" alt="OpenAI" loading="lazy"></a>
+    <a class="rv" href="https://www.primeintellect.ai" target="_blank" rel="noopener" aria-label="Prime Intellect"><img src="assets/logos/prime-intellect.svg" alt="Prime Intellect" loading="lazy"></a>
+    <a class="rv" href="https://www.producthunt.com" target="_blank" rel="noopener" aria-label="Product Hunt"><img src="assets/logos/product-hunt.svg" alt="Product Hunt" class="lg-sm" loading="lazy"></a>
+    <a class="rv" href="https://www.quora.com" target="_blank" rel="noopener" aria-label="Quora"><img src="assets/logos/quora.svg" alt="Quora" loading="lazy"></a>
+    <a class="rv" href="https://replit.com" target="_blank" rel="noopener" aria-label="Replit"><img src="assets/logos/replit.svg" alt="Replit" class="lg-sm" loading="lazy"></a>
+    <a class="rv" href="https://replicate.com" target="_blank" rel="noopener" aria-label="Replicate"><img src="assets/logos/replicate.svg" alt="Replicate" loading="lazy"></a>
+    <a class="rv" href="https://www.runpod.io" target="_blank" rel="noopener" aria-label="RunPod"><img src="assets/logos/runpod.svg" alt="RunPod" loading="lazy"></a>
+    <a class="rv" href="https://stability.ai" target="_blank" rel="noopener" aria-label="Stability AI"><img src="assets/logos/stability-ai.svg" alt="Stability AI" loading="lazy"></a>
+    <a class="rv" href="https://www.susaventures.com" target="_blank" rel="noopener" aria-label="SUSA Ventures"><img src="assets/logos/susa-ventures.svg" alt="SUSA Ventures" loading="lazy"></a>
+    <a class="rv" href="https://www.upstage.ai" target="_blank" rel="noopener" aria-label="Upstage"><img src="assets/logos/upstage.svg" alt="Upstage" loading="lazy"></a>
+    <a class="rv" href="https://www.wing.vc" target="_blank" rel="noopener" aria-label="Wing"><img src="assets/logos/wing.svg" alt="Wing" loading="lazy"></a>
+    <a class="rv" href="https://zapier.com" target="_blank" rel="noopener" aria-label="Zapier"><img src="assets/logos/zapier.svg" alt="Zapier" loading="lazy"></a>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="wrap">
+  <div class="ctaband rv">
+    <h2>Build the<br>Next Unicorn</h2>
+    <p>Residencies and hackathons alongside the founders behind Perplexity, Lovable, and a trillion dollars of companies. Apply to join.</p>
+    <a class="applybtn" href="mailto:operations@agihouse.ai">Get In Touch</a>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="ft">
+    <span>&copy; 2026 AGI House SF</span>
+    <span>The Nexus for Progress in the Intelligence Age</span>
+    <span>SF · Hillsborough</span>
+  </div>
+</footer>
+
+<script>
+  // nav: solidify the glass bar on scroll
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>40),{passive:true});
+
+  // scroll reveals
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  function observeReveals(scope){(scope||document).querySelectorAll('.rv:not(.in)').forEach((el,i)=>{el.style.transitionDelay=((i%6)*70)+'ms';io.observe(el)});}
+  observeReveals();
+
+  // ===== TRILLION-DOLLAR STAT (computed from data/companies.json) =====
+  (function(){
+    const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    // format billions -> compact display ($1.87T / $852B / $700M)
+    function fmt(b){
+      if(b>=1000) return '$'+(b/1000).toFixed(2).replace(/\.?0+$/,'')+'T';
+      if(b>=1)    return '$'+(b%1===0?b:b.toFixed(2).replace(/\.?0+$/,''))+'B';
+      return '$'+Math.round(b*1000)+'M';
+    }
+    fetch('data/companies.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+      const all=d.companies||[];
+      const priced=all.filter(c=>typeof c.valuationB==='number').sort((a,b)=>b.valuationB-a.valuationB);
+      const undisclosed=all.length-priced.length;
+      const total=priced.reduce((s,c)=>s+c.valuationB,0);
+      const unicorns=priced.filter(c=>c.valuationB>=1).length;
+      const unum=document.getElementById('unicorn-num');
+      if(unum) unum.textContent = unicorns;
+
+      // headline number — floor to whole trillions so it reads as a conservative floor ("$1T+")
+      const tnum=document.getElementById('total-num');
+      if(tnum) tnum.textContent = total>=1500 ? '$'+Math.floor(total/1000)+'T+' : (total>=900 ? '~$1T' : '$'+Math.round(total)+'B+');
+
+      // breakdown rows
+      const rows=document.getElementById('bd-rows');
+      if(rows) rows.innerHTML=priced.map(c=>
+        '<div class="bd-row"><span class="co">'+esc(c.company)+'<small>'+esc(c.founder)+' · '+esc(c.role)+'</small></span>'+
+        '<span class="vv">'+esc(c.display||fmt(c.valuationB))+'</span></div>').join('');
+      const tv=document.getElementById('bd-total-val'); if(tv) tv.textContent=fmt(total);
+      const foot=document.getElementById('bd-foot');
+      if(foot) foot.textContent='As of '+(d.asOf||'')+'. '+undisclosed+' more companies have undisclosed valuations and aren’t counted. Valuations attributed to founding-team members; figures from public reporting.';
+    }).catch(()=>{});
+  })();
+
+  // ===== SUBSCRIBE button → reveal + focus the site newsletter bar =====
+  (function(){
+    const btn=document.getElementById('nl-subscribe');
+    if(!btn) return;
+    btn.addEventListener('click',function(){
+      const bar=document.getElementById('agih-nl');
+      const input=bar&&bar.querySelector('input[type=email]');
+      if(input){ bar.style.transform='none'; bar.style.opacity='1'; input.scrollIntoView({behavior:'smooth',block:'center'}); setTimeout(()=>input.focus(),350); }
+      else { window.open('https://lu.ma/agi-house','_blank','noopener'); }
+    });
+  })();
+
+  // ===== THE HOUSE — community grid (data/people.json) =====
+  (function(){
+    const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    fetch('data/people.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+      const grid=document.getElementById('network-grid');
+      const ppl=(d.people||[]);
+      if(!grid||!ppl.length) return;
+      grid.innerHTML=ppl.map(p=>
+        '<div class="card rv"><div class="ph"><img src="assets/network/'+esc(p.img)+'.jpg" alt="'+esc(p.name)+'" loading="lazy"></div>'+
+        '<div class="meta"><div class="n">'+esc(p.name)+'</div><div class="o">'+esc(p.company)+'</div>'+
+        (p.tag?'<div class="x">'+esc(p.tag)+'</div>':'')+'</div></div>').join('');
+      observeReveals(grid);
+    }).catch(()=>{});
+  })();
+
+  // ===== EVENTS =====
+  (function(){
+    // Direct lu.ma/agi-house calendar embed (loaded lazily when Calendar view opens)
+    const CAL_EMBED='https://luma.com/embed/calendar/cal-Lv1pgYv5ITFR4tC/events';
+    const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+    function fmtMeta(e){
+      const d=new Date(e.startAt);
+      let t=d.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
+      const parts=[d.toLocaleDateString([], {weekday:'short'})+' · '+t];
+      if(e.city) parts.push(e.city);
+      return parts;
+    }
+    const LIMIT=7; // rows shown before "Show more"
+    function row(e,extra){
+      const d=new Date(e.startAt);
+      const meta=fmtMeta(e).map((m,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(m)+'</span>').join('');
+      const thumb=e.coverUrl
+        ? '<img class="ev-thumb" src="'+esc(e.coverUrl)+'" alt="" loading="lazy">'
+        : '<div class="ev-thumb placeholder"></div>';
+      return '<a class="ev-row'+(extra?' ev-extra':'')+'" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+
+        thumb+
+        '<div class="ev-date"><div class="d">'+d.getDate()+'</div><div class="mo">'+MONTHS[d.getMonth()]+'</div></div>'+
+        '<div class="ev-main"><div class="t">'+esc(e.title)+'</div><div class="m">'+meta+'</div></div>'+
+        '</a>';
+    }
+    function render(id,arr,emptyMsg){
+      const el=document.getElementById(id);
+      el.classList.remove('show-all');
+      if(!arr||!arr.length){el.innerHTML='<div class="ev-empty">'+emptyMsg+'</div>';return;}
+      el.innerHTML=arr.map((e,i)=>row(e,i>=LIMIT)).join('');
+      // collapse the overflow behind a "Show N more" toggle
+      if(arr.length>LIMIT){
+        const hidden=arr.length-LIMIT;
+        const btn=document.createElement('button');
+        btn.type='button';btn.className='ev-expand';
+        btn.textContent='Show '+hidden+' more';
+        btn.addEventListener('click',function(){
+          const open=el.classList.toggle('show-all');
+          btn.textContent=open?'Show fewer':('Show '+hidden+' more');
+        });
+        el.appendChild(btn);
       }
+    }
 
-      void main() {
-        vUv =  uv + (uOffset * 2.);
-        vec3 newPosition = position;
-        newPosition = deformationCurve(position,uv,uOffset);
-        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+    fetch('events.json',{cache:'no-cache'}).then(r=>r.json()).then(data=>{
+      const up=data.upcoming||[], past=data.past||[];
+      render('list-upcoming',up,'No upcoming events right now — check the calendar.');
+      render('list-past',past,'No past events found.');
+      const cu=document.getElementById('ct-up'), cp=document.getElementById('ct-past');
+      if(cu) cu.textContent='('+up.length+')';
+      if(cp) cp.textContent='('+past.length+')';
+    }).catch(()=>{
+      render('list-upcoming',null,'Couldn’t load events. See the calendar tab or visit lu.ma/agi-house.');
+    });
+
+    // upcoming / past sub-toggle
+    document.querySelectorAll('.ev-subtoggle .est').forEach(btn=>{
+      btn.addEventListener('click',function(){
+        document.querySelectorAll('.ev-subtoggle .est').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false')});
+        this.classList.add('active');this.setAttribute('aria-selected','true');
+        const when=this.dataset.when;
+        document.getElementById('list-upcoming').hidden = when!=='upcoming';
+        document.getElementById('list-past').hidden = when!=='past';
+      });
+    });
+
+    // list / calendar view toggle
+    let calLoaded=false;
+    document.querySelectorAll('.view-toggle .vt').forEach(btn=>{
+      btn.addEventListener('click',function(){
+        document.querySelectorAll('.view-toggle .vt').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false')});
+        this.classList.add('active');this.setAttribute('aria-selected','true');
+        const view=this.dataset.view;
+        document.getElementById('view-list').hidden = view!=='list';
+        document.getElementById('view-calendar').hidden = view!=='calendar';
+        if(view==='calendar' && !calLoaded){
+          document.getElementById('luma-cal').src=CAL_EMBED;
+          calLoaded=true;
+        }
+      });
+    });
+  })();
+
+  // ===== house-card slideshows (the two houses) — click-through, no auto-advance =====
+  (function(){
+    document.querySelectorAll('.hc-slideshow').forEach(function(el){
+      var imgs = Array.prototype.slice.call(el.querySelectorAll('img'));
+      if(imgs.length < 2) return;
+      var dots = el.querySelector('.hc-dots');
+      imgs.forEach(function(_, i){
+        var d = document.createElement('span');
+        if(i===0) d.className='is-active';
+        dots.appendChild(d);
+      });
+      var dotEls = Array.prototype.slice.call(dots.children);
+      var idx = 0;
+      function show(newIdx){
+        imgs[idx].classList.remove('is-active');
+        dotEls[idx].classList.remove('is-active');
+        idx = (newIdx + imgs.length) % imgs.length;
+        imgs[idx].classList.add('is-active');
+        dotEls[idx].classList.add('is-active');
       }
-    </script>
-    <script id="list-hover-fs" type="x-shader/x-fragment">
-      uniform sampler2D uTexture;
-      uniform float uAlpha;
-      uniform float uScale;
+      var prev = el.querySelector('.hc-arrow--prev');
+      var next = el.querySelector('.hc-arrow--next');
+      if(prev) prev.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); show(idx-1); });
+      if(next) next.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); show(idx+1); });
+    });
+  })();
+</script>
 
-      varying vec2 vUv;
-
-      vec2 scaleUV(vec2 uv,float scale) {
-        float center = 0.5;
-        return ((uv - center) * scale) + center;
-      }
-
-      void main() {
-        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
-        gl_FragColor = vec4(color,uAlpha);
-      }
-    </script>
-    <!-- - List Hover Shaders -->
-    <!-- Slider Textures Shaders -->
-    <script id="slider-textures-vs" type="x-shader/x-vertex">
-      varying vec2 vUv;
-      void main() {
-        vUv = uv;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
-      }
-    </script>
-    <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
-      varying vec2 vUv;
-
-      uniform sampler2D texture;
-      uniform sampler2D texture2;
-      uniform sampler2D disp;
-
-      uniform float dispFactor;
-      uniform float effectFactor;
-
-      void main() {
-
-        vec2 uv = vUv;
-
-        vec4 disp = texture2D(disp, uv);
-
-        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
-        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
-
-        vec4 _texture = texture2D(texture, distortedPosition);
-        vec4 _texture2 = texture2D(texture2, distortedPosition2);
-
-        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
-
-        gl_FragColor = finalTexture;
-
-      }
-    </script>
-    <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
-      varying vec2 vUv;
-
-      uniform sampler2D texture;
-      uniform sampler2D texture2;
-      uniform sampler2D disp;
-
-      uniform float dispFactor;
-      uniform float effectFactor;
-
-      void main() {
-
-        vec2 uv = vUv;
-
-        vec4 disp = texture2D(disp, uv);
-
-        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
-        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
-
-        vec4 _texture = texture2D(texture, distortedPosition);
-        vec4 _texture2 = texture2D(texture2, distortedPosition2);
-
-        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
-
-        gl_FragColor = finalTexture;
-
-      }
-    </script>
-    <!-- - Slider Textures Shaders -->
-    <!-- VENDOR SCRIPTS -->
-    <script src="js/vendor.js"></script>
-    <!-- - VENDOR SCRIPTS -->
-    <!-- COMPONENTS -->
-    <script src="js/components.js"></script>
-    <!-- - COMPONENTS -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
-      async
-    ></script>
-  <!-- NEWSLETTER SIGNUP -->
-    <script src="js/newsletter.js" defer></script>
-  </body>
+<!-- NEWSLETTER SIGNUP (shared site-wide bar) -->
+<script src="../js/newsletter.js" defer></script>
+</body>
 </html>
