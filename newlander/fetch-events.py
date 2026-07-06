@@ -40,5 +40,9 @@ out = {
     "upcoming": [norm(x) for x in up.get("entries",[])],
     "past":     [norm(x) for x in past.get("entries",[])],
 }
-json.dump(out, open("events.json","w"), indent=2)
-print(f"wrote events.json — {len(out['upcoming'])} upcoming, {len(out['past'])} past")
+# Write next to this script, not relative to cwd — this gets invoked from the repo
+# root by the launchd refresh job, and a cwd-relative path silently wrote a stray
+# events.json at the repo root instead of updating newlander/events.json.
+out_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "events.json")
+json.dump(out, open(out_path, "w"), indent=2)
+print(f"wrote {out_path} — {len(out['upcoming'])} upcoming, {len(out['past'])} past")

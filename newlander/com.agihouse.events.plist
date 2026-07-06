@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- launchd job: events snapshot refresh, every 6 hours.
+     This is a TEMPLATE — it does not contain a real API key. Install:
+       cp newlander/com.agihouse.events.plist ~/Library/LaunchAgents/
+       # then edit ~/Library/LaunchAgents/com.agihouse.events.plist and replace
+       # REPLACE_WITH_LUMA_API_KEY with the real key (never commit that copy)
+       launchctl load ~/Library/LaunchAgents/com.agihouse.events.plist
+     Remove:
+       launchctl unload ~/Library/LaunchAgents/com.agihouse.events.plist -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.agihouse.events</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/juliusritter/agihouse/newlander/refresh-events.sh</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>LUMA_API_KEY</key>
+    <string>REPLACE_WITH_LUMA_API_KEY</string>
+  </dict>
+  <key>StartInterval</key>
+  <integer>21600</integer>
+  <key>StandardOutPath</key>
+  <string>/tmp/agihouse-events.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/agihouse-events.log</string>
+</dict>
+</plist>
