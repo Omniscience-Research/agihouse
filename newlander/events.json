@@ -1,42 +1,6 @@
 {
-  "generatedAt": "2026-07-03T19:55:07Z",
+  "generatedAt": "2026-07-06T17:03:10Z",
   "upcoming": [
-    {
-      "title": "Enhanced Humans I: New Way of Working",
-      "startAt": "2026-07-04T17:00:00.000Z",
-      "endAt": "2026-07-04T19:00:00.000Z",
-      "url": "https://luma.com/enhancedhumansI",
-      "coverUrl": "https://images.lumacdn.com/uploads/8y/3622fdaa-a068-4f82-aae8-d63cd9a4be5f.jpg",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "AutoResearch",
-      "startAt": "2026-07-04T22:30:00.000Z",
-      "endAt": "2026-07-05T01:00:00.000Z",
-      "url": "https://luma.com/2xr67tfz",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/cz/d1f8ae12-e094-4599-96f1-ba941940b2a1.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Inference Hackathon",
-      "startAt": "2026-07-05T01:00:00.000Z",
-      "endAt": "2026-07-05T05:00:00.000Z",
-      "url": "https://luma.com/InferenceHackathon",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/mh/61829d4f-dce0-45be-91bd-ffb546b970e1",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Recursive Self-Improvement Hackathon",
-      "startAt": "2026-07-06T01:00:00.000Z",
-      "endAt": "2026-07-06T05:00:00.000Z",
-      "url": "https://luma.com/recursiveselfimprovement",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/yl/35c06a9f-fe5b-4598-93de-bdde26f03157",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Quantum Biology Modeling in the Age of AGI",
       "startAt": "2026-07-08T01:30:00.000Z",
@@ -372,6 +336,42 @@
     }
   ],
   "past": [
+    {
+      "title": "Recursive Self-Improvement Hackathon",
+      "startAt": "2026-07-06T01:00:00.000Z",
+      "endAt": "2026-07-06T05:00:00.000Z",
+      "url": "https://luma.com/recursiveselfimprovement",
+      "coverUrl": "https://images.lumacdn.com/uploads/mq/578be988-5788-47ba-a6d7-ef57fcfa70e3.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Inference Hackathon",
+      "startAt": "2026-07-05T01:00:00.000Z",
+      "endAt": "2026-07-05T05:00:00.000Z",
+      "url": "https://luma.com/InferenceHackathon",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/mh/61829d4f-dce0-45be-91bd-ffb546b970e1",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AutoResearch",
+      "startAt": "2026-07-04T22:30:00.000Z",
+      "endAt": "2026-07-05T01:00:00.000Z",
+      "url": "https://luma.com/2xr67tfz",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/cz/d1f8ae12-e094-4599-96f1-ba941940b2a1.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Enhanced Humans I: New Way of Working",
+      "startAt": "2026-07-04T17:00:00.000Z",
+      "endAt": "2026-07-04T19:00:00.000Z",
+      "url": "https://luma.com/enhancedhumansI",
+      "coverUrl": "https://images.lumacdn.com/uploads/8y/3622fdaa-a068-4f82-aae8-d63cd9a4be5f.jpg",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents",
       "startAt": "2026-07-01T17:30:00.000Z",
