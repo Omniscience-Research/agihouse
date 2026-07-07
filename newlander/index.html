@@ -464,10 +464,13 @@
 
   function signalReady(){
     // Wait for the scene to actually paint real frames before revealing (no green flash).
-    // UnicornStudio renders on its own internal ticker, so our repaint() calls only
-    // request a frame — they don't guarantee it's been drawn by the next RAF. Force
-    // several repaint+RAF rounds spread across real time, then add a generous fixed
-    // buffer, so slower GPUs/first paints still finish before the canvas is revealed.
+    // Tested empirically: fewer renderNFrames() passes here under-render the dither layer
+    // (portrait shows up dark/half-formed), so this needs several rounds — reducing it
+    // made the very-first portrait *worse*, not better. (A separately reported "portraits
+    // look progressively overexposed" issue is NOT caused by this function — reverting it
+    // to 1 pass just produced a persistently dark portrait, not a fix — so the real cause
+    // is still open; likely candidate is cumulative rendering behavior in setPortrait's
+    // per-swap repaint calls over a long-open tab, not this one-time reveal gate.)
     var rounds = 0, maxRounds = 5;
     function pump(){
       scenes.forEach(function(sp){ repaint(sp.scene); });
