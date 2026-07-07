@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T11:03:39Z",
+  "generatedAt": "2026-07-07T17:03:50Z",
   "upcoming": [
     {
       "title": "Quantum Biology Modeling in the Age of AGI",
@@ -7,6 +7,15 @@
       "endAt": "2026-07-08T03:30:00.000Z",
       "url": "https://luma.com/quantumbiology",
       "coverUrl": "https://images.lumacdn.com/uploads/mt/c513022d-0547-425e-a4a7-8532f048356a.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "xxsxdc",
+      "startAt": "2026-07-08T07:30:00.000Z",
+      "endAt": "2026-07-08T08:30:00.000Z",
+      "url": "https://luma.com/agi-a2bq",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ni/6dead781-4636-44be-80bb-c348ca463a5b",
       "city": "",
       "venue": ""
     },
