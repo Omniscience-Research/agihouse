@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-07-08T05:03:55Z",
+  "generatedAt": "2026-07-08T11:03:59Z",
   "upcoming": [
-    {
-      "title": "xxsxdc",
-      "startAt": "2026-07-08T07:30:00.000Z",
-      "endAt": "2026-07-08T08:30:00.000Z",
-      "url": "https://luma.com/agi-a2bq",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/ni/6dead781-4636-44be-80bb-c348ca463a5b",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "The Crossing: From Fantasy to Reality",
       "startAt": "2026-07-10T01:00:00.000Z",
@@ -336,6 +327,15 @@
     }
   ],
   "past": [
+    {
+      "title": "xxsxdc",
+      "startAt": "2026-07-08T07:30:00.000Z",
+      "endAt": "2026-07-08T08:30:00.000Z",
+      "url": "https://luma.com/agi-a2bq",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ni/6dead781-4636-44be-80bb-c348ca463a5b",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Quantum Biology Modeling in the Age of AGI",
       "startAt": "2026-07-08T01:00:00.000Z",
@@ -774,15 +774,6 @@
       "endAt": "2025-01-13T06:00:00.000Z",
       "url": "https://luma.com/wl3stggu",
       "coverUrl": "https://images.lumacdn.com/event-covers/yh/d21aecf7-6601-471a-bec4-1a9f6107c249",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Decentralized AI Hackathon ",
-      "startAt": "2024-06-16T19:00:00.000Z",
-      "endAt": "2024-06-17T05:00:00.000Z",
-      "url": "https://luma.com/decent-ai-crypto",
-      "coverUrl": "https://images.lumacdn.com/event-covers/cj/a4d6580a-be0f-447f-a4fe-a1e85dab026a",
       "city": "",
       "venue": ""
     }
