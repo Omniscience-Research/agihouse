@@ -89,7 +89,8 @@
   /* mobile: the scene doesn't need to be full-bleed — shrink it to a smaller box below
      the text stack so the portrait ("head") isn't the whole screen, and the name/logo
      label has real black space to sit in instead of hovering on top of the photo. */
-  @media(max-width:820px){#us-hero{inset:auto;top:34vh;left:0;right:0;bottom:0;height:auto}}
+  @media(max-width:820px){#us-hero{inset:auto;top:40vh;left:50%;right:auto;bottom:auto;
+    transform:translateX(-50%);width:min(58vw,250px);aspect-ratio:.88;height:auto}}
   #us-hero canvas{width:100%!important;height:100%!important}
   /* the scene carries its own composition + legibility; just a faint bottom fade
      for the overlaid coords/scroll cue */
@@ -398,10 +399,20 @@
     function render(){ if(numEl)numEl.textContent=Math.round(pct); if(fillEl)fillEl.style.width=pct.toFixed(1)+'%'; }
     function loop(){ pct+=(target-pct)*0.07; if(pct>target-0.15)pct=Math.min(pct,target); render(); if(!done)raf=requestAnimationFrame(loop); }
     function bump(t){ if(t>target)target=Math.min(t,99); }
-    function finish(){
-      if(done)return; done=true; cancelAnimationFrame(raf);
+    function reveal(){
       pct=100; render(); document.body.classList.add('hero-ready');
       setTimeout(function(){ if(el)el.classList.add('done'); setTimeout(function(){ if(el&&el.parentNode)el.parentNode.removeChild(el); },820); },240);
+    }
+    function finish(){
+      if(done)return; done=true; cancelAnimationFrame(raf);
+      // Wait for the custom display font to actually be swapped in before revealing —
+      // otherwise the (much larger) hero title can still be showing the fallback font
+      // when the preloader fades, and the font-display:swap reflow that follows a
+      // moment later reads as a blurry "ghost" duplicate of the title.
+      if(document.fonts&&document.fonts.ready){
+        var to=setTimeout(reveal,600); // don't block reveal forever if fonts.ready never settles
+        document.fonts.ready.then(function(){ clearTimeout(to); reveal(); });
+      } else reveal();
     }
     function start(){ el=document.getElementById('preloader'); numEl=document.getElementById('pl-num'); fillEl=document.getElementById('pl-fill'); render(); loop(); bump(20); }
     if(document.readyState!=='loading')start(); else document.addEventListener('DOMContentLoaded',start);
