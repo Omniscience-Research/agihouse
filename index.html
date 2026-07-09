@@ -103,7 +103,15 @@
      library composes the scene: it keeps #us-hero at its normal full-bleed 100vw/100vh
      box (untouched, so the library's own render/crop logic never changes), then visually
      shrinks the WHOLE already-rendered picture — including its own black background,
-     which blends into .hero's black background with no visible seam — as one unit. */
+     which blends into .hero's black background with no visible seam — as one unit.
+     The scene's own composition bakes the face right-of-centre (it's designed for
+     desktop, where the text lockup sits in the empty left half) — scaling around
+     the box's own centre keeps that same off-centre framing, just smaller, so a
+     translateX correction (measured empirically: face lands ~59% across before
+     the shift, needs to land at 50%) re-centres it. translateX must come before
+     scale() in the function list so the shift applies in real screen px, not
+     shrunk by the scale that follows it. */
+  @media(max-width:820px){#us-hero{transform:translateX(-12vw) scale(.42);transform-origin:50% 50%}}
   /* the scene carries its own composition + legibility; just a faint bottom fade
      for the overlaid coords/scroll cue */
   .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
