@@ -111,7 +111,7 @@
     background:linear-gradient(180deg,rgba(0,0,0,0) 78%,rgba(0,0,0,.55) 100%);}
   /* click-through so the scene receives mouse for its trail / god-rays / tilt */
   .hero-overlay{position:relative;z-index:2;min-height:100vh;display:flex;
-    align-items:flex-end;padding:0 0 56px;pointer-events:none}
+    align-items:flex-end;padding-bottom:56px;pointer-events:none}
 
   /* bottom: scroll cue + coords (the only HTML overlay; the rest is the scene) */
   .hero-bot{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;width:100%}
@@ -181,6 +181,8 @@
   .readout .k{font-family:var(--display);font-size:46px;font-weight:400;line-height:1;letter-spacing:.01em}
   .readout .t{margin-top:12px;font-family:var(--body);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
   @media(max-width:860px){.intro{grid-template-columns:1fr;gap:40px}}
+  @media(max-width:600px){.readout div{padding:18px 16px}
+    .readout .k{font-size:clamp(24px,9vw,46px)}}
   .lead + .lead{margin-top:20px}
   /* give-back + subscribe footer under the intro grid */
   .intro-foot{margin-top:72px;padding-top:40px;border-top:1px solid var(--line);
@@ -490,11 +492,14 @@
     if(!layer || typeof layer.setSource !== 'function') return;
     scenes.push({ scene:scene, layer:layer });
   }
+  // Real device on a weak connection: the ~85KB portrait jpg can take well over
+  // 180ms to arrive, so a swap firing before it lands painted nothing and nothing
+  // repainted it afterward (blank portrait, confirmed on a slow-cellular screenshot).
+  // Spread repaints across a longer tail so a late-arriving image still gets shown.
   function setPortrait(p){
     scenes.forEach(function(sp){
-      sp.layer.setSource(asset('people/'+p.slug+'.jpg'), { onLoad:function(){ repaint(sp.scene); } });
-      setTimeout(function(){ repaint(sp.scene); }, 60);
-      setTimeout(function(){ repaint(sp.scene); }, 180);
+      sp.layer.setSource(asset('people/'+p.slug+'.jpg'), { onLoad:function(){ repaint(sp.scene); setTimeout(function(){ repaint(sp.scene); }, 120); } });
+      [60,180,400,900,1600].forEach(function(ms){ setTimeout(function(){ repaint(sp.scene); }, ms); });
     });
   }
 
