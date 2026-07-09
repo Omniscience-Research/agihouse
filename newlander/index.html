@@ -98,7 +98,6 @@
      box (untouched, so the library's own render/crop logic never changes), then visually
      shrinks the WHOLE already-rendered picture — including its own black background,
      which blends into .hero's black background with no visible seam — as one unit. */
-  @media(max-width:820px){#us-hero{transform:scale(.42);transform-origin:50% 56%}}
   /* the scene carries its own composition + legibility; just a faint bottom fade
      for the overlaid coords/scroll cue */
   .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
@@ -601,32 +600,6 @@
     </div>
   </div>
 </header>
-
-<script>
-  // Mobile hero photo positioning — measures .hero-text's REAL rendered bottom edge
-  // (rather than guessing a top:X% against font metrics that already broke once on a
-  // real device when the tagline wrapped to 2 lines instead of the 1 line assumed) and
-  // anchors the CSS transform:scale(.42) on #us-hero (see mobile media query above)
-  // safely below it. Desktop is untouched — this only runs under the same 820px
-  // breakpoint as the rest of the mobile hero layout.
-  (function(){
-    var canvas = document.getElementById('us-hero');
-    var text = document.querySelector('.hero-text');
-    if(!canvas || !text) return;
-    var GAP = 36; // desired breathing room (px) between the text block and the photo
-    function layout(){
-      if(window.innerWidth > 820){ canvas.style.transformOrigin = ''; return; }
-      var bottom = text.getBoundingClientRect().bottom;
-      var originPct = Math.min(85, ((bottom + GAP) / window.innerHeight) * 100);
-      canvas.style.transformOrigin = '50% ' + originPct.toFixed(2) + '%';
-    }
-    layout();
-    if(document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
-    window.addEventListener('load', layout);
-    var t;
-    window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(layout, 120); });
-  })();
-</script>
 
 <!-- ===== INTRO / RECORD ===== -->
 <section id="intro" class="wrap">
