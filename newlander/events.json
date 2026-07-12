@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-07-11T22:30:24Z",
+  "generatedAt": "2026-07-12T22:05:18Z",
   "upcoming": [
-    {
-      "title": "Hardware Hackathon",
-      "startAt": "2026-07-12T01:00:00.000Z",
-      "endAt": "2026-07-12T05:00:00.000Z",
-      "url": "https://luma.com/hardwarehackathon",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/sv/c14ea5cc-0118-46a0-aaba-7d405125c7b4",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Infinity Unconference",
       "startAt": "2026-07-13T01:00:00.000Z",
@@ -327,6 +318,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Hardware Hackathon",
+      "startAt": "2026-07-12T01:00:00.000Z",
+      "endAt": "2026-07-12T05:00:00.000Z",
+      "url": "https://luma.com/hardwarehackathon",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/sv/c14ea5cc-0118-46a0-aaba-7d405125c7b4",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "The Crossing: From Fantasy to Reality",
       "startAt": "2026-07-10T01:00:00.000Z",
@@ -765,15 +765,6 @@
       "endAt": "2025-03-16T06:00:00.000Z",
       "url": "https://luma.com/2kutm92r",
       "coverUrl": "https://images.lumacdn.com/event-covers/4b/cbb0fe99-a36d-49a1-b84a-a12c05ec5897.jpg",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Vibe Code-a-Thon: Give in to the Vibes",
-      "startAt": "2025-03-08T19:00:00.000Z",
-      "endAt": "2025-03-09T07:00:00.000Z",
-      "url": "https://luma.com/zybz6klf",
-      "coverUrl": "https://images.lumacdn.com/event-covers/av/bd151654-54dd-4f8f-a9ff-bf712989f111.jpg",
       "city": "",
       "venue": ""
     }
