@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-07-12T22:05:18Z",
+  "generatedAt": "2026-07-13T10:05:25Z",
   "upcoming": [
-    {
-      "title": "Infinity Unconference",
-      "startAt": "2026-07-13T01:00:00.000Z",
-      "endAt": "2026-07-13T05:00:00.000Z",
-      "url": "https://luma.com/infinityunconference",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/l9/8a9304d4-ae5f-4fa4-87d2-acac12d8a637",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Mechanistic Interpretability Reading Group",
       "startAt": "2026-07-15T01:30:00.000Z",
@@ -318,6 +309,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Infinity Unconference",
+      "startAt": "2026-07-13T01:00:00.000Z",
+      "endAt": "2026-07-13T05:00:00.000Z",
+      "url": "https://luma.com/infinityunconference",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/l9/8a9304d4-ae5f-4fa4-87d2-acac12d8a637",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Hardware Hackathon",
       "startAt": "2026-07-12T01:00:00.000Z",
@@ -756,15 +756,6 @@
       "endAt": "2025-06-15T05:00:00.000Z",
       "url": "https://luma.com/lovhis3m",
       "coverUrl": "https://images.lumacdn.com/event-covers/hl/c9f098a1-280b-4a20-8f31-a95d4026d7ef.jpg",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "MCP Hackathon w/ Anthropic x Smithery.ai @ AGI House",
-      "startAt": "2025-03-15T18:00:00.000Z",
-      "endAt": "2025-03-16T06:00:00.000Z",
-      "url": "https://luma.com/2kutm92r",
-      "coverUrl": "https://images.lumacdn.com/event-covers/4b/cbb0fe99-a36d-49a1-b84a-a12c05ec5897.jpg",
       "city": "",
       "venue": ""
     }
