@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T16:05:30Z",
+  "generatedAt": "2026-07-14T04:07:51Z",
   "upcoming": [
     {
       "title": "Mechanistic Interpretability Reading Group",
@@ -74,20 +74,20 @@
       "venue": ""
     },
     {
+      "title": "Build-a-thon: Drone Engineering",
+      "startAt": "2026-08-01T00:00:00.000Z",
+      "endAt": "2026-08-03T05:00:00.000Z",
+      "url": "https://luma.com/DroneEngineering",
+      "coverUrl": "https://images.unsplash.com/photo-1640262653848-adea46405e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2NHx8ZHJvbmUlMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3ODIzMTk1MTN8Mg&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
       "title": "Posthumanism, Transhumanism & Xenophilosophy Reading Night",
       "startAt": "2026-08-07T01:00:00.000Z",
       "endAt": "2026-08-07T05:00:00.000Z",
       "url": "https://luma.com/ReadingNightagi-xlnu",
       "coverUrl": "https://images.lumacdn.com/uploads/u3/663c0363-c49e-4ed5-b27b-7c08044b667c.webp",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Build-a-thon: Drone Engineering",
-      "startAt": "2026-08-08T17:00:00.000Z",
-      "endAt": "2026-08-09T04:00:00.000Z",
-      "url": "https://luma.com/DroneEngineering",
-      "coverUrl": "https://images.unsplash.com/photo-1640262653848-adea46405e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2NHx8ZHJvbmUlMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3ODIzMTk1MTN8Mg&ixlib=rb-4.1.0&q=80&w=1080",
       "city": "",
       "venue": ""
     },
