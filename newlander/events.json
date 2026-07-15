@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-07-14T22:07:59Z",
+  "generatedAt": "2026-07-15T13:35:23Z",
   "upcoming": [
-    {
-      "title": "Mechanistic Interpretability Reading Group",
-      "startAt": "2026-07-15T01:30:00.000Z",
-      "endAt": "2026-07-15T05:00:00.000Z",
-      "url": "https://luma.com/mechanisticinterpretability",
-      "coverUrl": "https://images.lumacdn.com/uploads/fh/8a8da5bd-1e02-4590-91c2-202deefb08de.gif",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "PaperBench: Evaluating AI\u2019s Ability to Replicate AI Research",
       "startAt": "2026-07-16T01:00:00.000Z",
@@ -79,6 +70,15 @@
       "endAt": "2026-08-03T05:00:00.000Z",
       "url": "https://luma.com/DroneEngineering",
       "coverUrl": "https://images.unsplash.com/photo-1640262653848-adea46405e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2NHx8ZHJvbmUlMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3ODIzMTk1MTN8Mg&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Drone Engineering",
+      "startAt": "2026-08-01T00:30:00.000Z",
+      "endAt": "2026-08-03T05:00:00.000Z",
+      "url": "https://luma.com/kardashevdrones",
+      "coverUrl": "https://images.lumacdn.com/uploads/6z/074dc8ea-c506-46e2-bced-8214c15e8dde.png",
       "city": "",
       "venue": ""
     },
@@ -309,6 +309,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Mechanistic Interpretability Reading Group",
+      "startAt": "2026-07-15T01:30:00.000Z",
+      "endAt": "2026-07-15T05:00:00.000Z",
+      "url": "https://luma.com/mechanisticinterpretability",
+      "coverUrl": "https://images.lumacdn.com/uploads/fh/8a8da5bd-1e02-4590-91c2-202deefb08de.gif",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Infinity Unconference",
       "startAt": "2026-07-13T01:00:00.000Z",
@@ -747,15 +756,6 @@
       "endAt": "2025-07-20T06:00:00.000Z",
       "url": "https://luma.com/ctmlauuf",
       "coverUrl": "https://images.lumacdn.com/event-covers/5s/78b56683-7031-4851-8620-e85382b32c57.jpg",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Search: The Advent of AI Knowledge Discovery",
-      "startAt": "2025-06-14T18:00:00.000Z",
-      "endAt": "2025-06-15T05:00:00.000Z",
-      "url": "https://luma.com/lovhis3m",
-      "coverUrl": "https://images.lumacdn.com/event-covers/hl/c9f098a1-280b-4a20-8f31-a95d4026d7ef.jpg",
       "city": "",
       "venue": ""
     }
