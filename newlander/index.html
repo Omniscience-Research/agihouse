@@ -9,17 +9,17 @@
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://agihouse.ai/newlander/" />
-<meta property="og:title" content="AGI House SF" />
+<meta property="og:title" content="Home | AGI House" />
 <meta property="og:description" content="A place for the people building the future to build it together." />
-<meta property="og:image" content="https://agihouse.ai/newlander/assets/phoenix-og.jpg" />
+<meta property="og:image" content="https://agihouse.ai/newlander/assets/paypal-mafia-2022.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="AGI House SF" />
+<meta name="twitter:title" content="Home | AGI House" />
 <meta name="twitter:description" content="A place for the people building the future to build it together." />
-<meta name="twitter:image" content="https://agihouse.ai/newlander/assets/phoenix-og.jpg" />
+<meta name="twitter:image" content="https://agihouse.ai/newlander/assets/paypal-mafia-2022.jpg" />
 
-<!-- Favicon: the AGI House phoenix -->
-<link rel="icon" type="image/png" href="assets/phoenix-mark.png" />
-<link rel="apple-touch-icon" href="assets/phoenix-mark.png" />
+<!-- Favicon: the AGI House logo -->
+<link rel="icon" type="image/png" href="assets/agi-logo.png" />
+<link rel="apple-touch-icon" href="assets/agi-logo.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,7 +73,7 @@
   .navinner{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
   @media(max-width:480px){.navinner{padding:14px 22px}}
   nav.solid{background:rgba(0,0,0,.7);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);border-bottom:1px solid var(--line)}
-  /* phoenix mark + wordmark, always visible top-left */
+  /* AGI House logo + wordmark, always visible top-left */
   .brand{display:flex;align-items:center;gap:13px;font-family:var(--display);text-transform:uppercase;font-size:15px;letter-spacing:.22em;color:var(--text)}
   .brand img{width:30px;height:30px;object-fit:contain;filter:drop-shadow(0 1px 6px rgba(0,0,0,.6))}
   .nl{display:flex;gap:34px;align-items:center}
@@ -105,7 +105,7 @@
      the shift, needs to land at 50%) re-centres it. translateX must come before
      scale() in the function list so the shift applies in real screen px, not
      shrunk by the scale that follows it. */
-  @media(max-width:820px){#us-hero{transform:translateX(-12vw) scale(.42);transform-origin:50% 50%}}
+  @media(max-width:820px){#us-hero{display:none}}
   /* the scene carries its own composition + legibility; just a faint bottom fade
      for the overlaid coords/scroll cue */
   .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
@@ -143,7 +143,14 @@
   /* centred horizontally over the head (portrait sits right-of-centre) and just above it */
   .hero-label{position:absolute;top:23%;left:66%;transform:translate(-50%,-100%);z-index:3;pointer-events:none;
     display:flex;flex-direction:column;align-items:center;gap:16px;width:max-content;max-width:90vw;text-align:center}
-  @media(max-width:820px){.hero-label{position:static;left:auto;transform:none;width:auto}}
+  @media(max-width:820px){.hero-label{display:none}}
+  /* mobile: pixelated-portrait scene is hidden; keep the hero short so the
+     PayPal Mafia photo arrives on the first scroll (placed after the base
+     .hero/.hero-overlay rules so the override actually wins) */
+  @media(max-width:820px){
+    .hero{min-height:62vh;min-height:62svh}
+    .hero-overlay{min-height:62vh;min-height:62svh}
+  }
   /* mobile-only wrapper: see the HTML comment next to hero-text for why this exists.
      Anchored near the top of the hero, stacks its two children with a flex column so
      spacing between them is guaranteed correct regardless of actual rendered text height
@@ -160,12 +167,34 @@
   @keyframes hlfade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
 
   /* ---- reveal ---- */
-  /* origin photo — the PayPal Mafia of AI group shot, directly under the hero */
-  .mafia{margin:0}
+  /* life at the house — two-up snapshot gallery in the History section */
+  .lifegrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px}
+  @media(max-width:680px){.lifegrid{grid-template-columns:1fr}}
+  .life{margin:0}
+  .life img{width:100%;display:block;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--line)}
+  .life figcaption{margin-top:12px;font-family:var(--body);text-transform:uppercase;letter-spacing:.18em;font-size:10.5px;color:var(--dim)}
+
+  /* origin photo — the PayPal Mafia of AI group shot, directly under the hero.
+     Mirrors the original composite: title + left-to-right roster beside the photo,
+     stacking photo-first on mobile. */
+  #mafia{padding-top:96px;padding-bottom:0}
+  .mafia{margin:0;display:grid;grid-template-columns:minmax(230px,320px) 1fr;gap:44px;align-items:center}
   .mafia img{width:100%;display:block;border:1px solid var(--line)}
-  .mafia figcaption{margin-top:18px}
-  .mafia .cap-t{font-family:var(--body);text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--text)}
-  .mafia .cap-n{margin-top:8px;color:var(--dim);font-size:13px;line-height:1.8;max-width:980px}
+  .mafia figcaption{margin:0}
+  .mafia .cap-h{font-family:var(--display);text-transform:uppercase;font-weight:300;font-size:clamp(20px,2vw,28px);line-height:1.25;color:var(--text)}
+  .mafia .cap-d{margin-top:10px;font-family:var(--body);text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--mute)}
+  .mafia .cap-l{margin-top:22px;font-family:var(--body);text-transform:uppercase;letter-spacing:.18em;font-size:10px;color:var(--dim)}
+  .mafia .cap-list{list-style:none;margin:10px 0 0;padding:0;font-size:12.5px;line-height:1.5;color:var(--text)}
+  .mafia .cap-list li{margin-top:7px}
+  .mafia .cap-list li span{display:block;color:var(--dim);font-size:11px}
+  @media(max-width:820px){
+    .mafia{grid-template-columns:1fr;gap:26px}
+    .mafia img{order:-1}
+    .mafia .cap-h{font-size:clamp(22px,6vw,28px)}
+    .mafia .cap-list{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+  }
+  @media(max-width:480px){.mafia .cap-list{grid-template-columns:1fr}}
+  @media(max-width:820px){#mafia{padding-top:44px}}
 
   .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
   .rv.in{opacity:1;transform:none}
@@ -421,7 +450,7 @@
 </style>
 <div id="preloader" role="progressbar" aria-label="Loading" aria-live="polite">
   <div class="pl-inner">
-    <img class="pl-mark" src="assets/phoenix-mark.png" alt="">
+    <img class="pl-mark" src="assets/agi-logo.png" alt="">
     <div class="pl-count"><span id="pl-num">0</span><span class="pl-pct">%</span></div>
     <div class="pl-bar"><i id="pl-fill"></i></div>
     <div class="pl-word">Loading the Nexus</div>
@@ -567,7 +596,7 @@
 
 <nav id="nav">
   <div class="navinner">
-    <a href="#top" class="brand"><img src="assets/phoenix-mark.png" alt="AGI House SF"><span>AGI House SF</span></a>
+    <a href="#top" class="brand"><img src="assets/agi-logo.png" alt="AGI House SF"><span>AGI House SF</span></a>
     <div class="nl">
       <a href="#events">Events</a>
       <a href="#outcomes">Outcomes</a>
@@ -617,13 +646,31 @@
 </header>
 
 <!-- ===== ORIGIN PHOTO — the PayPal Mafia of AI, from the original agihouse.ai homepage ===== -->
-<section id="mafia" class="wrap" style="padding:96px 0 0">
+<section id="mafia" class="wrap">
   <figure class="mafia rv">
-    <img src="assets/paypal-mafia-2022.jpg" alt="Group photo at the first AGI House, Hillsborough — September 3, 2022" loading="eager">
     <figcaption>
-      <div class="cap-t">The PayPal Mafia of AI &middot; September 3, 2022</div>
-      <div class="cap-n">Left to right: Marco Mascorro (FellowAI), Matt Bell (Matterport), Kyle Morris (Banana), Aravind Srinivas (Perplexity), Andrej Karpathy (Tesla Autopilot, OpenAI), Scott Fitsimones (AirGarage), Otavio Good, Sharon Zhou (Lamini), Jeremy Nixon (Omniscience &amp; AGI House), Simon Willison (Django), Russell Kaplan (Scale AI), Kate Park (Tesla Autopilot), Sharif Shankar (Lexica), Sean Bell (Meta AI), Erik Schluntz (Cobalt Robotics).</div>
+      <div class="cap-h">AGI House:<br>The PayPal Mafia of AI</div>
+      <div class="cap-d">September 3, 2022</div>
+      <div class="cap-l">Left to right:</div>
+      <ul class="cap-list">
+        <li>Marco Mascorro<span>Co-founder of FellowAI</span></li>
+        <li>Matt Bell<span>Co-founder of Matterport</span></li>
+        <li>Kyle Morris<span>Co-founder of Banana</span></li>
+        <li>Aravind Srinivas<span>Founder of Perplexity</span></li>
+        <li>Andrej Karpathy<span>Tesla Autopilot, OpenAI</span></li>
+        <li>Scott Fitsimones<span>Co-founder of AirGarage</span></li>
+        <li>Otavio Good<span>Building Humanoid Robots</span></li>
+        <li>Sharon Zhou<span>Co-founder of Lamini</span></li>
+        <li>Jeremy Nixon<span>Founder of Omniscience &amp; AGI House</span></li>
+        <li>Simon Willison<span>Creator of Django</span></li>
+        <li>Russell Kaplan<span>Scale AI</span></li>
+        <li>Kate Park<span>Tesla Autopilot</span></li>
+        <li>Sharif Shankar<span>Founder of Lexica</span></li>
+        <li>Sean Bell<span>Meta AI</span></li>
+        <li>Erik Schluntz<span>Co-founder of Cobalt Robotics</span></li>
+      </ul>
     </figcaption>
+    <img src="assets/paypal-mafia-2022.jpg" alt="Group photo at the first AGI House, Hillsborough — September 3, 2022" loading="eager">
   </figure>
 </section>
 
@@ -767,6 +814,18 @@
         <div class="hc-x">The second house. Jeremy opened it in the city to run the same thing at a larger scale, now hosting up to five events a week.</div>
       </div>
     </div>
+  </div>
+
+  <!-- life at the house — snapshots -->
+  <div class="lifegrid">
+    <figure class="life rv">
+      <img src="assets/house/hackathon-winners.jpg" alt="Hackathon winners at AGI House holding their GPU prize behind gold AGI House letters" loading="lazy">
+      <figcaption>Hackathon night — the winning team takes home a GPU.</figcaption>
+    </figure>
+    <figure class="life rv">
+      <img src="assets/house/community-dinner.jpg" alt="AGI House roommates and friends at a dinner in San Francisco" loading="lazy">
+      <figcaption>Roommate dinner out in the city.</figcaption>
+    </figure>
   </div>
 
   <!-- milestones -->

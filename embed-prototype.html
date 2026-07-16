@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Upcoming Events | AGI House</title>
+    <meta property="og:title" content="Upcoming Events | AGI House" />
+    <meta property="og:image" content="img/assets/neo.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Upcoming events at AGI House. Hackathons, dinners, and gatherings at the frontier of intelligence." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="img/assets/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
+    <!-- Template Vendor's Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <!-- Template Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Favicons & App Icons -->
+    <link rel="manifest" href="img/content/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://kit.fontawesome.com/f15c1cc7e2.js" crossorigin="anonymous"></script>
+    <style>
+      /* ── Tab Navigation ── */
+      .events-tabs {
+        display: flex;
+        gap: 0;
+        margin-bottom: 0;
+        border-bottom: 2px solid #000;
+      }
+      .events-tab {
+        padding: 1rem 2.5rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: #999;
+        position: relative;
+        transition: color 0.3s ease;
+      }
+      .events-tab:hover {
+        color: #333;
+      }
+      .events-tab.active {
+        color: #000;
+      }
+      .events-tab.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #000;
+      }
+
+      /* ── Tab Content ── */
+      .tab-panel {
+        display: none;
+      }
+      .tab-panel.active {
+        display: block;
+      }
+
+      /* ── Embed Container ── */
+      .embed-container {
+        margin-top: 2rem;
+        min-height: 700px;
+        position: relative;
+      }
+      .embed-container iframe {
+        width: 100%;
+        min-height: 700px;
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 8px;
+        background: #fafafa;
+      }
+
+      /* ── Partiful Fallback ── */
+      .partiful-fallback {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 8px;
+        margin-top: 2rem;
+        display: none;
+      }
+      .partiful-fallback h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .partiful-fallback p {
+        color: #666;
+        margin-bottom: 1.5rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* ── Page Header ── */
+      .events-header {
+        margin-bottom: 2.5rem;
+      }
+      .events-header h1 {
+        font-family: 'Playfair Display', serif;
+        margin: 0 0 0.5rem;
+      }
+      .events-header p {
+        color: #666;
+        font-size: 1.1rem;
+        margin: 0;
+      }
+
+      /* ── Setup Banner ── */
+      .setup-banner {
+        background: #fffde7;
+        border: 1px solid #f0e68c;
+        border-radius: 8px;
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+      .setup-banner strong {
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+      .setup-banner code {
+        background: rgba(0,0,0,0.06);
+        padding: 0.15rem 0.4rem;
+        border-radius: 3px;
+        font-size: 0.85rem;
+      }
+
+      /* ── Unified Event Cards (API-powered) ── */
+      .events-timeline {
+        margin-top: 2rem;
+      }
+      .events-loading {
+        text-align: center;
+        padding: 3rem;
+        color: #999;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
+      }
+      .events-error {
+        text-align: center;
+        padding: 2rem;
+        color: #c0392b;
+        font-size: 0.9rem;
+      }
+      .month-group {
+        margin-bottom: 2.5rem;
+      }
+      .month-label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #999;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        margin-bottom: 1rem;
+        position: sticky;
+        top: 0;
+        background: var(--color-light-1, #f2f1ed);
+        z-index: 1;
+      }
+      .event-card {
+        display: flex;
+        gap: 1.25rem;
+        padding: 1.25rem 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        text-decoration: none;
+        color: inherit;
+        transition: opacity 0.2s ease;
+      }
+      .event-card:hover {
+        opacity: 0.7;
+      }
+      .event-card__date {
+        flex-shrink: 0;
+        width: 52px;
+        text-align: center;
+      }
+      .event-card__day {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.75rem;
+        line-height: 1;
+        display: block;
+      }
+      .event-card__weekday {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #999;
+        margin-top: 0.25rem;
+        display: block;
+      }
+      .event-card__info {
+        flex: 1;
+        min-width: 0;
+      }
+      .event-card__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.15rem;
+        margin: 0 0 0.35rem;
+        line-height: 1.3;
+      }
+      .event-card__meta {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.8rem;
+        color: #888;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .event-card__source {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        flex-shrink: 0;
+        align-self: flex-start;
+        margin-top: 0.15rem;
+      }
+      .event-card__source--luma {
+        background: #f0eef8;
+        color: #6c5ce7;
+      }
+      .event-card__source--partiful {
+        background: #fef0e7;
+        color: #e17055;
+      }
+      .event-card__cover {
+        width: 120px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 6px;
+        flex-shrink: 0;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 768px) {
+        .events-tab {
+          padding: 0.75rem 1.25rem;
+          font-size: 0.75rem;
+          letter-spacing: 0.08em;
+        }
+        .embed-container {
+          min-height: 500px;
+        }
+        .embed-container iframe {
+          min-height: 500px;
+        }
+        .event-card__cover {
+          width: 80px;
+          height: 56px;
+        }
+        .event-card__title {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div data-barba="wrapper">
+      <!-- Transition Curtain -->
+      <div class="curtain transition-curtain" id="js-page-transition-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- header curtain show/hide -->
+      <div class="header-curtain curtain" id="js-header-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- header curtain AJAX transition -->
+      <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- Cursor Follower -->
+      <div class="cursor" id="js-cursor">
+        <div class="cursor__wrapper">
+          <div class="cursor__follower">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6"></circle>
+              <circle id="outer" cx="25" cy="25" r="24" style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+            </svg>
+          </div>
+          <div class="cursor__arrows">
+            <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+            <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+            <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+            <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+          </div>
+          <div class="cursor__label"></div>
+          <div class="cursor__icon material-icons"></div>
+        </div>
+      </div>
+      <!-- PAGE HEADER -->
+      <header
+        class="header header_menu-right header_fixed container-fluid js-header-sticky"
+        id="page-header"
+        data-arts-theme-text="light"
+        data-arts-header-sticky-theme="bg-white"
+        data-arts-header-logo="secondary"
+        data-arts-header-sticky-logo="primary"
+        data-arts-header-overlay-theme="light"
+        data-arts-header-overlay-background="#f2f1ed"
+      >
+        <div class="header__container header__controls">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto header__col">
+              <a class="button button_solid button_black mb-0-5" data-hover="Build With Us" href="https://forms.gle/TF6Arjmv7CMM4KUQA" target="_blank">
+                <span class="button__label-hover">Join Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- PAGE MAIN -->
+      <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
+        <main class="page-wrapper__content">
+          <section class="section section-masthead pt-large pt-md-0" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-background-color="var(--color-light-1)">
+            <div class="container-fluid container-fluid_paddings">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                  <!-- Page Header -->
+                  <div class="events-header" style="padding-top: 2rem;">
+                    <div class="small-caps mt-0 mb-1" style="color: #888;">AGI House</div>
+                    <h1 class="h1 mt-0 mb-0">Upcoming Events</h1>
+                    <p>Hackathons, dinners, and gatherings at the frontier of intelligence.</p>
+                  </div>
+
+                  <!--
+                    ┌─────────────────────────────────────────────────┐
+                    │  SETUP: Replace the placeholder URLs below      │
+                    │                                                 │
+                    │  LUMA: Go to lu.ma/home/calendars → select      │
+                    │  AGI House calendar → Settings → Embed →        │
+                    │  copy the embed src URL.                        │
+                    │  It looks like:                                 │
+                    │  https://lu.ma/embed/calendar/cal-XXXXX/events  │
+                    │                                                 │
+                    │  PARTIFUL: Use Jeremy Nixon's profile URL.      │
+                    │  e.g. https://partiful.com/jeremynixon          │
+                    │  (Note: Partiful may block iframe embedding,    │
+                    │  in which case the fallback link will show.)    │
+                    └─────────────────────────────────────────────────┘
+                  -->
+
+                  <!-- Setup Banner — remove this div once fully configured -->
+                  <div class="setup-banner" id="setup-banner">
+                    <strong>Optional: Enable the unified multi-calendar timeline</strong>
+                    Add your Luma API key to <code>LUMA_API_KEY</code> in the <code>&lt;script&gt;</code> at the bottom of this page. This merges events from all calendars in <code>LUMA_CALENDARS</code> into one sorted timeline.<br>
+                    Get an API key: <a href="https://lu.ma" target="_blank">lu.ma</a> → Settings → API → Create API Key (requires Luma Plus).
+                  </div>
+
+                  <!-- Tabs -->
+                  <nav class="events-tabs" role="tablist">
+                    <button class="events-tab active" role="tab" data-tab="unified" aria-selected="true">
+                      All Events
+                    </button>
+                    <button class="events-tab" role="tab" data-tab="luma" aria-selected="false">
+                      Luma
+                    </button>
+                    <button class="events-tab" role="tab" data-tab="partiful" aria-selected="false">
+                      Partiful
+                    </button>
+                  </nav>
+
+                  <!-- Unified Panel (API-powered, merges multiple calendars) -->
+                  <div class="tab-panel active" id="panel-unified" role="tabpanel">
+                    <div class="events-timeline" id="unified-timeline">
+                      <div class="events-loading" id="unified-loading">Loading events...</div>
+                    </div>
+                  </div>
+
+                  <!-- Luma Embed Panel (iframe fallback) -->
+                  <div class="tab-panel" id="panel-luma" role="tabpanel">
+                    <div class="embed-container">
+                      <iframe
+                        id="luma-embed"
+                        src=""
+                        frameborder="0"
+                        allowfullscreen
+                        aria-hidden="false"
+                        tabindex="0"
+                        style="border: 1px solid #bfcbda88; border-radius: 4px;"
+                      ></iframe>
+                    </div>
+                  </div>
+
+                  <!-- Partiful Panel -->
+                  <div class="tab-panel" id="panel-partiful" role="tabpanel">
+                    <div class="partiful-fallback" id="partiful-fallback" style="display: block;">
+                      <h3>Partiful Events</h3>
+                      <p>View our events hosted by Jeremy Nixon directly on Partiful.</p>
+                      <a id="partiful-link" class="button button_solid button_black" data-hover="View Events" href="" target="_blank">
+                        <span class="button__label-hover">Open Partiful</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- PAGE FOOTER -->
+        <footer class="footer container-fluid bg-white" id="page-footer" data-arts-theme-text="dark" data-arts-footer-logo="primary">
+          <div class="footer__area pb-sm-4">
+            <div class="row"><div class="col-lg-12"></div></div>
+          </div>
+          <div class="footer__area footer__area-border-top">
+            <div class="row align-items-center">
+              <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
+                <section class="widget widget_text">
+                  <div class="textwidget">
+                    <p><small>&copy; 2026 AGI House</small></p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <canvas id="js-webgl"></canvas>
+    <!-- PhotoSwipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"><div class="pswp__img pswp__img--placeholder"></div></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div>
+          </div>
+          <div class="pswp__button pswp__button--arrow--left">
+            <div class="arrow arrow-left js-arrow">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-left__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <div class="pswp__button pswp__button--arrow--right">
+            <div class="arrow arrow-right js-arrow">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-right__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <div class="pswp__caption"><div class="pswp__caption__center text-center"></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Shaders -->
+    <script id="list-hover-vs" type="x-shader/x-vertex">
+      uniform vec2 uOffset;
+      varying vec2 vUv;
+      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
+        float M_PI = 3.1415926535897932384626433832795;
+        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
+        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
+        return position;
+      }
+      void main() {
+        vUv = uv + (uOffset * 2.);
+        vec3 newPosition = deformationCurve(position, uv, uOffset);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
+      }
+    </script>
+    <script id="list-hover-fs" type="x-shader/x-fragment">
+      uniform sampler2D uTexture;
+      uniform float uAlpha;
+      uniform float uScale;
+      varying vec2 vUv;
+      vec2 scaleUV(vec2 uv, float scale) {
+        float center = 0.5;
+        return ((uv - center) * scale) + center;
+      }
+      void main() {
+        vec3 color = texture2D(uTexture, scaleUV(vUv, uScale)).rgb;
+        gl_FragColor = vec4(color, uAlpha);
+      }
+    </script>
+    <script id="slider-textures-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    </script>
+    <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      uniform float dispFactor;
+      uniform float effectFactor;
+      void main() {
+        vec2 uv = vUv;
+        vec4 disp = texture2D(disp, uv);
+        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+        gl_FragColor = mix(_texture, _texture2, dispFactor);
+      }
+    </script>
+    <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      uniform float dispFactor;
+      uniform float effectFactor;
+      void main() {
+        vec2 uv = vUv;
+        vec4 disp = texture2D(disp, uv);
+        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
+        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+        gl_FragColor = mix(_texture, _texture2, dispFactor);
+      }
+    </script>
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <!-- EMBED CONFIGURATION -->
+    <script>
+      (function() {
+        // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        // CONFIGURATION — edit these values
+        // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+        // Luma API key (requires Luma Plus subscription)
+        // Get yours at: lu.ma → Settings → API → Create API Key
+        var LUMA_API_KEY = 'secret-BSjOYDXxwFC4r2QPCgOjmlmWR';
+
+        // Luma calendar embed URLs — add as many calendars as you want.
+        // Each one will also be queried via API for the unified timeline.
+        var LUMA_CALENDARS = [
+          {
+            name: 'AGI House',
+            embedUrl: 'https://luma.com/embed/calendar/cal-Lv1pgYv5ITFR4tC/events',
+            // Calendar API ID (same cal-XXXXX from the embed URL)
+            calendarId: 'cal-Lv1pgYv5ITFR4tC'
+          }
+          // Add more calendars here:
+          // {
+          //   name: 'Another Calendar',
+          //   embedUrl: 'https://luma.com/embed/calendar/cal-YYYYY/events',
+          //   calendarId: 'cal-YYYYY'
+          // }
+        ];
+
+        // Partiful profile URL (for link-out — Partiful has no embed/API)
+        var PARTIFUL_URL = 'https://partiful.com/u/FFul3rBdtCT3Ap9Ytp6nzalEXak1';
+
+        // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+        // ── Helpers ──
+
+        var MONTHS = ['January','February','March','April','May','June',
+                      'July','August','September','October','November','December'];
+        var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+        function formatTime(dateStr) {
+          var d = new Date(dateStr);
+          var h = d.getHours();
+          var m = d.getMinutes();
+          var ampm = h >= 12 ? 'PM' : 'AM';
+          h = h % 12 || 12;
+          return h + (m ? ':' + (m < 10 ? '0' : '') + m : '') + ' ' + ampm;
+        }
+
+        function groupByMonth(events) {
+          var groups = {};
+          events.forEach(function(evt) {
+            var d = new Date(evt.startAt);
+            var key = MONTHS[d.getMonth()] + ' ' + d.getFullYear();
+            if (!groups[key]) groups[key] = [];
+            groups[key].push(evt);
+          });
+          return groups;
+        }
+
+        function renderEventCard(evt) {
+          var d = new Date(evt.startAt);
+          var card = document.createElement('a');
+          card.className = 'event-card';
+          card.href = evt.url;
+          card.target = '_blank';
+          card.rel = 'noopener';
+
+          var html = '' +
+            '<div class="event-card__date">' +
+              '<span class="event-card__day">' + d.getDate() + '</span>' +
+              '<span class="event-card__weekday">' + DAYS[d.getDay()].slice(0,3) + '</span>' +
+            '</div>' +
+            '<div class="event-card__info">' +
+              '<h3 class="event-card__title">' + evt.title + '</h3>' +
+              '<div class="event-card__meta">' +
+                '<span>' + formatTime(evt.startAt) + '</span>' +
+                (evt.location ? '<span>' + evt.location + '</span>' : '') +
+              '</div>' +
+            '</div>' +
+            '<span class="event-card__source event-card__source--' + evt.source + '">' + evt.source + '</span>';
+
+          if (evt.coverUrl) {
+            html += '<img class="event-card__cover" src="' + evt.coverUrl + '" alt="" loading="lazy">';
+          }
+
+          card.innerHTML = html;
+          return card;
+        }
+
+        function renderTimeline(events, containerId) {
+          var container = document.getElementById(containerId);
+          container.innerHTML = '';
+
+          if (!events.length) {
+            container.innerHTML = '<div class="events-loading">No upcoming events found.</div>';
+            return;
+          }
+
+          var groups = groupByMonth(events);
+          Object.keys(groups).forEach(function(month) {
+            var section = document.createElement('div');
+            section.className = 'month-group';
+
+            var label = document.createElement('div');
+            label.className = 'month-label';
+            label.textContent = month;
+            section.appendChild(label);
+
+            groups[month].forEach(function(evt) {
+              section.appendChild(renderEventCard(evt));
+            });
+
+            container.appendChild(section);
+          });
+        }
+
+        // ── Fetch Luma events via API ──
+
+        async function fetchLumaEventsAPI() {
+          if (!LUMA_API_KEY) return [];
+
+          var allEvents = [];
+          var now = new Date().toISOString();
+
+          for (var i = 0; i < LUMA_CALENDARS.length; i++) {
+            var cal = LUMA_CALENDARS[i];
+            try {
+              var url = 'https://public-api.luma.com/v1/calendar/list-events' +
+                '?after=' + encodeURIComponent(now) +
+                '&sort_column=start_at&sort_direction=asc&pagination_limit=50';
+
+              var resp = await fetch(url, {
+                headers: {
+                  'x-luma-api-key': LUMA_API_KEY,
+                  'Content-Type': 'application/json'
+                }
+              });
+
+              if (!resp.ok) throw new Error('Luma API ' + resp.status);
+
+              var data = await resp.json();
+              (data.entries || []).forEach(function(entry) {
+                var e = entry.event;
+                allEvents.push({
+                  title: e.name || 'Untitled Event',
+                  startAt: e.start_at,
+                  endAt: e.end_at,
+                  url: e.url || ('https://lu.ma/' + (entry.api_id || '')),
+                  coverUrl: e.cover_url || '',
+                  location: (e.geo_address_info && e.geo_address_info.city) || '',
+                  source: 'luma',
+                  calendarName: cal.name
+                });
+              });
+            } catch (err) {
+              console.warn('Failed to fetch Luma calendar "' + cal.name + '":', err);
+            }
+          }
+
+          return allEvents;
+        }
+
+        // ── Scrape Luma embed as fallback (no API key needed) ──
+        // The Luma embed iframe renders events client-side, so we can't scrape it.
+        // If no API key, we show the iframe embed directly instead.
+
+        // ── Fetch Partiful events from pre-generated JSON ──
+        // Run: node scripts/fetch-partiful-events.js to generate data/partiful-events.json
+
+        async function fetchPartifulEvents() {
+          try {
+            var resp = await fetch('data/partiful-events.json');
+            if (!resp.ok) return [];
+            var data = await resp.json();
+            return (data.events || []).map(function(e) {
+              return {
+                title: e.title || 'Untitled',
+                startAt: e.startAt,
+                endAt: e.endAt,
+                url: e.url,
+                coverUrl: e.coverUrl || '',
+                location: e.location || '',
+                source: 'partiful',
+                calendarName: 'Partiful'
+              };
+            });
+          } catch (err) {
+            console.warn('No Partiful events JSON found. Run: node scripts/fetch-partiful-events.js');
+            return [];
+          }
+        }
+
+        // ── Initialize ──
+
+        async function init() {
+          // 1. Set up Luma iframe tab (first calendar as default)
+          if (LUMA_CALENDARS.length) {
+            document.getElementById('luma-embed').src = LUMA_CALENDARS[0].embedUrl;
+          }
+
+          // 2. Set up Partiful link
+          if (PARTIFUL_URL) {
+            document.getElementById('partiful-link').href = PARTIFUL_URL;
+          }
+
+          // 3. Build unified timeline — merge Luma API + Partiful JSON
+          var allEvents = [];
+
+          // Fetch Luma events via API (if key is set)
+          if (LUMA_API_KEY) {
+            try {
+              var lumaEvents = await fetchLumaEventsAPI();
+              allEvents = allEvents.concat(lumaEvents);
+            } catch (err) {
+              console.warn('Luma API fetch failed:', err);
+            }
+          }
+
+          // Fetch Partiful events from pre-generated JSON
+          var partifulEvents = await fetchPartifulEvents();
+          allEvents = allEvents.concat(partifulEvents);
+
+          // Sort everything by date
+          allEvents.sort(function(a, b) {
+            if (!a.startAt) return 1;
+            if (!b.startAt) return -1;
+            return new Date(a.startAt) - new Date(b.startAt);
+          });
+
+          if (allEvents.length) {
+            renderTimeline(allEvents, 'unified-timeline');
+          } else if (LUMA_CALENDARS.length) {
+            // Fallback: show Luma embed iframes stacked
+            var timeline = document.getElementById('unified-timeline');
+            var html = '';
+            LUMA_CALENDARS.forEach(function(cal) {
+              html += '' +
+                (LUMA_CALENDARS.length > 1 ?
+                  '<div class="month-label">' + cal.name + '</div>' : '') +
+                '<div class="embed-container">' +
+                  '<iframe src="' + cal.embedUrl + '" frameborder="0" allowfullscreen ' +
+                  'style="border: 1px solid #bfcbda88; border-radius: 4px;"></iframe>' +
+                '</div>';
+            });
+            if (PARTIFUL_URL) {
+              html += '' +
+                '<div style="text-align: center; padding: 2.5rem; margin-top: 2rem; ' +
+                'background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%); ' +
+                'border: 1px solid rgba(0,0,0,0.08); border-radius: 8px;">' +
+                  '<h3 style="font-family: Playfair Display, serif; font-size: 1.25rem; margin-bottom: 0.5rem;">More on Partiful</h3>' +
+                  '<p style="color: #666; margin-bottom: 1rem;">Some events are hosted on Partiful by Jeremy Nixon.</p>' +
+                  '<a class="button button_solid button_black" data-hover="View Events" href="' + PARTIFUL_URL + '" target="_blank">' +
+                    '<span class="button__label-hover">Open Partiful</span>' +
+                  '</a>' +
+                '</div>';
+            }
+            timeline.innerHTML = html;
+          } else {
+            document.getElementById('unified-timeline').innerHTML =
+              '<div class="events-loading">No events found. Check your Luma API key or run the Partiful fetch script.</div>';
+          }
+
+          // Hide setup banner if configured
+          if (LUMA_CALENDARS.length && PARTIFUL_URL) {
+            var banner = document.getElementById('setup-banner');
+            if (banner) banner.style.display = 'none';
+          }
+        }
+
+        // Tab switching
+        var tabs = document.querySelectorAll('.events-tab');
+        var panels = document.querySelectorAll('.tab-panel');
+        tabs.forEach(function(tab) {
+          tab.addEventListener('click', function() {
+            var target = this.getAttribute('data-tab');
+            tabs.forEach(function(t) {
+              t.classList.remove('active');
+              t.setAttribute('aria-selected', 'false');
+            });
+            panels.forEach(function(p) { p.classList.remove('active'); });
+            this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
+            document.getElementById('panel-' + target).classList.add('active');
+          });
+        });
+
+        init();
+      })();
+    </script>
+  <!-- NEWSLETTER SIGNUP -->
+    <script src="js/newsletter.js" defer></script>
+  </body>
+</html>
