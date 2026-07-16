@@ -1,38 +1,185 @@
 {
   "_comment": "AGI House Community grid. Three lines per card: name (n) → title at company (company) → AGI House context (tag). img = assets/network/<slug>.jpg. Featured roommates/founders lead the grid; Anton is placed 3rd by request.",
   "people": [
-    { "name": "Andrej Karpathy",        "company": "Co-Founder at OpenAI",              "tag": "Co-Founder of AGI House",              "img": "andrej-karpathy" },
-    { "name": "Benjamin Mann",          "company": "Co-Founder at Anthropic",           "tag": "Founding hackathon organizer",         "img": "benjamin-mann" },
-    { "name": "Anton Osika",            "company": "Founder at Lovable",                "tag": "Former Roommate at AGI House SF",      "img": "anton-osika" },
-    { "name": "Aravind Srinivas",       "company": "Co-Founder at Perplexity",          "tag": "Founded Perplexity at AGI House",      "img": "aravind-srinivas" },
-    { "name": "Jeremy Nixon",           "company": "Founder of AGI Houses & Infinity",  "tag": "Has built AI group houses for 8 years","img": "jeremy-nixon" },
-    { "name": "Max Novendstern",        "company": "Co-Founder at Worldcoin",           "tag": "Former Roommate at AGI House SF",      "img": "max-novendstern" },
-    { "name": "Josh Payne",             "company": "Founder & CEO at Coframe",          "tag": "Roommate at AGI House, unicorn founder","img": "josh-payne" },
-    { "name": "Erik Bernhardsson",      "company": "Co-Founder & CEO at Modal",         "tag": "In the network",                       "img": "erik-bernhardsson" },
-    { "name": "Adam D'Angelo",          "company": "Co-Founder & CEO at Quora",         "tag": "Speaker at AGI House",                 "img": "adam-dangelo" },
-    { "name": "Tim Shi",                "company": "Co-Founder at Cresta",              "tag": "Genesis roommate",                     "img": "tim-shi" },
-    { "name": "Chris Power",            "company": "Founder & CEO at Hadrian",          "tag": "In the network",                       "img": "chris-power" },
-    { "name": "Michael Ng",             "company": "Co-Founder at Ambience Healthcare", "tag": "Genesis roommate",                     "img": "michael-ng" },
-    { "name": "Robert Nishihara",       "company": "Co-Founder at Anyscale",            "tag": "Genesis roommate",                     "img": "robert-nishihara" },
-    { "name": "George Sivulka",         "company": "Founder & CEO at Hebbia",           "tag": "In the network",                       "img": "george-sivulka" },
-    { "name": "Julius Ritter",          "company": "President at AGI House SF",         "tag": "Roommate at AGI House SF",             "img": "julius-ritter" },
-    { "name": "Div Garg",               "company": "Founder at AGI, Inc.",              "tag": "Roommate at AGI House SF",             "img": "div-garg" },
-    { "name": "Kyle Morris",            "company": "Co-Founder at Banana & Demi",       "tag": "Roommate at AGI House SF",             "img": "kyle-morris" },
-    { "name": "Connie Li",              "company": "AI Neo Lab Founder",                "tag": "Roommate at AGI House SF",             "img": "connie-li" },
-    { "name": "John Schulman",          "company": "Co-Founder at Thinking Machines",   "tag": "Speaker at AGI House",                 "img": "john-schulman" },
-    { "name": "Celine Halioua",         "company": "Founder & CEO at Loyal",            "tag": "Fmr Roommate at AGI House SF",         "img": "celine-halioua" },
-    { "name": "Joscha Bach",            "company": "Exec. Director at CIMC",            "tag": "Speaker at AGI House SF",              "img": "joscha-bach" },
-    { "name": "Michael Andregg",        "company": "Founder at Eon",                    "tag": "Speaker at AGI House SF",              "img": "michael-andregg" },
-    { "name": "Sharon Zhou",            "company": "VP of AI at AMD",                   "tag": "Former Roommate at AGI House",         "img": "sharon-zhou" },
-    { "name": "Steve Hsu",              "company": "Physics Professor & Podcast Host",  "tag": "Speaker at AGI House SF",              "img": "steve-hsu" },
-    { "name": "Laura Deming",           "company": "Co-Founder & CEO at Until Labs",    "tag": "In the network",                       "img": "laura-deming" },
-    { "name": "Conor White-Sullivan",   "company": "Co-Founder & CEO at Roam Research", "tag": "Roommate at AGI House SF",             "img": "conor-white-sullivan" },
-    { "name": "Scott Fitsimones",       "company": "Co-Founder & CTO at AirGarage",     "tag": "In the network",                       "img": "scott-fitsimones" },
-    { "name": "Sergey Brin",            "company": "Co-Founder at Google",              "tag": "Sponsor & speaker at AGI House",       "img": "sergey-brin" },
-    { "name": "George Hotz",            "company": "Founder at the tiny corp",          "tag": "Hackathon hacker at AGI House",        "img": "george-hotz" },
-    { "name": "Stephen Wolfram",        "company": "Founder & CEO at Wolfram Research", "tag": "Speaker at AGI House",                 "img": "stephen-wolfram" },
-    { "name": "Alec Radford",           "company": "AI Researcher",                     "tag": "In the network",                       "img": "alec-radford" },
-    { "name": "Andrew White",           "company": "Co-Founder at FutureHouse",         "tag": "In the network",                       "img": "andrew-white" },
-    { "name": "Kawal Gandhi",           "company": "Office of the CTO at Google",       "tag": "Speaker & sponsor at AGI House",       "img": "kawal-gandhi" }
+    {
+      "name": "Andrej Karpathy",
+      "company": "Co-Founder at OpenAI",
+      "tag": "Co-Founder of AGI House",
+      "img": "andrej-karpathy"
+    },
+    {
+      "name": "Benjamin Mann",
+      "company": "Co-Founder at Anthropic",
+      "tag": "Founding hackathon organizer",
+      "img": "benjamin-mann"
+    },
+    {
+      "name": "Anton Osika",
+      "company": "Founder at Lovable",
+      "tag": "Former Roommate at AGI House SF",
+      "img": "anton-osika"
+    },
+    {
+      "name": "Aravind Srinivas",
+      "company": "Co-Founder at Perplexity",
+      "tag": "Founded Perplexity at AGI House",
+      "img": "aravind-srinivas"
+    },
+    {
+      "name": "Jeremy Nixon",
+      "company": "Founder of AGI Houses & Infinity",
+      "tag": "Has built AI group houses for 8 years",
+      "img": "jeremy-nixon"
+    },
+    {
+      "name": "Max Novendstern",
+      "company": "Co-Founder at Worldcoin",
+      "tag": "Former Roommate at AGI House SF",
+      "img": "max-novendstern"
+    },
+    {
+      "name": "Josh Payne",
+      "company": "Founder & CEO at Coframe",
+      "tag": "Roommate at AGI House, unicorn founder",
+      "img": "josh-payne"
+    },
+    {
+      "name": "Erik Bernhardsson",
+      "company": "Co-Founder & CEO at Modal",
+      "tag": "In the network",
+      "img": "erik-bernhardsson"
+    },
+    {
+      "name": "Tim Shi",
+      "company": "Co-Founder at Cresta",
+      "tag": "Genesis roommate",
+      "img": "tim-shi"
+    },
+    {
+      "name": "Chris Power",
+      "company": "Founder & CEO at Hadrian",
+      "tag": "In the network",
+      "img": "chris-power"
+    },
+    {
+      "name": "Michael Ng",
+      "company": "Co-Founder at Ambience Healthcare",
+      "tag": "Genesis roommate",
+      "img": "michael-ng"
+    },
+    {
+      "name": "Robert Nishihara",
+      "company": "Co-Founder at Anyscale",
+      "tag": "Genesis roommate",
+      "img": "robert-nishihara"
+    },
+    {
+      "name": "Julius Ritter",
+      "company": "President at AGI House SF",
+      "tag": "Roommate at AGI House SF",
+      "img": "julius-ritter"
+    },
+    {
+      "name": "Div Garg",
+      "company": "Founder at AGI, Inc.",
+      "tag": "Roommate at AGI House SF",
+      "img": "div-garg"
+    },
+    {
+      "name": "Kyle Morris",
+      "company": "Co-Founder at Banana & Demi",
+      "tag": "Roommate at AGI House SF",
+      "img": "kyle-morris"
+    },
+    {
+      "name": "Connie Li",
+      "company": "AI Neo Lab Founder",
+      "tag": "Roommate at AGI House SF",
+      "img": "connie-li"
+    },
+    {
+      "name": "John Schulman",
+      "company": "Co-Founder at Thinking Machines",
+      "tag": "Speaker at AGI House",
+      "img": "john-schulman"
+    },
+    {
+      "name": "Celine Halioua",
+      "company": "Founder & CEO at Loyal",
+      "tag": "Fmr Roommate at AGI House SF",
+      "img": "celine-halioua"
+    },
+    {
+      "name": "Joscha Bach",
+      "company": "Exec. Director at CIMC",
+      "tag": "Speaker at AGI House SF",
+      "img": "joscha-bach"
+    },
+    {
+      "name": "Michael Andregg",
+      "company": "Founder at Eon",
+      "tag": "Speaker at AGI House SF",
+      "img": "michael-andregg"
+    },
+    {
+      "name": "Sharon Zhou",
+      "company": "VP of AI at AMD",
+      "tag": "Former Roommate at AGI House",
+      "img": "sharon-zhou"
+    },
+    {
+      "name": "Steve Hsu",
+      "company": "Physics Professor & Podcast Host",
+      "tag": "Speaker at AGI House SF",
+      "img": "steve-hsu"
+    },
+    {
+      "name": "Laura Deming",
+      "company": "Co-Founder & CEO at Until Labs",
+      "tag": "In the network",
+      "img": "laura-deming"
+    },
+    {
+      "name": "Conor White-Sullivan",
+      "company": "Co-Founder & CEO at Roam Research",
+      "tag": "Roommate at AGI House SF",
+      "img": "conor-white-sullivan"
+    },
+    {
+      "name": "Scott Fitsimones",
+      "company": "Co-Founder & CTO at AirGarage",
+      "tag": "In the network",
+      "img": "scott-fitsimones"
+    },
+    {
+      "name": "Sergey Brin",
+      "company": "Co-Founder at Google",
+      "tag": "Sponsor & speaker at AGI House",
+      "img": "sergey-brin"
+    },
+    {
+      "name": "Stephen Wolfram",
+      "company": "Founder & CEO at Wolfram Research",
+      "tag": "Speaker at AGI House",
+      "img": "stephen-wolfram"
+    },
+    {
+      "name": "Alec Radford",
+      "company": "AI Researcher",
+      "tag": "In the network",
+      "img": "alec-radford"
+    },
+    {
+      "name": "Andrew White",
+      "company": "Co-Founder at FutureHouse",
+      "tag": "In the network",
+      "img": "andrew-white"
+    },
+    {
+      "name": "Kawal Gandhi",
+      "company": "Office of the CTO at Google",
+      "tag": "Speaker & sponsor at AGI House",
+      "img": "kawal-gandhi"
+    }
   ]
 }

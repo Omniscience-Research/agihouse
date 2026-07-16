@@ -160,6 +160,13 @@
   @keyframes hlfade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
 
   /* ---- reveal ---- */
+  /* origin photo — the PayPal Mafia of AI group shot, directly under the hero */
+  .mafia{margin:0}
+  .mafia img{width:100%;display:block;border:1px solid var(--line)}
+  .mafia figcaption{margin-top:18px}
+  .mafia .cap-t{font-family:var(--body);text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--text)}
+  .mafia .cap-n{margin-top:8px;color:var(--dim);font-size:13px;line-height:1.8;max-width:980px}
+
   .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
   .rv.in{opacity:1;transform:none}
 
@@ -195,7 +202,7 @@
     text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(--text);background:none;cursor:pointer;transition:all .25s}
   .sub-cta .applybtn:hover{background:var(--text);color:#000;border-color:var(--text)}
   @media(max-width:860px){.intro-foot{grid-template-columns:1fr;gap:28px;margin-top:52px}}
-  /* hero stat tile — the trillion-dollar number, with a hover/focus breakdown */
+  /* hero stat tile — the 20+ centamillion-companies count, with a hover/focus breakdown */
   .stat-hero{cursor:help;position:relative}
   .stat-hero .k{background:linear-gradient(180deg,var(--text),#b9b39f);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .stat-hero .info{display:inline-block;margin-left:6px;color:var(--dim);font-size:9px;vertical-align:middle;transition:color .25s}
@@ -609,6 +616,17 @@
   </div>
 </header>
 
+<!-- ===== ORIGIN PHOTO — the PayPal Mafia of AI, from the original agihouse.ai homepage ===== -->
+<section id="mafia" class="wrap" style="padding:96px 0 0">
+  <figure class="mafia rv">
+    <img src="assets/paypal-mafia-2022.jpg" alt="Group photo at the first AGI House, Hillsborough — September 3, 2022" loading="eager">
+    <figcaption>
+      <div class="cap-t">The PayPal Mafia of AI &middot; September 3, 2022</div>
+      <div class="cap-n">Left to right: Marco Mascorro (FellowAI), Matt Bell (Matterport), Kyle Morris (Banana), Aravind Srinivas (Perplexity), Andrej Karpathy (Tesla Autopilot, OpenAI), Scott Fitsimones (AirGarage), Otavio Good, Sharon Zhou (Lamini), Jeremy Nixon (Omniscience &amp; AGI House), Simon Willison (Django), Russell Kaplan (Scale AI), Kate Park (Tesla Autopilot), Sharif Shankar (Lexica), Sean Bell (Meta AI), Erik Schluntz (Cobalt Robotics).</div>
+    </figcaption>
+  </figure>
+</section>
+
 <!-- ===== INTRO / RECORD ===== -->
 <section id="intro" class="wrap">
   <div class="shead rv"><span class="id">00</span><span class="ln"></span><span class="eyebrow">The Nexus</span></div>
@@ -620,8 +638,8 @@
     </div>
     <div class="readout rv">
       <div class="stat-hero" id="stat-total" tabindex="0" aria-describedby="breakdown">
-        <div class="k display" id="total-num">~$1T</div>
-        <div class="t">Companies Founded <span class="info" aria-hidden="true">&#9432;</span></div>
+        <div class="k display" id="total-num">20+</div>
+        <div class="t">$100M+ Companies by Roommates <span class="info" aria-hidden="true">&#9432;</span></div>
         <div class="breakdown" id="breakdown" role="tooltip">
           <div class="bd-h">Companies our roommates co-founded — added up</div>
           <div class="bd-scroll" id="bd-rows"></div>
@@ -852,7 +870,7 @@
   function observeReveals(scope){(scope||document).querySelectorAll('.rv:not(.in)').forEach((el,i)=>{el.style.transitionDelay=((i%6)*70)+'ms';io.observe(el)});}
   observeReveals();
 
-  // ===== TRILLION-DOLLAR STAT (computed from data/companies.json) =====
+  // ===== HEADLINE STAT — 20+ $100M+ roommate-founded companies (data/companies.json) =====
   (function(){
     const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
     // format billions -> compact display ($1.87T / $852B / $700M)
@@ -870,9 +888,12 @@
       const unum=document.getElementById('unicorn-num');
       if(unum) unum.textContent = unicorns;
 
-      // headline number — floor to whole trillions so it reads as a conservative floor ("$1T+")
+      // headline number — count of roommate-founded companies at $100M+ (per Jeremy: "20+
+      // centamillion-dollar companies founded by roommates"). Undisclosed-valuation companies
+      // known to clear $100M keep the floor at 20+, so never display below that.
+      const centa=priced.filter(c=>c.valuationB>=0.1).length;
       const tnum=document.getElementById('total-num');
-      if(tnum) tnum.textContent = total>=1500 ? '$'+Math.floor(total/1000)+'T+' : (total>=900 ? '~$1T' : '$'+Math.round(total)+'B+');
+      if(tnum) tnum.textContent = centa>20 ? centa+'+' : '20+';
 
       // breakdown rows
       const rows=document.getElementById('bd-rows');

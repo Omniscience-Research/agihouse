@@ -1,35 +1,232 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-07-13",
+  "asOf": "2026-07-16",
   "currency": "USD",
   "companies": [
-    { "company": "OpenAI",               "founder": "Andrej Karpathy",      "role": "Founding member",            "valuationB": 852,   "display": "$852B",  "note": "Round closed Mar 2026 at $852B. John Schulman also a co-founder.", "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html" },
-    { "company": "Perplexity",           "founder": "Aravind Srinivas",     "role": "Co-founder & CEO",           "valuationB": 20,    "display": "$20B",   "note": "Sept 2025 round; founded out of the AGI House SF community.", "source": "https://www.forbes.com/profile/aravind-srinivas/" },
-    { "company": "Thinking Machines Lab","founder": "Luke Metz",            "role": "Co-founder",                 "valuationB": 12,    "display": "$12B",   "note": "$2B seed, Jul 2025. John Schulman is Chief Scientist.", "source": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab" },
-    { "company": "Lovable",              "founder": "Anton Osika",          "role": "Co-founder & CEO",           "valuationB": 6.6,   "display": "$6.6B",  "note": "$330M Series B, Dec 2025; reportedly raising at ~$12B.", "source": "https://techcrunch.com/2025/12/18/vibe-coding-startup-lovable-raises-330m-at-a-6-6b-valuation/" },
-    { "company": "Modal Labs",           "founder": "Erik Bernhardsson",    "role": "Co-founder & CEO",           "valuationB": 4.65,  "display": "$4.65B", "note": "Series C, May 2026.", "source": "https://modal.com/company" },
-    { "company": "Recursive Superintelligence","founder": "Tim Shi",       "role": "Co-founder",                 "valuationB": 4.65,  "display": "$4.65B", "note": "$650M raise from Nvidia and GV, May 2026.", "source": "https://techfundingnews.com/uk-ai-startup-recursive-hits-4-65b-valuation-with-650m-raise-from-nvidia-and-gv/" },
-    { "company": "Worldcoin",            "founder": "Max Novendstern",      "role": "Co-founder",                 "valuationB": 3,     "display": "$3B",    "note": "Co-founded with Sam Altman.", "source": "https://techcrunch.com/2022/08/24/worldcoin-co-founder-novendstern-leaves-startup-to-start-new-venture/" },
-    { "company": "Quora",                "founder": "Adam D'Angelo",        "role": "Co-founder & CEO",           "valuationB": 0.5,   "display": "$500M",  "note": "Down-round: $75M raised Jan 2024 (a16z) to fund Poe, at $500M — down from the 2017 Series D's ~$2B. Also built Poe.", "source": "https://techcrunch.com/2024/01/09/quora-75m-funding-a16z-poe-ai-chat/" },
-    { "company": "Cresta",               "founder": "Tim Shi",              "role": "Co-founder",                 "valuationB": 1.6,   "display": "$1.6B",  "note": "Series C valuation, carried into Series D 2024.", "source": "https://cresta.com" },
-    { "company": "Hadrian",              "founder": "Chris Power",          "role": "Founder & CEO",              "valuationB": 1.6,   "display": "$1.6B",  "note": "Jan 2026.", "source": "https://www.therobotreport.com/hadrian-brings-in-additional-funding-bringing-its-valuation-to-1-6b/" },
-    { "company": "Autograph",            "founder": "Josh Payne",           "role": "Co-founder",                 "valuationB": 1.5,   "display": "$1.5B",  "note": "Peak valuation; Payne has since founded Coframe.", "source": "https://www.crunchbase.com/organization/autograph" },
-    { "company": "Ambience Healthcare",  "founder": "Michael Ng",           "role": "Co-founder & Chairman",      "valuationB": 1.25,  "display": "$1.25B", "note": "$243M Series C, Jul 2025.", "source": "https://www.ambiencehealthcare.com/blog/ambience-healthcare-announces-243-million-series-c-to-scale-its-ai-platform-for-health-systems" },
-    { "company": "Anyscale",             "founder": "Robert Nishihara",     "role": "Co-founder",                 "valuationB": 1,     "display": "$1B",    "note": "Series C unicorn.", "source": "https://www.anyscale.com" },
-    { "company": "Hebbia",               "founder": "George Sivulka",       "role": "Founder & CEO",              "valuationB": 0.7,   "display": "$700M",  "note": "$130M Series B, Jul 2024.", "source": "https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue/" },
-    { "company": "Loyal",                "founder": "Celine Halioua",       "role": "Founder & CEO",              "valuationB": 0.425, "display": "$425M",  "note": "Last disclosed 2025; $100M Series C, Feb 2026.", "source": "https://loyal.com/posts/100m-for-first-longevity-drug" },
-    { "company": "Roam Research",        "founder": "Conor White-Sullivan", "role": "Co-founder & CEO",           "valuationB": 0.2,   "display": "$200M",  "note": "Seed valuation, Sept 2020.", "source": "https://www.crunchbase.com/organization/roam-research" },
-
-    { "company": "Eureka Labs",          "founder": "Andrej Karpathy",      "role": "Founder",                    "valuationB": null,  "display": "undisclosed", "note": "Reported ~$20M seed; valuation not disclosed.", "source": "https://eurekalabs.ai" },
-    { "company": "Coframe",              "founder": "Josh Payne",           "role": "Founder & CEO",              "valuationB": null,  "display": "undisclosed", "note": "$9.3M seed; valuation not disclosed.", "source": "https://www.crunchbase.com/organization/coframe" },
-    { "company": "Until Labs",           "founder": "Laura Deming",         "role": "Co-founder & CEO",           "valuationB": null,  "display": "undisclosed", "note": "Formerly Cradle; $58M Series A, Sept 2025.", "source": "https://www.untillabs.com" },
-    { "company": "Navier",               "founder": "Sampriti Bhattacharyya","role": "Founder & CEO",             "valuationB": null,  "display": "undisclosed", "note": "~$15M raised; valuation not disclosed.", "source": "https://www.navierboat.com" },
-    { "company": "AirGarage",            "founder": "Scott Fitsimones",     "role": "Co-founder & CTO",           "valuationB": null,  "display": "undisclosed", "note": "$23M Series B, Jul 2025; valuation not disclosed.", "source": "https://www.airgarage.com/blog/series-b" },
-    { "company": "Mana",                 "founder": "Max Novendstern",      "role": "Founder & CEO",              "valuationB": null,  "display": "undisclosed", "note": "AI investor lab; valuation not disclosed.", "source": "https://mana.ai" },
-    { "company": "Episteme",             "founder": "Louis Andre",          "role": "Co-founder & CEO",           "valuationB": null,  "display": "undisclosed", "note": "Altman/Masa-backed research lab; undisclosed.", "source": "https://episteme.com/" },
-    { "company": "the tiny corp",        "founder": "George Hotz",          "role": "Founder",                    "valuationB": null,  "display": "undisclosed", "note": "$5.1M raised, 2023; valuation not disclosed.", "source": "https://tinygrad.org" },
-    { "company": "AGI, Inc.",            "founder": "Div Garg",             "role": "Founder",                    "valuationB": null,  "display": "undisclosed", "note": "Reportedly in talks (Nov 2025) to raise $50M at a $500M valuation; unconfirmed/not closed.", "source": "https://www.forbes.com/sites/annatong/2025/11/19/ai-startup-agi-inc-in-talks-to-raise-money-at-500-million-valuation/" },
-    { "company": "Banana",               "founder": "Kyle Morris",          "role": "Co-founder",                 "valuationB": null,  "display": "undisclosed", "note": "$1.6M raised (led by Pioneer); valuation not disclosed.", "source": "https://pioneer.app/blog/banana-raises-1-6m-led-by-pioneer/" },
-    { "company": "Eon",                  "founder": "Michael Andregg",      "role": "Founder",                    "valuationB": null,  "display": "undisclosed", "note": "Brain-emulation startup; $3.5M seed led by Protocol Labs, 2024; valuation not disclosed.", "source": "https://untappedventures.substack.com/p/untapped-ventures-invests-in-eon" }
+    {
+      "company": "OpenAI",
+      "founder": "Andrej Karpathy",
+      "role": "Founding member",
+      "valuationB": 852,
+      "display": "$852B",
+      "note": "Round closed Mar 2026 at $852B. John Schulman also a co-founder.",
+      "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
+    },
+    {
+      "company": "Perplexity",
+      "founder": "Aravind Srinivas",
+      "role": "Co-founder & CEO",
+      "valuationB": 20,
+      "display": "$20B",
+      "note": "Sept 2025 round; founded out of the AGI House SF community.",
+      "source": "https://www.forbes.com/profile/aravind-srinivas/"
+    },
+    {
+      "company": "Thinking Machines Lab",
+      "founder": "Luke Metz",
+      "role": "Co-founder",
+      "valuationB": 12,
+      "display": "$12B",
+      "note": "$2B seed, Jul 2025. John Schulman is Chief Scientist.",
+      "source": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab"
+    },
+    {
+      "company": "Lovable",
+      "founder": "Anton Osika",
+      "role": "Co-founder & CEO",
+      "valuationB": 6.6,
+      "display": "$6.6B",
+      "note": "$330M Series B, Dec 2025; reportedly raising at ~$12B.",
+      "source": "https://techcrunch.com/2025/12/18/vibe-coding-startup-lovable-raises-330m-at-a-6-6b-valuation/"
+    },
+    {
+      "company": "Modal Labs",
+      "founder": "Erik Bernhardsson",
+      "role": "Co-founder & CEO",
+      "valuationB": 4.65,
+      "display": "$4.65B",
+      "note": "Series C, May 2026.",
+      "source": "https://modal.com/company"
+    },
+    {
+      "company": "Recursive Superintelligence",
+      "founder": "Tim Shi",
+      "role": "Co-founder",
+      "valuationB": 4.65,
+      "display": "$4.65B",
+      "note": "$650M raise from Nvidia and GV, May 2026.",
+      "source": "https://techfundingnews.com/uk-ai-startup-recursive-hits-4-65b-valuation-with-650m-raise-from-nvidia-and-gv/"
+    },
+    {
+      "company": "Worldcoin",
+      "founder": "Max Novendstern",
+      "role": "Co-founder",
+      "valuationB": 3,
+      "display": "$3B",
+      "note": "Co-founded with Sam Altman.",
+      "source": "https://techcrunch.com/2022/08/24/worldcoin-co-founder-novendstern-leaves-startup-to-start-new-venture/"
+    },
+    {
+      "company": "Cresta",
+      "founder": "Tim Shi",
+      "role": "Co-founder",
+      "valuationB": 1.6,
+      "display": "$1.6B",
+      "note": "Series C valuation, carried into Series D 2024.",
+      "source": "https://cresta.com"
+    },
+    {
+      "company": "Hadrian",
+      "founder": "Chris Power",
+      "role": "Founder & CEO",
+      "valuationB": 1.6,
+      "display": "$1.6B",
+      "note": "Jan 2026.",
+      "source": "https://www.therobotreport.com/hadrian-brings-in-additional-funding-bringing-its-valuation-to-1-6b/"
+    },
+    {
+      "company": "Autograph",
+      "founder": "Josh Payne",
+      "role": "Co-founder",
+      "valuationB": 1.5,
+      "display": "$1.5B",
+      "note": "Peak valuation; Payne has since founded Coframe.",
+      "source": "https://www.crunchbase.com/organization/autograph"
+    },
+    {
+      "company": "Ambience Healthcare",
+      "founder": "Michael Ng",
+      "role": "Co-founder & Chairman",
+      "valuationB": 1.25,
+      "display": "$1.25B",
+      "note": "$243M Series C, Jul 2025.",
+      "source": "https://www.ambiencehealthcare.com/blog/ambience-healthcare-announces-243-million-series-c-to-scale-its-ai-platform-for-health-systems"
+    },
+    {
+      "company": "Anyscale",
+      "founder": "Robert Nishihara",
+      "role": "Co-founder",
+      "valuationB": 1,
+      "display": "$1B",
+      "note": "Series C unicorn.",
+      "source": "https://www.anyscale.com"
+    },
+    {
+      "company": "Loyal",
+      "founder": "Celine Halioua",
+      "role": "Founder & CEO",
+      "valuationB": 0.425,
+      "display": "$425M",
+      "note": "Last disclosed 2025; $100M Series C, Feb 2026.",
+      "source": "https://loyal.com/posts/100m-for-first-longevity-drug"
+    },
+    {
+      "company": "Roam Research",
+      "founder": "Conor White-Sullivan",
+      "role": "Co-founder & CEO",
+      "valuationB": 0.2,
+      "display": "$200M",
+      "note": "Seed valuation, Sept 2020.",
+      "source": "https://www.crunchbase.com/organization/roam-research"
+    },
+    {
+      "company": "Infinity",
+      "founder": "Jeremy Nixon",
+      "role": "Founder & CEO",
+      "valuationB": 0.1,
+      "display": "$100M",
+      "note": "Added Jul 2026 at Jeremy's direction ahead of the Infinity launch; $100M valuation.",
+      "source": "https://infinity.inc"
+    },
+    {
+      "company": "Eureka Labs",
+      "founder": "Andrej Karpathy",
+      "role": "Founder",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "Reported ~$20M seed; valuation not disclosed.",
+      "source": "https://eurekalabs.ai"
+    },
+    {
+      "company": "Coframe",
+      "founder": "Josh Payne",
+      "role": "Founder & CEO",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "$9.3M seed; valuation not disclosed.",
+      "source": "https://www.crunchbase.com/organization/coframe"
+    },
+    {
+      "company": "Until Labs",
+      "founder": "Laura Deming",
+      "role": "Co-founder & CEO",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "Formerly Cradle; $58M Series A, Sept 2025.",
+      "source": "https://www.untillabs.com"
+    },
+    {
+      "company": "Navier",
+      "founder": "Sampriti Bhattacharyya",
+      "role": "Founder & CEO",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "~$15M raised; valuation not disclosed.",
+      "source": "https://www.navierboat.com"
+    },
+    {
+      "company": "AirGarage",
+      "founder": "Scott Fitsimones",
+      "role": "Co-founder & CTO",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "$23M Series B, Jul 2025; valuation not disclosed.",
+      "source": "https://www.airgarage.com/blog/series-b"
+    },
+    {
+      "company": "Mana",
+      "founder": "Max Novendstern",
+      "role": "Founder & CEO",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "AI investor lab; valuation not disclosed.",
+      "source": "https://mana.ai"
+    },
+    {
+      "company": "AGI, Inc.",
+      "founder": "Div Garg",
+      "role": "Founder",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "Reportedly in talks (Nov 2025) to raise $50M at a $500M valuation; unconfirmed/not closed.",
+      "source": "https://www.forbes.com/sites/annatong/2025/11/19/ai-startup-agi-inc-in-talks-to-raise-money-at-500-million-valuation/"
+    },
+    {
+      "company": "Banana",
+      "founder": "Kyle Morris",
+      "role": "Co-founder",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "$1.6M raised (led by Pioneer); valuation not disclosed.",
+      "source": "https://pioneer.app/blog/banana-raises-1-6m-led-by-pioneer/"
+    },
+    {
+      "company": "Eon",
+      "founder": "Michael Andregg",
+      "role": "Founder",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "Brain-emulation startup; $3.5M seed led by Protocol Labs, 2024; valuation not disclosed.",
+      "source": "https://untappedventures.substack.com/p/untapped-ventures-invests-in-eon"
+    },
+    {
+      "company": "Raindrop",
+      "founder": "Ben Hylak",
+      "role": "Co-founder",
+      "valuationB": null,
+      "display": "undisclosed",
+      "note": "$15M seed led by Lightspeed, Dec 2025; valuation undisclosed. Co-founders Zubin Koticha and Alexis Gauba.",
+      "source": "https://www.raindrop.ai/blog/seed-round/"
+    }
   ]
 }
