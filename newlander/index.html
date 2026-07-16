@@ -148,15 +148,15 @@
      PayPal Mafia photo arrives on the first scroll (placed after the base
      .hero/.hero-overlay rules so the override actually wins) */
   @media(max-width:820px){
-    .hero{min-height:62vh;min-height:62svh}
-    .hero-overlay{min-height:62vh;min-height:62svh}
+    .hero{min-height:48vh;min-height:48svh}
+    .hero-overlay{min-height:48vh;min-height:48svh}
   }
   /* mobile-only wrapper: see the HTML comment next to hero-text for why this exists.
      Anchored near the top of the hero, stacks its two children with a flex column so
      spacing between them is guaranteed correct regardless of actual rendered text height
      — JS measures this block's real bottom edge to position the (scaled-down) photo
      safely below it, rather than guessing a percentage against untested font metrics. */
-  @media(max-width:820px){.hero-text{position:absolute;top:max(13%,96px);left:50%;transform:translateX(-50%);
+  @media(max-width:820px){.hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-56%);
     width:90vw;z-index:3;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:22px}}
   .hero-label .hl-name{font-family:var(--display);text-transform:uppercase;font-weight:400;color:var(--text);
     font-size:clamp(15px,1.55vw,21px);letter-spacing:.34em;text-indent:.34em;white-space:nowrap}
@@ -193,7 +193,7 @@
     .mafia .cap-list{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
   }
   @media(max-width:480px){.mafia .cap-list{grid-template-columns:1fr}}
-  @media(max-width:820px){#mafia{padding-top:44px}}
+  @media(max-width:820px){#mafia{padding-top:26px}}
 
   .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
   .rv.in{opacity:1;transform:none}
