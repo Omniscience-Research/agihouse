@@ -1,8 +1,17 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-07-16",
+  "asOf": "2026-07-20",
   "currency": "USD",
   "companies": [
+    {
+      "company": "Anthropic",
+      "founder": "Benjamin Mann",
+      "role": "Co-founder",
+      "valuationB": 965,
+      "display": "$965B",
+      "note": "$65B Series H closed May 2026 at $965B post-money; surpassed OpenAI as most valuable AI startup.",
+      "source": "https://www.anthropic.com/news/series-h"
+    },
     {
       "company": "OpenAI",
       "founder": "Andrej Karpathy",
@@ -36,7 +45,7 @@
       "role": "Co-founder & CEO",
       "valuationB": 6.6,
       "display": "$6.6B",
-      "note": "$330M Series B, Dec 2025; reportedly raising at ~$12B.",
+      "note": "$330M Series B, Dec 2025; reportedly in talks (Jul 2026) to raise $300M at ~$13.2B, not closed.",
       "source": "https://techcrunch.com/2025/12/18/vibe-coding-startup-lovable-raises-330m-at-a-6-6b-valuation/"
     },
     {
@@ -81,7 +90,7 @@
       "role": "Founder & CEO",
       "valuationB": 1.6,
       "display": "$1.6B",
-      "note": "Jan 2026.",
+      "note": "Jan 2026 round led by T. Rowe Price; Jun 2026 reports of talks at ~$7.5B were denied by the company.",
       "source": "https://www.therobotreport.com/hadrian-brings-in-additional-funding-bringing-its-valuation-to-1-6b/"
     },
     {
@@ -90,7 +99,7 @@
       "role": "Co-founder",
       "valuationB": 1.5,
       "display": "$1.5B",
-      "note": "Peak valuation; Payne has since founded Coframe.",
+      "note": "Peak valuation; merged into Future (Jan 2025, terms undisclosed). Payne has since founded Coframe.",
       "source": "https://www.crunchbase.com/organization/autograph"
     },
     {
@@ -153,7 +162,7 @@
       "role": "Founder & CEO",
       "valuationB": null,
       "display": "undisclosed",
-      "note": "$9.3M seed; valuation not disclosed.",
+      "note": "$9.3M seed; acquired HaystacksAI Mar 2026; valuation not disclosed.",
       "source": "https://www.crunchbase.com/organization/coframe"
     },
     {
