@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-23T21:56:27Z",
+  "generatedAt": "2026-07-24T03:56:32Z",
   "upcoming": [
     {
       "title": "[RESCHEDULED: July 24] The California Peptide Club IV",
       "startAt": "2026-07-25T00:00:00.000Z",
       "endAt": "2026-07-25T05:00:00.000Z",
       "url": "https://luma.com/agi-knz4",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/y5/bb8ffa8c-b879-40a5-85d1-a0cd35dd276c",
+      "coverUrl": "https://images.lumacdn.com/uploads/4d/2866c670-a424-4933-a34c-43fc80bbea93.png",
       "city": "",
       "venue": ""
     },
@@ -16,6 +16,15 @@
       "endAt": "2026-07-30T05:00:00.000Z",
       "url": "https://luma.com/agi-oz7e",
       "coverUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw3fHxyZWFkaW5nfGVufDB8fHx8MTc4MjIxNDA5NHwy&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Jam Session 4 - AGI House Community",
+      "startAt": "2026-07-30T03:00:00.000Z",
+      "endAt": "2026-07-30T05:00:00.000Z",
+      "url": "https://luma.com/jamsession4",
+      "coverUrl": "https://images.lumacdn.com/uploads/7n/7a635862-61ab-4d88-84bd-3a2636985c1f.png",
       "city": "",
       "venue": ""
     },
