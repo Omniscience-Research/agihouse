@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-07-24T21:56:53Z",
+  "generatedAt": "2026-07-25T03:56:58Z",
   "upcoming": [
-    {
-      "title": "[RESCHEDULED: July 24] The California Peptide Club IV",
-      "startAt": "2026-07-25T00:00:00.000Z",
-      "endAt": "2026-07-25T05:00:00.000Z",
-      "url": "https://luma.com/agi-knz4",
-      "coverUrl": "https://images.lumacdn.com/uploads/4d/2866c670-a424-4933-a34c-43fc80bbea93.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "AlphaEvolve \u2014 Paper Reading",
       "startAt": "2026-07-30T01:00:00.000Z",
@@ -282,6 +273,15 @@
     }
   ],
   "past": [
+    {
+      "title": "[RESCHEDULED: July 24] The California Peptide Club IV",
+      "startAt": "2026-07-25T00:00:00.000Z",
+      "endAt": "2026-07-25T05:00:00.000Z",
+      "url": "https://luma.com/agi-knz4",
+      "coverUrl": "https://images.lumacdn.com/uploads/4d/2866c670-a424-4933-a34c-43fc80bbea93.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Creativity Reading Night",
       "startAt": "2026-07-16T02:00:00.000Z",
@@ -720,15 +720,6 @@
       "endAt": "2026-01-04T07:00:00.000Z",
       "url": "https://luma.com/jr58xxjl",
       "coverUrl": "https://images.lumacdn.com/event-covers/3f/e287c80d-b1a5-4a5c-bb42-2102913bea21.jpg",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "The Voice of AGI",
-      "startAt": "2025-09-20T18:00:00.000Z",
-      "endAt": "2025-09-21T06:00:00.000Z",
-      "url": "https://luma.com/wdhtnoga",
-      "coverUrl": "https://images.lumacdn.com/event-covers/3k/50d796c0-1440-4e27-ae28-b2d1c89d0355.png",
       "city": "",
       "venue": ""
     }
