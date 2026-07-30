@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-07-29T23:03:37Z",
+  "generatedAt": "2026-07-30T23:03:45Z",
   "upcoming": [
-    {
-      "title": "AlphaEvolve \u2014 Paper Reading",
-      "startAt": "2026-07-30T01:00:00.000Z",
-      "endAt": "2026-07-30T05:00:00.000Z",
-      "url": "https://luma.com/agi-oz7e",
-      "coverUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw3fHxyZWFkaW5nfGVufDB8fHx8MTc4MjIxNDA5NHwy&ixlib=rb-4.1.0&q=80&w=1080",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Jam Session 4 - AGI House Community",
-      "startAt": "2026-07-30T03:00:00.000Z",
-      "endAt": "2026-07-30T05:00:00.000Z",
-      "url": "https://luma.com/jamsession4",
-      "coverUrl": "https://images.lumacdn.com/uploads/7n/7a635862-61ab-4d88-84bd-3a2636985c1f.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Mechanism Design",
       "startAt": "2026-07-31T01:00:00.000Z",
@@ -61,6 +43,15 @@
       "endAt": "2026-08-09T05:00:00.000Z",
       "url": "https://luma.com/RoboticsBuild-a-thon",
       "coverUrl": "https://images.lumacdn.com/uploads/je/39bf55b9-a8d8-407c-a3bb-f10300f46d7b.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Masterclass: Power. How to Stop Giving Yours Away.",
+      "startAt": "2026-08-12T02:00:00.000Z",
+      "endAt": "2026-08-12T04:30:00.000Z",
+      "url": "https://luma.com/powermasterclass",
+      "coverUrl": "https://images.lumacdn.com/uploads/2q/75aa22a7-bfd0-499d-8099-ae80635b99ee.jpg",
       "city": "",
       "venue": ""
     },
@@ -273,6 +264,24 @@
     }
   ],
   "past": [
+    {
+      "title": "Jam Session 4 - AGI House Community",
+      "startAt": "2026-07-30T03:00:00.000Z",
+      "endAt": "2026-07-30T05:00:00.000Z",
+      "url": "https://luma.com/jamsession4",
+      "coverUrl": "https://images.lumacdn.com/uploads/7n/7a635862-61ab-4d88-84bd-3a2636985c1f.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AlphaEvolve \u2014 Paper Reading",
+      "startAt": "2026-07-30T01:00:00.000Z",
+      "endAt": "2026-07-30T05:00:00.000Z",
+      "url": "https://luma.com/agi-oz7e",
+      "coverUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw3fHxyZWFkaW5nfGVufDB8fHx8MTc4MjIxNDA5NHwy&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "[RESCHEDULED: July 24] The California Peptide Club IV",
       "startAt": "2026-07-25T00:00:00.000Z",
@@ -702,24 +711,6 @@
       "endAt": "2026-01-25T07:00:00.000Z",
       "url": "https://luma.com/otdp9uwj",
       "coverUrl": "https://images.lumacdn.com/event-covers/qc/7e171a26-eacc-4352-9449-235d58ba2e87.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Finance x Artificial Intelligence",
-      "startAt": "2026-01-17T19:00:00.000Z",
-      "endAt": "2026-01-18T07:00:00.000Z",
-      "url": "https://luma.com/h45cco4m",
-      "coverUrl": "https://images.lumacdn.com/event-covers/eg/e3c3aeba-62b0-4888-bf8d-2af1baf056c6.webp",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Agentic Justice",
-      "startAt": "2026-01-03T19:00:00.000Z",
-      "endAt": "2026-01-04T07:00:00.000Z",
-      "url": "https://luma.com/jr58xxjl",
-      "coverUrl": "https://images.lumacdn.com/event-covers/3f/e287c80d-b1a5-4a5c-bb42-2102913bea21.jpg",
       "city": "",
       "venue": ""
     }
