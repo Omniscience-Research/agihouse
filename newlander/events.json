@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-07-31T23:04:03Z",
+  "generatedAt": "2026-08-01T05:04:08Z",
   "upcoming": [
-    {
-      "title": "Build-a-thon: Drone Engineering",
-      "startAt": "2026-08-01T00:00:00.000Z",
-      "endAt": "2026-08-03T05:00:00.000Z",
-      "url": "https://luma.com/DroneEngineering",
-      "coverUrl": "https://images.unsplash.com/photo-1640262653848-adea46405e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2NHx8ZHJvbmUlMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3ODIzMTk1MTN8Mg&ixlib=rb-4.1.0&q=80&w=1080",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Drone Engineering",
-      "startAt": "2026-08-01T00:30:00.000Z",
-      "endAt": "2026-08-03T05:00:00.000Z",
-      "url": "https://luma.com/kardashevdrones",
-      "coverUrl": "https://images.lumacdn.com/uploads/6z/074dc8ea-c506-46e2-bced-8214c15e8dde.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Posthumanism, Transhumanism & Xenophilosophy Reading Night",
       "startAt": "2026-08-07T01:00:00.000Z",
@@ -264,6 +246,24 @@
     }
   ],
   "past": [
+    {
+      "title": "Drone Engineering",
+      "startAt": "2026-08-01T00:30:00.000Z",
+      "endAt": "2026-08-03T05:00:00.000Z",
+      "url": "https://luma.com/kardashevdrones",
+      "coverUrl": "https://images.lumacdn.com/uploads/6z/074dc8ea-c506-46e2-bced-8214c15e8dde.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Build-a-thon: Drone Engineering",
+      "startAt": "2026-08-01T00:00:00.000Z",
+      "endAt": "2026-08-03T05:00:00.000Z",
+      "url": "https://luma.com/DroneEngineering",
+      "coverUrl": "https://images.unsplash.com/photo-1640262653848-adea46405e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw2NHx8ZHJvbmUlMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3ODIzMTk1MTN8Mg&ixlib=rb-4.1.0&q=80&w=1080",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Mechanism Design",
       "startAt": "2026-07-31T01:00:00.000Z",
@@ -693,24 +693,6 @@
       "endAt": "2026-02-27T06:00:00.000Z",
       "url": "https://luma.com/ctopokernight",
       "coverUrl": "https://images.lumacdn.com/event-covers/pb/f4d8ca16-472d-4c65-9a6d-8920f507bafb.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "The SPV Dinner",
-      "startAt": "2026-02-21T02:30:00.000Z",
-      "endAt": "2026-02-21T05:00:00.000Z",
-      "url": "https://luma.com/spvdinner",
-      "coverUrl": "https://images.lumacdn.com/event-covers/np/ae5344cb-866e-4f13-9350-147a16cc0a12.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Edge AI Dinner - by AGI Inc & Ascension",
-      "startAt": "2026-02-19T02:00:00.000Z",
-      "endAt": "2026-02-19T04:30:00.000Z",
-      "url": "https://luma.com/edgeaidinner",
-      "coverUrl": "https://images.lumacdn.com/event-covers/st/00501f9f-dc1c-437e-ba0b-961725a1fdb0.png",
       "city": "",
       "venue": ""
     }
