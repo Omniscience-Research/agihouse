@@ -1,6 +1,6 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-07-27",
+  "asOf": "2026-08-03",
   "currency": "USD",
   "companies": [
     {
@@ -70,10 +70,10 @@
       "company": "Worldcoin",
       "founder": "Max Novendstern",
       "role": "Co-founder",
-      "valuationB": 3,
-      "display": "$3B",
-      "note": "Co-founded with Sam Altman.",
-      "source": "https://techcrunch.com/2022/08/24/worldcoin-co-founder-novendstern-leaves-startup-to-start-new-venture/"
+      "valuationB": 2.5,
+      "display": "$2.5B",
+      "note": "Co-founded with Sam Altman. Parent Tools for Humanity valued ~$2.5B per Jun 2026 reports, down from $3B (2022).",
+      "source": "https://beincrypto.com/sam-altman-tools-for-humanity-layoffs-worldcoin/"
     },
     {
       "company": "Cresta",
@@ -115,10 +115,10 @@
       "company": "Anyscale",
       "founder": "Robert Nishihara",
       "role": "Co-founder",
-      "valuationB": 1,
-      "display": "$1B",
-      "note": "Series C unicorn.",
-      "source": "https://www.anyscale.com"
+      "valuationB": 1.65,
+      "display": "$1.65B",
+      "note": "Acquired by Nscale for $1.65B (definitive agreement Jul 30, 2026; closing expected H2 2026). Prior mark: $1B Series C (2021).",
+      "source": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/"
     },
     {
       "company": "Loyal",
