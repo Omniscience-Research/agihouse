@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T17:05:30Z",
+  "generatedAt": "2026-08-05T23:05:35Z",
   "upcoming": [
     {
       "title": "Posthumanism, Transhumanism & Xenophilosophy Reading Night",
@@ -65,6 +65,24 @@
       "venue": ""
     },
     {
+      "title": "Data Centers for Good",
+      "startAt": "2026-08-20T01:00:00.000Z",
+      "endAt": "2026-08-20T04:00:00.000Z",
+      "url": "https://luma.com/datacentersforgood",
+      "coverUrl": "https://images.lumacdn.com/uploads/v4/83d304a2-a3b1-4bf1-8824-d793a634f06d.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AI for Good Hackathon",
+      "startAt": "2026-08-22T19:00:00.000Z",
+      "endAt": "2026-08-23T03:00:00.000Z",
+      "url": "https://luma.com/aiforgoodhackathon",
+      "coverUrl": "https://images.lumacdn.com/uploads/bf/92b1702f-fc0a-4fe0-8b0f-cb118097698b.png",
+      "city": "",
+      "venue": ""
+    },
+    {
       "title": "OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration",
       "startAt": "2026-08-26T10:00:00.000Z",
       "endAt": "2026-08-26T14:00:00.000Z",
@@ -79,6 +97,15 @@
       "endAt": "2026-08-28T05:00:00.000Z",
       "url": "https://luma.com/NeoTranshumanistEschatology",
       "coverUrl": "https://images.lumacdn.com/gallery-images/xy/13fae58d-87bd-455a-8c6d-c1ba52df7767",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AI Efficiency",
+      "startAt": "2026-08-29T19:00:00.000Z",
+      "endAt": "2026-08-29T22:00:00.000Z",
+      "url": "https://luma.com/aiefficiency",
+      "coverUrl": "https://images.lumacdn.com/uploads/68/5bf50138-b4e8-458f-9359-9978ea5d3d04.png",
       "city": "",
       "venue": ""
     },
