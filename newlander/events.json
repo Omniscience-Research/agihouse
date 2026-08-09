@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-08-07T17:06:13Z",
+  "generatedAt": "2026-08-09T14:33:34Z",
   "upcoming": [
-    {
-      "title": "Robotics Build-a-thon",
-      "startAt": "2026-08-09T02:00:00.000Z",
-      "endAt": "2026-08-09T05:00:00.000Z",
-      "url": "https://luma.com/RoboticsBuild-a-thon",
-      "coverUrl": "https://images.lumacdn.com/uploads/je/39bf55b9-a8d8-407c-a3bb-f10300f46d7b.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Masterclass: Power. How to Stop Giving Yours Away.",
       "startAt": "2026-08-11T02:00:00.000Z",
@@ -60,7 +51,7 @@
       "startAt": "2026-08-22T19:00:00.000Z",
       "endAt": "2026-08-23T03:00:00.000Z",
       "url": "https://luma.com/aiforgoodhackathon",
-      "coverUrl": "https://images.lumacdn.com/uploads/bf/92b1702f-fc0a-4fe0-8b0f-cb118097698b.png",
+      "coverUrl": "https://images.lumacdn.com/uploads/qz/13fc4ed7-94d5-4dc5-b7a9-8b351c0c7402.png",
       "city": "",
       "venue": ""
     },
@@ -255,6 +246,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Robotics Build-a-thon",
+      "startAt": "2026-08-09T02:00:00.000Z",
+      "endAt": "2026-08-09T05:00:00.000Z",
+      "url": "https://luma.com/RoboticsBuild-a-thon",
+      "coverUrl": "https://images.lumacdn.com/uploads/je/39bf55b9-a8d8-407c-a3bb-f10300f46d7b.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Posthumanism, Transhumanism & Xenophilosophy Reading Night",
       "startAt": "2026-08-07T01:00:00.000Z",
@@ -693,15 +693,6 @@
       "endAt": "2026-03-15T05:00:00.000Z",
       "url": "https://luma.com/autoresearch",
       "coverUrl": "https://images.lumacdn.com/event-covers/pt/80757150-a517-465b-8704-de965582a44b.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "The Infinity Investors Dinner",
-      "startAt": "2026-03-13T01:30:00.000Z",
-      "endAt": "2026-03-13T03:30:00.000Z",
-      "url": "https://luma.com/infinityinvestorsdinner",
-      "coverUrl": "https://images.lumacdn.com/event-covers/4d/9126e8e4-839d-40e4-8c7c-bd44728eea25.png",
       "city": "",
       "venue": ""
     }
