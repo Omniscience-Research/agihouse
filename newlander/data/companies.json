@@ -1,6 +1,6 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-08-03",
+  "asOf": "2026-08-10",
   "currency": "USD",
   "companies": [
     {
@@ -88,10 +88,10 @@
       "company": "Hadrian",
       "founder": "Chris Power",
       "role": "Founder & CEO",
-      "valuationB": 1.6,
-      "display": "$1.6B",
-      "note": "Jan 2026 round led by T. Rowe Price; Jun 2026 reports of talks at ~$7.5B were denied by the company.",
-      "source": "https://www.therobotreport.com/hadrian-brings-in-additional-funding-bringing-its-valuation-to-1-6b/"
+      "valuationB": 7.87,
+      "display": "$7.87B",
+      "note": "$1.37B Series D closed Aug 6, 2026 at $7.87B; anchored by JPMorgan's Strategic Investment Group, co-led by WCM, Washington Harbour, Valor, 137 Ventures, Baillie Gifford. Up from $1.6B in Jan 2026.",
+      "source": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/"
     },
     {
       "company": "Autograph",
