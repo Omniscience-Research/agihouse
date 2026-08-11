@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-08-10T20:34:02Z",
+  "generatedAt": "2026-08-11T02:34:07Z",
   "upcoming": [
-    {
-      "title": "Masterclass: Power. How to Stop Giving Yours Away.",
-      "startAt": "2026-08-11T02:00:00.000Z",
-      "endAt": "2026-08-11T04:30:00.000Z",
-      "url": "https://luma.com/powermasterclass",
-      "coverUrl": "https://images.lumacdn.com/uploads/2q/75aa22a7-bfd0-499d-8099-ae80635b99ee.jpg",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "When AI Builds Itself",
       "startAt": "2026-08-13T02:00:00.000Z",
@@ -246,6 +237,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Masterclass: Power. How to Stop Giving Yours Away.",
+      "startAt": "2026-08-11T02:00:00.000Z",
+      "endAt": "2026-08-11T04:30:00.000Z",
+      "url": "https://luma.com/powermasterclass",
+      "coverUrl": "https://images.lumacdn.com/uploads/2q/75aa22a7-bfd0-499d-8099-ae80635b99ee.jpg",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Robotics Build-a-thon",
       "startAt": "2026-08-09T02:00:00.000Z",
@@ -684,15 +684,6 @@
       "endAt": "2026-04-06T02:00:00.000Z",
       "url": "https://luma.com/limitingbeliefs",
       "coverUrl": "https://images.lumacdn.com/event-covers/ol/32c4a27d-8dcb-4b6c-a6ed-a370c474400f.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Autoresearch Hackathon",
-      "startAt": "2026-03-14T18:00:00.000Z",
-      "endAt": "2026-03-15T05:00:00.000Z",
-      "url": "https://luma.com/autoresearch",
-      "coverUrl": "https://images.lumacdn.com/event-covers/pt/80757150-a517-465b-8704-de965582a44b.png",
       "city": "",
       "venue": ""
     }
