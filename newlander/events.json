@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T14:34:35Z",
+  "generatedAt": "2026-08-12T20:34:40Z",
   "upcoming": [
     {
       "title": "When AI Builds Itself",
@@ -43,6 +43,15 @@
       "endAt": "2026-08-23T03:00:00.000Z",
       "url": "https://luma.com/aiforgoodhackathon",
       "coverUrl": "https://images.lumacdn.com/uploads/qz/13fc4ed7-94d5-4dc5-b7a9-8b351c0c7402.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Infinity Seed Launch Party",
+      "startAt": "2026-08-24T01:00:00.000Z",
+      "endAt": "2026-08-24T05:00:00.000Z",
+      "url": "https://luma.com/InfinitySeedLaunchParty",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/3o/1eac0497-1680-41a6-ba52-6b3b2cc61025",
       "city": "",
       "venue": ""
     },
