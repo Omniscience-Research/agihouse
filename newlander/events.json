@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T14:34:56Z",
+  "generatedAt": "2026-08-13T20:35:02Z",
   "upcoming": [
     {
       "title": "Synesthesia School",
@@ -79,6 +79,15 @@
       "endAt": "2026-09-03T03:00:00.000Z",
       "url": "https://luma.com/MAIThinking1",
       "coverUrl": "https://images.lumacdn.com/uploads/6x/cd5bc7b3-1c74-4ee1-a3db-570b081d07e4.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The AI Debates Hackathon",
+      "startAt": "2026-09-05T16:00:00.000Z",
+      "endAt": "2026-09-06T05:30:00.000Z",
+      "url": "https://luma.com/aidebates",
+      "coverUrl": "https://images.lumacdn.com/uploads/mz/bdf35be9-6a11-4811-9b01-111073a89919.png",
       "city": "",
       "venue": ""
     },
