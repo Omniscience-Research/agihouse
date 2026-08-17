@@ -1,6 +1,6 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-08-10",
+  "asOf": "2026-08-17",
   "currency": "USD",
   "companies": [
     {
@@ -18,7 +18,7 @@
       "role": "Founding member",
       "valuationB": 852,
       "display": "$852B",
-      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender at same price; confidential IPO S-1 filed Jun 2026. John Schulman also a co-founder.",
+      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender and $7B employee buyback (Aug 2026) both at same price; confidential IPO S-1 filed Jun 2026. John Schulman also a co-founder.",
       "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
     },
     {
@@ -43,10 +43,10 @@
       "company": "Lovable",
       "founder": "Anton Osika",
       "role": "Co-founder & CEO",
-      "valuationB": 6.6,
-      "display": "$6.6B",
-      "note": "$330M Series B, Dec 2025; still in talks (per TechCrunch Jul 8, 2026) to raise $300M at ~$13.2B, not closed.",
-      "source": "https://techcrunch.com/2025/12/18/vibe-coding-startup-lovable-raises-330m-at-a-6-6b-valuation/"
+      "valuationB": 13.3,
+      "display": "$13.3B",
+      "note": "$400M Series C closed Aug 12, 2026 at $13.3B, led by Menlo Ventures and EQT's Scaleup Europe Fund (Tencent, Balderton, Carmignac, Kaszek participating). Up from $6.6B Dec 2025.",
+      "source": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/"
     },
     {
       "company": "Modal Labs",
@@ -241,10 +241,10 @@
       "company": "Raindrop",
       "founder": "Ben Hylak",
       "role": "Co-founder",
-      "valuationB": null,
-      "display": "undisclosed",
-      "note": "$15M seed led by Lightspeed, Dec 2025; valuation undisclosed. Co-founders Zubin Koticha and Alexis Gauba.",
-      "source": "https://www.raindrop.ai/blog/seed-round/"
+      "valuationB": 0.0975,
+      "display": "$97.5M",
+      "note": "$15M seed led by Lightspeed (closed Sept 2025, announced Dec 2025) at $97.5M post-money per PitchBook. Co-founders Zubin Koticha and Alexis Gauba.",
+      "source": "https://pitchbook.com/profiles/company/593034-85"
     }
   ]
 }
