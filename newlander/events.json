@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-08-19T02:41:04Z",
+  "generatedAt": "2026-08-19T08:41:11Z",
   "upcoming": [
-    {
-      "title": "Neural Computers",
-      "startAt": "2026-08-20T01:00:00.000Z",
-      "endAt": "2026-08-20T05:00:00.000Z",
-      "url": "https://luma.com/neuralcomputers",
-      "coverUrl": "https://images.lumacdn.com/uploads/lz/688134dd-3558-4e1d-9323-8c59de5b42fe.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Data Centers for Good",
       "startAt": "2026-08-20T01:00:00.000Z",
