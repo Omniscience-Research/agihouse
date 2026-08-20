@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-08-19T20:41:22Z",
+  "generatedAt": "2026-08-20T02:41:27Z",
   "upcoming": [
-    {
-      "title": "Data Centers for Good",
-      "startAt": "2026-08-20T01:00:00.000Z",
-      "endAt": "2026-08-20T04:00:00.000Z",
-      "url": "https://luma.com/datacentersforgood",
-      "coverUrl": "https://images.lumacdn.com/uploads/v4/83d304a2-a3b1-4bf1-8824-d793a634f06d.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "AI for Good Hackathon",
       "startAt": "2026-08-22T19:00:00.000Z",
@@ -228,6 +219,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Data Centers for Good",
+      "startAt": "2026-08-20T01:00:00.000Z",
+      "endAt": "2026-08-20T04:00:00.000Z",
+      "url": "https://luma.com/datacentersforgood",
+      "coverUrl": "https://images.lumacdn.com/uploads/v4/83d304a2-a3b1-4bf1-8824-d793a634f06d.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Synesthesia School",
       "startAt": "2026-08-14T01:00:00.000Z",
@@ -666,15 +666,6 @@
       "endAt": "2026-04-19T05:30:00.000Z",
       "url": "https://luma.com/OpenMic1",
       "coverUrl": "https://images.lumacdn.com/event-covers/wo/c9d2322b-93e6-4f88-b820-2c5f23d92481.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Automated Discovery at Scale",
-      "startAt": "2026-04-18T20:00:00.000Z",
-      "endAt": "2026-04-19T02:00:00.000Z",
-      "url": "https://luma.com/automateddiscovery",
-      "coverUrl": "https://images.lumacdn.com/event-covers/rg/f051a784-9b3a-4e3b-83d4-89401bc74daa.png",
       "city": "",
       "venue": ""
     }
