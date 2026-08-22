@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-08-22T13:17:44Z",
+  "generatedAt": "2026-08-22T19:17:50Z",
   "upcoming": [
-    {
-      "title": "AI for Good Hackathon",
-      "startAt": "2026-08-22T18:30:00.000Z",
-      "endAt": "2026-08-23T00:00:00.000Z",
-      "url": "https://luma.com/aiforgoodhackathon",
-      "coverUrl": "https://images.lumacdn.com/uploads/qz/13fc4ed7-94d5-4dc5-b7a9-8b351c0c7402.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Infinity Seed Launch Party",
       "startAt": "2026-08-24T01:00:00.000Z",
@@ -219,6 +210,15 @@
     }
   ],
   "past": [
+    {
+      "title": "AI for Good Hackathon",
+      "startAt": "2026-08-22T18:30:00.000Z",
+      "endAt": "2026-08-23T00:00:00.000Z",
+      "url": "https://luma.com/aiforgoodhackathon",
+      "coverUrl": "https://images.lumacdn.com/uploads/qz/13fc4ed7-94d5-4dc5-b7a9-8b351c0c7402.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Data Centers for Good",
       "startAt": "2026-08-20T01:00:00.000Z",
@@ -657,15 +657,6 @@
       "endAt": "2026-04-21T04:00:00.000Z",
       "url": "https://luma.com/agenticrobots",
       "coverUrl": "https://images.lumacdn.com/event-covers/sc/6890a4d9-bae7-4511-97e5-fa783c5f1357.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Open Mic Night I",
-      "startAt": "2026-04-19T03:00:00.000Z",
-      "endAt": "2026-04-19T05:30:00.000Z",
-      "url": "https://luma.com/OpenMic1",
-      "coverUrl": "https://images.lumacdn.com/event-covers/wo/c9d2322b-93e6-4f88-b820-2c5f23d92481.png",
       "city": "",
       "venue": ""
     }
