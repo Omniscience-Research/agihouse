@@ -1,6 +1,6 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-08-17",
+  "asOf": "2026-08-24",
   "currency": "USD",
   "companies": [
     {
@@ -9,7 +9,7 @@
       "role": "Co-founder",
       "valuationB": 965,
       "display": "$965B",
-      "note": "$65B Series H closed May 2026 at $965B post-money; secondary-market trades implied ~$1.2T (Jul 2026, not a round); confidential IPO S-1 filed Jun 2026.",
+      "note": "$65B Series H closed May 2026 at $965B post-money; secondary-market trades implied ~$1.2T (Jul 2026, not a round); IPO reportedly accelerated to Oct 2026 with investors targeting ~$2T (Aug 2026, unpriced).",
       "source": "https://www.anthropic.com/news/series-h"
     },
     {
@@ -27,7 +27,7 @@
       "role": "Co-founder & CEO",
       "valuationB": 22.6,
       "display": "$22.6B",
-      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers (up from $20B Sept 2025); founded out of the AGI House SF community.",
+      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers; Nvidia reportedly in talks (Aug 2026) to invest at $30B+ — not closed, not counted.",
       "source": "https://tracxn.com/d/companies/perplexity/__V2BE-5ihMWJ1hNb2_u1W7Gry25JzPFCBg-iNWi94XI8/funding-and-investors"
     },
     {
