@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-08-23T22:50:39Z",
+  "generatedAt": "2026-08-24T04:50:44Z",
   "upcoming": [
-    {
-      "title": "Infinity Seed Launch Party",
-      "startAt": "2026-08-24T01:00:00.000Z",
-      "endAt": "2026-08-24T05:00:00.000Z",
-      "url": "https://luma.com/InfinitySeedLaunchParty",
-      "coverUrl": "https://images.lumacdn.com/uploads/bg/0f3138de-a6d9-40cb-aeb7-02fdf6c85d8d.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration",
       "startAt": "2026-08-26T10:00:00.000Z",
@@ -210,6 +201,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Infinity Seed Launch Party",
+      "startAt": "2026-08-24T01:00:00.000Z",
+      "endAt": "2026-08-24T05:00:00.000Z",
+      "url": "https://luma.com/InfinitySeedLaunchParty",
+      "coverUrl": "https://images.lumacdn.com/uploads/bg/0f3138de-a6d9-40cb-aeb7-02fdf6c85d8d.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "AI for Good Hackathon",
       "startAt": "2026-08-22T18:30:00.000Z",
@@ -648,15 +648,6 @@
       "endAt": "2026-04-23T05:00:00.000Z",
       "url": "https://luma.com/aiforthoughtnight",
       "coverUrl": "https://images.lumacdn.com/event-covers/zj/0569bf92-431f-41fc-aab9-ede10d4e614c.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Agentic Robotic Engineering - Build your Cute Robot Arm Assistant in a Night",
-      "startAt": "2026-04-21T01:30:00.000Z",
-      "endAt": "2026-04-21T04:00:00.000Z",
-      "url": "https://luma.com/agenticrobots",
-      "coverUrl": "https://images.lumacdn.com/event-covers/sc/6890a4d9-bae7-4511-97e5-fa783c5f1357.png",
       "city": "",
       "venue": ""
     }
