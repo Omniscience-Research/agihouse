@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-08-25T04:51:08Z",
+  "generatedAt": "2026-08-26T20:30:19Z",
   "upcoming": [
-    {
-      "title": "OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration",
-      "startAt": "2026-08-26T10:00:00.000Z",
-      "endAt": "2026-08-26T14:00:00.000Z",
-      "url": "https://luma.com/OPUS_TowardsEfficientAndPrincipledData",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/ry/bd098b7b-aae7-495c-9b4d-2ff4c014a61e",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "NeoTranshumanist Eschatology",
       "startAt": "2026-08-28T01:00:00.000Z",
@@ -201,6 +192,15 @@
     }
   ],
   "past": [
+    {
+      "title": "OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration",
+      "startAt": "2026-08-26T10:00:00.000Z",
+      "endAt": "2026-08-26T14:00:00.000Z",
+      "url": "https://luma.com/OPUS_TowardsEfficientAndPrincipledData",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/ry/bd098b7b-aae7-495c-9b4d-2ff4c014a61e",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Infinity Seed Launch Party",
       "startAt": "2026-08-24T01:00:00.000Z",
@@ -639,15 +639,6 @@
       "endAt": "2026-04-27T05:00:00.000Z",
       "url": "https://luma.com/buildacompany",
       "coverUrl": "https://images.lumacdn.com/event-covers/44/fa138499-681f-49e3-bad5-fc331c0c9bdf.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "AI For Thought Night - Episode I",
-      "startAt": "2026-04-23T01:00:00.000Z",
-      "endAt": "2026-04-23T05:00:00.000Z",
-      "url": "https://luma.com/aiforthoughtnight",
-      "coverUrl": "https://images.lumacdn.com/event-covers/zj/0569bf92-431f-41fc-aab9-ede10d4e614c.png",
       "city": "",
       "venue": ""
     }
