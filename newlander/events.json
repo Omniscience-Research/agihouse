@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-08-27T20:30:32Z",
+  "generatedAt": "2026-08-28T02:30:38Z",
   "upcoming": [
-    {
-      "title": "NeoTranshumanist Eschatology",
-      "startAt": "2026-08-28T01:00:00.000Z",
-      "endAt": "2026-08-28T05:00:00.000Z",
-      "url": "https://luma.com/NeoTranshumanistEschatology",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/xy/13fae58d-87bd-455a-8c6d-c1ba52df7767",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "AI Efficiency",
-      "startAt": "2026-08-29T19:00:00.000Z",
-      "endAt": "2026-08-29T22:00:00.000Z",
-      "url": "https://luma.com/aiefficiency",
-      "coverUrl": "https://images.lumacdn.com/uploads/68/5bf50138-b4e8-458f-9359-9978ea5d3d04.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
       "startAt": "2026-09-03T01:30:00.000Z",
@@ -192,6 +174,15 @@
     }
   ],
   "past": [
+    {
+      "title": "NeoTranshumanist Eschatology",
+      "startAt": "2026-08-28T01:00:00.000Z",
+      "endAt": "2026-08-28T05:00:00.000Z",
+      "url": "https://luma.com/NeoTranshumanistEschatology",
+      "coverUrl": "https://images.lumacdn.com/gallery-images/xy/13fae58d-87bd-455a-8c6d-c1ba52df7767",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration",
       "startAt": "2026-08-26T10:00:00.000Z",
@@ -630,15 +621,6 @@
       "endAt": "2026-05-01T05:30:00.000Z",
       "url": "https://luma.com/scifinight",
       "coverUrl": "https://images.lumacdn.com/uploads/he/8b72c322-46be-4b80-b89f-6c2af33271fe.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "OpenAI x Qdrant x Tandem AI Revenue Hackathon",
-      "startAt": "2026-04-25T00:30:00.000Z",
-      "endAt": "2026-04-27T05:00:00.000Z",
-      "url": "https://luma.com/buildacompany",
-      "coverUrl": "https://images.lumacdn.com/event-covers/44/fa138499-681f-49e3-bad5-fc331c0c9bdf.png",
       "city": "",
       "venue": ""
     }
