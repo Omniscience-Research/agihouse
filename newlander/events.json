@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T08:31:30Z",
+  "generatedAt": "2026-08-30T14:31:36Z",
   "upcoming": [
     {
       "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
@@ -7,15 +7,6 @@
       "endAt": "2026-09-03T03:00:00.000Z",
       "url": "https://luma.com/MAIThinking1",
       "coverUrl": "https://images.lumacdn.com/uploads/6x/cd5bc7b3-1c74-4ee1-a3db-570b081d07e4.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "The AI Debates Hackathon",
-      "startAt": "2026-09-05T16:00:00.000Z",
-      "endAt": "2026-09-06T05:30:00.000Z",
-      "url": "https://luma.com/aidebates",
-      "coverUrl": "https://images.lumacdn.com/uploads/mz/bdf35be9-6a11-4811-9b01-111073a89919.png",
       "city": "",
       "venue": ""
     },
@@ -34,6 +25,15 @@
       "endAt": "2026-09-20T05:30:00.000Z",
       "url": "https://luma.com/agi-empy",
       "coverUrl": "https://images.lumacdn.com/gallery-images/21/171e0794-3f09-40f2-a4d1-72eb76299921",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The AI Debates Hackathon",
+      "startAt": "2026-09-20T16:00:00.000Z",
+      "endAt": "2026-09-21T05:30:00.000Z",
+      "url": "https://luma.com/aidebates",
+      "coverUrl": "https://images.lumacdn.com/uploads/mz/bdf35be9-6a11-4811-9b01-111073a89919.png",
       "city": "",
       "venue": ""
     },
