@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T10:49:56Z",
+  "generatedAt": "2026-09-01T10:50:02Z",
   "upcoming": [
     {
       "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
@@ -16,6 +16,15 @@
       "endAt": "2026-09-11T05:00:00.000Z",
       "url": "https://luma.com/ComputationalMemetics",
       "coverUrl": "https://images.lumacdn.com/gallery-images/j5/e0d9e03b-63b3-452b-8899-3fc8f848a4bb",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "The Data Goldmine",
+      "startAt": "2026-09-18T02:00:00.000Z",
+      "endAt": "2026-09-18T04:30:00.000Z",
+      "url": "https://luma.com/datagoldmine",
+      "coverUrl": "https://images.lumacdn.com/uploads/b9/197cccd3-39a7-40fd-8edb-87fdcd8ae01b.png",
       "city": "",
       "venue": ""
     },
