@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-09-02T22:51:11Z",
+  "generatedAt": "2026-09-03T04:51:17Z",
   "upcoming": [
-    {
-      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
-      "startAt": "2026-09-03T01:30:00.000Z",
-      "endAt": "2026-09-03T03:00:00.000Z",
-      "url": "https://luma.com/MAIThinking1",
-      "coverUrl": "https://images.lumacdn.com/uploads/6x/cd5bc7b3-1c74-4ee1-a3db-570b081d07e4.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "The AI Productivity Stack: Building Personalized Agent Systems to Run Your Life",
       "startAt": "2026-09-05T21:00:00.000Z",
@@ -201,6 +192,15 @@
     }
   ],
   "past": [
+    {
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "startAt": "2026-09-03T01:30:00.000Z",
+      "endAt": "2026-09-03T03:00:00.000Z",
+      "url": "https://luma.com/MAIThinking1",
+      "coverUrl": "https://images.lumacdn.com/uploads/6x/cd5bc7b3-1c74-4ee1-a3db-570b081d07e4.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "NeoTranshumanist Eschatology",
       "startAt": "2026-08-28T01:00:00.000Z",
@@ -639,15 +639,6 @@
       "endAt": "2026-05-10T03:00:00.000Z",
       "url": "https://luma.com/gtmengineering",
       "coverUrl": "https://images.lumacdn.com/uploads/xw/554b2dc4-37b4-48cb-8006-e07ee353ee15.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Sci-Fi Reading + Movie Night: The Martian",
-      "startAt": "2026-05-01T01:00:00.000Z",
-      "endAt": "2026-05-01T05:30:00.000Z",
-      "url": "https://luma.com/scifinight",
-      "coverUrl": "https://images.lumacdn.com/uploads/he/8b72c322-46be-4b80-b89f-6c2af33271fe.png",
       "city": "",
       "venue": ""
     }
