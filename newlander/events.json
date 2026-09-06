@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-09-05T19:20:15Z",
+  "generatedAt": "2026-09-06T08:40:15Z",
   "upcoming": [
-    {
-      "title": "The AI Productivity Stack: Building Personalized Agent Systems to Run Your Life",
-      "startAt": "2026-09-05T21:00:00.000Z",
-      "endAt": "2026-09-05T23:00:00.000Z",
-      "url": "https://luma.com/aiproductivitystack",
-      "coverUrl": "https://images.lumacdn.com/uploads/s8/2f78722b-a9c7-4ad0-b390-4c9bc122da88.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Computational Memetics",
       "startAt": "2026-09-11T01:00:00.000Z",
@@ -192,6 +183,15 @@
     }
   ],
   "past": [
+    {
+      "title": "The AI Productivity Stack: Building Personalized Agent Systems to Run Your Life",
+      "startAt": "2026-09-05T21:00:00.000Z",
+      "endAt": "2026-09-05T23:00:00.000Z",
+      "url": "https://luma.com/aiproductivitystack",
+      "coverUrl": "https://images.lumacdn.com/uploads/s8/2f78722b-a9c7-4ad0-b390-4c9bc122da88.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
       "startAt": "2026-09-03T01:30:00.000Z",
@@ -630,15 +630,6 @@
       "endAt": "2026-05-17T08:30:00.000Z",
       "url": "https://luma.com/californiapeptideclub2",
       "coverUrl": "https://images.lumacdn.com/uploads/vg/7438e7e1-a7b8-48a0-9d89-b30d1735475b.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Autonomous GTM Hackathon with Vultr and OpenAI Codex",
-      "startAt": "2026-05-09T18:00:00.000Z",
-      "endAt": "2026-05-10T03:00:00.000Z",
-      "url": "https://luma.com/gtmengineering",
-      "coverUrl": "https://images.lumacdn.com/uploads/xw/554b2dc4-37b4-48cb-8006-e07ee353ee15.png",
       "city": "",
       "venue": ""
     }
