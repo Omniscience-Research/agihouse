@@ -1,6 +1,6 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-08-24",
+  "asOf": "2026-09-07",
   "currency": "USD",
   "companies": [
     {
@@ -9,7 +9,7 @@
       "role": "Co-founder",
       "valuationB": 965,
       "display": "$965B",
-      "note": "$65B Series H closed May 2026 at $965B post-money; secondary-market trades implied ~$1.2T (Jul 2026, not a round); IPO reportedly accelerated to Oct 2026 with investors targeting ~$2T (Aug 2026, unpriced).",
+      "note": "$65B Series H closed May 2026 at $965B post-money (last priced round). NYSE OpenVC Unicorn Index implied ~$1.17T (Sep 2, 2026, secondary-derived, not a round); public S-1 expected after Labor Day with an Oct 2026 Nasdaq listing targeting ~$2T (unpriced, not counted).",
       "source": "https://www.anthropic.com/news/series-h"
     },
     {
@@ -18,7 +18,7 @@
       "role": "Founding member",
       "valuationB": 852,
       "display": "$852B",
-      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender and $7B employee buyback (Aug 2026) both at same price; confidential IPO S-1 filed Jun 2026. John Schulman also a co-founder.",
+      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender and $7B employee buyback (Aug 2026) both at same price. Confidential S-1 filed Jun 2026; CFO Sarah Friar told staff (Aug 2026) OpenAI will be public in 2027. John Schulman also a co-founder.",
       "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
     },
     {
@@ -27,7 +27,7 @@
       "role": "Co-founder & CEO",
       "valuationB": 22.6,
       "display": "$22.6B",
-      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers; Nvidia reportedly in talks (Aug 2026) to invest at $30B+ — not closed, not counted.",
+      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers; Nvidia reportedly in talks (The Information, Aug 23, 2026) to invest at $30B+ — still unconfirmed and not closed as of Sep 7, 2026, not counted.",
       "source": "https://tracxn.com/d/companies/perplexity/__V2BE-5ihMWJ1hNb2_u1W7Gry25JzPFCBg-iNWi94XI8/funding-and-investors"
     },
     {
@@ -36,8 +36,8 @@
       "role": "Co-founder",
       "valuationB": 12,
       "display": "$12B",
-      "note": "$2B seed, Jul 2025. Nov 2025 talks at $50-60B collapsed by Jan 2026. John Schulman is Chief Scientist.",
-      "source": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab"
+      "note": "$2B seed, Jul 2025 ($12B post). Nov 2025 talks at $50B+ collapsed by Jan 2026. Sep 3, 2026: reportedly in talks for $1B+ led by Accel at ~$40B pre-money, with Nvidia weighing ~$2.5B — not closed, not counted. John Schulman is Chief Scientist.",
+      "source": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/"
     },
     {
       "company": "Lovable",
@@ -90,7 +90,7 @@
       "role": "Founder & CEO",
       "valuationB": 7.87,
       "display": "$7.87B",
-      "note": "$1.37B Series D closed Aug 6, 2026 at $7.87B; anchored by JPMorgan's Strategic Investment Group, co-led by WCM, Washington Harbour, Valor, 137 Ventures, Baillie Gifford. Up from $1.6B in Jan 2026.",
+      "note": "$1.37B Series D closed Aug 6, 2026 at $7.87B; anchored by JPMorgan's Strategic Investment Group, co-led by WCM, Washington Harbour, Valor, 137 Ventures, Baillie Gifford. Up from $1.6B in Jan 2026. Additional $360M debt facility Aug 14, 2026 (no valuation change).",
       "source": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/"
     },
     {
@@ -117,7 +117,7 @@
       "role": "Co-founder",
       "valuationB": 1.65,
       "display": "$1.65B",
-      "note": "Acquired by Nscale for $1.65B (definitive agreement Jul 30, 2026; closing expected H2 2026). Prior mark: $1B Series C (2021).",
+      "note": "Acquired by Nscale for $1.65B (definitive agreement Jul 30, 2026; closing expected H2 2026, not yet closed as of Sep 7, 2026). Prior mark: $1B Series C (2021).",
       "source": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/"
     },
     {
