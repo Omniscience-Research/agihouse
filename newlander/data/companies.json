@@ -1,6 +1,6 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-09-07",
+  "asOf": "2026-09-14",
   "currency": "USD",
   "companies": [
     {
@@ -9,7 +9,7 @@
       "role": "Co-founder",
       "valuationB": 965,
       "display": "$965B",
-      "note": "$65B Series H closed May 2026 at $965B post-money (last priced round). NYSE OpenVC Unicorn Index implied ~$1.17T (Sep 2, 2026, secondary-derived, not a round); public S-1 expected after Labor Day with an Oct 2026 Nasdaq listing targeting ~$2T (unpriced, not counted).",
+      "note": "$65B Series H closed May 2026 at $965B post-money (last priced round). NYSE OpenVC Unicorn Index implied ~$1.17T (Sep 2, 2026, secondary-derived, not a round); confidential S-1 filed Jun 1, 2026, public S-1 still pending as of Sep 14, 2026, Oct 2026 listing targeting ~$2T (unpriced, not counted).",
       "source": "https://www.anthropic.com/news/series-h"
     },
     {
@@ -18,7 +18,7 @@
       "role": "Founding member",
       "valuationB": 852,
       "display": "$852B",
-      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender and $7B employee buyback (Aug 2026) both at same price. Confidential S-1 filed Jun 2026; CFO Sarah Friar told staff (Aug 2026) OpenAI will be public in 2027. John Schulman also a co-founder.",
+      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender and $7B employee buyback (Aug 2026) both at same price. Confidential S-1 filed Jun 2026; CFO Sarah Friar told staff (Aug 2026) OpenAI will be public in 2027. No new priced event as of Sep 14, 2026. John Schulman also a co-founder.",
       "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
     },
     {
@@ -27,7 +27,7 @@
       "role": "Co-founder & CEO",
       "valuationB": 22.6,
       "display": "$22.6B",
-      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers; Nvidia reportedly in talks (The Information, Aug 23, 2026) to invest at $30B+ — still unconfirmed and not closed as of Sep 7, 2026, not counted.",
+      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers; Nvidia reportedly in talks (The Information, Aug 23, 2026) to invest at $30B+ — still unconfirmed and not closed as of Sep 14, 2026, not counted.",
       "source": "https://tracxn.com/d/companies/perplexity/__V2BE-5ihMWJ1hNb2_u1W7Gry25JzPFCBg-iNWi94XI8/funding-and-investors"
     },
     {
@@ -36,7 +36,7 @@
       "role": "Co-founder",
       "valuationB": 12,
       "display": "$12B",
-      "note": "$2B seed, Jul 2025 ($12B post). Nov 2025 talks at $50B+ collapsed by Jan 2026. Sep 3, 2026: reportedly in talks for $1B+ led by Accel at ~$40B pre-money, with Nvidia weighing ~$2.5B — not closed, not counted. John Schulman is Chief Scientist.",
+      "note": "$2B seed, Jul 2025 ($12B post). Nov 2025 talks at $50B+ collapsed by Jan 2026. Sep 2026: reportedly in talks for a $1B+ (possibly $5-6B) round led by Accel at ~$40B pre-money, with Nvidia weighing roughly half — still not closed as of Sep 14, 2026, not counted. John Schulman is Chief Scientist.",
       "source": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/"
     },
     {
@@ -117,7 +117,7 @@
       "role": "Co-founder",
       "valuationB": 1.65,
       "display": "$1.65B",
-      "note": "Acquired by Nscale for $1.65B (definitive agreement Jul 30, 2026; closing expected H2 2026, not yet closed as of Sep 7, 2026). Prior mark: $1B Series C (2021).",
+      "note": "Acquired by Nscale for $1.65B (definitive agreement Jul 30, 2026; closing expected H2 2026, not yet closed as of Sep 14, 2026). Prior mark: $1B Series C (2021).",
       "source": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/"
     },
     {
