@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-09-19T15:30:51Z",
+  "generatedAt": "2026-09-19T23:40:04Z",
   "upcoming": [
-    {
-      "title": "Voice AI Hackathon: SambaNova + General Compute + Infinity + Hume",
-      "startAt": "2026-09-19T17:00:00.000Z",
-      "endAt": "2026-09-20T03:30:00.000Z",
-      "url": "https://luma.com/voiceaihackathon",
-      "coverUrl": "https://images.lumacdn.com/uploads/7k/dc349cb7-e139-4a5a-a140-869915595044.gif",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "The AI Debates Hackathon",
       "startAt": "2026-09-20T16:00:00.000Z",
@@ -48,6 +39,15 @@
     }
   ],
   "past": [
+    {
+      "title": "Voice AI Hackathon: SambaNova + General Compute + Infinity + Hume",
+      "startAt": "2026-09-19T17:00:00.000Z",
+      "endAt": "2026-09-20T03:30:00.000Z",
+      "url": "https://luma.com/voiceaihackathon",
+      "coverUrl": "https://images.lumacdn.com/uploads/7k/dc349cb7-e139-4a5a-a140-869915595044.gif",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "The Data Goldmine",
       "startAt": "2026-09-18T02:00:00.000Z",
@@ -486,15 +486,6 @@
       "endAt": "2026-05-28T04:00:00.000Z",
       "url": "https://luma.com/pizzapartyAGI",
       "coverUrl": "https://images.lumacdn.com/api-uploads/s4/55caec62-8094-425e-8762-ecaa3b70c331.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Jam Session - AGI House Community",
-      "startAt": "2026-05-20T03:00:00.000Z",
-      "endAt": "2026-05-20T05:00:00.000Z",
-      "url": "https://luma.com/jamsession3",
-      "coverUrl": "https://images.lumacdn.com/uploads/7n/7a635862-61ab-4d88-84bd-3a2636985c1f.png",
       "city": "",
       "venue": ""
     }
