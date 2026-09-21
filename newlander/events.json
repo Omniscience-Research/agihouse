@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-09-19T23:40:04Z",
+  "generatedAt": "2026-09-21T17:25:28Z",
   "upcoming": [
-    {
-      "title": "The AI Debates Hackathon",
-      "startAt": "2026-09-20T16:00:00.000Z",
-      "endAt": "2026-09-21T05:30:00.000Z",
-      "url": "https://luma.com/aidebates",
-      "coverUrl": "https://images.lumacdn.com/uploads/mz/bdf35be9-6a11-4811-9b01-111073a89919.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Energy Optimization of GPUs through Self-Improving Agents",
       "startAt": "2026-09-23T02:00:00.000Z",
