@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clinical Trial Interest | AGI House SF</title>
+<link rel="icon" href="/img/assets/favicon.png">
+<style>
+  :root { --gold: #c9b27a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #000; color: #fff; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 24px 16px; }
+  .card { width: 100%; max-width: 420px; }
+  .eyebrow { color: var(--gold); letter-spacing: .2em; font-size: 12px; text-transform: uppercase; }
+  h1 { font-size: 30px; line-height: 1.15; margin: 10px 0 12px; font-weight: 600; }
+  p { color: #aaa; line-height: 1.5; margin: 0 0 24px; }
+  label { display: block; font-size: 13px; color: #ccc; margin-bottom: 8px; }
+  input { width: 100%; padding: 14px 16px; font-size: 17px; border-radius: 10px; border: 1px solid #333;
+    background: #111; color: #fff; outline: none; }
+  input:focus { border-color: var(--gold); }
+  button { margin-top: 14px; width: 100%; padding: 15px; font-size: 17px; font-weight: 600; border: 0;
+    border-radius: 10px; background: var(--gold); color: #000; cursor: pointer; }
+  button:disabled { opacity: .4; cursor: default; }
+  .fine { margin-top: 18px; font-size: 12px; color: #666; text-align: center; }
+  .fine a { color: #888; }
+</style>
+</head>
+<body>
+  <form class="card" id="f">
+    <div class="eyebrow">AGI House SF</div>
+    <h1>Interested in the clinical trial?</h1>
+    <p>Type your name, tap the button, and your mail app opens with a note to Julius ready to send.</p>
+    <label for="name">Your name</label>
+    <input id="name" autocomplete="name" placeholder="First and last name" required autofocus>
+    <button id="go" type="submit" disabled>Open email to Julius</button>
+    <div class="fine">Goes to <a href="mailto:julius@agihouse.ai">julius@agihouse.ai</a></div>
+  </form>
+<script>
+  const input = document.getElementById('name');
+  const go = document.getElementById('go');
+  input.addEventListener('input', () => { go.disabled = !input.value.trim(); });
+  document.getElementById('f').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = input.value.trim();
+    if (!name) return;
+    const subject = 'Clinical trial interest: ' + name;
+    const body = 'Hi Julius,\n\nMy name is ' + name + ' and I\'m interested in the clinical trial. Please keep me posted on next steps.\n\nThanks,\n' + name;
+    window.location.href = 'mailto:julius@agihouse.ai?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
