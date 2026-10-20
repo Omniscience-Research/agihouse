@@ -1,6 +1,16 @@
 {
-  "generatedAt": "2026-10-20T15:45:04Z",
-  "upcoming": [],
+  "generatedAt": "2026-10-20T21:49:05Z",
+  "upcoming": [
+    {
+      "title": "Applied GPU Session with Traversaal (TBD)",
+      "startAt": "2026-11-22T00:00:00.000Z",
+      "endAt": "2026-11-22T02:00:00.000Z",
+      "url": "https://luma.com/agi-9h67",
+      "coverUrl": "https://images.lumacdn.com/uploads/9s/87009ac7-69d3-4c1b-bfa0-ec81eec736d1.png",
+      "city": "",
+      "venue": ""
+    }
+  ],
   "past": [
     {
       "title": "Can AI Agents Make GPUs More Energy Efficient?",
