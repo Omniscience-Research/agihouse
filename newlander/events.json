@@ -1,12 +1,48 @@
 {
-  "generatedAt": "2026-10-20T21:49:05Z",
+  "generatedAt": "2026-10-21T04:58:47Z",
   "upcoming": [
     {
-      "title": "Applied GPU Session with Traversaal (TBD)",
+      "title": "AI Researcher Mixer at AGI House SF [STAGED]",
+      "startAt": "2026-10-22T01:30:00.000Z",
+      "endAt": "2026-10-22T04:30:00.000Z",
+      "url": "https://luma.com/airesearchermixer-staged",
+      "coverUrl": "https://images.lumacdn.com/uploads/ei/30ab5fc6-6c07-478c-9e65-62f7f6a701ba.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "SF \u00d7 MIT Hack Day: Physics & Quantum [STAGED]",
+      "startAt": "2026-11-08T19:00:00.000Z",
+      "endAt": "2026-11-09T03:00:00.000Z",
+      "url": "https://luma.com/sfxmit-physics-staged",
+      "coverUrl": "https://images.lumacdn.com/uploads/3n/fb9f965f-1a6b-4b9a-be2f-b999db5f5663.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "Applied GPU Session with Traversaal [STAGED]",
       "startAt": "2026-11-22T00:00:00.000Z",
       "endAt": "2026-11-22T02:00:00.000Z",
-      "url": "https://luma.com/agi-9h67",
+      "url": "https://luma.com/appliedgpu-staged",
       "coverUrl": "https://images.lumacdn.com/uploads/9s/87009ac7-69d3-4c1b-bfa0-ec81eec736d1.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "SF \u00d7 MIT Hack Day: Energy [STAGED]",
+      "startAt": "2026-11-29T19:00:00.000Z",
+      "endAt": "2026-11-30T03:00:00.000Z",
+      "url": "https://luma.com/sfxmit-energy-staged",
+      "coverUrl": "https://images.lumacdn.com/uploads/qm/6290da71-629d-4e5c-b9f5-2fd6041b3f91.jpg",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "AGI for BCI Hack Day [STAGED]",
+      "startAt": "2026-12-12T19:00:00.000Z",
+      "endAt": "2026-12-13T03:00:00.000Z",
+      "url": "https://luma.com/agi-for-bci-staged",
+      "coverUrl": "https://images.lumacdn.com/uploads/a7/7768cfd8-a8a7-45bc-93e4-0f2ca7b3c96d.jpg",
       "city": "",
       "venue": ""
     }
