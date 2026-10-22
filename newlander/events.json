@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-10-21T18:20:30Z",
+  "generatedAt": "2026-10-22T01:46:26Z",
   "upcoming": [
-    {
-      "title": "AI Researcher Mixer at AGI House SF [STAGED]",
-      "startAt": "2026-10-22T01:30:00.000Z",
-      "endAt": "2026-10-22T04:30:00.000Z",
-      "url": "https://luma.com/airesearchermixer-staged",
-      "coverUrl": "https://images.lumacdn.com/uploads/ei/30ab5fc6-6c07-478c-9e65-62f7f6a701ba.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "SF \u00d7 MIT Hack Day: Physics & Quantum [STAGED]",
       "startAt": "2026-11-08T19:00:00.000Z",
@@ -48,6 +39,15 @@
     }
   ],
   "past": [
+    {
+      "title": "AI Researcher Mixer at AGI House SF [STAGED]",
+      "startAt": "2026-10-22T01:30:00.000Z",
+      "endAt": "2026-10-22T04:30:00.000Z",
+      "url": "https://luma.com/airesearchermixer-staged",
+      "coverUrl": "https://images.lumacdn.com/uploads/ei/30ab5fc6-6c07-478c-9e65-62f7f6a701ba.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Can AI Agents Make GPUs More Energy Efficient?",
       "startAt": "2026-10-03T23:00:00.000Z",
@@ -486,15 +486,6 @@
       "endAt": "2026-06-07T01:00:00.000Z",
       "url": "https://luma.com/selfimprovingai",
       "coverUrl": "https://images.lumacdn.com/uploads/pq/393137e9-44a1-488b-adc5-b587c7d33cc3.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "The AI Neo Lab Dinner",
-      "startAt": "2026-06-03T01:30:00.000Z",
-      "endAt": "2026-06-03T05:00:00.000Z",
-      "url": "https://luma.com/neolabdinner",
-      "coverUrl": "https://images.lumacdn.com/api-uploads/nu/8771113f-4a0d-4537-992a-05593261f079.png",
       "city": "",
       "venue": ""
     }
