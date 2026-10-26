@@ -1,6 +1,6 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-10-05",
+  "asOf": "2026-10-26",
   "currency": "USD",
   "companies": [
     {
@@ -9,7 +9,7 @@
       "role": "Co-founder",
       "valuationB": 965,
       "display": "$965B",
-      "note": "$65B Series H closed May 2026 at $965B post-money (last priced round). NYSE OpenVC Unicorn Index implied ~$1.17T (Sep 2, 2026, secondary-derived, not a round); confidential S-1 filed Jun 1, 2026, public S-1 and price range still pending. IPO reportedly pushed to Nov 2026 (WSJ via Forbes, Sep 23, 2026) to include Q3 results, at ~$2T (some reports up to $2.3T) with a raise of up to $100B (unpriced, not counted). No new priced event as of Oct 5, 2026.",
+      "note": "$65B Series H closed May 2026 at $965B post-money (last priced round). Public S-1 filed Oct 26, 2026 (Nasdaq, ticker ANT; 21 underwriters led by Goldman Sachs and Morgan Stanley); share count and price range still blank. Press reads the filing as pointing to a ~$1.5T-$1.75T market value, below the ~$2T reported in Aug-Sep; listing reportedly targeted before Thanksgiving. Unpriced, not counted. No new priced event as of Oct 26, 2026.",
       "source": "https://www.anthropic.com/news/series-h"
     },
     {
@@ -18,7 +18,7 @@
       "role": "Founding member",
       "valuationB": 852,
       "display": "$852B",
-      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender and $7B employee buyback (Aug 2026) both at same price. Confidential S-1 filed Jun 2026; Altman told Fortune (Sep 12, 2026) there will be no IPO in 2026, targeting 2027. Bloomberg (Sep 29, 2026): OpenAI targeting a raise of at least $30B at ~$1.4T pre-money, described as early-stage talks; not closed, not counted. No new priced event as of Oct 5, 2026. John Schulman also a co-founder.",
+      "note": "$122B round closed Mar 2026 at $852B; Jun 2026 tender and $7B employee buyback (Aug 2026) both at same price. Confidential S-1 filed Jun 2026; IPO targeted for 2027. Bloomberg/CNBC (Oct 22, 2026): OpenAI nearing a round of up to $30B at $1.25T pre-money led by UAE investors and Coatue (target cut from $1.4T), signatures sought but terms not final; not closed, not counted. No new priced event as of Oct 26, 2026. John Schulman also a co-founder.",
       "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
     },
     {
@@ -27,7 +27,7 @@
       "role": "Co-founder & CEO",
       "valuationB": 22.6,
       "display": "$22.6B",
-      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers; Nvidia reportedly in talks (The Information, Aug 23, 2026) to invest at $30B+ — still unconfirmed and not closed as of Oct 5, 2026, so not counted.",
+      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers; Nvidia reportedly in talks (The Information, Aug 23, 2026) to invest at $30B+ — still unconfirmed and not closed as of Oct 26, 2026, so not counted.",
       "source": "https://tracxn.com/d/companies/perplexity/__V2BE-5ihMWJ1hNb2_u1W7Gry25JzPFCBg-iNWi94XI8/funding-and-investors"
     },
     {
@@ -36,7 +36,7 @@
       "role": "Co-founder",
       "valuationB": 12,
       "display": "$12B",
-      "note": "$2B seed, Jul 2025 ($12B post, last priced round). Nov 2025 talks at $50B+ collapsed by Jan 2026. TechCrunch (Sep 3, 2026): Accel in talks to lead a ~$1B round at $40B+ valuation, Nvidia reportedly joining — not closed as of Oct 5, 2026, not counted. Co-founder Luke Metz reportedly returned to OpenAI; John Schulman also a co-founder.",
+      "note": "$2B seed, Jul 2025 ($12B post, last priced round). Nov 2025 talks at $50B+ collapsed by Jan 2026. Since Sep 2026, reported talks for a round led by Accel at $40B+ pre-money (later reports: $5-6B raise, Nvidia ~$2.5B) — not closed as of Oct 26, 2026, not counted. Co-founder Luke Metz reportedly returned to OpenAI; John Schulman also a co-founder.",
       "source": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/"
     },
     {
@@ -52,10 +52,10 @@
       "company": "Modal Labs",
       "founder": "Erik Bernhardsson",
       "role": "Co-founder & CEO",
-      "valuationB": 4.65,
-      "display": "$4.65B",
-      "note": "Series C, May 2026. TechCrunch (Sep 28, 2026, single source): Modal closing in on a $750M Accel-led round at $15.75B post-money; no official close or announcement as of Oct 5, 2026, so not counted.",
-      "source": "https://modal.com/company"
+      "valuationB": 15.75,
+      "display": "$15.75B",
+      "note": "$750M Series D led by Accel closed Oct 14, 2026 at $15.75B post-money (Kleiner Perkins joined; Menlo, General Catalyst, Redpoint, Lux, Bain Capital Ventures participated). Up from $4.65B Series C, May 2026. Company says annualized run rate passed $1B.",
+      "source": "https://www.pillsburylaw.com/en/news-and-insights/pillsbury-advises-modal-labs-on-750-million-financing.html"
     },
     {
       "company": "Recursive Superintelligence",
@@ -117,7 +117,7 @@
       "role": "Co-founder",
       "valuationB": 1.65,
       "display": "$1.65B",
-      "note": "Acquired by Nscale for $1.65B in Nscale equity (definitive agreement Jul 30, 2026; price per Bloomberg and Nscale S-1). Closing is conditional on Nscale's IPO, expected 2H 2026, still pending as of Oct 5, 2026 (Nscale S-1 filed Sep 18, 2026; no price range set yet). Nscale raised $3.36B in pre-IPO convertible notes on Sep 25, 2026 and reportedly targets a ~$35B NYSE IPO (ticker NSCL). Prior mark: $1B Series C (2021).",
+      "note": "Acquired by Nscale for $1.65B in Nscale equity (definitive agreement Jul 30, 2026; price per Bloomberg and Nscale S-1). Closing is conditional on Nscale's IPO, still pending as of Oct 26, 2026 (S-1 filed Sep 18, 2026, NYSE ticker NSCL, no price range set). Bloomberg (Oct 18, 2026): Nscale seeking ~$30B IPO valuation, some investors pushing for $16B-$19B. Prior mark: $1B Series C (2021).",
       "source": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/"
     },
     {
