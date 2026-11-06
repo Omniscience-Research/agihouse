@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T01:16:21Z",
+  "generatedAt": "2026-11-06T21:21:24Z",
   "upcoming": [
     {
       "title": "SF \u00d7 MIT Hack Day: Energy",
@@ -11,7 +11,7 @@
       "venue": ""
     },
     {
-      "title": "Applied GPU Session with Traversaal [STAGED]",
+      "title": "Forward Deployment Engineering and Infra (GPU Scaling)",
       "startAt": "2026-11-22T00:00:00.000Z",
       "endAt": "2026-11-22T02:00:00.000Z",
       "url": "https://luma.com/appliedgpu-staged",
