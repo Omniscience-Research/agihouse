@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-11-08T11:38:32Z",
+  "generatedAt": "2026-11-08T18:52:20Z",
   "upcoming": [
-    {
-      "title": "SF \u00d7 MIT Hack Day: Energy",
-      "startAt": "2026-11-08T18:00:00.000Z",
-      "endAt": "2026-11-09T03:00:00.000Z",
-      "url": "https://luma.com/sfxmit-energy-staged",
-      "coverUrl": "https://images.lumacdn.com/uploads/rq/eb734d1a-8a41-4f81-8b02-3e5778ffdb86.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "Forward Deployment Engineering and Infra (GPU Scaling)",
       "startAt": "2026-11-22T00:00:00.000Z",
@@ -39,6 +30,15 @@
     }
   ],
   "past": [
+    {
+      "title": "SF \u00d7 MIT Hack Day: Energy",
+      "startAt": "2026-11-08T18:00:00.000Z",
+      "endAt": "2026-11-09T03:00:00.000Z",
+      "url": "https://luma.com/sfxmit-energy-staged",
+      "coverUrl": "https://images.lumacdn.com/uploads/rq/eb734d1a-8a41-4f81-8b02-3e5778ffdb86.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "AI Researcher Mixer at AGI House SF [STAGED]",
       "startAt": "2026-10-22T01:30:00.000Z",
@@ -477,15 +477,6 @@
       "endAt": "2026-06-07T02:00:00.000Z",
       "url": "https://luma.com/agi-0fck",
       "coverUrl": "https://images.lumacdn.com/gallery-images/r1/2de72242-6d5a-4740-87be-c51b7a941c92",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Self Improving AI (SIA) Agents - Emergency Hackathon (by AGI House SF & Nebius)",
-      "startAt": "2026-06-06T17:00:00.000Z",
-      "endAt": "2026-06-07T01:00:00.000Z",
-      "url": "https://luma.com/selfimprovingai",
-      "coverUrl": "https://images.lumacdn.com/uploads/pq/393137e9-44a1-488b-adc5-b587c7d33cc3.png",
       "city": "",
       "venue": ""
     }
