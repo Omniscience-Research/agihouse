@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T21:37:24Z",
+  "generatedAt": "2026-11-17T03:40:11Z",
   "upcoming": [
     {
       "title": "An Evening of Forward Deployed Engineering (PM, AI Engineers, SWEs) Infrastructure & Good Company (in-person)",
@@ -7,6 +7,15 @@
       "endAt": "2026-11-22T02:00:00.000Z",
       "url": "https://luma.com/appliedgpu-staged",
       "coverUrl": "https://images.lumacdn.com/uploads/rn/9121d208-ca68-440d-913e-b91ea8d46da8.png",
+      "city": "",
+      "venue": ""
+    },
+    {
+      "title": "SHOKUNIN: The Mastery Path",
+      "startAt": "2026-11-25T02:30:00.000Z",
+      "endAt": "2026-11-25T05:00:00.000Z",
+      "url": "https://luma.com/shokunin",
+      "coverUrl": "https://images.lumacdn.com/uploads/k2/420fd60c-4634-4fdb-b638-8c3899dffdc9.png",
       "city": "",
       "venue": ""
     },
