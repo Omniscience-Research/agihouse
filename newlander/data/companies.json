@@ -1,16 +1,16 @@
 {
   "_comment": "Companies co-founded by people who came through the AGI House / Genesis lineage. valuationB = most recent known valuation in USD billions (null = undisclosed, excluded from the total). The site sums valuationB client-side, so this file is the single source of truth for the headline number and the hover breakdown. Refreshed weekly by update-valuations (see newlander/README.md).",
-  "asOf": "2026-11-16",
+  "asOf": "2026-11-23",
   "currency": "USD",
   "companies": [
     {
       "company": "Anthropic",
       "founder": "Benjamin Mann",
       "role": "Co-founder",
-      "valuationB": 965,
-      "display": "$965B",
-      "note": "$65B Series H closed May 2026 at $965B post-money (last priced round). Nasdaq IPO (ticker ANT): amended S-1 on Nov 10, 2026 set a $70-$78 per-share range for 825M shares, implying roughly $0.92T-$1.02T on shares outstanding or up to ~$1.4T fully diluted. Pricing expected Nov 18, trading Nov 19; book reportedly covered. Seven strategic partners incl. Google and Nvidia committed $26B at the IPO price. Unpriced as of Nov 16, so not counted yet.",
-      "source": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+      "valuationB": 1180,
+      "display": "$1.18T",
+      "note": "Public on Nasdaq (ANT). IPO priced Nov 18, 2026 at $83/share (above the $70-$78 range), 980M Class A shares, ~$81B raised; opened $111.50 Nov 19 and closed $97.17 (~$1.28T basic, ~$1.75T fully diluted). Fell back to $88.91 at the Nov 20 close: ~$1.18T market cap on ~13.2B shares outstanding (counted here; fully diluted is materially higher). Prior private mark: $965B Series H, May 2026.",
+      "source": "https://stockanalysis.com/stocks/ant/market-cap/"
     },
     {
       "company": "OpenAI",
@@ -18,7 +18,7 @@
       "role": "Founding member",
       "valuationB": 1250,
       "display": "$1.25T",
-      "note": "Bloomberg (Nov 6, 2026): ~$11B first close of a new round at $1.25T; CFO Sarah Friar has said the $1.25T is pre-money. Remainder (up to ~$20B total) expected in coming weeks; no further close confirmed as of Nov 16, 2026. Scaled back from $30B at $1.4T target. Prior: $122B round closed Mar 2026 at $852B. Confidential S-1 filed Jun 2026; IPO targeted for 2027. John Schulman also a co-founder.",
+      "note": "Bloomberg (Nov 6, 2026): ~$11B first close of a new round at $1.25T; CFO Sarah Friar has said the $1.25T is pre-money. Remainder (up to ~$20B total) expected in coming weeks; no further close confirmed as of Nov 23, 2026. Scaled back from $30B at $1.4T target. Prior: $122B round closed Mar 2026 at $852B. Confidential S-1 filed Jun 2026; IPO targeted for 2027. John Schulman also a co-founder.",
       "source": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
     },
     {
@@ -27,7 +27,7 @@
       "role": "Co-founder & CEO",
       "valuationB": 22.6,
       "display": "$22.6B",
-      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers (other trackers still show $20B, Sep 2025); Nvidia reportedly in talks (The Information, Aug 23, 2026) to invest at $30B+ — still not closed as of Nov 16, 2026, so not counted. Annualized revenue reportedly past $750M.",
+      "note": "Series E-6 closed Jan 2026 at ~$22.6B per funding trackers (other trackers still show $20B, Sep 2025); Nvidia reportedly in talks (The Information, Aug 23, 2026) to invest at $30B+ — still not closed as of Nov 23, 2026, so not counted. Annualized revenue reportedly past $750M.",
       "source": "https://tracxn.com/d/companies/perplexity/__V2BE-5ihMWJ1hNb2_u1W7Gry25JzPFCBg-iNWi94XI8/funding-and-investors"
     },
     {
@@ -36,7 +36,7 @@
       "role": "Co-founder",
       "valuationB": 12,
       "display": "$12B",
-      "note": "$2B seed, Jul 2025 ($12B post, last priced round). Nov 2025 talks at $50B+ collapsed by Jan 2026. Business Insider (Nov 6, 2026): set to close a ~$5B round led by Accel at $40B pre-money (~$45B post) as soon as this week; Nvidia reportedly ~$2.5B of it. Company declined to comment; not closed as of Nov 16, 2026, not counted. Co-founder Luke Metz reportedly returned to OpenAI; John Schulman also a co-founder.",
+      "note": "$2B seed, Jul 2025 ($12B post, last priced round). Nov 2025 talks at $50B+ collapsed by Jan 2026. Business Insider (Nov 6, 2026): set to close a ~$5B round led by Accel at $40B pre-money (~$45B post) as soon as this week; Nvidia reportedly ~$2.5B of it. Company declined to comment; not closed as of Nov 23, 2026, not counted. Co-founder Luke Metz reportedly returned to OpenAI; John Schulman also a co-founder.",
       "source": "https://dealroom.co/news/170334-thinking-machines-lab-nears-5b-round-at-40b-valuation-led-by-accel/"
     },
     {
@@ -117,7 +117,7 @@
       "role": "Co-founder",
       "valuationB": 1.65,
       "display": "$1.65B",
-      "note": "Acquired by Nscale for $1.65B in Nscale equity (definitive agreement Jul 2026; price per Bloomberg and Nscale S-1). Closing is conditional on Nscale's IPO, still pending as of Nov 16, 2026 (S-1 filed Sep 18, 2026, NYSE ticker NSCL, no price range set; ~$30B target vs. investor push for $16B-$19B; reports in late Oct say listing slipped to at least Dec 2026). Prior mark: $1B Series C (2021).",
+      "note": "Acquired by Nscale for $1.65B in Nscale equity (definitive agreement Jul 2026; price per Bloomberg and Nscale S-1). Closing is conditional on Nscale's IPO, still pending as of Nov 23, 2026 (S-1 filed Sep 18, 2026, NYSE ticker NSCL, no price range set; ~$30B target vs. investor push for $16B-$19B; reports in late Oct say listing slipped to at least Dec 2026; company memo still targets a year-end listing at $30B-$35B). Prior mark: $1B Series C (2021).",
       "source": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/"
     },
     {
