@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-11-21T20:29:23Z",
+  "generatedAt": "2026-11-23T21:30:20Z",
   "upcoming": [
-    {
-      "title": "An Evening of Forward Deployed Engineering (PM, AI Engineers, SWEs) Infrastructure & Good Company (in-person)",
-      "startAt": "2026-11-22T00:00:00.000Z",
-      "endAt": "2026-11-22T02:00:00.000Z",
-      "url": "https://luma.com/appliedgpu-staged",
-      "coverUrl": "https://images.lumacdn.com/uploads/rn/9121d208-ca68-440d-913e-b91ea8d46da8.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "SHOKUNIN: The Mastery Path",
       "startAt": "2026-11-25T02:30:00.000Z",
@@ -48,6 +39,15 @@
     }
   ],
   "past": [
+    {
+      "title": "An Evening of Forward Deployed Engineering (PM, AI Engineers, SWEs) Infrastructure & Good Company (in-person)",
+      "startAt": "2026-11-22T00:00:00.000Z",
+      "endAt": "2026-11-22T02:00:00.000Z",
+      "url": "https://luma.com/appliedgpu-staged",
+      "coverUrl": "https://images.lumacdn.com/uploads/rn/9121d208-ca68-440d-913e-b91ea8d46da8.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "Formalizing Bioelectricity",
       "startAt": "2026-11-13T02:00:00.000Z",
@@ -486,15 +486,6 @@
       "endAt": "2026-06-10T05:00:00.000Z",
       "url": "https://luma.com/longevitydinner",
       "coverUrl": "https://images.lumacdn.com/gallery-images/ry/bd098b7b-aae7-495c-9b4d-2ff4c014a61e",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Self Improving Agent Framework & 1M Context LLMs - Workshop on Recursive Agents and Deep dive into DeepSeek-V4 Architecture",
-      "startAt": "2026-06-07T18:30:00.000Z",
-      "endAt": "2026-06-07T21:00:00.000Z",
-      "url": "https://luma.com/contextagents",
-      "coverUrl": "https://images.lumacdn.com/uploads/3n/79011d8a-476f-47e8-9010-74c918589279.png",
       "city": "",
       "venue": ""
     }
