@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-11-24T20:50:03Z",
+  "generatedAt": "2026-11-25T02:50:07Z",
   "upcoming": [
-    {
-      "title": "SHOKUNIN: The Mastery Path",
-      "startAt": "2026-11-25T02:30:00.000Z",
-      "endAt": "2026-11-25T05:00:00.000Z",
-      "url": "https://luma.com/shokunin",
-      "coverUrl": "https://images.lumacdn.com/uploads/k2/420fd60c-4634-4fdb-b638-8c3899dffdc9.png",
-      "city": "",
-      "venue": ""
-    },
     {
       "title": "SF \u00d7 MIT Hack Day: Peptides - Claims vs Evidence",
       "startAt": "2026-11-29T18:00:00.000Z",
@@ -39,6 +30,15 @@
     }
   ],
   "past": [
+    {
+      "title": "SHOKUNIN: The Mastery Path",
+      "startAt": "2026-11-25T02:30:00.000Z",
+      "endAt": "2026-11-25T05:00:00.000Z",
+      "url": "https://luma.com/shokunin",
+      "coverUrl": "https://images.lumacdn.com/uploads/k2/420fd60c-4634-4fdb-b638-8c3899dffdc9.png",
+      "city": "",
+      "venue": ""
+    },
     {
       "title": "An Evening of Forward Deployed Engineering (PM, AI Engineers, SWEs) Infrastructure & Good Company (in-person)",
       "startAt": "2026-11-22T00:00:00.000Z",
@@ -477,15 +477,6 @@
       "endAt": "2026-06-11T06:30:00.000Z",
       "url": "https://luma.com/scifinight2",
       "coverUrl": "https://images.lumacdn.com/uploads/rp/78a2d89f-fa4f-4484-a107-c4d0866c272a.png",
-      "city": "",
-      "venue": ""
-    },
-    {
-      "title": "Longevity Dinner",
-      "startAt": "2026-06-10T01:30:00.000Z",
-      "endAt": "2026-06-10T05:00:00.000Z",
-      "url": "https://luma.com/longevitydinner",
-      "coverUrl": "https://images.lumacdn.com/gallery-images/ry/bd098b7b-aae7-495c-9b4d-2ff4c014a61e",
       "city": "",
       "venue": ""
     }
